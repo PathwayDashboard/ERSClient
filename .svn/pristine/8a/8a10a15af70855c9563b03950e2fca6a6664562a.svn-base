@@ -1,0 +1,222 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+import java.util.Date;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-07-18T17:20:02.553+02:00")
+public class ActiveLifestylePASessionSubsection   {
+  
+  private Date date = null;
+  private String startTime = null;
+  private String endTime = null;
+  private Integer duration = null;
+  private String hrFile = null;
+  private Integer expenditure = null;
+  private Integer acceptable = null;
+  private Integer averageHeartRate = null;
+  private Integer stepsNumber = null;
+  private Integer type = null;
+  private Integer monitored = null;
+  private String description = null;
+  private Integer intensity = null;
+
+  
+  /**
+   * Session Date
+   **/
+  @ApiModelProperty(value = "Session Date")
+  @JsonProperty("date")
+  public Date getDate() {
+    return date;
+  }
+  public void setDate(Date date) {
+    this.date = date;
+  }
+
+  
+  /**
+   * Session StartTime
+   **/
+  @ApiModelProperty(value = "Session StartTime")
+  @JsonProperty("startTime")
+  public String getStartTime() {
+    return startTime;
+  }
+  public void setStartTime(String startTime) {
+    this.startTime = startTime;
+  }
+
+  
+  /**
+   * Session End Time
+   **/
+  @ApiModelProperty(value = "Session End Time")
+  @JsonProperty("endTime")
+  public String getEndTime() {
+    return endTime;
+  }
+  public void setEndTime(String endTime) {
+    this.endTime = endTime;
+  }
+
+  
+  /**
+   * Session Duration
+   **/
+  @ApiModelProperty(value = "Session Duration")
+  @JsonProperty("duration")
+  public Integer getDuration() {
+    return duration;
+  }
+  public void setDuration(Integer duration) {
+    this.duration = duration;
+  }
+
+  
+  /**
+   * Session Heart rate file
+   **/
+  @ApiModelProperty(value = "Session Heart rate file")
+  @JsonProperty("hrFile")
+  public String getHrFile() {
+    return hrFile;
+  }
+  public void setHrFile(String hrFile) {
+    this.hrFile = hrFile;
+  }
+
+  
+  /**
+   * Session Expenditure Value
+   **/
+  @ApiModelProperty(value = "Session Expenditure Value")
+  @JsonProperty("expenditure")
+  public Integer getExpenditure() {
+    return expenditure;
+  }
+  public void setExpenditure(Integer expenditure) {
+    this.expenditure = expenditure;
+  }
+
+  
+  /**
+   * Session Acceptable
+   **/
+  @ApiModelProperty(value = "Session Acceptable")
+  @JsonProperty("acceptable")
+  public Integer getAcceptable() {
+    return acceptable;
+  }
+  public void setAcceptable(Integer acceptable) {
+    this.acceptable = acceptable;
+  }
+
+  
+  /**
+   * Session Average Heart Rate
+   **/
+  @ApiModelProperty(value = "Session Average Heart Rate")
+  @JsonProperty("averageHeartRate")
+  public Integer getAverageHeartRate() {
+    return averageHeartRate;
+  }
+  public void setAverageHeartRate(Integer averageHeartRate) {
+    this.averageHeartRate = averageHeartRate;
+  }
+
+  
+  /**
+   * Session Steps Number
+   **/
+  @ApiModelProperty(value = "Session Steps Number")
+  @JsonProperty("stepsNumber")
+  public Integer getStepsNumber() {
+    return stepsNumber;
+  }
+  public void setStepsNumber(Integer stepsNumber) {
+    this.stepsNumber = stepsNumber;
+  }
+
+  
+  /**
+   * Session Type
+   **/
+  @ApiModelProperty(value = "Session Type")
+  @JsonProperty("type")
+  public Integer getType() {
+    return type;
+  }
+  public void setType(Integer type) {
+    this.type = type;
+  }
+
+  
+  /**
+   * Session Monitored
+   **/
+  @ApiModelProperty(value = "Session Monitored")
+  @JsonProperty("monitored")
+  public Integer getMonitored() {
+    return monitored;
+  }
+  public void setMonitored(Integer monitored) {
+    this.monitored = monitored;
+  }
+
+  
+  /**
+   * Session Description
+   **/
+  @ApiModelProperty(value = "Session Description")
+  @JsonProperty("description")
+  public String getDescription() {
+    return description;
+  }
+  public void setDescription(String description) {
+    this.description = description;
+  }
+
+  
+  /**
+   * Session Intensity
+   **/
+  @ApiModelProperty(value = "Session Intensity")
+  @JsonProperty("intensity")
+  public Integer getIntensity() {
+    return intensity;
+  }
+  public void setIntensity(Integer intensity) {
+    this.intensity = intensity;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class ActiveLifestylePASessionSubsection {\n");
+    
+    sb.append("    date: ").append(StringUtil.toIndentedString(date)).append("\n");
+    sb.append("    startTime: ").append(StringUtil.toIndentedString(startTime)).append("\n");
+    sb.append("    endTime: ").append(StringUtil.toIndentedString(endTime)).append("\n");
+    sb.append("    duration: ").append(StringUtil.toIndentedString(duration)).append("\n");
+    sb.append("    hrFile: ").append(StringUtil.toIndentedString(hrFile)).append("\n");
+    sb.append("    expenditure: ").append(StringUtil.toIndentedString(expenditure)).append("\n");
+    sb.append("    acceptable: ").append(StringUtil.toIndentedString(acceptable)).append("\n");
+    sb.append("    averageHeartRate: ").append(StringUtil.toIndentedString(averageHeartRate)).append("\n");
+    sb.append("    stepsNumber: ").append(StringUtil.toIndentedString(stepsNumber)).append("\n");
+    sb.append("    type: ").append(StringUtil.toIndentedString(type)).append("\n");
+    sb.append("    monitored: ").append(StringUtil.toIndentedString(monitored)).append("\n");
+    sb.append("    description: ").append(StringUtil.toIndentedString(description)).append("\n");
+    sb.append("    intensity: ").append(StringUtil.toIndentedString(intensity)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

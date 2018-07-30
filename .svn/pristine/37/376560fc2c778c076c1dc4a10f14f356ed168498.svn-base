@@ -1,0 +1,56 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+import io.swagger.client.model.BehavioralChangeNotificationPreferences;
+import io.swagger.client.model.ExerciseNotificationPreferences;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-04-21T15:01:39.375+02:00")
+public class NotificationsPreferences   {
+  
+  private ExerciseNotificationPreferences exerciseNotificationPreferences = null;
+  private BehavioralChangeNotificationPreferences behavioralChangeNotificationPreferences = null;
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("exerciseNotificationPreferences")
+  public ExerciseNotificationPreferences getExerciseNotificationPreferences() {
+    return exerciseNotificationPreferences;
+  }
+  public void setExerciseNotificationPreferences(ExerciseNotificationPreferences exerciseNotificationPreferences) {
+    this.exerciseNotificationPreferences = exerciseNotificationPreferences;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("behavioralChangeNotificationPreferences")
+  public BehavioralChangeNotificationPreferences getBehavioralChangeNotificationPreferences() {
+    return behavioralChangeNotificationPreferences;
+  }
+  public void setBehavioralChangeNotificationPreferences(BehavioralChangeNotificationPreferences behavioralChangeNotificationPreferences) {
+    this.behavioralChangeNotificationPreferences = behavioralChangeNotificationPreferences;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class NotificationsPreferences {\n");
+    
+    sb.append("    exerciseNotificationPreferences: ").append(StringUtil.toIndentedString(exerciseNotificationPreferences)).append("\n");
+    sb.append("    behavioralChangeNotificationPreferences: ").append(StringUtil.toIndentedString(behavioralChangeNotificationPreferences)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

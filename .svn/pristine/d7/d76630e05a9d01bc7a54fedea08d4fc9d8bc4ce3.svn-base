@@ -1,0 +1,86 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-05-13T12:06:50.958+02:00")
+public class BehaviouralChangeProgramPersonalGoals   {
+  
+  private Integer behaviouralChangeProgramPersonalGoalID = null;
+  private String behaviouralChangeProgramPersonalGoalDescription = null;
+  private Integer behaviouralChangeProgramPersonalGoalCategory = null;
+  private String behaviouralChangeProgramPersonalGoalGoalAssessmentQuestionnaire = null;
+
+  
+  /**
+   * Personal Goal ID
+   **/
+  @ApiModelProperty(value = "Personal Goal ID")
+  @JsonProperty("behaviouralChangeProgramPersonalGoalID")
+  public Integer getBehaviouralChangeProgramPersonalGoalID() {
+    return behaviouralChangeProgramPersonalGoalID;
+  }
+  public void setBehaviouralChangeProgramPersonalGoalID(Integer behaviouralChangeProgramPersonalGoalID) {
+    this.behaviouralChangeProgramPersonalGoalID = behaviouralChangeProgramPersonalGoalID;
+  }
+
+  
+  /**
+   * Program Personal Goal Description
+   **/
+  @ApiModelProperty(value = "Program Personal Goal Description")
+  @JsonProperty("behaviouralChangeProgramPersonalGoalDescription")
+  public String getBehaviouralChangeProgramPersonalGoalDescription() {
+    return behaviouralChangeProgramPersonalGoalDescription;
+  }
+  public void setBehaviouralChangeProgramPersonalGoalDescription(String behaviouralChangeProgramPersonalGoalDescription) {
+    this.behaviouralChangeProgramPersonalGoalDescription = behaviouralChangeProgramPersonalGoalDescription;
+  }
+
+  
+  /**
+   * Program Personal Goal Category
+   **/
+  @ApiModelProperty(value = "Program Personal Goal Category")
+  @JsonProperty("behaviouralChangeProgramPersonalGoalCategory")
+  public Integer getBehaviouralChangeProgramPersonalGoalCategory() {
+    return behaviouralChangeProgramPersonalGoalCategory;
+  }
+  public void setBehaviouralChangeProgramPersonalGoalCategory(Integer behaviouralChangeProgramPersonalGoalCategory) {
+    this.behaviouralChangeProgramPersonalGoalCategory = behaviouralChangeProgramPersonalGoalCategory;
+  }
+
+  
+  /**
+   * tbd
+   **/
+  @ApiModelProperty(value = "tbd")
+  @JsonProperty("behaviouralChangeProgramPersonalGoalGoalAssessmentQuestionnaire")
+  public String getBehaviouralChangeProgramPersonalGoalGoalAssessmentQuestionnaire() {
+    return behaviouralChangeProgramPersonalGoalGoalAssessmentQuestionnaire;
+  }
+  public void setBehaviouralChangeProgramPersonalGoalGoalAssessmentQuestionnaire(String behaviouralChangeProgramPersonalGoalGoalAssessmentQuestionnaire) {
+    this.behaviouralChangeProgramPersonalGoalGoalAssessmentQuestionnaire = behaviouralChangeProgramPersonalGoalGoalAssessmentQuestionnaire;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class BehaviouralChangeProgramPersonalGoals {\n");
+    
+    sb.append("    behaviouralChangeProgramPersonalGoalID: ").append(StringUtil.toIndentedString(behaviouralChangeProgramPersonalGoalID)).append("\n");
+    sb.append("    behaviouralChangeProgramPersonalGoalDescription: ").append(StringUtil.toIndentedString(behaviouralChangeProgramPersonalGoalDescription)).append("\n");
+    sb.append("    behaviouralChangeProgramPersonalGoalCategory: ").append(StringUtil.toIndentedString(behaviouralChangeProgramPersonalGoalCategory)).append("\n");
+    sb.append("    behaviouralChangeProgramPersonalGoalGoalAssessmentQuestionnaire: ").append(StringUtil.toIndentedString(behaviouralChangeProgramPersonalGoalGoalAssessmentQuestionnaire)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

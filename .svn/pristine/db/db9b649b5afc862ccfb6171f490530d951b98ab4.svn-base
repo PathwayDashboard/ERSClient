@@ -1,0 +1,178 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+import io.swagger.client.model.CardiacRehabilitationProgressHealthAndFitnessAssessmentSessionenergyExpenditureSubSubSection;
+import java.util.*;
+import io.swagger.client.model.CardiacRehabilitationProgressHealthAndFitnessAssessmentSessionHealthAndFitnessAssessmentPreScreeningInfoSubSubsection;
+import java.util.Date;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-08-04T11:43:36.581+02:00")
+public class CardiacRehabilitationProgressHealthAndFitnessAssessmentSessionSubsection   {
+  
+  private Double minute1HR = null;
+  private Double minute2HR = null;
+  private Double minute3HR = null;
+  private Double minute4HR = null;
+  private List<String> symptoms = new ArrayList<String>();
+  private Integer difficultyLevel = null;
+  private Date date = null;
+  private String hrFile = null;
+  private CardiacRehabilitationProgressHealthAndFitnessAssessmentSessionHealthAndFitnessAssessmentPreScreeningInfoSubSubsection healthAndFitnessAssessmentPreScreeningInfo = null;
+  private CardiacRehabilitationProgressHealthAndFitnessAssessmentSessionenergyExpenditureSubSubSection energyExpenditure = null;
+
+  
+  /**
+   * minute1HR
+   **/
+  @ApiModelProperty(value = "minute1HR")
+  @JsonProperty("minute1HR")
+  public Double getMinute1HR() {
+    return minute1HR;
+  }
+  public void setMinute1HR(Double minute1HR) {
+    this.minute1HR = minute1HR;
+  }
+
+  
+  /**
+   * minute2HR
+   **/
+  @ApiModelProperty(value = "minute2HR")
+  @JsonProperty("minute2HR")
+  public Double getMinute2HR() {
+    return minute2HR;
+  }
+  public void setMinute2HR(Double minute2HR) {
+    this.minute2HR = minute2HR;
+  }
+
+  
+  /**
+   * minute3HR
+   **/
+  @ApiModelProperty(value = "minute3HR")
+  @JsonProperty("minute3HR")
+  public Double getMinute3HR() {
+    return minute3HR;
+  }
+  public void setMinute3HR(Double minute3HR) {
+    this.minute3HR = minute3HR;
+  }
+
+  
+  /**
+   * minute4HR
+   **/
+  @ApiModelProperty(value = "minute4HR")
+  @JsonProperty("minute4HR")
+  public Double getMinute4HR() {
+    return minute4HR;
+  }
+  public void setMinute4HR(Double minute4HR) {
+    this.minute4HR = minute4HR;
+  }
+
+  
+  /**
+   * symptoms
+   **/
+  @ApiModelProperty(value = "symptoms")
+  @JsonProperty("symptoms")
+  public List<String> getSymptoms() {
+    return symptoms;
+  }
+  public void setSymptoms(List<String> symptoms) {
+    this.symptoms = symptoms;
+  }
+
+  
+  /**
+   * difficultyLevel
+   **/
+  @ApiModelProperty(value = "difficultyLevel")
+  @JsonProperty("difficultyLevel")
+  public Integer getDifficultyLevel() {
+    return difficultyLevel;
+  }
+  public void setDifficultyLevel(Integer difficultyLevel) {
+    this.difficultyLevel = difficultyLevel;
+  }
+
+  
+  /**
+   * date
+   **/
+  @ApiModelProperty(value = "date")
+  @JsonProperty("date")
+  public Date getDate() {
+    return date;
+  }
+  public void setDate(Date date) {
+    this.date = date;
+  }
+
+  
+  /**
+   * file
+   **/
+  @ApiModelProperty(value = "file")
+  @JsonProperty("hr_file")
+  public String getHrFile() {
+    return hrFile;
+  }
+  public void setHrFile(String hrFile) {
+    this.hrFile = hrFile;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("healthAndFitnessAssessmentPreScreeningInfo")
+  public CardiacRehabilitationProgressHealthAndFitnessAssessmentSessionHealthAndFitnessAssessmentPreScreeningInfoSubSubsection getHealthAndFitnessAssessmentPreScreeningInfo() {
+    return healthAndFitnessAssessmentPreScreeningInfo;
+  }
+  public void setHealthAndFitnessAssessmentPreScreeningInfo(CardiacRehabilitationProgressHealthAndFitnessAssessmentSessionHealthAndFitnessAssessmentPreScreeningInfoSubSubsection healthAndFitnessAssessmentPreScreeningInfo) {
+    this.healthAndFitnessAssessmentPreScreeningInfo = healthAndFitnessAssessmentPreScreeningInfo;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("energyExpenditure")
+  public CardiacRehabilitationProgressHealthAndFitnessAssessmentSessionenergyExpenditureSubSubSection getEnergyExpenditure() {
+    return energyExpenditure;
+  }
+  public void setEnergyExpenditure(CardiacRehabilitationProgressHealthAndFitnessAssessmentSessionenergyExpenditureSubSubSection energyExpenditure) {
+    this.energyExpenditure = energyExpenditure;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class CardiacRehabilitationProgressHealthAndFitnessAssessmentSessionSubsection {\n");
+    
+    sb.append("    minute1HR: ").append(StringUtil.toIndentedString(minute1HR)).append("\n");
+    sb.append("    minute2HR: ").append(StringUtil.toIndentedString(minute2HR)).append("\n");
+    sb.append("    minute3HR: ").append(StringUtil.toIndentedString(minute3HR)).append("\n");
+    sb.append("    minute4HR: ").append(StringUtil.toIndentedString(minute4HR)).append("\n");
+    sb.append("    symptoms: ").append(StringUtil.toIndentedString(symptoms)).append("\n");
+    sb.append("    difficultyLevel: ").append(StringUtil.toIndentedString(difficultyLevel)).append("\n");
+    sb.append("    date: ").append(StringUtil.toIndentedString(date)).append("\n");
+    sb.append("    hrFile: ").append(StringUtil.toIndentedString(hrFile)).append("\n");
+    sb.append("    healthAndFitnessAssessmentPreScreeningInfo: ").append(StringUtil.toIndentedString(healthAndFitnessAssessmentPreScreeningInfo)).append("\n");
+    sb.append("    energyExpenditure: ").append(StringUtil.toIndentedString(energyExpenditure)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

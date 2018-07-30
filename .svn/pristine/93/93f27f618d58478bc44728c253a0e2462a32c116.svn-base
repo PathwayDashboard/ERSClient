@@ -1,0 +1,86 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-05-30T11:30:03.045+02:00")
+public class BehaviouralChangeProgramGoodHabit   {
+  
+  private Integer goodHabitID = null;
+  private String goodHabitdescription = null;
+  private Integer goodHabittype = null;
+  private Integer goodHabitcategory = null;
+
+  
+  /**
+   * Good habit ID
+   **/
+  @ApiModelProperty(value = "Good habit ID")
+  @JsonProperty("goodHabitID")
+  public Integer getGoodHabitID() {
+    return goodHabitID;
+  }
+  public void setGoodHabitID(Integer goodHabitID) {
+    this.goodHabitID = goodHabitID;
+  }
+
+  
+  /**
+   * Good habit description
+   **/
+  @ApiModelProperty(value = "Good habit description")
+  @JsonProperty("goodHabitdescription")
+  public String getGoodHabitdescription() {
+    return goodHabitdescription;
+  }
+  public void setGoodHabitdescription(String goodHabitdescription) {
+    this.goodHabitdescription = goodHabitdescription;
+  }
+
+  
+  /**
+   * Good habit type
+   **/
+  @ApiModelProperty(value = "Good habit type")
+  @JsonProperty("goodHabittype")
+  public Integer getGoodHabittype() {
+    return goodHabittype;
+  }
+  public void setGoodHabittype(Integer goodHabittype) {
+    this.goodHabittype = goodHabittype;
+  }
+
+  
+  /**
+   * Good habit category
+   **/
+  @ApiModelProperty(value = "Good habit category")
+  @JsonProperty("goodHabitcategory")
+  public Integer getGoodHabitcategory() {
+    return goodHabitcategory;
+  }
+  public void setGoodHabitcategory(Integer goodHabitcategory) {
+    this.goodHabitcategory = goodHabitcategory;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class BehaviouralChangeProgramGoodHabit {\n");
+    
+    sb.append("    goodHabitID: ").append(StringUtil.toIndentedString(goodHabitID)).append("\n");
+    sb.append("    goodHabitdescription: ").append(StringUtil.toIndentedString(goodHabitdescription)).append("\n");
+    sb.append("    goodHabittype: ").append(StringUtil.toIndentedString(goodHabittype)).append("\n");
+    sb.append("    goodHabitcategory: ").append(StringUtil.toIndentedString(goodHabitcategory)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

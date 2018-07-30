@@ -1,0 +1,252 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+import io.swagger.client.model.ExerClassSessionwarmingUpInfoSubSubsection;
+import io.swagger.client.model.ExerClassSessionmainInfoSubSubsection;
+import io.swagger.client.model.ExerClassSessioncoolDownInfoSubSubsection;
+import java.util.Date;
+import io.swagger.client.model.ExerClassSessionPreScreeningInfoSubSubsection;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-07-22T14:54:54.065+02:00")
+public class ExerClassSessionSubsection   {
+  
+  private Integer id = null;
+  private Date date = null;
+  private String startTime = null;
+  private String endTime = null;
+  private Integer duration = null;
+  private String hrFile = null;
+  private Integer energyExpenditure = null;
+  private Integer acceptable = null;
+  private Integer status = null;
+  private Integer sessionSatisfactionLevel = null;
+  private Integer rpe = null;
+  private ExerClassSessionwarmingUpInfoSubSubsection warmingUpInfo = null;
+  private ExerClassSessionmainInfoSubSubsection mainInfo = null;
+  private ExerClassSessioncoolDownInfoSubSubsection coolDownInfo = null;
+  private ExerClassSessionPreScreeningInfoSubSubsection preScreeningInfo = null;
+
+  
+  /**
+   * Session ID
+   **/
+  @ApiModelProperty(value = "Session ID")
+  @JsonProperty("id")
+  public Integer getId() {
+    return id;
+  }
+  public void setId(Integer id) {
+    this.id = id;
+  }
+
+  
+  /**
+   * Session Date
+   **/
+  @ApiModelProperty(value = "Session Date")
+  @JsonProperty("date")
+  public Date getDate() {
+    return date;
+  }
+  public void setDate(Date date) {
+    this.date = date;
+  }
+
+  
+  /**
+   * Session StartTime
+   **/
+  @ApiModelProperty(value = "Session StartTime")
+  @JsonProperty("startTime")
+  public String getStartTime() {
+    return startTime;
+  }
+  public void setStartTime(String startTime) {
+    this.startTime = startTime;
+  }
+
+  
+  /**
+   * Session End Time
+   **/
+  @ApiModelProperty(value = "Session End Time")
+  @JsonProperty("endTime")
+  public String getEndTime() {
+    return endTime;
+  }
+  public void setEndTime(String endTime) {
+    this.endTime = endTime;
+  }
+
+  
+  /**
+   * Session Duration
+   **/
+  @ApiModelProperty(value = "Session Duration")
+  @JsonProperty("duration")
+  public Integer getDuration() {
+    return duration;
+  }
+  public void setDuration(Integer duration) {
+    this.duration = duration;
+  }
+
+  
+  /**
+   * Session Heart rate file
+   **/
+  @ApiModelProperty(value = "Session Heart rate file")
+  @JsonProperty("hrFile")
+  public String getHrFile() {
+    return hrFile;
+  }
+  public void setHrFile(String hrFile) {
+    this.hrFile = hrFile;
+  }
+
+  
+  /**
+   * Session Expenditure Value
+   **/
+  @ApiModelProperty(value = "Session Expenditure Value")
+  @JsonProperty("energyExpenditure")
+  public Integer getEnergyExpenditure() {
+    return energyExpenditure;
+  }
+  public void setEnergyExpenditure(Integer energyExpenditure) {
+    this.energyExpenditure = energyExpenditure;
+  }
+
+  
+  /**
+   * Session Acceptable
+   **/
+  @ApiModelProperty(value = "Session Acceptable")
+  @JsonProperty("acceptable")
+  public Integer getAcceptable() {
+    return acceptable;
+  }
+  public void setAcceptable(Integer acceptable) {
+    this.acceptable = acceptable;
+  }
+
+  
+  /**
+   * Session Status
+   **/
+  @ApiModelProperty(value = "Session Status")
+  @JsonProperty("status")
+  public Integer getStatus() {
+    return status;
+  }
+  public void setStatus(Integer status) {
+    this.status = status;
+  }
+
+  
+  /**
+   * Session Session Satisfaction Level
+   **/
+  @ApiModelProperty(value = "Session Session Satisfaction Level")
+  @JsonProperty("sessionSatisfactionLevel")
+  public Integer getSessionSatisfactionLevel() {
+    return sessionSatisfactionLevel;
+  }
+  public void setSessionSatisfactionLevel(Integer sessionSatisfactionLevel) {
+    this.sessionSatisfactionLevel = sessionSatisfactionLevel;
+  }
+
+  
+  /**
+   * Session Rate perceived Effort
+   **/
+  @ApiModelProperty(value = "Session Rate perceived Effort")
+  @JsonProperty("rpe")
+  public Integer getRpe() {
+    return rpe;
+  }
+  public void setRpe(Integer rpe) {
+    this.rpe = rpe;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("warmingUpInfo")
+  public ExerClassSessionwarmingUpInfoSubSubsection getWarmingUpInfo() {
+    return warmingUpInfo;
+  }
+  public void setWarmingUpInfo(ExerClassSessionwarmingUpInfoSubSubsection warmingUpInfo) {
+    this.warmingUpInfo = warmingUpInfo;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("mainInfo")
+  public ExerClassSessionmainInfoSubSubsection getMainInfo() {
+    return mainInfo;
+  }
+  public void setMainInfo(ExerClassSessionmainInfoSubSubsection mainInfo) {
+    this.mainInfo = mainInfo;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("coolDownInfo")
+  public ExerClassSessioncoolDownInfoSubSubsection getCoolDownInfo() {
+    return coolDownInfo;
+  }
+  public void setCoolDownInfo(ExerClassSessioncoolDownInfoSubSubsection coolDownInfo) {
+    this.coolDownInfo = coolDownInfo;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("preScreeningInfo")
+  public ExerClassSessionPreScreeningInfoSubSubsection getPreScreeningInfo() {
+    return preScreeningInfo;
+  }
+  public void setPreScreeningInfo(ExerClassSessionPreScreeningInfoSubSubsection preScreeningInfo) {
+    this.preScreeningInfo = preScreeningInfo;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class ExerClassSessionSubsection {\n");
+    
+    sb.append("    id: ").append(StringUtil.toIndentedString(id)).append("\n");
+    sb.append("    date: ").append(StringUtil.toIndentedString(date)).append("\n");
+    sb.append("    startTime: ").append(StringUtil.toIndentedString(startTime)).append("\n");
+    sb.append("    endTime: ").append(StringUtil.toIndentedString(endTime)).append("\n");
+    sb.append("    duration: ").append(StringUtil.toIndentedString(duration)).append("\n");
+    sb.append("    hrFile: ").append(StringUtil.toIndentedString(hrFile)).append("\n");
+    sb.append("    energyExpenditure: ").append(StringUtil.toIndentedString(energyExpenditure)).append("\n");
+    sb.append("    acceptable: ").append(StringUtil.toIndentedString(acceptable)).append("\n");
+    sb.append("    status: ").append(StringUtil.toIndentedString(status)).append("\n");
+    sb.append("    sessionSatisfactionLevel: ").append(StringUtil.toIndentedString(sessionSatisfactionLevel)).append("\n");
+    sb.append("    rpe: ").append(StringUtil.toIndentedString(rpe)).append("\n");
+    sb.append("    warmingUpInfo: ").append(StringUtil.toIndentedString(warmingUpInfo)).append("\n");
+    sb.append("    mainInfo: ").append(StringUtil.toIndentedString(mainInfo)).append("\n");
+    sb.append("    coolDownInfo: ").append(StringUtil.toIndentedString(coolDownInfo)).append("\n");
+    sb.append("    preScreeningInfo: ").append(StringUtil.toIndentedString(preScreeningInfo)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

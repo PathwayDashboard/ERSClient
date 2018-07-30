@@ -1,0 +1,131 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+import io.swagger.client.model.CardiacRehabilitationProgressExerClassSessionExecutedExercisehrRangeSubSubSubsection;
+import io.swagger.client.model.CardiacRehabilitationProgressExerClassSessionExecutedExerciseenjoymentLevelSubSubSubsection;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-08-04T11:43:36.581+02:00")
+public class CardiacRehabilitationProgressExerClassSessionExecutedExerciseSubSubsection   {
+  
+  private Double achievedAccuracy = null;
+  private Integer exerciseDescriptionID = null;
+  private Integer duration = null;
+  private Double averageHRBpm = null;
+  private Integer relatedGame = null;
+  private CardiacRehabilitationProgressExerClassSessionExecutedExerciseenjoymentLevelSubSubSubsection enjoymentLevel = null;
+  private CardiacRehabilitationProgressExerClassSessionExecutedExercisehrRangeSubSubSubsection hrRange = null;
+
+  
+  /**
+   * achievedAccuracy
+   **/
+  @ApiModelProperty(value = "achievedAccuracy")
+  @JsonProperty("achievedAccuracy")
+  public Double getAchievedAccuracy() {
+    return achievedAccuracy;
+  }
+  public void setAchievedAccuracy(Double achievedAccuracy) {
+    this.achievedAccuracy = achievedAccuracy;
+  }
+
+  
+  /**
+   * exerciseDescriptionID
+   **/
+  @ApiModelProperty(value = "exerciseDescriptionID")
+  @JsonProperty("exerciseDescriptionID")
+  public Integer getExerciseDescriptionID() {
+    return exerciseDescriptionID;
+  }
+  public void setExerciseDescriptionID(Integer exerciseDescriptionID) {
+    this.exerciseDescriptionID = exerciseDescriptionID;
+  }
+
+  
+  /**
+   * duration
+   **/
+  @ApiModelProperty(value = "duration")
+  @JsonProperty("duration")
+  public Integer getDuration() {
+    return duration;
+  }
+  public void setDuration(Integer duration) {
+    this.duration = duration;
+  }
+
+  
+  /**
+   * averageHRBpm
+   **/
+  @ApiModelProperty(value = "averageHRBpm")
+  @JsonProperty("averageHRBpm")
+  public Double getAverageHRBpm() {
+    return averageHRBpm;
+  }
+  public void setAverageHRBpm(Double averageHRBpm) {
+    this.averageHRBpm = averageHRBpm;
+  }
+
+  
+  /**
+   * relatedGame
+   **/
+  @ApiModelProperty(value = "relatedGame")
+  @JsonProperty("relatedGame")
+  public Integer getRelatedGame() {
+    return relatedGame;
+  }
+  public void setRelatedGame(Integer relatedGame) {
+    this.relatedGame = relatedGame;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("enjoymentLevel")
+  public CardiacRehabilitationProgressExerClassSessionExecutedExerciseenjoymentLevelSubSubSubsection getEnjoymentLevel() {
+    return enjoymentLevel;
+  }
+  public void setEnjoymentLevel(CardiacRehabilitationProgressExerClassSessionExecutedExerciseenjoymentLevelSubSubSubsection enjoymentLevel) {
+    this.enjoymentLevel = enjoymentLevel;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("hrRange")
+  public CardiacRehabilitationProgressExerClassSessionExecutedExercisehrRangeSubSubSubsection getHrRange() {
+    return hrRange;
+  }
+  public void setHrRange(CardiacRehabilitationProgressExerClassSessionExecutedExercisehrRangeSubSubSubsection hrRange) {
+    this.hrRange = hrRange;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class CardiacRehabilitationProgressExerClassSessionExecutedExerciseSubSubsection {\n");
+    
+    sb.append("    achievedAccuracy: ").append(StringUtil.toIndentedString(achievedAccuracy)).append("\n");
+    sb.append("    exerciseDescriptionID: ").append(StringUtil.toIndentedString(exerciseDescriptionID)).append("\n");
+    sb.append("    duration: ").append(StringUtil.toIndentedString(duration)).append("\n");
+    sb.append("    averageHRBpm: ").append(StringUtil.toIndentedString(averageHRBpm)).append("\n");
+    sb.append("    relatedGame: ").append(StringUtil.toIndentedString(relatedGame)).append("\n");
+    sb.append("    enjoymentLevel: ").append(StringUtil.toIndentedString(enjoymentLevel)).append("\n");
+    sb.append("    hrRange: ").append(StringUtil.toIndentedString(hrRange)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

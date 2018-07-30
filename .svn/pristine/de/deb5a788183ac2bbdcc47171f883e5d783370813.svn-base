@@ -1,0 +1,432 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+import io.swagger.client.model.ExergamerSessionPreScreeningInfo;
+import java.util.Date;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-05-30T11:30:03.045+02:00")
+public class ExerGameSessionProgress   {
+  
+  private Integer exerGameSessionID = null;
+  private Date exerGameSessiondate = null;
+  private String exerGameSessionstartTime = null;
+  private String exerGameSessionendTime = null;
+  private Integer exerGameSessionduration = null;
+  private String exerGameSessionhrFile = null;
+  private Date exerGameSessionexpenditureObservationTimeStamp = null;
+  private Integer exerGameSessionexependitureObservationValue = null;
+  private Integer exerGameSessionacceptable = null;
+  private String exerGameSessionexerciseRulesMappingHashMapString = null;
+  private String exerGameSessionexerciseRulesMappingHashMapList = null;
+  private Integer exerGameSessionscore = null;
+  private Integer exerGameSessionstatus = null;
+  private Integer exerGameSessionwarmingUpInfoDuration = null;
+  private Integer exerGameSessionwarmingUpInfoMinHRBpm = null;
+  private Integer exerGameSessionwarmingUpInfoMaxHRBpm = null;
+  private Double exerGameSessionwarmingUpInfoAverageHRBpm = null;
+  private Integer exerGameSessionmainInfoDuration = null;
+  private Integer exerGameSessionmainInfoMinHRBpm = null;
+  private Integer exerGameSessionmainInfoMaxHRBpm = null;
+  private Double exerGameSessionmainInfoAverageHRBpm = null;
+  private Integer exerGameSessioncoolDownInfoDuration = null;
+  private Integer exerGameSessioncoolDownInfoMinHRBpm = null;
+  private Integer exerGameSessioncoolDownInfoMaxHRBpm = null;
+  private Double exerGameSessioncoolDownInfoAverageHRBpm = null;
+  private Integer exerGameSessionsessionSatisfactionLevel = null;
+  private ExergamerSessionPreScreeningInfo exergamerSessionPreScreeningInfo = null;
+
+  
+  /**
+   * Session ID
+   **/
+  @ApiModelProperty(value = "Session ID")
+  @JsonProperty("ExerGameSessionID")
+  public Integer getExerGameSessionID() {
+    return exerGameSessionID;
+  }
+  public void setExerGameSessionID(Integer exerGameSessionID) {
+    this.exerGameSessionID = exerGameSessionID;
+  }
+
+  
+  /**
+   * Session Date
+   **/
+  @ApiModelProperty(value = "Session Date")
+  @JsonProperty("ExerGameSessiondate")
+  public Date getExerGameSessiondate() {
+    return exerGameSessiondate;
+  }
+  public void setExerGameSessiondate(Date exerGameSessiondate) {
+    this.exerGameSessiondate = exerGameSessiondate;
+  }
+
+  
+  /**
+   * Session Start Time
+   **/
+  @ApiModelProperty(value = "Session Start Time")
+  @JsonProperty("ExerGameSessionstartTime")
+  public String getExerGameSessionstartTime() {
+    return exerGameSessionstartTime;
+  }
+  public void setExerGameSessionstartTime(String exerGameSessionstartTime) {
+    this.exerGameSessionstartTime = exerGameSessionstartTime;
+  }
+
+  
+  /**
+   * Session End Time
+   **/
+  @ApiModelProperty(value = "Session End Time")
+  @JsonProperty("ExerGameSessionendTime")
+  public String getExerGameSessionendTime() {
+    return exerGameSessionendTime;
+  }
+  public void setExerGameSessionendTime(String exerGameSessionendTime) {
+    this.exerGameSessionendTime = exerGameSessionendTime;
+  }
+
+  
+  /**
+   * Session Duration
+   **/
+  @ApiModelProperty(value = "Session Duration")
+  @JsonProperty("ExerGameSessionduration")
+  public Integer getExerGameSessionduration() {
+    return exerGameSessionduration;
+  }
+  public void setExerGameSessionduration(Integer exerGameSessionduration) {
+    this.exerGameSessionduration = exerGameSessionduration;
+  }
+
+  
+  /**
+   * Session HR File
+   **/
+  @ApiModelProperty(value = "Session HR File")
+  @JsonProperty("ExerGameSessionhrFile")
+  public String getExerGameSessionhrFile() {
+    return exerGameSessionhrFile;
+  }
+  public void setExerGameSessionhrFile(String exerGameSessionhrFile) {
+    this.exerGameSessionhrFile = exerGameSessionhrFile;
+  }
+
+  
+  /**
+   * Session Expenditure TimeStamp
+   **/
+  @ApiModelProperty(value = "Session Expenditure TimeStamp")
+  @JsonProperty("ExerGameSessionexpenditureObservationTimeStamp")
+  public Date getExerGameSessionexpenditureObservationTimeStamp() {
+    return exerGameSessionexpenditureObservationTimeStamp;
+  }
+  public void setExerGameSessionexpenditureObservationTimeStamp(Date exerGameSessionexpenditureObservationTimeStamp) {
+    this.exerGameSessionexpenditureObservationTimeStamp = exerGameSessionexpenditureObservationTimeStamp;
+  }
+
+  
+  /**
+   * Session Expenditure Value
+   **/
+  @ApiModelProperty(value = "Session Expenditure Value")
+  @JsonProperty("ExerGameSessionexependitureObservationValue")
+  public Integer getExerGameSessionexependitureObservationValue() {
+    return exerGameSessionexependitureObservationValue;
+  }
+  public void setExerGameSessionexependitureObservationValue(Integer exerGameSessionexependitureObservationValue) {
+    this.exerGameSessionexependitureObservationValue = exerGameSessionexependitureObservationValue;
+  }
+
+  
+  /**
+   * Session Acceptable
+   **/
+  @ApiModelProperty(value = "Session Acceptable")
+  @JsonProperty("ExerGameSessionacceptable")
+  public Integer getExerGameSessionacceptable() {
+    return exerGameSessionacceptable;
+  }
+  public void setExerGameSessionacceptable(Integer exerGameSessionacceptable) {
+    this.exerGameSessionacceptable = exerGameSessionacceptable;
+  }
+
+  
+  /**
+   * HashMap Hash
+   **/
+  @ApiModelProperty(value = "HashMap Hash")
+  @JsonProperty("ExerGameSessionexerciseRulesMappingHashMapString")
+  public String getExerGameSessionexerciseRulesMappingHashMapString() {
+    return exerGameSessionexerciseRulesMappingHashMapString;
+  }
+  public void setExerGameSessionexerciseRulesMappingHashMapString(String exerGameSessionexerciseRulesMappingHashMapString) {
+    this.exerGameSessionexerciseRulesMappingHashMapString = exerGameSessionexerciseRulesMappingHashMapString;
+  }
+
+  
+  /**
+   * HashMap LIst
+   **/
+  @ApiModelProperty(value = "HashMap LIst")
+  @JsonProperty("ExerGameSessionexerciseRulesMappingHashMapList")
+  public String getExerGameSessionexerciseRulesMappingHashMapList() {
+    return exerGameSessionexerciseRulesMappingHashMapList;
+  }
+  public void setExerGameSessionexerciseRulesMappingHashMapList(String exerGameSessionexerciseRulesMappingHashMapList) {
+    this.exerGameSessionexerciseRulesMappingHashMapList = exerGameSessionexerciseRulesMappingHashMapList;
+  }
+
+  
+  /**
+   * Session Score
+   **/
+  @ApiModelProperty(value = "Session Score")
+  @JsonProperty("ExerGameSessionscore")
+  public Integer getExerGameSessionscore() {
+    return exerGameSessionscore;
+  }
+  public void setExerGameSessionscore(Integer exerGameSessionscore) {
+    this.exerGameSessionscore = exerGameSessionscore;
+  }
+
+  
+  /**
+   * Session Status
+   **/
+  @ApiModelProperty(value = "Session Status")
+  @JsonProperty("ExerGameSessionstatus")
+  public Integer getExerGameSessionstatus() {
+    return exerGameSessionstatus;
+  }
+  public void setExerGameSessionstatus(Integer exerGameSessionstatus) {
+    this.exerGameSessionstatus = exerGameSessionstatus;
+  }
+
+  
+  /**
+   * Session WarningUp Duration
+   **/
+  @ApiModelProperty(value = "Session WarningUp Duration")
+  @JsonProperty("ExerGameSessionwarmingUpInfoDuration")
+  public Integer getExerGameSessionwarmingUpInfoDuration() {
+    return exerGameSessionwarmingUpInfoDuration;
+  }
+  public void setExerGameSessionwarmingUpInfoDuration(Integer exerGameSessionwarmingUpInfoDuration) {
+    this.exerGameSessionwarmingUpInfoDuration = exerGameSessionwarmingUpInfoDuration;
+  }
+
+  
+  /**
+   * Session WarningUp Min HRBpm
+   **/
+  @ApiModelProperty(value = "Session WarningUp Min HRBpm")
+  @JsonProperty("ExerGameSessionwarmingUpInfoMinHRBpm")
+  public Integer getExerGameSessionwarmingUpInfoMinHRBpm() {
+    return exerGameSessionwarmingUpInfoMinHRBpm;
+  }
+  public void setExerGameSessionwarmingUpInfoMinHRBpm(Integer exerGameSessionwarmingUpInfoMinHRBpm) {
+    this.exerGameSessionwarmingUpInfoMinHRBpm = exerGameSessionwarmingUpInfoMinHRBpm;
+  }
+
+  
+  /**
+   * Session WarningUp Max HRBpm
+   **/
+  @ApiModelProperty(value = "Session WarningUp Max HRBpm")
+  @JsonProperty("ExerGameSessionwarmingUpInfoMaxHRBpm")
+  public Integer getExerGameSessionwarmingUpInfoMaxHRBpm() {
+    return exerGameSessionwarmingUpInfoMaxHRBpm;
+  }
+  public void setExerGameSessionwarmingUpInfoMaxHRBpm(Integer exerGameSessionwarmingUpInfoMaxHRBpm) {
+    this.exerGameSessionwarmingUpInfoMaxHRBpm = exerGameSessionwarmingUpInfoMaxHRBpm;
+  }
+
+  
+  /**
+   * Session WarningUp Average HRBpm
+   **/
+  @ApiModelProperty(value = "Session WarningUp Average HRBpm")
+  @JsonProperty("ExerGameSessionwarmingUpInfoAverageHRBpm")
+  public Double getExerGameSessionwarmingUpInfoAverageHRBpm() {
+    return exerGameSessionwarmingUpInfoAverageHRBpm;
+  }
+  public void setExerGameSessionwarmingUpInfoAverageHRBpm(Double exerGameSessionwarmingUpInfoAverageHRBpm) {
+    this.exerGameSessionwarmingUpInfoAverageHRBpm = exerGameSessionwarmingUpInfoAverageHRBpm;
+  }
+
+  
+  /**
+   * Session Main Duration
+   **/
+  @ApiModelProperty(value = "Session Main Duration")
+  @JsonProperty("ExerGameSessionmainInfoDuration")
+  public Integer getExerGameSessionmainInfoDuration() {
+    return exerGameSessionmainInfoDuration;
+  }
+  public void setExerGameSessionmainInfoDuration(Integer exerGameSessionmainInfoDuration) {
+    this.exerGameSessionmainInfoDuration = exerGameSessionmainInfoDuration;
+  }
+
+  
+  /**
+   * Session Main Min HRBpm
+   **/
+  @ApiModelProperty(value = "Session Main Min HRBpm")
+  @JsonProperty("ExerGameSessionmainInfoMinHRBpm")
+  public Integer getExerGameSessionmainInfoMinHRBpm() {
+    return exerGameSessionmainInfoMinHRBpm;
+  }
+  public void setExerGameSessionmainInfoMinHRBpm(Integer exerGameSessionmainInfoMinHRBpm) {
+    this.exerGameSessionmainInfoMinHRBpm = exerGameSessionmainInfoMinHRBpm;
+  }
+
+  
+  /**
+   * Session Main Max HRBpm
+   **/
+  @ApiModelProperty(value = "Session Main Max HRBpm")
+  @JsonProperty("ExerGameSessionmainInfoMaxHRBpm")
+  public Integer getExerGameSessionmainInfoMaxHRBpm() {
+    return exerGameSessionmainInfoMaxHRBpm;
+  }
+  public void setExerGameSessionmainInfoMaxHRBpm(Integer exerGameSessionmainInfoMaxHRBpm) {
+    this.exerGameSessionmainInfoMaxHRBpm = exerGameSessionmainInfoMaxHRBpm;
+  }
+
+  
+  /**
+   * Session Main Average HRBpm
+   **/
+  @ApiModelProperty(value = "Session Main Average HRBpm")
+  @JsonProperty("ExerGameSessionmainInfoAverageHRBpm")
+  public Double getExerGameSessionmainInfoAverageHRBpm() {
+    return exerGameSessionmainInfoAverageHRBpm;
+  }
+  public void setExerGameSessionmainInfoAverageHRBpm(Double exerGameSessionmainInfoAverageHRBpm) {
+    this.exerGameSessionmainInfoAverageHRBpm = exerGameSessionmainInfoAverageHRBpm;
+  }
+
+  
+  /**
+   * Session CoolDown Duration
+   **/
+  @ApiModelProperty(value = "Session CoolDown Duration")
+  @JsonProperty("ExerGameSessioncoolDownInfoDuration")
+  public Integer getExerGameSessioncoolDownInfoDuration() {
+    return exerGameSessioncoolDownInfoDuration;
+  }
+  public void setExerGameSessioncoolDownInfoDuration(Integer exerGameSessioncoolDownInfoDuration) {
+    this.exerGameSessioncoolDownInfoDuration = exerGameSessioncoolDownInfoDuration;
+  }
+
+  
+  /**
+   * Session CoolDown Min HRBpm
+   **/
+  @ApiModelProperty(value = "Session CoolDown Min HRBpm")
+  @JsonProperty("ExerGameSessioncoolDownInfoMinHRBpm")
+  public Integer getExerGameSessioncoolDownInfoMinHRBpm() {
+    return exerGameSessioncoolDownInfoMinHRBpm;
+  }
+  public void setExerGameSessioncoolDownInfoMinHRBpm(Integer exerGameSessioncoolDownInfoMinHRBpm) {
+    this.exerGameSessioncoolDownInfoMinHRBpm = exerGameSessioncoolDownInfoMinHRBpm;
+  }
+
+  
+  /**
+   * Session Cool Down Max HRBpm
+   **/
+  @ApiModelProperty(value = "Session Cool Down Max HRBpm")
+  @JsonProperty("ExerGameSessioncoolDownInfoMaxHRBpm")
+  public Integer getExerGameSessioncoolDownInfoMaxHRBpm() {
+    return exerGameSessioncoolDownInfoMaxHRBpm;
+  }
+  public void setExerGameSessioncoolDownInfoMaxHRBpm(Integer exerGameSessioncoolDownInfoMaxHRBpm) {
+    this.exerGameSessioncoolDownInfoMaxHRBpm = exerGameSessioncoolDownInfoMaxHRBpm;
+  }
+
+  
+  /**
+   * Session Cool Down Average HRBpm
+   **/
+  @ApiModelProperty(value = "Session Cool Down Average HRBpm")
+  @JsonProperty("ExerGameSessioncoolDownInfoAverageHRBpm")
+  public Double getExerGameSessioncoolDownInfoAverageHRBpm() {
+    return exerGameSessioncoolDownInfoAverageHRBpm;
+  }
+  public void setExerGameSessioncoolDownInfoAverageHRBpm(Double exerGameSessioncoolDownInfoAverageHRBpm) {
+    this.exerGameSessioncoolDownInfoAverageHRBpm = exerGameSessioncoolDownInfoAverageHRBpm;
+  }
+
+  
+  /**
+   * Session Session Satisfaction Level
+   **/
+  @ApiModelProperty(value = "Session Session Satisfaction Level")
+  @JsonProperty("ExerGameSessionsessionSatisfactionLevel")
+  public Integer getExerGameSessionsessionSatisfactionLevel() {
+    return exerGameSessionsessionSatisfactionLevel;
+  }
+  public void setExerGameSessionsessionSatisfactionLevel(Integer exerGameSessionsessionSatisfactionLevel) {
+    this.exerGameSessionsessionSatisfactionLevel = exerGameSessionsessionSatisfactionLevel;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("exergamerSessionPreScreeningInfo")
+  public ExergamerSessionPreScreeningInfo getExergamerSessionPreScreeningInfo() {
+    return exergamerSessionPreScreeningInfo;
+  }
+  public void setExergamerSessionPreScreeningInfo(ExergamerSessionPreScreeningInfo exergamerSessionPreScreeningInfo) {
+    this.exergamerSessionPreScreeningInfo = exergamerSessionPreScreeningInfo;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class ExerGameSessionProgress {\n");
+    
+    sb.append("    exerGameSessionID: ").append(StringUtil.toIndentedString(exerGameSessionID)).append("\n");
+    sb.append("    exerGameSessiondate: ").append(StringUtil.toIndentedString(exerGameSessiondate)).append("\n");
+    sb.append("    exerGameSessionstartTime: ").append(StringUtil.toIndentedString(exerGameSessionstartTime)).append("\n");
+    sb.append("    exerGameSessionendTime: ").append(StringUtil.toIndentedString(exerGameSessionendTime)).append("\n");
+    sb.append("    exerGameSessionduration: ").append(StringUtil.toIndentedString(exerGameSessionduration)).append("\n");
+    sb.append("    exerGameSessionhrFile: ").append(StringUtil.toIndentedString(exerGameSessionhrFile)).append("\n");
+    sb.append("    exerGameSessionexpenditureObservationTimeStamp: ").append(StringUtil.toIndentedString(exerGameSessionexpenditureObservationTimeStamp)).append("\n");
+    sb.append("    exerGameSessionexependitureObservationValue: ").append(StringUtil.toIndentedString(exerGameSessionexependitureObservationValue)).append("\n");
+    sb.append("    exerGameSessionacceptable: ").append(StringUtil.toIndentedString(exerGameSessionacceptable)).append("\n");
+    sb.append("    exerGameSessionexerciseRulesMappingHashMapString: ").append(StringUtil.toIndentedString(exerGameSessionexerciseRulesMappingHashMapString)).append("\n");
+    sb.append("    exerGameSessionexerciseRulesMappingHashMapList: ").append(StringUtil.toIndentedString(exerGameSessionexerciseRulesMappingHashMapList)).append("\n");
+    sb.append("    exerGameSessionscore: ").append(StringUtil.toIndentedString(exerGameSessionscore)).append("\n");
+    sb.append("    exerGameSessionstatus: ").append(StringUtil.toIndentedString(exerGameSessionstatus)).append("\n");
+    sb.append("    exerGameSessionwarmingUpInfoDuration: ").append(StringUtil.toIndentedString(exerGameSessionwarmingUpInfoDuration)).append("\n");
+    sb.append("    exerGameSessionwarmingUpInfoMinHRBpm: ").append(StringUtil.toIndentedString(exerGameSessionwarmingUpInfoMinHRBpm)).append("\n");
+    sb.append("    exerGameSessionwarmingUpInfoMaxHRBpm: ").append(StringUtil.toIndentedString(exerGameSessionwarmingUpInfoMaxHRBpm)).append("\n");
+    sb.append("    exerGameSessionwarmingUpInfoAverageHRBpm: ").append(StringUtil.toIndentedString(exerGameSessionwarmingUpInfoAverageHRBpm)).append("\n");
+    sb.append("    exerGameSessionmainInfoDuration: ").append(StringUtil.toIndentedString(exerGameSessionmainInfoDuration)).append("\n");
+    sb.append("    exerGameSessionmainInfoMinHRBpm: ").append(StringUtil.toIndentedString(exerGameSessionmainInfoMinHRBpm)).append("\n");
+    sb.append("    exerGameSessionmainInfoMaxHRBpm: ").append(StringUtil.toIndentedString(exerGameSessionmainInfoMaxHRBpm)).append("\n");
+    sb.append("    exerGameSessionmainInfoAverageHRBpm: ").append(StringUtil.toIndentedString(exerGameSessionmainInfoAverageHRBpm)).append("\n");
+    sb.append("    exerGameSessioncoolDownInfoDuration: ").append(StringUtil.toIndentedString(exerGameSessioncoolDownInfoDuration)).append("\n");
+    sb.append("    exerGameSessioncoolDownInfoMinHRBpm: ").append(StringUtil.toIndentedString(exerGameSessioncoolDownInfoMinHRBpm)).append("\n");
+    sb.append("    exerGameSessioncoolDownInfoMaxHRBpm: ").append(StringUtil.toIndentedString(exerGameSessioncoolDownInfoMaxHRBpm)).append("\n");
+    sb.append("    exerGameSessioncoolDownInfoAverageHRBpm: ").append(StringUtil.toIndentedString(exerGameSessioncoolDownInfoAverageHRBpm)).append("\n");
+    sb.append("    exerGameSessionsessionSatisfactionLevel: ").append(StringUtil.toIndentedString(exerGameSessionsessionSatisfactionLevel)).append("\n");
+    sb.append("    exergamerSessionPreScreeningInfo: ").append(StringUtil.toIndentedString(exergamerSessionPreScreeningInfo)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

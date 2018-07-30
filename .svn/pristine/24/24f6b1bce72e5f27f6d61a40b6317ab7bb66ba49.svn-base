@@ -1,0 +1,56 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-07-22T14:54:54.065+02:00")
+public class ExerClassSessionmainInfohrRange   {
+  
+  private Integer minimumHR = null;
+  private Integer maximumHR = null;
+
+  
+  /**
+   * minimumHR
+   **/
+  @ApiModelProperty(value = "minimumHR")
+  @JsonProperty("minimumHR")
+  public Integer getMinimumHR() {
+    return minimumHR;
+  }
+  public void setMinimumHR(Integer minimumHR) {
+    this.minimumHR = minimumHR;
+  }
+
+  
+  /**
+   * maximumHR
+   **/
+  @ApiModelProperty(value = "maximumHR")
+  @JsonProperty("maximumHR")
+  public Integer getMaximumHR() {
+    return maximumHR;
+  }
+  public void setMaximumHR(Integer maximumHR) {
+    this.maximumHR = maximumHR;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class ExerClassSessionmainInfohrRange {\n");
+    
+    sb.append("    minimumHR: ").append(StringUtil.toIndentedString(minimumHR)).append("\n");
+    sb.append("    maximumHR: ").append(StringUtil.toIndentedString(maximumHR)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

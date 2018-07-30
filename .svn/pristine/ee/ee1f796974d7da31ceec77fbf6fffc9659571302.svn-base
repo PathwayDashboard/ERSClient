@@ -1,0 +1,177 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+import java.util.Date;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-05-30T11:30:03.045+02:00")
+public class ExerClassPreScreeningInfo   {
+  
+  private Integer exerClassSessionPreScreeningfinalEvaluationResult = null;
+  private String exerClassSessionPreScreeningfinalEvaluationDescription = null;
+  private Date exerClassSessionPreScreeningfinalEvaluationTimestamp = null;
+  private String exerClassSessionPreScreeningfinalEvaluationMessage = null;
+  private String exerClassSessionPreScreeningpreScreeningAssessment = null;
+  private Date exerClassSessionPreScreeningrestingBloodPressureTimeStamp = null;
+  private Integer exerClassSessionPreScreeningrestingBloodPressureSystolic = null;
+  private Integer exerClassSessionPreScreeningrestingBloodPressureDiastolic = null;
+  private Date exerClassSessionPreScreeningrestingHRTimeStamp = null;
+  private Integer exerClassSessionPreScreeningrestingHR = null;
+
+  
+  /**
+   * Result Type
+   **/
+  @ApiModelProperty(value = "Result Type")
+  @JsonProperty("ExerClassSessionPreScreeningfinalEvaluationResult")
+  public Integer getExerClassSessionPreScreeningfinalEvaluationResult() {
+    return exerClassSessionPreScreeningfinalEvaluationResult;
+  }
+  public void setExerClassSessionPreScreeningfinalEvaluationResult(Integer exerClassSessionPreScreeningfinalEvaluationResult) {
+    this.exerClassSessionPreScreeningfinalEvaluationResult = exerClassSessionPreScreeningfinalEvaluationResult;
+  }
+
+  
+  /**
+   * Description
+   **/
+  @ApiModelProperty(value = "Description")
+  @JsonProperty("ExerClassSessionPreScreeningfinalEvaluationDescription")
+  public String getExerClassSessionPreScreeningfinalEvaluationDescription() {
+    return exerClassSessionPreScreeningfinalEvaluationDescription;
+  }
+  public void setExerClassSessionPreScreeningfinalEvaluationDescription(String exerClassSessionPreScreeningfinalEvaluationDescription) {
+    this.exerClassSessionPreScreeningfinalEvaluationDescription = exerClassSessionPreScreeningfinalEvaluationDescription;
+  }
+
+  
+  /**
+   * Timestamp
+   **/
+  @ApiModelProperty(value = "Timestamp")
+  @JsonProperty("ExerClassSessionPreScreeningfinalEvaluationTimestamp")
+  public Date getExerClassSessionPreScreeningfinalEvaluationTimestamp() {
+    return exerClassSessionPreScreeningfinalEvaluationTimestamp;
+  }
+  public void setExerClassSessionPreScreeningfinalEvaluationTimestamp(Date exerClassSessionPreScreeningfinalEvaluationTimestamp) {
+    this.exerClassSessionPreScreeningfinalEvaluationTimestamp = exerClassSessionPreScreeningfinalEvaluationTimestamp;
+  }
+
+  
+  /**
+   * Message
+   **/
+  @ApiModelProperty(value = "Message")
+  @JsonProperty("ExerClassSessionPreScreeningfinalEvaluationMessage")
+  public String getExerClassSessionPreScreeningfinalEvaluationMessage() {
+    return exerClassSessionPreScreeningfinalEvaluationMessage;
+  }
+  public void setExerClassSessionPreScreeningfinalEvaluationMessage(String exerClassSessionPreScreeningfinalEvaluationMessage) {
+    this.exerClassSessionPreScreeningfinalEvaluationMessage = exerClassSessionPreScreeningfinalEvaluationMessage;
+  }
+
+  
+  /**
+   * Assessment
+   **/
+  @ApiModelProperty(value = "Assessment")
+  @JsonProperty("ExerClassSessionPreScreeningpreScreeningAssessment")
+  public String getExerClassSessionPreScreeningpreScreeningAssessment() {
+    return exerClassSessionPreScreeningpreScreeningAssessment;
+  }
+  public void setExerClassSessionPreScreeningpreScreeningAssessment(String exerClassSessionPreScreeningpreScreeningAssessment) {
+    this.exerClassSessionPreScreeningpreScreeningAssessment = exerClassSessionPreScreeningpreScreeningAssessment;
+  }
+
+  
+  /**
+   * Resting Blood Pressure TimeStamp
+   **/
+  @ApiModelProperty(value = "Resting Blood Pressure TimeStamp")
+  @JsonProperty("ExerClassSessionPreScreeningrestingBloodPressureTimeStamp")
+  public Date getExerClassSessionPreScreeningrestingBloodPressureTimeStamp() {
+    return exerClassSessionPreScreeningrestingBloodPressureTimeStamp;
+  }
+  public void setExerClassSessionPreScreeningrestingBloodPressureTimeStamp(Date exerClassSessionPreScreeningrestingBloodPressureTimeStamp) {
+    this.exerClassSessionPreScreeningrestingBloodPressureTimeStamp = exerClassSessionPreScreeningrestingBloodPressureTimeStamp;
+  }
+
+  
+  /**
+   * Resting Blood Pressure Systolic
+   **/
+  @ApiModelProperty(value = "Resting Blood Pressure Systolic")
+  @JsonProperty("ExerClassSessionPreScreeningrestingBloodPressureSystolic")
+  public Integer getExerClassSessionPreScreeningrestingBloodPressureSystolic() {
+    return exerClassSessionPreScreeningrestingBloodPressureSystolic;
+  }
+  public void setExerClassSessionPreScreeningrestingBloodPressureSystolic(Integer exerClassSessionPreScreeningrestingBloodPressureSystolic) {
+    this.exerClassSessionPreScreeningrestingBloodPressureSystolic = exerClassSessionPreScreeningrestingBloodPressureSystolic;
+  }
+
+  
+  /**
+   * Resting Blood Pressure Diastolic
+   **/
+  @ApiModelProperty(value = "Resting Blood Pressure Diastolic")
+  @JsonProperty("ExerClassSessionPreScreeningrestingBloodPressureDiastolic")
+  public Integer getExerClassSessionPreScreeningrestingBloodPressureDiastolic() {
+    return exerClassSessionPreScreeningrestingBloodPressureDiastolic;
+  }
+  public void setExerClassSessionPreScreeningrestingBloodPressureDiastolic(Integer exerClassSessionPreScreeningrestingBloodPressureDiastolic) {
+    this.exerClassSessionPreScreeningrestingBloodPressureDiastolic = exerClassSessionPreScreeningrestingBloodPressureDiastolic;
+  }
+
+  
+  /**
+   * Resting HR TimeStamp
+   **/
+  @ApiModelProperty(value = "Resting HR TimeStamp")
+  @JsonProperty("ExerClassSessionPreScreeningrestingHRTimeStamp")
+  public Date getExerClassSessionPreScreeningrestingHRTimeStamp() {
+    return exerClassSessionPreScreeningrestingHRTimeStamp;
+  }
+  public void setExerClassSessionPreScreeningrestingHRTimeStamp(Date exerClassSessionPreScreeningrestingHRTimeStamp) {
+    this.exerClassSessionPreScreeningrestingHRTimeStamp = exerClassSessionPreScreeningrestingHRTimeStamp;
+  }
+
+  
+  /**
+   * Resting heart rate
+   **/
+  @ApiModelProperty(value = "Resting heart rate")
+  @JsonProperty("ExerClassSessionPreScreeningrestingHR")
+  public Integer getExerClassSessionPreScreeningrestingHR() {
+    return exerClassSessionPreScreeningrestingHR;
+  }
+  public void setExerClassSessionPreScreeningrestingHR(Integer exerClassSessionPreScreeningrestingHR) {
+    this.exerClassSessionPreScreeningrestingHR = exerClassSessionPreScreeningrestingHR;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class ExerClassPreScreeningInfo {\n");
+    
+    sb.append("    exerClassSessionPreScreeningfinalEvaluationResult: ").append(StringUtil.toIndentedString(exerClassSessionPreScreeningfinalEvaluationResult)).append("\n");
+    sb.append("    exerClassSessionPreScreeningfinalEvaluationDescription: ").append(StringUtil.toIndentedString(exerClassSessionPreScreeningfinalEvaluationDescription)).append("\n");
+    sb.append("    exerClassSessionPreScreeningfinalEvaluationTimestamp: ").append(StringUtil.toIndentedString(exerClassSessionPreScreeningfinalEvaluationTimestamp)).append("\n");
+    sb.append("    exerClassSessionPreScreeningfinalEvaluationMessage: ").append(StringUtil.toIndentedString(exerClassSessionPreScreeningfinalEvaluationMessage)).append("\n");
+    sb.append("    exerClassSessionPreScreeningpreScreeningAssessment: ").append(StringUtil.toIndentedString(exerClassSessionPreScreeningpreScreeningAssessment)).append("\n");
+    sb.append("    exerClassSessionPreScreeningrestingBloodPressureTimeStamp: ").append(StringUtil.toIndentedString(exerClassSessionPreScreeningrestingBloodPressureTimeStamp)).append("\n");
+    sb.append("    exerClassSessionPreScreeningrestingBloodPressureSystolic: ").append(StringUtil.toIndentedString(exerClassSessionPreScreeningrestingBloodPressureSystolic)).append("\n");
+    sb.append("    exerClassSessionPreScreeningrestingBloodPressureDiastolic: ").append(StringUtil.toIndentedString(exerClassSessionPreScreeningrestingBloodPressureDiastolic)).append("\n");
+    sb.append("    exerClassSessionPreScreeningrestingHRTimeStamp: ").append(StringUtil.toIndentedString(exerClassSessionPreScreeningrestingHRTimeStamp)).append("\n");
+    sb.append("    exerClassSessionPreScreeningrestingHR: ").append(StringUtil.toIndentedString(exerClassSessionPreScreeningrestingHR)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

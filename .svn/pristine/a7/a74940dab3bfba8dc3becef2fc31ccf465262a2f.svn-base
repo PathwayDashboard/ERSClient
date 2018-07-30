@@ -1,0 +1,84 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+import io.swagger.client.model.ExerClassExerciseDescription;
+import java.util.*;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-01-28T14:46:04.495+01:00")
+public class ExerClassDescription   {
+  
+  private String uid = null;
+  private Integer expectedSessionDuration = null;
+  private Integer mandatorySensor = null;
+  private List<ExerClassExerciseDescription> exerClassExerciseDescription = new ArrayList<ExerClassExerciseDescription>();
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("uid")
+  public String getUid() {
+    return uid;
+  }
+  public void setUid(String uid) {
+    this.uid = uid;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("expectedSessionDuration")
+  public Integer getExpectedSessionDuration() {
+    return expectedSessionDuration;
+  }
+  public void setExpectedSessionDuration(Integer expectedSessionDuration) {
+    this.expectedSessionDuration = expectedSessionDuration;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("mandatorySensor")
+  public Integer getMandatorySensor() {
+    return mandatorySensor;
+  }
+  public void setMandatorySensor(Integer mandatorySensor) {
+    this.mandatorySensor = mandatorySensor;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("exerClassExerciseDescription")
+  public List<ExerClassExerciseDescription> getExerClassExerciseDescription() {
+    return exerClassExerciseDescription;
+  }
+  public void setExerClassExerciseDescription(List<ExerClassExerciseDescription> exerClassExerciseDescription) {
+    this.exerClassExerciseDescription = exerClassExerciseDescription;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class ExerClassDescription {\n");
+    
+    sb.append("    uid: ").append(StringUtil.toIndentedString(uid)).append("\n");
+    sb.append("    expectedSessionDuration: ").append(StringUtil.toIndentedString(expectedSessionDuration)).append("\n");
+    sb.append("    mandatorySensor: ").append(StringUtil.toIndentedString(mandatorySensor)).append("\n");
+    sb.append("    exerClassExerciseDescription: ").append(StringUtil.toIndentedString(exerClassExerciseDescription)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

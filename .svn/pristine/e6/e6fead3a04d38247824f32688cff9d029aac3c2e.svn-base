@@ -1,0 +1,920 @@
+package io.swagger.client.api;
+
+import io.swagger.client.ApiException;
+import io.swagger.client.ApiClient;
+import io.swagger.client.Configuration;
+import io.swagger.client.Pair;
+import io.swagger.client.TypeRef;
+
+import io.swagger.client.model.*;
+
+import java.util.*;
+
+import io.swagger.client.model.ActiveLifestylePASessionSubsection;
+import io.swagger.client.model.GenericPostputResult;
+import io.swagger.client.model.ExerClassSessionExecutedExerciseSubSubsection;
+import io.swagger.client.model.ExerClassSessionSubsection;
+import io.swagger.client.model.IdPostputResult;
+import io.swagger.client.model.ExerGameSessionExecutedExerciseSubSubsection;
+import io.swagger.client.model.ExerGameSessionSubsection;
+import io.swagger.client.model.CardiacRehabilitationProgressFull;
+import io.swagger.client.model.HealthAndFitnessAssessmentSessionSubsection;
+
+import java.io.File;
+import java.util.Map;
+import java.util.HashMap;
+
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-07-22T14:54:54.065+02:00")
+public class CardiacRehabilitationProgressApi {
+  private ApiClient apiClient;
+
+  public CardiacRehabilitationProgressApi() {
+    this(Configuration.getDefaultApiClient());
+  }
+
+  public CardiacRehabilitationProgressApi(ApiClient apiClient) {
+    this.apiClient = apiClient;
+  }
+
+  public ApiClient getApiClient() {
+    return apiClient;
+  }
+
+  public void setApiClient(ApiClient apiClient) {
+    this.apiClient = apiClient;
+  }
+
+  
+  /**
+   * Gets ActiveLifestylePASessions from a patient
+   * 
+   * @param patientNumber The health ID of the patient
+   * @param xSessionId Identifies user which undertakes this action
+   * @return List<ActiveLifestylePASessionSubsection>
+   */
+  public List<ActiveLifestylePASessionSubsection> cardiacRehabilitationProgressGetCardiacRehabilitationProgressActiveLifestylePASessions (String patientNumber, String xSessionId) throws ApiException {
+    Object postBody = null;
+    byte[] postBinaryBody = null;
+    
+     // verify the required parameter 'patientNumber' is set
+     if (patientNumber == null) {
+        throw new ApiException(400, "Missing the required parameter 'patientNumber' when calling cardiacRehabilitationProgressGetCardiacRehabilitationProgressActiveLifestylePASessions");
+     }
+     
+    // create path and map variables
+    String path = "/pathway/hdm/CardiacRehabilitationProgressActiveLifestylePASessions/{patientNumber}".replaceAll("\\{format\\}","json")
+      .replaceAll("\\{" + "patientNumber" + "\\}", apiClient.escapeString(patientNumber.toString()));
+
+    // query params
+    List<Pair> queryParams = new ArrayList<Pair>();
+    Map<String, String> headerParams = new HashMap<String, String>();
+    Map<String, Object> formParams = new HashMap<String, Object>();
+
+    
+
+    if (xSessionId != null)
+    headerParams.put("X-session_id", apiClient.parameterToString(xSessionId));
+    
+
+    
+
+    final String[] accepts = {
+      "application/json", "text/json", "application/xml", "text/xml"
+    };
+    final String accept = apiClient.selectHeaderAccept(accepts);
+
+    final String[] contentTypes = {
+      
+    };
+    final String contentType = apiClient.selectHeaderContentType(contentTypes);
+
+    String[] authNames = new String[] {  };
+
+    
+
+    
+    
+    TypeRef returnType = new TypeRef<List<ActiveLifestylePASessionSubsection>>() {};
+    return apiClient.invokeAPI(path, "GET", queryParams, postBody, postBinaryBody, headerParams, formParams, accept, contentType, authNames, returnType);
+    
+    
+
+
+  }
+  
+  /**
+   * Sets a CRProgressActiveLifestylePASessionSession of a patient
+   * 
+   * @param patientNumber The health ID of the patient
+   * @param cRProgressActiveLifestylePASession Data belonging to an CRProgressActiveLifestylePASession
+   * @param xSessionId Identifies user which undertakes this action
+   * @return GenericPostputResult
+   */
+  public GenericPostputResult cardiacRehabilitationProgressPostCardiacRehabilitationProgressActiveLifestylePASession (String patientNumber, ActiveLifestylePASessionSubsection cRProgressActiveLifestylePASession, String xSessionId) throws ApiException {
+    Object postBody = cRProgressActiveLifestylePASession;
+    byte[] postBinaryBody = null;
+    
+     // verify the required parameter 'patientNumber' is set
+     if (patientNumber == null) {
+        throw new ApiException(400, "Missing the required parameter 'patientNumber' when calling cardiacRehabilitationProgressPostCardiacRehabilitationProgressActiveLifestylePASession");
+     }
+     
+     // verify the required parameter 'cRProgressActiveLifestylePASession' is set
+     if (cRProgressActiveLifestylePASession == null) {
+        throw new ApiException(400, "Missing the required parameter 'cRProgressActiveLifestylePASession' when calling cardiacRehabilitationProgressPostCardiacRehabilitationProgressActiveLifestylePASession");
+     }
+     
+    // create path and map variables
+    String path = "/pathway/hdm/CardiacRehabilitationProgressActiveLifestylePASessions/{patientNumber}".replaceAll("\\{format\\}","json")
+      .replaceAll("\\{" + "patientNumber" + "\\}", apiClient.escapeString(patientNumber.toString()));
+
+    // query params
+    List<Pair> queryParams = new ArrayList<Pair>();
+    Map<String, String> headerParams = new HashMap<String, String>();
+    Map<String, Object> formParams = new HashMap<String, Object>();
+
+    
+
+    if (xSessionId != null)
+    headerParams.put("X-session_id", apiClient.parameterToString(xSessionId));
+    
+
+    
+
+    final String[] accepts = {
+      "application/json", "text/json", "application/xml", "text/xml"
+    };
+    final String accept = apiClient.selectHeaderAccept(accepts);
+
+    final String[] contentTypes = {
+      "application/json", "text/json", "application/xml", "text/xml", "application/x-www-form-urlencoded"
+    };
+    final String contentType = apiClient.selectHeaderContentType(contentTypes);
+
+    String[] authNames = new String[] {  };
+
+    
+
+    
+    
+    TypeRef returnType = new TypeRef<GenericPostputResult>() {};
+    return apiClient.invokeAPI(path, "POST", queryParams, postBody, postBinaryBody, headerParams, formParams, accept, contentType, authNames, returnType);
+    
+    
+
+
+  }
+  
+  /**
+   * Gets CardiacRehabilitationProgressExerClassSessionExecutedExercises from a patient
+   * 
+   * @param patientNumber The health ID of the patient
+   * @param exerClassSessionID The ExerClassSession ID of the patient
+   * @param xSessionId Identifies user which undertakes this action
+   * @return List<ExerClassSessionExecutedExerciseSubSubsection>
+   */
+  public List<ExerClassSessionExecutedExerciseSubSubsection> cardiacRehabilitationProgressGetCardiacRehabilitationProgressExerClassSessionExecutedExercises (String patientNumber, Integer exerClassSessionID, String xSessionId) throws ApiException {
+    Object postBody = null;
+    byte[] postBinaryBody = null;
+    
+     // verify the required parameter 'patientNumber' is set
+     if (patientNumber == null) {
+        throw new ApiException(400, "Missing the required parameter 'patientNumber' when calling cardiacRehabilitationProgressGetCardiacRehabilitationProgressExerClassSessionExecutedExercises");
+     }
+     
+     // verify the required parameter 'exerClassSessionID' is set
+     if (exerClassSessionID == null) {
+        throw new ApiException(400, "Missing the required parameter 'exerClassSessionID' when calling cardiacRehabilitationProgressGetCardiacRehabilitationProgressExerClassSessionExecutedExercises");
+     }
+     
+    // create path and map variables
+    String path = "/pathway/hdm/CardiacRehabilitationProgressExerClassSessionExecutedExercises/{patientNumber}".replaceAll("\\{format\\}","json")
+      .replaceAll("\\{" + "patientNumber" + "\\}", apiClient.escapeString(patientNumber.toString()));
+
+    // query params
+    List<Pair> queryParams = new ArrayList<Pair>();
+    Map<String, String> headerParams = new HashMap<String, String>();
+    Map<String, Object> formParams = new HashMap<String, Object>();
+
+    
+    queryParams.addAll(apiClient.parameterToPairs("", "exerClassSessionID", exerClassSessionID));
+    
+
+    if (xSessionId != null)
+    headerParams.put("X-session_id", apiClient.parameterToString(xSessionId));
+    
+
+    
+
+    final String[] accepts = {
+      "application/json", "text/json", "application/xml", "text/xml"
+    };
+    final String accept = apiClient.selectHeaderAccept(accepts);
+
+    final String[] contentTypes = {
+      
+    };
+    final String contentType = apiClient.selectHeaderContentType(contentTypes);
+
+    String[] authNames = new String[] {  };
+
+    
+
+    
+    
+    TypeRef returnType = new TypeRef<List<ExerClassSessionExecutedExerciseSubSubsection>>() {};
+    return apiClient.invokeAPI(path, "GET", queryParams, postBody, postBinaryBody, headerParams, formParams, accept, contentType, authNames, returnType);
+    
+    
+
+
+  }
+  
+  /**
+   * Sets a CardiacRehabilitationProgressExerClassSessionExecutedExercise of a patient
+   * 
+   * @param patientNumber The health ID of the patient
+   * @param exerClassSessionID The exerClassSession ID of the patient
+   * @param exerClassSessionExecutedExercise Data belonging to an ExerClassSessionExecutedExercise
+   * @param xSessionId Identifies user which undertakes this action
+   * @return GenericPostputResult
+   */
+  public GenericPostputResult cardiacRehabilitationProgressPostCardiacRehabilitationProgressExerClassSessionExecutedExercises (String patientNumber, Integer exerClassSessionID, ExerClassSessionExecutedExerciseSubSubsection exerClassSessionExecutedExercise, String xSessionId) throws ApiException {
+    Object postBody = exerClassSessionExecutedExercise;
+    byte[] postBinaryBody = null;
+    
+     // verify the required parameter 'patientNumber' is set
+     if (patientNumber == null) {
+        throw new ApiException(400, "Missing the required parameter 'patientNumber' when calling cardiacRehabilitationProgressPostCardiacRehabilitationProgressExerClassSessionExecutedExercises");
+     }
+     
+     // verify the required parameter 'exerClassSessionID' is set
+     if (exerClassSessionID == null) {
+        throw new ApiException(400, "Missing the required parameter 'exerClassSessionID' when calling cardiacRehabilitationProgressPostCardiacRehabilitationProgressExerClassSessionExecutedExercises");
+     }
+     
+     // verify the required parameter 'exerClassSessionExecutedExercise' is set
+     if (exerClassSessionExecutedExercise == null) {
+        throw new ApiException(400, "Missing the required parameter 'exerClassSessionExecutedExercise' when calling cardiacRehabilitationProgressPostCardiacRehabilitationProgressExerClassSessionExecutedExercises");
+     }
+     
+    // create path and map variables
+    String path = "/pathway/hdm/CardiacRehabilitationProgressExerClassSessionExecutedExercises/{patientNumber}".replaceAll("\\{format\\}","json")
+      .replaceAll("\\{" + "patientNumber" + "\\}", apiClient.escapeString(patientNumber.toString()));
+
+    // query params
+    List<Pair> queryParams = new ArrayList<Pair>();
+    Map<String, String> headerParams = new HashMap<String, String>();
+    Map<String, Object> formParams = new HashMap<String, Object>();
+
+    
+    queryParams.addAll(apiClient.parameterToPairs("", "exerClassSessionID", exerClassSessionID));
+    
+
+    if (xSessionId != null)
+    headerParams.put("X-session_id", apiClient.parameterToString(xSessionId));
+    
+
+    
+
+    final String[] accepts = {
+      "application/json", "text/json", "application/xml", "text/xml"
+    };
+    final String accept = apiClient.selectHeaderAccept(accepts);
+
+    final String[] contentTypes = {
+      "application/json", "text/json", "application/xml", "text/xml", "application/x-www-form-urlencoded"
+    };
+    final String contentType = apiClient.selectHeaderContentType(contentTypes);
+
+    String[] authNames = new String[] {  };
+
+    
+
+    
+    
+    TypeRef returnType = new TypeRef<GenericPostputResult>() {};
+    return apiClient.invokeAPI(path, "POST", queryParams, postBody, postBinaryBody, headerParams, formParams, accept, contentType, authNames, returnType);
+    
+    
+
+
+  }
+  
+  /**
+   * Gets ExerClassSessions from a patient
+   * 
+   * @param patientNumber The health ID of the patient
+   * @param xSessionId Identifies user which undertakes this action
+   * @return List<ExerClassSessionSubsection>
+   */
+  public List<ExerClassSessionSubsection> cardiacRehabilitationProgressGetCardiacRehabilitationProgressExerClassSessions (String patientNumber, String xSessionId) throws ApiException {
+    Object postBody = null;
+    byte[] postBinaryBody = null;
+    
+     // verify the required parameter 'patientNumber' is set
+     if (patientNumber == null) {
+        throw new ApiException(400, "Missing the required parameter 'patientNumber' when calling cardiacRehabilitationProgressGetCardiacRehabilitationProgressExerClassSessions");
+     }
+     
+    // create path and map variables
+    String path = "/pathway/hdm/CardiacRehabilitationProgressExerClassSessions/{patientNumber}".replaceAll("\\{format\\}","json")
+      .replaceAll("\\{" + "patientNumber" + "\\}", apiClient.escapeString(patientNumber.toString()));
+
+    // query params
+    List<Pair> queryParams = new ArrayList<Pair>();
+    Map<String, String> headerParams = new HashMap<String, String>();
+    Map<String, Object> formParams = new HashMap<String, Object>();
+
+    
+
+    if (xSessionId != null)
+    headerParams.put("X-session_id", apiClient.parameterToString(xSessionId));
+    
+
+    
+
+    final String[] accepts = {
+      "application/json", "text/json", "application/xml", "text/xml"
+    };
+    final String accept = apiClient.selectHeaderAccept(accepts);
+
+    final String[] contentTypes = {
+      
+    };
+    final String contentType = apiClient.selectHeaderContentType(contentTypes);
+
+    String[] authNames = new String[] {  };
+
+    
+
+    
+    
+    TypeRef returnType = new TypeRef<List<ExerClassSessionSubsection>>() {};
+    return apiClient.invokeAPI(path, "GET", queryParams, postBody, postBinaryBody, headerParams, formParams, accept, contentType, authNames, returnType);
+    
+    
+
+
+  }
+  
+  /**
+   * Sets a ExerClassSession of a patient
+   * 
+   * @param patientNumber The health ID of the patient
+   * @param exerClassSession Data belonging to an ExerClassSession
+   * @param xSessionId Identifies user which undertakes this action
+   * @return IdPostputResult
+   */
+  public IdPostputResult cardiacRehabilitationProgressPostCardiacRehabilitationProgressExerClassSession (String patientNumber, ExerClassSessionSubsection exerClassSession, String xSessionId) throws ApiException {
+    Object postBody = exerClassSession;
+    byte[] postBinaryBody = null;
+    
+     // verify the required parameter 'patientNumber' is set
+     if (patientNumber == null) {
+        throw new ApiException(400, "Missing the required parameter 'patientNumber' when calling cardiacRehabilitationProgressPostCardiacRehabilitationProgressExerClassSession");
+     }
+     
+     // verify the required parameter 'exerClassSession' is set
+     if (exerClassSession == null) {
+        throw new ApiException(400, "Missing the required parameter 'exerClassSession' when calling cardiacRehabilitationProgressPostCardiacRehabilitationProgressExerClassSession");
+     }
+     
+    // create path and map variables
+    String path = "/pathway/hdm/CardiacRehabilitationProgressExerClassSessions/{patientNumber}".replaceAll("\\{format\\}","json")
+      .replaceAll("\\{" + "patientNumber" + "\\}", apiClient.escapeString(patientNumber.toString()));
+
+    // query params
+    List<Pair> queryParams = new ArrayList<Pair>();
+    Map<String, String> headerParams = new HashMap<String, String>();
+    Map<String, Object> formParams = new HashMap<String, Object>();
+
+    
+
+    if (xSessionId != null)
+    headerParams.put("X-session_id", apiClient.parameterToString(xSessionId));
+    
+
+    
+
+    final String[] accepts = {
+      "application/json", "text/json", "application/xml", "text/xml"
+    };
+    final String accept = apiClient.selectHeaderAccept(accepts);
+
+    final String[] contentTypes = {
+      "application/json", "text/json", "application/xml", "text/xml", "application/x-www-form-urlencoded"
+    };
+    final String contentType = apiClient.selectHeaderContentType(contentTypes);
+
+    String[] authNames = new String[] {  };
+
+    
+
+    
+    
+    TypeRef returnType = new TypeRef<IdPostputResult>() {};
+    return apiClient.invokeAPI(path, "POST", queryParams, postBody, postBinaryBody, headerParams, formParams, accept, contentType, authNames, returnType);
+    
+    
+
+
+  }
+  
+  /**
+   * Gets CardiacRehabilitationProgressExerGameSessionExecutedExercises from a patient
+   * 
+   * @param patientNumber The health ID of the patient
+   * @param exerGameSessionID The ExerGameSession ID of the patient
+   * @param xSessionId Identifies user which undertakes this action
+   * @return List<ExerGameSessionExecutedExerciseSubSubsection>
+   */
+  public List<ExerGameSessionExecutedExerciseSubSubsection> cardiacRehabilitationProgressGetCardiacRehabilitationProgressExerGameSessionExecutedExercises (String patientNumber, Integer exerGameSessionID, String xSessionId) throws ApiException {
+    Object postBody = null;
+    byte[] postBinaryBody = null;
+    
+     // verify the required parameter 'patientNumber' is set
+     if (patientNumber == null) {
+        throw new ApiException(400, "Missing the required parameter 'patientNumber' when calling cardiacRehabilitationProgressGetCardiacRehabilitationProgressExerGameSessionExecutedExercises");
+     }
+     
+     // verify the required parameter 'exerGameSessionID' is set
+     if (exerGameSessionID == null) {
+        throw new ApiException(400, "Missing the required parameter 'exerGameSessionID' when calling cardiacRehabilitationProgressGetCardiacRehabilitationProgressExerGameSessionExecutedExercises");
+     }
+     
+    // create path and map variables
+    String path = "/pathway/hdm/CardiacRehabilitationProgressExerGameSessionExecutedExercises/{patientNumber}".replaceAll("\\{format\\}","json")
+      .replaceAll("\\{" + "patientNumber" + "\\}", apiClient.escapeString(patientNumber.toString()));
+
+    // query params
+    List<Pair> queryParams = new ArrayList<Pair>();
+    Map<String, String> headerParams = new HashMap<String, String>();
+    Map<String, Object> formParams = new HashMap<String, Object>();
+
+    
+    queryParams.addAll(apiClient.parameterToPairs("", "exerGameSessionID", exerGameSessionID));
+    
+
+    if (xSessionId != null)
+    headerParams.put("X-session_id", apiClient.parameterToString(xSessionId));
+    
+
+    
+
+    final String[] accepts = {
+      "application/json", "text/json", "application/xml", "text/xml"
+    };
+    final String accept = apiClient.selectHeaderAccept(accepts);
+
+    final String[] contentTypes = {
+      
+    };
+    final String contentType = apiClient.selectHeaderContentType(contentTypes);
+
+    String[] authNames = new String[] {  };
+
+    
+
+    
+    
+    TypeRef returnType = new TypeRef<List<ExerGameSessionExecutedExerciseSubSubsection>>() {};
+    return apiClient.invokeAPI(path, "GET", queryParams, postBody, postBinaryBody, headerParams, formParams, accept, contentType, authNames, returnType);
+    
+    
+
+
+  }
+  
+  /**
+   * Sets a CardiacRehabilitationProgressExerGameSessionExecutedExercise of a patient
+   * 
+   * @param patientNumber The health ID of the patient
+   * @param exerGameSessionID The exerGameSession ID of the patient
+   * @param exerGameSessionExecutedExercise Data belonging to an ExerGameSessionExecutedExercise
+   * @param xSessionId Identifies user which undertakes this action
+   * @return GenericPostputResult
+   */
+  public GenericPostputResult cardiacRehabilitationProgressPostCardiacRehabilitationProgressExerGameSessionExecutedExercise (String patientNumber, Integer exerGameSessionID, ExerGameSessionExecutedExerciseSubSubsection exerGameSessionExecutedExercise, String xSessionId) throws ApiException {
+    Object postBody = exerGameSessionExecutedExercise;
+    byte[] postBinaryBody = null;
+    
+     // verify the required parameter 'patientNumber' is set
+     if (patientNumber == null) {
+        throw new ApiException(400, "Missing the required parameter 'patientNumber' when calling cardiacRehabilitationProgressPostCardiacRehabilitationProgressExerGameSessionExecutedExercise");
+     }
+     
+     // verify the required parameter 'exerGameSessionID' is set
+     if (exerGameSessionID == null) {
+        throw new ApiException(400, "Missing the required parameter 'exerGameSessionID' when calling cardiacRehabilitationProgressPostCardiacRehabilitationProgressExerGameSessionExecutedExercise");
+     }
+     
+     // verify the required parameter 'exerGameSessionExecutedExercise' is set
+     if (exerGameSessionExecutedExercise == null) {
+        throw new ApiException(400, "Missing the required parameter 'exerGameSessionExecutedExercise' when calling cardiacRehabilitationProgressPostCardiacRehabilitationProgressExerGameSessionExecutedExercise");
+     }
+     
+    // create path and map variables
+    String path = "/pathway/hdm/CardiacRehabilitationProgressExerGameSessionExecutedExercises/{patientNumber}".replaceAll("\\{format\\}","json")
+      .replaceAll("\\{" + "patientNumber" + "\\}", apiClient.escapeString(patientNumber.toString()));
+
+    // query params
+    List<Pair> queryParams = new ArrayList<Pair>();
+    Map<String, String> headerParams = new HashMap<String, String>();
+    Map<String, Object> formParams = new HashMap<String, Object>();
+
+    
+    queryParams.addAll(apiClient.parameterToPairs("", "exerGameSessionID", exerGameSessionID));
+    
+
+    if (xSessionId != null)
+    headerParams.put("X-session_id", apiClient.parameterToString(xSessionId));
+    
+
+    
+
+    final String[] accepts = {
+      "application/json", "text/json", "application/xml", "text/xml"
+    };
+    final String accept = apiClient.selectHeaderAccept(accepts);
+
+    final String[] contentTypes = {
+      "application/json", "text/json", "application/xml", "text/xml", "application/x-www-form-urlencoded"
+    };
+    final String contentType = apiClient.selectHeaderContentType(contentTypes);
+
+    String[] authNames = new String[] {  };
+
+    
+
+    
+    
+    TypeRef returnType = new TypeRef<GenericPostputResult>() {};
+    return apiClient.invokeAPI(path, "POST", queryParams, postBody, postBinaryBody, headerParams, formParams, accept, contentType, authNames, returnType);
+    
+    
+
+
+  }
+  
+  /**
+   * Gets ExerGameSessions from a patient
+   * 
+   * @param patientNumber The health ID of the patient
+   * @param xSessionId Identifies user which undertakes this action
+   * @return List<ExerGameSessionSubsection>
+   */
+  public List<ExerGameSessionSubsection> cardiacRehabilitationProgressGetCardiacRehabilitationProgressExerGameSessions (String patientNumber, String xSessionId) throws ApiException {
+    Object postBody = null;
+    byte[] postBinaryBody = null;
+    
+     // verify the required parameter 'patientNumber' is set
+     if (patientNumber == null) {
+        throw new ApiException(400, "Missing the required parameter 'patientNumber' when calling cardiacRehabilitationProgressGetCardiacRehabilitationProgressExerGameSessions");
+     }
+     
+    // create path and map variables
+    String path = "/pathway/hdm/CardiacRehabilitationProgressExerGameSessions/{patientNumber}".replaceAll("\\{format\\}","json")
+      .replaceAll("\\{" + "patientNumber" + "\\}", apiClient.escapeString(patientNumber.toString()));
+
+    // query params
+    List<Pair> queryParams = new ArrayList<Pair>();
+    Map<String, String> headerParams = new HashMap<String, String>();
+    Map<String, Object> formParams = new HashMap<String, Object>();
+
+    
+
+    if (xSessionId != null)
+    headerParams.put("X-session_id", apiClient.parameterToString(xSessionId));
+    
+
+    
+
+    final String[] accepts = {
+      "application/json", "text/json", "application/xml", "text/xml"
+    };
+    final String accept = apiClient.selectHeaderAccept(accepts);
+
+    final String[] contentTypes = {
+      
+    };
+    final String contentType = apiClient.selectHeaderContentType(contentTypes);
+
+    String[] authNames = new String[] {  };
+
+    
+
+    
+    
+    TypeRef returnType = new TypeRef<List<ExerGameSessionSubsection>>() {};
+    return apiClient.invokeAPI(path, "GET", queryParams, postBody, postBinaryBody, headerParams, formParams, accept, contentType, authNames, returnType);
+    
+    
+
+
+  }
+  
+  /**
+   * Sets a ExerGameSession of a patient
+   * 
+   * @param patientNumber The health ID of the patient
+   * @param exerGameSession Data belonging to an ExerGameSession
+   * @param xSessionId Identifies user which undertakes this action
+   * @return IdPostputResult
+   */
+  public IdPostputResult cardiacRehabilitationProgressPostCardiacRehabilitationProgressExerGameSession (String patientNumber, ExerGameSessionSubsection exerGameSession, String xSessionId) throws ApiException {
+    Object postBody = exerGameSession;
+    byte[] postBinaryBody = null;
+    
+     // verify the required parameter 'patientNumber' is set
+     if (patientNumber == null) {
+        throw new ApiException(400, "Missing the required parameter 'patientNumber' when calling cardiacRehabilitationProgressPostCardiacRehabilitationProgressExerGameSession");
+     }
+     
+     // verify the required parameter 'exerGameSession' is set
+     if (exerGameSession == null) {
+        throw new ApiException(400, "Missing the required parameter 'exerGameSession' when calling cardiacRehabilitationProgressPostCardiacRehabilitationProgressExerGameSession");
+     }
+     
+    // create path and map variables
+    String path = "/pathway/hdm/CardiacRehabilitationProgressExerGameSessions/{patientNumber}".replaceAll("\\{format\\}","json")
+      .replaceAll("\\{" + "patientNumber" + "\\}", apiClient.escapeString(patientNumber.toString()));
+
+    // query params
+    List<Pair> queryParams = new ArrayList<Pair>();
+    Map<String, String> headerParams = new HashMap<String, String>();
+    Map<String, Object> formParams = new HashMap<String, Object>();
+
+    
+
+    if (xSessionId != null)
+    headerParams.put("X-session_id", apiClient.parameterToString(xSessionId));
+    
+
+    
+
+    final String[] accepts = {
+      "application/json", "text/json", "application/xml", "text/xml"
+    };
+    final String accept = apiClient.selectHeaderAccept(accepts);
+
+    final String[] contentTypes = {
+      "application/json", "text/json", "application/xml", "text/xml", "application/x-www-form-urlencoded"
+    };
+    final String contentType = apiClient.selectHeaderContentType(contentTypes);
+
+    String[] authNames = new String[] {  };
+
+    
+
+    
+    
+    TypeRef returnType = new TypeRef<IdPostputResult>() {};
+    return apiClient.invokeAPI(path, "POST", queryParams, postBody, postBinaryBody, headerParams, formParams, accept, contentType, authNames, returnType);
+    
+    
+
+
+  }
+  
+  /**
+   * Gets a CardiacRehabilitationProgressFull from a patient
+   * 
+   * @param patientNumber The health ID of the patient
+   * @param xSessionId Identifies user which undertakes this action
+   * @return CardiacRehabilitationProgressFull
+   */
+  public CardiacRehabilitationProgressFull cardiacRehabilitationProgressGetCardiacRehabilitationProgressFull (String patientNumber, String xSessionId) throws ApiException {
+    Object postBody = null;
+    byte[] postBinaryBody = null;
+    
+     // verify the required parameter 'patientNumber' is set
+     if (patientNumber == null) {
+        throw new ApiException(400, "Missing the required parameter 'patientNumber' when calling cardiacRehabilitationProgressGetCardiacRehabilitationProgressFull");
+     }
+     
+    // create path and map variables
+    String path = "/pathway/hdm/CardiacRehabilitationProgressFull/{patientNumber}".replaceAll("\\{format\\}","json")
+      .replaceAll("\\{" + "patientNumber" + "\\}", apiClient.escapeString(patientNumber.toString()));
+
+    // query params
+    List<Pair> queryParams = new ArrayList<Pair>();
+    Map<String, String> headerParams = new HashMap<String, String>();
+    Map<String, Object> formParams = new HashMap<String, Object>();
+
+    
+
+    if (xSessionId != null)
+    headerParams.put("X-session_id", apiClient.parameterToString(xSessionId));
+    
+
+    
+
+    final String[] accepts = {
+      "application/json", "text/json", "application/xml", "text/xml"
+    };
+    final String accept = apiClient.selectHeaderAccept(accepts);
+
+    final String[] contentTypes = {
+      
+    };
+    final String contentType = apiClient.selectHeaderContentType(contentTypes);
+
+    String[] authNames = new String[] {  };
+
+    
+
+    
+    
+    TypeRef returnType = new TypeRef<CardiacRehabilitationProgressFull>() {};
+    return apiClient.invokeAPI(path, "GET", queryParams, postBody, postBinaryBody, headerParams, formParams, accept, contentType, authNames, returnType);
+    
+    
+
+
+  }
+  
+  /**
+   * Sets a CardiacRehabilitationProgressFull of a patient
+   * 
+   * @param patientNumber The health ID of the patient
+   * @param cardiacRehabilitationProgress Data belonging to an CardiacRehabilitationProgressFull
+   * @param xSessionId Identifies user which undertakes this action
+   * @return GenericPostputResult
+   */
+  public GenericPostputResult cardiacRehabilitationProgressPutCardiacRehabilitationProgress (String patientNumber, CardiacRehabilitationProgressFull cardiacRehabilitationProgress, String xSessionId) throws ApiException {
+    Object postBody = cardiacRehabilitationProgress;
+    byte[] postBinaryBody = null;
+    
+     // verify the required parameter 'patientNumber' is set
+     if (patientNumber == null) {
+        throw new ApiException(400, "Missing the required parameter 'patientNumber' when calling cardiacRehabilitationProgressPutCardiacRehabilitationProgress");
+     }
+     
+     // verify the required parameter 'cardiacRehabilitationProgress' is set
+     if (cardiacRehabilitationProgress == null) {
+        throw new ApiException(400, "Missing the required parameter 'cardiacRehabilitationProgress' when calling cardiacRehabilitationProgressPutCardiacRehabilitationProgress");
+     }
+     
+    // create path and map variables
+    String path = "/pathway/hdm/CardiacRehabilitationProgressFull/{patientNumber}".replaceAll("\\{format\\}","json")
+      .replaceAll("\\{" + "patientNumber" + "\\}", apiClient.escapeString(patientNumber.toString()));
+
+    // query params
+    List<Pair> queryParams = new ArrayList<Pair>();
+    Map<String, String> headerParams = new HashMap<String, String>();
+    Map<String, Object> formParams = new HashMap<String, Object>();
+
+    
+
+    if (xSessionId != null)
+    headerParams.put("X-session_id", apiClient.parameterToString(xSessionId));
+    
+
+    
+
+    final String[] accepts = {
+      "application/json", "text/json", "application/xml", "text/xml"
+    };
+    final String accept = apiClient.selectHeaderAccept(accepts);
+
+    final String[] contentTypes = {
+      "application/json", "text/json", "application/xml", "text/xml", "application/x-www-form-urlencoded"
+    };
+    final String contentType = apiClient.selectHeaderContentType(contentTypes);
+
+    String[] authNames = new String[] {  };
+
+    
+
+    
+    
+    TypeRef returnType = new TypeRef<GenericPostputResult>() {};
+    return apiClient.invokeAPI(path, "PUT", queryParams, postBody, postBinaryBody, headerParams, formParams, accept, contentType, authNames, returnType);
+    
+    
+
+
+  }
+  
+  /**
+   * Gets HealthAndFitnessAssessmentSessions from a patient
+   * 
+   * @param patientNumber The health ID of the patient
+   * @param xSessionId Identifies user which undertakes this action
+   * @return List<HealthAndFitnessAssessmentSessionSubsection>
+   */
+  public List<HealthAndFitnessAssessmentSessionSubsection> cardiacRehabilitationProgressGetCardiacRehabilitationProgressHealthAndFitnessAssessmentSessions (String patientNumber, String xSessionId) throws ApiException {
+    Object postBody = null;
+    byte[] postBinaryBody = null;
+    
+     // verify the required parameter 'patientNumber' is set
+     if (patientNumber == null) {
+        throw new ApiException(400, "Missing the required parameter 'patientNumber' when calling cardiacRehabilitationProgressGetCardiacRehabilitationProgressHealthAndFitnessAssessmentSessions");
+     }
+     
+    // create path and map variables
+    String path = "/pathway/hdm/CardiacRehabilitationProgressHealthAndFitnessAssessmentSessions/{patientNumber}".replaceAll("\\{format\\}","json")
+      .replaceAll("\\{" + "patientNumber" + "\\}", apiClient.escapeString(patientNumber.toString()));
+
+    // query params
+    List<Pair> queryParams = new ArrayList<Pair>();
+    Map<String, String> headerParams = new HashMap<String, String>();
+    Map<String, Object> formParams = new HashMap<String, Object>();
+
+    
+
+    if (xSessionId != null)
+    headerParams.put("X-session_id", apiClient.parameterToString(xSessionId));
+    
+
+    
+
+    final String[] accepts = {
+      "application/json", "text/json", "application/xml", "text/xml"
+    };
+    final String accept = apiClient.selectHeaderAccept(accepts);
+
+    final String[] contentTypes = {
+      
+    };
+    final String contentType = apiClient.selectHeaderContentType(contentTypes);
+
+    String[] authNames = new String[] {  };
+
+    
+
+    
+    
+    TypeRef returnType = new TypeRef<List<HealthAndFitnessAssessmentSessionSubsection>>() {};
+    return apiClient.invokeAPI(path, "GET", queryParams, postBody, postBinaryBody, headerParams, formParams, accept, contentType, authNames, returnType);
+    
+    
+
+
+  }
+  
+  /**
+   * Sets a CRProgressHealthAndFitnessAssessmentSession of a patient
+   * 
+   * @param patientNumber The health ID of the patient
+   * @param cRProgressHealthAndFitnessAssessmentSession Data belonging to an CRProgressHealth AndFitnessAssessmentSession
+   * @param xSessionId Identifies user which undertakes this action
+   * @return GenericPostputResult
+   */
+  public GenericPostputResult cardiacRehabilitationProgressPostCardiacRehabilitationProgressHealthAndFitnessAssessmentSession (String patientNumber, HealthAndFitnessAssessmentSessionSubsection cRProgressHealthAndFitnessAssessmentSession, String xSessionId) throws ApiException {
+    Object postBody = cRProgressHealthAndFitnessAssessmentSession;
+    byte[] postBinaryBody = null;
+    
+     // verify the required parameter 'patientNumber' is set
+     if (patientNumber == null) {
+        throw new ApiException(400, "Missing the required parameter 'patientNumber' when calling cardiacRehabilitationProgressPostCardiacRehabilitationProgressHealthAndFitnessAssessmentSession");
+     }
+     
+     // verify the required parameter 'cRProgressHealthAndFitnessAssessmentSession' is set
+     if (cRProgressHealthAndFitnessAssessmentSession == null) {
+        throw new ApiException(400, "Missing the required parameter 'cRProgressHealthAndFitnessAssessmentSession' when calling cardiacRehabilitationProgressPostCardiacRehabilitationProgressHealthAndFitnessAssessmentSession");
+     }
+     
+    // create path and map variables
+    String path = "/pathway/hdm/CardiacRehabilitationProgressHealthAndFitnessAssessmentSessions/{patientNumber}".replaceAll("\\{format\\}","json")
+      .replaceAll("\\{" + "patientNumber" + "\\}", apiClient.escapeString(patientNumber.toString()));
+
+    // query params
+    List<Pair> queryParams = new ArrayList<Pair>();
+    Map<String, String> headerParams = new HashMap<String, String>();
+    Map<String, Object> formParams = new HashMap<String, Object>();
+
+    
+
+    if (xSessionId != null)
+    headerParams.put("X-session_id", apiClient.parameterToString(xSessionId));
+    
+
+    
+
+    final String[] accepts = {
+      "application/json", "text/json", "application/xml", "text/xml"
+    };
+    final String accept = apiClient.selectHeaderAccept(accepts);
+
+    final String[] contentTypes = {
+      "application/json", "text/json", "application/xml", "text/xml", "application/x-www-form-urlencoded"
+    };
+    final String contentType = apiClient.selectHeaderContentType(contentTypes);
+
+    String[] authNames = new String[] {  };
+
+    
+
+    
+    
+    TypeRef returnType = new TypeRef<GenericPostputResult>() {};
+    return apiClient.invokeAPI(path, "POST", queryParams, postBody, postBinaryBody, headerParams, formParams, accept, contentType, authNames, returnType);
+    
+    
+
+
+  }
+  
+}

@@ -1,0 +1,40 @@
+package ers.test;
+
+import java.util.Map;
+
+import io.swagger.client.ApiException;
+import io.swagger.client.api.PathwayhdmisessionApi;
+import io.swagger.client.model.CreatePatientSessionData;
+import io.swagger.client.model.GenericPostputResult;
+
+public class ERSTest {
+
+	public static void main(String[] args) {
+
+		System.setProperty("http.proxyHost", "localhost");
+		System.setProperty("http.proxyPort", "13128");
+
+		try {
+			PathwayhdmisessionApi loginapi = new PathwayhdmisessionApi();
+			CreatePatientSessionData data=new CreatePatientSessionData();
+			data.setUserName("Tester");
+			data.setPassword("Tester");
+			GenericPostputResult result=loginapi.pathwayHdmiSessionPostPatientSession(data);
+			System.out.println(result);
+			System.out.println(result.getResult());
+			
+			data.setPassword("Testers");
+			result=loginapi.pathwayHdmiSessionPostPatientSession(data);
+			
+			System.out.println(result);
+		} catch (ApiException e) {
+			String msg=e.getMessage();
+			Map<String, String> resp=Utility.createMap(msg);
+			String toPrint=resp.getOrDefault("Message", "No message Available");
+			System.out.println(toPrint);
+//			e.printStackTrace();
+		}
+
+	}
+
+}

@@ -1,0 +1,9 @@
+package it.eng.pathway.fake.model;
+
+import java.util.Date;
+
+public class Observation {
+
+	private Date timestamp;
+
+}

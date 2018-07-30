@@ -1,0 +1,87 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+import io.swagger.client.model.PersonalGoalSubsection;
+import io.swagger.client.model.RecommendedGoalSubsection;
+import java.util.*;
+import io.swagger.client.model.GoodHabitSubsection;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-07-22T14:54:54.065+02:00")
+public class BehaviouralChangeProgrammeFull   {
+  
+  private Integer assessmentPeriodMonthInterval = null;
+  private List<PersonalGoalSubsection> personalGoals = new ArrayList<PersonalGoalSubsection>();
+  private List<RecommendedGoalSubsection> recommendedGoals = new ArrayList<RecommendedGoalSubsection>();
+  private List<GoodHabitSubsection> goodHabits = new ArrayList<GoodHabitSubsection>();
+
+  
+  /**
+   * Program Assessment Month interval
+   **/
+  @ApiModelProperty(value = "Program Assessment Month interval")
+  @JsonProperty("assessmentPeriodMonthInterval")
+  public Integer getAssessmentPeriodMonthInterval() {
+    return assessmentPeriodMonthInterval;
+  }
+  public void setAssessmentPeriodMonthInterval(Integer assessmentPeriodMonthInterval) {
+    this.assessmentPeriodMonthInterval = assessmentPeriodMonthInterval;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("personalGoals")
+  public List<PersonalGoalSubsection> getPersonalGoals() {
+    return personalGoals;
+  }
+  public void setPersonalGoals(List<PersonalGoalSubsection> personalGoals) {
+    this.personalGoals = personalGoals;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("recommendedGoals")
+  public List<RecommendedGoalSubsection> getRecommendedGoals() {
+    return recommendedGoals;
+  }
+  public void setRecommendedGoals(List<RecommendedGoalSubsection> recommendedGoals) {
+    this.recommendedGoals = recommendedGoals;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("GoodHabits")
+  public List<GoodHabitSubsection> getGoodHabits() {
+    return goodHabits;
+  }
+  public void setGoodHabits(List<GoodHabitSubsection> goodHabits) {
+    this.goodHabits = goodHabits;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class BehaviouralChangeProgrammeFull {\n");
+    
+    sb.append("    assessmentPeriodMonthInterval: ").append(StringUtil.toIndentedString(assessmentPeriodMonthInterval)).append("\n");
+    sb.append("    personalGoals: ").append(StringUtil.toIndentedString(personalGoals)).append("\n");
+    sb.append("    recommendedGoals: ").append(StringUtil.toIndentedString(recommendedGoals)).append("\n");
+    sb.append("    goodHabits: ").append(StringUtil.toIndentedString(goodHabits)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

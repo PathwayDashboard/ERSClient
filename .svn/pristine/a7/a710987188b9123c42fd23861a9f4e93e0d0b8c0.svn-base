@@ -1,0 +1,58 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+import io.swagger.client.model.AssessmentSubSection;
+import java.util.*;
+import io.swagger.client.model.BehaviouralStageSubsection;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-07-22T14:54:54.065+02:00")
+public class BehaviouralChangeProgressFull   {
+  
+  private List<BehaviouralStageSubsection> behaviouralStages = new ArrayList<BehaviouralStageSubsection>();
+  private List<AssessmentSubSection> assessments = new ArrayList<AssessmentSubSection>();
+
+  
+  /**
+   * Program Assessment Month interval
+   **/
+  @ApiModelProperty(value = "Program Assessment Month interval")
+  @JsonProperty("behaviouralStages")
+  public List<BehaviouralStageSubsection> getBehaviouralStages() {
+    return behaviouralStages;
+  }
+  public void setBehaviouralStages(List<BehaviouralStageSubsection> behaviouralStages) {
+    this.behaviouralStages = behaviouralStages;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("assessments")
+  public List<AssessmentSubSection> getAssessments() {
+    return assessments;
+  }
+  public void setAssessments(List<AssessmentSubSection> assessments) {
+    this.assessments = assessments;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class BehaviouralChangeProgressFull {\n");
+    
+    sb.append("    behaviouralStages: ").append(StringUtil.toIndentedString(behaviouralStages)).append("\n");
+    sb.append("    assessments: ").append(StringUtil.toIndentedString(assessments)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

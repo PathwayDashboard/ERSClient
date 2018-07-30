@@ -1,0 +1,80 @@
+package it.eng.pathway.fake.model;
+
+public class ActiveLifestylePASession extends ExerciseSession implements Comparable<ActiveLifestylePASession> {
+
+	private int averageHeartRate;
+
+	private int stepsNumber;
+	
+	private ActivityType type;
+	
+	private boolean monitored;
+	
+	private String description;
+	
+	private ActiveLifestylePAIntensityType intensity;
+
+	public int getAverageHeartRate() {
+		return averageHeartRate;
+	}
+
+	public void setAverageHeartRate(int averageHeartRate) {
+		this.averageHeartRate = averageHeartRate;
+	}
+
+	public int getStepsNumber() {
+		return stepsNumber;
+	}
+
+	public void setStepsNumber(int stepsNumber) {
+		this.stepsNumber = stepsNumber;
+	}
+
+	public ActivityType getType() {
+		return type;
+	}
+
+	public void setType(ActivityType type) {
+		this.type = type;
+	}
+
+	public boolean isMonitored() {
+		return monitored;
+	}
+
+	public void setMonitored(boolean monitored) {
+		this.monitored = monitored;
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	public ActiveLifestylePAIntensityType getIntensity() {
+		return intensity;
+	}
+
+	public void setIntensity(ActiveLifestylePAIntensityType intensity) {
+		this.intensity = intensity;
+	}
+
+	@Override
+	public String toString() {
+		return "ActiveLifestylePASession [averageHeartRate=" + averageHeartRate + ", stepsNumber=" + stepsNumber
+				+ ", type=" + type + ", monitored=" + monitored + ", description=" + description + ", intensity="
+				+ intensity + ", getDate()=" + getDate() + ", getDuration()=" + getDuration() + ", getStart_time()="
+				+ getStart_time() + ", getEnd_time()=" + getEnd_time() + "]";
+	}
+
+	@Override
+	public int compareTo(ActiveLifestylePASession o) {
+//		return this.getDate().compareTo(o.getDate()); //crescente
+		return o.getDate().compareTo(this.getDate()); //DEcrescente
+	}
+	
+
+}

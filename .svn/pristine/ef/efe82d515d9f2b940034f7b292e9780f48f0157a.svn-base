@@ -1,0 +1,41 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-05-13T12:06:50.958+02:00")
+public class FitnessAssessmentConf   {
+  
+  private Integer stepupsPerMinute = null;
+
+  
+  /**
+   * Number step-ups
+   **/
+  @ApiModelProperty(value = "Number step-ups")
+  @JsonProperty("stepupsPerMinute")
+  public Integer getStepupsPerMinute() {
+    return stepupsPerMinute;
+  }
+  public void setStepupsPerMinute(Integer stepupsPerMinute) {
+    this.stepupsPerMinute = stepupsPerMinute;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class FitnessAssessmentConf {\n");
+    
+    sb.append("    stepupsPerMinute: ").append(StringUtil.toIndentedString(stepupsPerMinute)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

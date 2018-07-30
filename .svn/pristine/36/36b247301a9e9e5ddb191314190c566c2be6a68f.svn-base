@@ -1,0 +1,237 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+import java.util.Date;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-05-30T11:30:03.045+02:00")
+public class ActiveLifestylePASessionSS   {
+  
+  private Integer activeLifestylePASessionID = null;
+  private Date activeLifestylePASessiondate = null;
+  private String activeLifestylePASessionstartTime = null;
+  private String activeLifestylePASessionendTime = null;
+  private Integer activeLifestylePASessionduration = null;
+  private String activeLifestylePASessionhrFile = null;
+  private Date activeLifestylePASessionexpenditureObservationTimeStamp = null;
+  private Integer activeLifestylePASessionexpenditureObservationValue = null;
+  private Integer activeLifestylePASessionaverageHeartRate = null;
+  private Integer activeLifestylePASessionstepsNumber = null;
+  private Integer activeLifestylePASessiontype = null;
+  private Integer activeLifestylePASessionmonitored = null;
+  private String activeLifestylePASessiondescription = null;
+  private Integer activeLifestylePASessionintensity = null;
+
+  
+  /**
+   * Progress Active Lifestyle PA SessionID
+   **/
+  @ApiModelProperty(value = "Progress Active Lifestyle PA SessionID")
+  @JsonProperty("ActiveLifestylePASessionID")
+  public Integer getActiveLifestylePASessionID() {
+    return activeLifestylePASessionID;
+  }
+  public void setActiveLifestylePASessionID(Integer activeLifestylePASessionID) {
+    this.activeLifestylePASessionID = activeLifestylePASessionID;
+  }
+
+  
+  /**
+   * Session Date
+   **/
+  @ApiModelProperty(value = "Session Date")
+  @JsonProperty("ActiveLifestylePASessiondate")
+  public Date getActiveLifestylePASessiondate() {
+    return activeLifestylePASessiondate;
+  }
+  public void setActiveLifestylePASessiondate(Date activeLifestylePASessiondate) {
+    this.activeLifestylePASessiondate = activeLifestylePASessiondate;
+  }
+
+  
+  /**
+   * SessionSession StartTime
+   **/
+  @ApiModelProperty(value = "SessionSession StartTime")
+  @JsonProperty("ActiveLifestylePASessionstartTime")
+  public String getActiveLifestylePASessionstartTime() {
+    return activeLifestylePASessionstartTime;
+  }
+  public void setActiveLifestylePASessionstartTime(String activeLifestylePASessionstartTime) {
+    this.activeLifestylePASessionstartTime = activeLifestylePASessionstartTime;
+  }
+
+  
+  /**
+   * Session EndTime
+   **/
+  @ApiModelProperty(value = "Session EndTime")
+  @JsonProperty("ActiveLifestylePASessionendTime")
+  public String getActiveLifestylePASessionendTime() {
+    return activeLifestylePASessionendTime;
+  }
+  public void setActiveLifestylePASessionendTime(String activeLifestylePASessionendTime) {
+    this.activeLifestylePASessionendTime = activeLifestylePASessionendTime;
+  }
+
+  
+  /**
+   * Session Duration
+   **/
+  @ApiModelProperty(value = "Session Duration")
+  @JsonProperty("ActiveLifestylePASessionduration")
+  public Integer getActiveLifestylePASessionduration() {
+    return activeLifestylePASessionduration;
+  }
+  public void setActiveLifestylePASessionduration(Integer activeLifestylePASessionduration) {
+    this.activeLifestylePASessionduration = activeLifestylePASessionduration;
+  }
+
+  
+  /**
+   * Session Hr File
+   **/
+  @ApiModelProperty(value = "Session Hr File")
+  @JsonProperty("ActiveLifestylePASessionhrFile")
+  public String getActiveLifestylePASessionhrFile() {
+    return activeLifestylePASessionhrFile;
+  }
+  public void setActiveLifestylePASessionhrFile(String activeLifestylePASessionhrFile) {
+    this.activeLifestylePASessionhrFile = activeLifestylePASessionhrFile;
+  }
+
+  
+  /**
+   * Expenditure Observation TimeStamp
+   **/
+  @ApiModelProperty(value = "Expenditure Observation TimeStamp")
+  @JsonProperty("ActiveLifestylePASessionexpenditureObservationTimeStamp")
+  public Date getActiveLifestylePASessionexpenditureObservationTimeStamp() {
+    return activeLifestylePASessionexpenditureObservationTimeStamp;
+  }
+  public void setActiveLifestylePASessionexpenditureObservationTimeStamp(Date activeLifestylePASessionexpenditureObservationTimeStamp) {
+    this.activeLifestylePASessionexpenditureObservationTimeStamp = activeLifestylePASessionexpenditureObservationTimeStamp;
+  }
+
+  
+  /**
+   * Exependiture Observation Value
+   **/
+  @ApiModelProperty(value = "Exependiture Observation Value")
+  @JsonProperty("ActiveLifestylePASessionexpenditureObservationValue")
+  public Integer getActiveLifestylePASessionexpenditureObservationValue() {
+    return activeLifestylePASessionexpenditureObservationValue;
+  }
+  public void setActiveLifestylePASessionexpenditureObservationValue(Integer activeLifestylePASessionexpenditureObservationValue) {
+    this.activeLifestylePASessionexpenditureObservationValue = activeLifestylePASessionexpenditureObservationValue;
+  }
+
+  
+  /**
+   * Session Average Heart Rate
+   **/
+  @ApiModelProperty(value = "Session Average Heart Rate")
+  @JsonProperty("ActiveLifestylePASessionaverageHeartRate")
+  public Integer getActiveLifestylePASessionaverageHeartRate() {
+    return activeLifestylePASessionaverageHeartRate;
+  }
+  public void setActiveLifestylePASessionaverageHeartRate(Integer activeLifestylePASessionaverageHeartRate) {
+    this.activeLifestylePASessionaverageHeartRate = activeLifestylePASessionaverageHeartRate;
+  }
+
+  
+  /**
+   * Session Steps Number
+   **/
+  @ApiModelProperty(value = "Session Steps Number")
+  @JsonProperty("ActiveLifestylePASessionstepsNumber")
+  public Integer getActiveLifestylePASessionstepsNumber() {
+    return activeLifestylePASessionstepsNumber;
+  }
+  public void setActiveLifestylePASessionstepsNumber(Integer activeLifestylePASessionstepsNumber) {
+    this.activeLifestylePASessionstepsNumber = activeLifestylePASessionstepsNumber;
+  }
+
+  
+  /**
+   * Session Type
+   **/
+  @ApiModelProperty(value = "Session Type")
+  @JsonProperty("ActiveLifestylePASessiontype")
+  public Integer getActiveLifestylePASessiontype() {
+    return activeLifestylePASessiontype;
+  }
+  public void setActiveLifestylePASessiontype(Integer activeLifestylePASessiontype) {
+    this.activeLifestylePASessiontype = activeLifestylePASessiontype;
+  }
+
+  
+  /**
+   * Session Monitored
+   **/
+  @ApiModelProperty(value = "Session Monitored")
+  @JsonProperty("ActiveLifestylePASessionmonitored")
+  public Integer getActiveLifestylePASessionmonitored() {
+    return activeLifestylePASessionmonitored;
+  }
+  public void setActiveLifestylePASessionmonitored(Integer activeLifestylePASessionmonitored) {
+    this.activeLifestylePASessionmonitored = activeLifestylePASessionmonitored;
+  }
+
+  
+  /**
+   * Session Description
+   **/
+  @ApiModelProperty(value = "Session Description")
+  @JsonProperty("ActiveLifestylePASessiondescription")
+  public String getActiveLifestylePASessiondescription() {
+    return activeLifestylePASessiondescription;
+  }
+  public void setActiveLifestylePASessiondescription(String activeLifestylePASessiondescription) {
+    this.activeLifestylePASessiondescription = activeLifestylePASessiondescription;
+  }
+
+  
+  /**
+   * Session Intensity
+   **/
+  @ApiModelProperty(value = "Session Intensity")
+  @JsonProperty("ActiveLifestylePASessionintensity")
+  public Integer getActiveLifestylePASessionintensity() {
+    return activeLifestylePASessionintensity;
+  }
+  public void setActiveLifestylePASessionintensity(Integer activeLifestylePASessionintensity) {
+    this.activeLifestylePASessionintensity = activeLifestylePASessionintensity;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class ActiveLifestylePASessionSS {\n");
+    
+    sb.append("    activeLifestylePASessionID: ").append(StringUtil.toIndentedString(activeLifestylePASessionID)).append("\n");
+    sb.append("    activeLifestylePASessiondate: ").append(StringUtil.toIndentedString(activeLifestylePASessiondate)).append("\n");
+    sb.append("    activeLifestylePASessionstartTime: ").append(StringUtil.toIndentedString(activeLifestylePASessionstartTime)).append("\n");
+    sb.append("    activeLifestylePASessionendTime: ").append(StringUtil.toIndentedString(activeLifestylePASessionendTime)).append("\n");
+    sb.append("    activeLifestylePASessionduration: ").append(StringUtil.toIndentedString(activeLifestylePASessionduration)).append("\n");
+    sb.append("    activeLifestylePASessionhrFile: ").append(StringUtil.toIndentedString(activeLifestylePASessionhrFile)).append("\n");
+    sb.append("    activeLifestylePASessionexpenditureObservationTimeStamp: ").append(StringUtil.toIndentedString(activeLifestylePASessionexpenditureObservationTimeStamp)).append("\n");
+    sb.append("    activeLifestylePASessionexpenditureObservationValue: ").append(StringUtil.toIndentedString(activeLifestylePASessionexpenditureObservationValue)).append("\n");
+    sb.append("    activeLifestylePASessionaverageHeartRate: ").append(StringUtil.toIndentedString(activeLifestylePASessionaverageHeartRate)).append("\n");
+    sb.append("    activeLifestylePASessionstepsNumber: ").append(StringUtil.toIndentedString(activeLifestylePASessionstepsNumber)).append("\n");
+    sb.append("    activeLifestylePASessiontype: ").append(StringUtil.toIndentedString(activeLifestylePASessiontype)).append("\n");
+    sb.append("    activeLifestylePASessionmonitored: ").append(StringUtil.toIndentedString(activeLifestylePASessionmonitored)).append("\n");
+    sb.append("    activeLifestylePASessiondescription: ").append(StringUtil.toIndentedString(activeLifestylePASessiondescription)).append("\n");
+    sb.append("    activeLifestylePASessionintensity: ").append(StringUtil.toIndentedString(activeLifestylePASessionintensity)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

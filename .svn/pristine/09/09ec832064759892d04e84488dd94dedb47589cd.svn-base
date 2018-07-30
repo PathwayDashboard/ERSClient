@@ -1,0 +1,13 @@
+package it.eng.pathway.fake.model;
+
+public enum SatisfactionLevelType {
+
+	;
+
+	private int tooEasy;
+
+	private int justRight;
+
+	private int tooHard;
+
+}

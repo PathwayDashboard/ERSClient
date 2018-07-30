@@ -1,0 +1,101 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-04-21T15:01:39.375+02:00")
+public class ExerClassDescription   {
+  
+  private Integer expectedSessionDuration = null;
+  private Integer mandatorySensorZensor = null;
+  private Integer mandatorySensorHR = null;
+  private Integer mandatorySensorBloodPressure = null;
+  private Integer mandatorysensorEnergyExpenditure = null;
+
+  
+  /**
+   * expected Session Duration
+   **/
+  @ApiModelProperty(value = "expected Session Duration")
+  @JsonProperty("expectedSessionDuration")
+  public Integer getExpectedSessionDuration() {
+    return expectedSessionDuration;
+  }
+  public void setExpectedSessionDuration(Integer expectedSessionDuration) {
+    this.expectedSessionDuration = expectedSessionDuration;
+  }
+
+  
+  /**
+   * mandatory Sensor Zensor
+   **/
+  @ApiModelProperty(value = "mandatory Sensor Zensor")
+  @JsonProperty("mandatorySensorZensor")
+  public Integer getMandatorySensorZensor() {
+    return mandatorySensorZensor;
+  }
+  public void setMandatorySensorZensor(Integer mandatorySensorZensor) {
+    this.mandatorySensorZensor = mandatorySensorZensor;
+  }
+
+  
+  /**
+   * mandatory Sensor HR
+   **/
+  @ApiModelProperty(value = "mandatory Sensor HR")
+  @JsonProperty("mandatorySensorHR")
+  public Integer getMandatorySensorHR() {
+    return mandatorySensorHR;
+  }
+  public void setMandatorySensorHR(Integer mandatorySensorHR) {
+    this.mandatorySensorHR = mandatorySensorHR;
+  }
+
+  
+  /**
+   * mandatory Sensor Blood Pressure
+   **/
+  @ApiModelProperty(value = "mandatory Sensor Blood Pressure")
+  @JsonProperty("mandatorySensorBloodPressure")
+  public Integer getMandatorySensorBloodPressure() {
+    return mandatorySensorBloodPressure;
+  }
+  public void setMandatorySensorBloodPressure(Integer mandatorySensorBloodPressure) {
+    this.mandatorySensorBloodPressure = mandatorySensorBloodPressure;
+  }
+
+  
+  /**
+   * mandatory sensor Energy Expenditure
+   **/
+  @ApiModelProperty(value = "mandatory sensor Energy Expenditure")
+  @JsonProperty("mandatorysensorEnergyExpenditure")
+  public Integer getMandatorysensorEnergyExpenditure() {
+    return mandatorysensorEnergyExpenditure;
+  }
+  public void setMandatorysensorEnergyExpenditure(Integer mandatorysensorEnergyExpenditure) {
+    this.mandatorysensorEnergyExpenditure = mandatorysensorEnergyExpenditure;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class ExerClassDescription {\n");
+    
+    sb.append("    expectedSessionDuration: ").append(StringUtil.toIndentedString(expectedSessionDuration)).append("\n");
+    sb.append("    mandatorySensorZensor: ").append(StringUtil.toIndentedString(mandatorySensorZensor)).append("\n");
+    sb.append("    mandatorySensorHR: ").append(StringUtil.toIndentedString(mandatorySensorHR)).append("\n");
+    sb.append("    mandatorySensorBloodPressure: ").append(StringUtil.toIndentedString(mandatorySensorBloodPressure)).append("\n");
+    sb.append("    mandatorysensorEnergyExpenditure: ").append(StringUtil.toIndentedString(mandatorysensorEnergyExpenditure)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

@@ -1,0 +1,71 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-05-13T12:06:50.958+02:00")
+public class BehaviouralChangeProgramRecommendedGoals   {
+  
+  private Integer behaviouralChangeProgramRecommendedGoalID = null;
+  private String behaviouralChangeProgramRecommendedGoalDescription = null;
+  private Integer behaviouralChangeProgramRecommendedGoalCategory = null;
+
+  
+  /**
+   * Recommended Goal ID
+   **/
+  @ApiModelProperty(value = "Recommended Goal ID")
+  @JsonProperty("behaviouralChangeProgramRecommendedGoalID")
+  public Integer getBehaviouralChangeProgramRecommendedGoalID() {
+    return behaviouralChangeProgramRecommendedGoalID;
+  }
+  public void setBehaviouralChangeProgramRecommendedGoalID(Integer behaviouralChangeProgramRecommendedGoalID) {
+    this.behaviouralChangeProgramRecommendedGoalID = behaviouralChangeProgramRecommendedGoalID;
+  }
+
+  
+  /**
+   * Program Recommended Description
+   **/
+  @ApiModelProperty(value = "Program Recommended Description")
+  @JsonProperty("behaviouralChangeProgramRecommendedGoalDescription")
+  public String getBehaviouralChangeProgramRecommendedGoalDescription() {
+    return behaviouralChangeProgramRecommendedGoalDescription;
+  }
+  public void setBehaviouralChangeProgramRecommendedGoalDescription(String behaviouralChangeProgramRecommendedGoalDescription) {
+    this.behaviouralChangeProgramRecommendedGoalDescription = behaviouralChangeProgramRecommendedGoalDescription;
+  }
+
+  
+  /**
+   * Program Recommended Category
+   **/
+  @ApiModelProperty(value = "Program Recommended Category")
+  @JsonProperty("behaviouralChangeProgramRecommendedGoalCategory")
+  public Integer getBehaviouralChangeProgramRecommendedGoalCategory() {
+    return behaviouralChangeProgramRecommendedGoalCategory;
+  }
+  public void setBehaviouralChangeProgramRecommendedGoalCategory(Integer behaviouralChangeProgramRecommendedGoalCategory) {
+    this.behaviouralChangeProgramRecommendedGoalCategory = behaviouralChangeProgramRecommendedGoalCategory;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class BehaviouralChangeProgramRecommendedGoals {\n");
+    
+    sb.append("    behaviouralChangeProgramRecommendedGoalID: ").append(StringUtil.toIndentedString(behaviouralChangeProgramRecommendedGoalID)).append("\n");
+    sb.append("    behaviouralChangeProgramRecommendedGoalDescription: ").append(StringUtil.toIndentedString(behaviouralChangeProgramRecommendedGoalDescription)).append("\n");
+    sb.append("    behaviouralChangeProgramRecommendedGoalCategory: ").append(StringUtil.toIndentedString(behaviouralChangeProgramRecommendedGoalCategory)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

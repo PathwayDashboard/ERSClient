@@ -1,0 +1,191 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-07-22T14:54:54.065+02:00")
+public class DemographicsSection   {
+  
+  private Integer gender = null;
+  private Integer nationality = null;
+  private String street = null;
+  private String houseNumber = null;
+  private String city = null;
+  private String postalCode = null;
+  private String stateOrProvince = null;
+  private String country = null;
+  private String telephoneNumber = null;
+  private String mobileNumber = null;
+  private String eMailAddress = null;
+
+  
+  /**
+   * Gender
+   **/
+  @ApiModelProperty(value = "Gender")
+  @JsonProperty("gender")
+  public Integer getGender() {
+    return gender;
+  }
+  public void setGender(Integer gender) {
+    this.gender = gender;
+  }
+
+  
+  /**
+   * Nationality
+   **/
+  @ApiModelProperty(value = "Nationality")
+  @JsonProperty("nationality")
+  public Integer getNationality() {
+    return nationality;
+  }
+  public void setNationality(Integer nationality) {
+    this.nationality = nationality;
+  }
+
+  
+  /**
+   * Street
+   **/
+  @ApiModelProperty(value = "Street")
+  @JsonProperty("street")
+  public String getStreet() {
+    return street;
+  }
+  public void setStreet(String street) {
+    this.street = street;
+  }
+
+  
+  /**
+   * House number
+   **/
+  @ApiModelProperty(value = "House number")
+  @JsonProperty("houseNumber")
+  public String getHouseNumber() {
+    return houseNumber;
+  }
+  public void setHouseNumber(String houseNumber) {
+    this.houseNumber = houseNumber;
+  }
+
+  
+  /**
+   * City
+   **/
+  @ApiModelProperty(value = "City")
+  @JsonProperty("city")
+  public String getCity() {
+    return city;
+  }
+  public void setCity(String city) {
+    this.city = city;
+  }
+
+  
+  /**
+   * Postal code
+   **/
+  @ApiModelProperty(value = "Postal code")
+  @JsonProperty("postalCode")
+  public String getPostalCode() {
+    return postalCode;
+  }
+  public void setPostalCode(String postalCode) {
+    this.postalCode = postalCode;
+  }
+
+  
+  /**
+   * State or Provence
+   **/
+  @ApiModelProperty(value = "State or Provence")
+  @JsonProperty("stateOrProvince")
+  public String getStateOrProvince() {
+    return stateOrProvince;
+  }
+  public void setStateOrProvince(String stateOrProvince) {
+    this.stateOrProvince = stateOrProvince;
+  }
+
+  
+  /**
+   * Country
+   **/
+  @ApiModelProperty(value = "Country")
+  @JsonProperty("country")
+  public String getCountry() {
+    return country;
+  }
+  public void setCountry(String country) {
+    this.country = country;
+  }
+
+  
+  /**
+   * Telephone no.
+   **/
+  @ApiModelProperty(value = "Telephone no.")
+  @JsonProperty("telephoneNumber")
+  public String getTelephoneNumber() {
+    return telephoneNumber;
+  }
+  public void setTelephoneNumber(String telephoneNumber) {
+    this.telephoneNumber = telephoneNumber;
+  }
+
+  
+  /**
+   * Mobile telephone number
+   **/
+  @ApiModelProperty(value = "Mobile telephone number")
+  @JsonProperty("mobileNumber")
+  public String getMobileNumber() {
+    return mobileNumber;
+  }
+  public void setMobileNumber(String mobileNumber) {
+    this.mobileNumber = mobileNumber;
+  }
+
+  
+  /**
+   * eMail
+   **/
+  @ApiModelProperty(value = "eMail")
+  @JsonProperty("eMailAddress")
+  public String getEMailAddress() {
+    return eMailAddress;
+  }
+  public void setEMailAddress(String eMailAddress) {
+    this.eMailAddress = eMailAddress;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class DemographicsSection {\n");
+    
+    sb.append("    gender: ").append(StringUtil.toIndentedString(gender)).append("\n");
+    sb.append("    nationality: ").append(StringUtil.toIndentedString(nationality)).append("\n");
+    sb.append("    street: ").append(StringUtil.toIndentedString(street)).append("\n");
+    sb.append("    houseNumber: ").append(StringUtil.toIndentedString(houseNumber)).append("\n");
+    sb.append("    city: ").append(StringUtil.toIndentedString(city)).append("\n");
+    sb.append("    postalCode: ").append(StringUtil.toIndentedString(postalCode)).append("\n");
+    sb.append("    stateOrProvince: ").append(StringUtil.toIndentedString(stateOrProvince)).append("\n");
+    sb.append("    country: ").append(StringUtil.toIndentedString(country)).append("\n");
+    sb.append("    telephoneNumber: ").append(StringUtil.toIndentedString(telephoneNumber)).append("\n");
+    sb.append("    mobileNumber: ").append(StringUtil.toIndentedString(mobileNumber)).append("\n");
+    sb.append("    eMailAddress: ").append(StringUtil.toIndentedString(eMailAddress)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

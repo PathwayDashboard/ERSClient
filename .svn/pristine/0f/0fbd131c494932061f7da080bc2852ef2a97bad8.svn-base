@@ -1,0 +1,72 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+import java.util.Date;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-05-17T15:35:09.175+02:00")
+public class LifeStyleAssessments   {
+  
+  private Integer lifeStyleAssessmentID = null;
+  private String lifeStyleAssessmentanswerList = null;
+  private Date lifeStyleAssessmentsubmissionDate = null;
+
+  
+  /**
+   * LifeStyle Assessment ID
+   **/
+  @ApiModelProperty(value = "LifeStyle Assessment ID")
+  @JsonProperty("LifeStyleAssessmentID")
+  public Integer getLifeStyleAssessmentID() {
+    return lifeStyleAssessmentID;
+  }
+  public void setLifeStyleAssessmentID(Integer lifeStyleAssessmentID) {
+    this.lifeStyleAssessmentID = lifeStyleAssessmentID;
+  }
+
+  
+  /**
+   * Answer
+   **/
+  @ApiModelProperty(value = "Answer")
+  @JsonProperty("LifeStyleAssessmentanswerList")
+  public String getLifeStyleAssessmentanswerList() {
+    return lifeStyleAssessmentanswerList;
+  }
+  public void setLifeStyleAssessmentanswerList(String lifeStyleAssessmentanswerList) {
+    this.lifeStyleAssessmentanswerList = lifeStyleAssessmentanswerList;
+  }
+
+  
+  /**
+   * Submission date
+   **/
+  @ApiModelProperty(value = "Submission date")
+  @JsonProperty("LifeStyleAssessmentsubmissionDate")
+  public Date getLifeStyleAssessmentsubmissionDate() {
+    return lifeStyleAssessmentsubmissionDate;
+  }
+  public void setLifeStyleAssessmentsubmissionDate(Date lifeStyleAssessmentsubmissionDate) {
+    this.lifeStyleAssessmentsubmissionDate = lifeStyleAssessmentsubmissionDate;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class LifeStyleAssessments {\n");
+    
+    sb.append("    lifeStyleAssessmentID: ").append(StringUtil.toIndentedString(lifeStyleAssessmentID)).append("\n");
+    sb.append("    lifeStyleAssessmentanswerList: ").append(StringUtil.toIndentedString(lifeStyleAssessmentanswerList)).append("\n");
+    sb.append("    lifeStyleAssessmentsubmissionDate: ").append(StringUtil.toIndentedString(lifeStyleAssessmentsubmissionDate)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

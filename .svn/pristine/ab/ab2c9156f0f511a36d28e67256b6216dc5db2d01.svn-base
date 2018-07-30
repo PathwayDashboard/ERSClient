@@ -1,0 +1,101 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+import io.swagger.client.model.ExerClassSessionExecutedExerciseenjoymentLevelSubSubSubsection;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-07-18T17:20:02.553+02:00")
+public class ExerClassSessionExecutedExerciseSubSubsection   {
+  
+  private Double achievedAccuracy = null;
+  private Integer executedExerciseDescriptionID = null;
+  private Integer duration = null;
+  private Integer relatedGame = null;
+  private ExerClassSessionExecutedExerciseenjoymentLevelSubSubSubsection enjoymentLevel = null;
+
+  
+  /**
+   * Session Achieved Accuracy
+   **/
+  @ApiModelProperty(value = "Session Achieved Accuracy")
+  @JsonProperty("achievedAccuracy")
+  public Double getAchievedAccuracy() {
+    return achievedAccuracy;
+  }
+  public void setAchievedAccuracy(Double achievedAccuracy) {
+    this.achievedAccuracy = achievedAccuracy;
+  }
+
+  
+  /**
+   * Session Description ID
+   **/
+  @ApiModelProperty(value = "Session Description ID")
+  @JsonProperty("executedExerciseDescriptionID")
+  public Integer getExecutedExerciseDescriptionID() {
+    return executedExerciseDescriptionID;
+  }
+  public void setExecutedExerciseDescriptionID(Integer executedExerciseDescriptionID) {
+    this.executedExerciseDescriptionID = executedExerciseDescriptionID;
+  }
+
+  
+  /**
+   * Session Duration
+   **/
+  @ApiModelProperty(value = "Session Duration")
+  @JsonProperty("duration")
+  public Integer getDuration() {
+    return duration;
+  }
+  public void setDuration(Integer duration) {
+    this.duration = duration;
+  }
+
+  
+  /**
+   * Related Game
+   **/
+  @ApiModelProperty(value = "Related Game")
+  @JsonProperty("relatedGame")
+  public Integer getRelatedGame() {
+    return relatedGame;
+  }
+  public void setRelatedGame(Integer relatedGame) {
+    this.relatedGame = relatedGame;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("enjoymentLevel")
+  public ExerClassSessionExecutedExerciseenjoymentLevelSubSubSubsection getEnjoymentLevel() {
+    return enjoymentLevel;
+  }
+  public void setEnjoymentLevel(ExerClassSessionExecutedExerciseenjoymentLevelSubSubSubsection enjoymentLevel) {
+    this.enjoymentLevel = enjoymentLevel;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class ExerClassSessionExecutedExerciseSubSubsection {\n");
+    
+    sb.append("    achievedAccuracy: ").append(StringUtil.toIndentedString(achievedAccuracy)).append("\n");
+    sb.append("    executedExerciseDescriptionID: ").append(StringUtil.toIndentedString(executedExerciseDescriptionID)).append("\n");
+    sb.append("    duration: ").append(StringUtil.toIndentedString(duration)).append("\n");
+    sb.append("    relatedGame: ").append(StringUtil.toIndentedString(relatedGame)).append("\n");
+    sb.append("    enjoymentLevel: ").append(StringUtil.toIndentedString(enjoymentLevel)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

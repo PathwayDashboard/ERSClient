@@ -1,0 +1,207 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+import io.swagger.client.model.HealthAndFitnessAssessmentPreScreeningInfo;
+import java.util.Date;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-04-21T15:01:39.375+02:00")
+public class HealthAndFitnessAssessmentSessionss   {
+  
+  private Integer cardiacrehabilitationProgressID = null;
+  private Integer cardiacrehabilitationProgressminute1HR = null;
+  private Integer cardiacrehabilitationProgressminute2HR = null;
+  private Integer cardiacrehabilitationProgressminute3HR = null;
+  private Integer cardiacrehabilitationProgressminute4HR = null;
+  private Date cardiacrehabilitationProgressenergyExpenditureTimeStamp = null;
+  private Integer cardiacrehabilitationProgressenergyExpenditure = null;
+  private String cardiacrehabilitationProgresssymptoms = null;
+  private Integer cardiacrehabilitationProgressdifficultyLevel = null;
+  private Date cardiacrehabilitationProgressdate = null;
+  private String cardiacrehabilitationProgressfile = null;
+  private HealthAndFitnessAssessmentPreScreeningInfo healthAndFitnessAssessmentPreScreeningInfo = null;
+
+  
+  /**
+   * Programme Id
+   **/
+  @ApiModelProperty(value = "Programme Id")
+  @JsonProperty("cardiacrehabilitationProgressID")
+  public Integer getCardiacrehabilitationProgressID() {
+    return cardiacrehabilitationProgressID;
+  }
+  public void setCardiacrehabilitationProgressID(Integer cardiacrehabilitationProgressID) {
+    this.cardiacrehabilitationProgressID = cardiacrehabilitationProgressID;
+  }
+
+  
+  /**
+   * minute 1 HR
+   **/
+  @ApiModelProperty(value = "minute 1 HR")
+  @JsonProperty("cardiacrehabilitationProgressminute1HR")
+  public Integer getCardiacrehabilitationProgressminute1HR() {
+    return cardiacrehabilitationProgressminute1HR;
+  }
+  public void setCardiacrehabilitationProgressminute1HR(Integer cardiacrehabilitationProgressminute1HR) {
+    this.cardiacrehabilitationProgressminute1HR = cardiacrehabilitationProgressminute1HR;
+  }
+
+  
+  /**
+   * minute 2 HR
+   **/
+  @ApiModelProperty(value = "minute 2 HR")
+  @JsonProperty("cardiacrehabilitationProgressminute2HR")
+  public Integer getCardiacrehabilitationProgressminute2HR() {
+    return cardiacrehabilitationProgressminute2HR;
+  }
+  public void setCardiacrehabilitationProgressminute2HR(Integer cardiacrehabilitationProgressminute2HR) {
+    this.cardiacrehabilitationProgressminute2HR = cardiacrehabilitationProgressminute2HR;
+  }
+
+  
+  /**
+   * minute 3 HR
+   **/
+  @ApiModelProperty(value = "minute 3 HR")
+  @JsonProperty("cardiacrehabilitationProgressminute3HR")
+  public Integer getCardiacrehabilitationProgressminute3HR() {
+    return cardiacrehabilitationProgressminute3HR;
+  }
+  public void setCardiacrehabilitationProgressminute3HR(Integer cardiacrehabilitationProgressminute3HR) {
+    this.cardiacrehabilitationProgressminute3HR = cardiacrehabilitationProgressminute3HR;
+  }
+
+  
+  /**
+   * minute 4 HR
+   **/
+  @ApiModelProperty(value = "minute 4 HR")
+  @JsonProperty("cardiacrehabilitationProgressminute4HR")
+  public Integer getCardiacrehabilitationProgressminute4HR() {
+    return cardiacrehabilitationProgressminute4HR;
+  }
+  public void setCardiacrehabilitationProgressminute4HR(Integer cardiacrehabilitationProgressminute4HR) {
+    this.cardiacrehabilitationProgressminute4HR = cardiacrehabilitationProgressminute4HR;
+  }
+
+  
+  /**
+   * energy Expenditure Timestamp
+   **/
+  @ApiModelProperty(value = "energy Expenditure Timestamp")
+  @JsonProperty("cardiacrehabilitationProgressenergyExpenditureTimeStamp")
+  public Date getCardiacrehabilitationProgressenergyExpenditureTimeStamp() {
+    return cardiacrehabilitationProgressenergyExpenditureTimeStamp;
+  }
+  public void setCardiacrehabilitationProgressenergyExpenditureTimeStamp(Date cardiacrehabilitationProgressenergyExpenditureTimeStamp) {
+    this.cardiacrehabilitationProgressenergyExpenditureTimeStamp = cardiacrehabilitationProgressenergyExpenditureTimeStamp;
+  }
+
+  
+  /**
+   * energy Expenditure
+   **/
+  @ApiModelProperty(value = "energy Expenditure")
+  @JsonProperty("cardiacrehabilitationProgressenergyExpenditure")
+  public Integer getCardiacrehabilitationProgressenergyExpenditure() {
+    return cardiacrehabilitationProgressenergyExpenditure;
+  }
+  public void setCardiacrehabilitationProgressenergyExpenditure(Integer cardiacrehabilitationProgressenergyExpenditure) {
+    this.cardiacrehabilitationProgressenergyExpenditure = cardiacrehabilitationProgressenergyExpenditure;
+  }
+
+  
+  /**
+   * symptoms reported
+   **/
+  @ApiModelProperty(value = "symptoms reported")
+  @JsonProperty("cardiacrehabilitationProgresssymptoms")
+  public String getCardiacrehabilitationProgresssymptoms() {
+    return cardiacrehabilitationProgresssymptoms;
+  }
+  public void setCardiacrehabilitationProgresssymptoms(String cardiacrehabilitationProgresssymptoms) {
+    this.cardiacrehabilitationProgresssymptoms = cardiacrehabilitationProgresssymptoms;
+  }
+
+  
+  /**
+   * cardiac rehabilitation Progress Difficulty Level
+   **/
+  @ApiModelProperty(value = "cardiac rehabilitation Progress Difficulty Level")
+  @JsonProperty("cardiacrehabilitationProgressdifficultyLevel")
+  public Integer getCardiacrehabilitationProgressdifficultyLevel() {
+    return cardiacrehabilitationProgressdifficultyLevel;
+  }
+  public void setCardiacrehabilitationProgressdifficultyLevel(Integer cardiacrehabilitationProgressdifficultyLevel) {
+    this.cardiacrehabilitationProgressdifficultyLevel = cardiacrehabilitationProgressdifficultyLevel;
+  }
+
+  
+  /**
+   * cardiac rehabilitation Progress Date
+   **/
+  @ApiModelProperty(value = "cardiac rehabilitation Progress Date")
+  @JsonProperty("cardiacrehabilitationProgressdate")
+  public Date getCardiacrehabilitationProgressdate() {
+    return cardiacrehabilitationProgressdate;
+  }
+  public void setCardiacrehabilitationProgressdate(Date cardiacrehabilitationProgressdate) {
+    this.cardiacrehabilitationProgressdate = cardiacrehabilitationProgressdate;
+  }
+
+  
+  /**
+   * cardiac rehabilitation Progress file
+   **/
+  @ApiModelProperty(value = "cardiac rehabilitation Progress file")
+  @JsonProperty("cardiacrehabilitationProgressfile")
+  public String getCardiacrehabilitationProgressfile() {
+    return cardiacrehabilitationProgressfile;
+  }
+  public void setCardiacrehabilitationProgressfile(String cardiacrehabilitationProgressfile) {
+    this.cardiacrehabilitationProgressfile = cardiacrehabilitationProgressfile;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("healthAndFitnessAssessmentPreScreeningInfo")
+  public HealthAndFitnessAssessmentPreScreeningInfo getHealthAndFitnessAssessmentPreScreeningInfo() {
+    return healthAndFitnessAssessmentPreScreeningInfo;
+  }
+  public void setHealthAndFitnessAssessmentPreScreeningInfo(HealthAndFitnessAssessmentPreScreeningInfo healthAndFitnessAssessmentPreScreeningInfo) {
+    this.healthAndFitnessAssessmentPreScreeningInfo = healthAndFitnessAssessmentPreScreeningInfo;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class HealthAndFitnessAssessmentSessionss {\n");
+    
+    sb.append("    cardiacrehabilitationProgressID: ").append(StringUtil.toIndentedString(cardiacrehabilitationProgressID)).append("\n");
+    sb.append("    cardiacrehabilitationProgressminute1HR: ").append(StringUtil.toIndentedString(cardiacrehabilitationProgressminute1HR)).append("\n");
+    sb.append("    cardiacrehabilitationProgressminute2HR: ").append(StringUtil.toIndentedString(cardiacrehabilitationProgressminute2HR)).append("\n");
+    sb.append("    cardiacrehabilitationProgressminute3HR: ").append(StringUtil.toIndentedString(cardiacrehabilitationProgressminute3HR)).append("\n");
+    sb.append("    cardiacrehabilitationProgressminute4HR: ").append(StringUtil.toIndentedString(cardiacrehabilitationProgressminute4HR)).append("\n");
+    sb.append("    cardiacrehabilitationProgressenergyExpenditureTimeStamp: ").append(StringUtil.toIndentedString(cardiacrehabilitationProgressenergyExpenditureTimeStamp)).append("\n");
+    sb.append("    cardiacrehabilitationProgressenergyExpenditure: ").append(StringUtil.toIndentedString(cardiacrehabilitationProgressenergyExpenditure)).append("\n");
+    sb.append("    cardiacrehabilitationProgresssymptoms: ").append(StringUtil.toIndentedString(cardiacrehabilitationProgresssymptoms)).append("\n");
+    sb.append("    cardiacrehabilitationProgressdifficultyLevel: ").append(StringUtil.toIndentedString(cardiacrehabilitationProgressdifficultyLevel)).append("\n");
+    sb.append("    cardiacrehabilitationProgressdate: ").append(StringUtil.toIndentedString(cardiacrehabilitationProgressdate)).append("\n");
+    sb.append("    cardiacrehabilitationProgressfile: ").append(StringUtil.toIndentedString(cardiacrehabilitationProgressfile)).append("\n");
+    sb.append("    healthAndFitnessAssessmentPreScreeningInfo: ").append(StringUtil.toIndentedString(healthAndFitnessAssessmentPreScreeningInfo)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

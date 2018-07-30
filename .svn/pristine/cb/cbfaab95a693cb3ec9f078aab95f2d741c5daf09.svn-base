@@ -1,0 +1,15 @@
+package it.eng.pathway.fake.model;
+
+public enum DifficultyType {
+
+	;
+
+	private int easy;
+
+	private int moderate;
+
+	private int difficult;
+
+	private ExerClassExerciseDescription exerClassExerciseDescription;
+
+}

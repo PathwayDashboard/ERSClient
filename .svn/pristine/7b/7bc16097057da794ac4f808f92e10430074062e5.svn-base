@@ -1,0 +1,162 @@
+package io.swagger.client.api;
+
+import io.swagger.client.ApiException;
+import io.swagger.client.ApiClient;
+import io.swagger.client.Configuration;
+import io.swagger.client.Pair;
+import io.swagger.client.TypeRef;
+
+import io.swagger.client.model.*;
+
+import java.util.*;
+
+import io.swagger.client.model.ActiveLifeStyleProgress;
+import io.swagger.client.model.GenericPostputResult;
+import io.swagger.client.model.CrProgressActiveLifestylePASessionSS;
+
+import java.io.File;
+import java.util.Map;
+import java.util.HashMap;
+
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-04-21T15:01:39.375+02:00")
+public class ActiveLifeStyleProgressApi {
+  private ApiClient apiClient;
+
+  public ActiveLifeStyleProgressApi() {
+    this(Configuration.getDefaultApiClient());
+  }
+
+  public ActiveLifeStyleProgressApi(ApiClient apiClient) {
+    this.apiClient = apiClient;
+  }
+
+  public ApiClient getApiClient() {
+    return apiClient;
+  }
+
+  public void setApiClient(ApiClient apiClient) {
+    this.apiClient = apiClient;
+  }
+
+  
+  /**
+   * Gets a ActiveLifeStyleProgress from a patient
+   * 
+   * @param patientNumber The health ID of the patient
+   * @param xSessionId Identifies user which undertakes this action
+   * @return ActiveLifeStyleProgress
+   */
+  public ActiveLifeStyleProgress activeLifeStyleProgressGetActiveLifeStyleProgress (String patientNumber, String xSessionId) throws ApiException {
+    Object postBody = null;
+    byte[] postBinaryBody = null;
+    
+     // verify the required parameter 'patientNumber' is set
+     if (patientNumber == null) {
+        throw new ApiException(400, "Missing the required parameter 'patientNumber' when calling activeLifeStyleProgressGetActiveLifeStyleProgress");
+     }
+     
+    // create path and map variables
+    String path = "/pathway/hdm/ActiveLifeStyleProgress/{patientNumber}".replaceAll("\\{format\\}","json")
+      .replaceAll("\\{" + "patientNumber" + "\\}", apiClient.escapeString(patientNumber.toString()));
+
+    // query params
+    List<Pair> queryParams = new ArrayList<Pair>();
+    Map<String, String> headerParams = new HashMap<String, String>();
+    Map<String, Object> formParams = new HashMap<String, Object>();
+
+    
+
+    if (xSessionId != null)
+    headerParams.put("X-session_id", apiClient.parameterToString(xSessionId));
+    
+
+    
+
+    final String[] accepts = {
+      "application/json", "text/json", "application/xml", "text/xml"
+    };
+    final String accept = apiClient.selectHeaderAccept(accepts);
+
+    final String[] contentTypes = {
+      
+    };
+    final String contentType = apiClient.selectHeaderContentType(contentTypes);
+
+    String[] authNames = new String[] {  };
+
+    
+
+    
+    
+    TypeRef returnType = new TypeRef<ActiveLifeStyleProgress>() {};
+    return apiClient.invokeAPI(path, "GET", queryParams, postBody, postBinaryBody, headerParams, formParams, accept, contentType, authNames, returnType);
+    
+    
+
+
+  }
+  
+  /**
+   * Sets a ActiveLifeStyleProgress of a patient
+   * 
+   * @param patientNumber The health ID of the patient
+   * @param crProgressActiveLifestylePASessionSS Data belonging to an CrProgressActiveLifestylePASessionSS
+   * @param xSessionId Identifies user which undertakes this action
+   * @return GenericPostputResult
+   */
+  public GenericPostputResult activeLifeStyleProgressPostActiveLifeStyleProgress (String patientNumber, CrProgressActiveLifestylePASessionSS crProgressActiveLifestylePASessionSS, String xSessionId) throws ApiException {
+    Object postBody = crProgressActiveLifestylePASessionSS;
+    byte[] postBinaryBody = null;
+    
+     // verify the required parameter 'patientNumber' is set
+     if (patientNumber == null) {
+        throw new ApiException(400, "Missing the required parameter 'patientNumber' when calling activeLifeStyleProgressPostActiveLifeStyleProgress");
+     }
+     
+     // verify the required parameter 'crProgressActiveLifestylePASessionSS' is set
+     if (crProgressActiveLifestylePASessionSS == null) {
+        throw new ApiException(400, "Missing the required parameter 'crProgressActiveLifestylePASessionSS' when calling activeLifeStyleProgressPostActiveLifeStyleProgress");
+     }
+     
+    // create path and map variables
+    String path = "/pathway/hdm/ActiveLifeStyleProgress/{patientNumber}".replaceAll("\\{format\\}","json")
+      .replaceAll("\\{" + "patientNumber" + "\\}", apiClient.escapeString(patientNumber.toString()));
+
+    // query params
+    List<Pair> queryParams = new ArrayList<Pair>();
+    Map<String, String> headerParams = new HashMap<String, String>();
+    Map<String, Object> formParams = new HashMap<String, Object>();
+
+    
+
+    if (xSessionId != null)
+    headerParams.put("X-session_id", apiClient.parameterToString(xSessionId));
+    
+
+    
+
+    final String[] accepts = {
+      "application/json", "text/json", "application/xml", "text/xml"
+    };
+    final String accept = apiClient.selectHeaderAccept(accepts);
+
+    final String[] contentTypes = {
+      "application/json", "text/json", "application/xml", "text/xml", "application/x-www-form-urlencoded"
+    };
+    final String contentType = apiClient.selectHeaderContentType(contentTypes);
+
+    String[] authNames = new String[] {  };
+
+    
+
+    
+    
+    TypeRef returnType = new TypeRef<GenericPostputResult>() {};
+    return apiClient.invokeAPI(path, "POST", queryParams, postBody, postBinaryBody, headerParams, formParams, accept, contentType, authNames, returnType);
+    
+    
+
+
+  }
+  
+}

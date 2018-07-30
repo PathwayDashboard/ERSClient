@@ -1,0 +1,117 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+import java.util.Date;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-05-17T15:35:09.175+02:00")
+public class HealthAndFitnessAssessmentPreScreeningInfo   {
+  
+  private Integer restingHRvalue = null;
+  private Date restingHRdate = null;
+  private Date restingBloodPressureObservationsystolicTimeStamp = null;
+  private Integer restingBloodPressureObservationsystolic = null;
+  private Integer restingBloodPressureObservationdiastolic = null;
+  private String restingECHFile = null;
+
+  
+  /**
+   * resting HR value
+   **/
+  @ApiModelProperty(value = "resting HR value")
+  @JsonProperty("restingHRvalue")
+  public Integer getRestingHRvalue() {
+    return restingHRvalue;
+  }
+  public void setRestingHRvalue(Integer restingHRvalue) {
+    this.restingHRvalue = restingHRvalue;
+  }
+
+  
+  /**
+   * resting HR date
+   **/
+  @ApiModelProperty(value = "resting HR date")
+  @JsonProperty("restingHRdate")
+  public Date getRestingHRdate() {
+    return restingHRdate;
+  }
+  public void setRestingHRdate(Date restingHRdate) {
+    this.restingHRdate = restingHRdate;
+  }
+
+  
+  /**
+   * resting Blood Pressure Systolic timestamp
+   **/
+  @ApiModelProperty(value = "resting Blood Pressure Systolic timestamp")
+  @JsonProperty("restingBloodPressureObservationsystolicTimeStamp")
+  public Date getRestingBloodPressureObservationsystolicTimeStamp() {
+    return restingBloodPressureObservationsystolicTimeStamp;
+  }
+  public void setRestingBloodPressureObservationsystolicTimeStamp(Date restingBloodPressureObservationsystolicTimeStamp) {
+    this.restingBloodPressureObservationsystolicTimeStamp = restingBloodPressureObservationsystolicTimeStamp;
+  }
+
+  
+  /**
+   * resting Blood Pressure Systolic
+   **/
+  @ApiModelProperty(value = "resting Blood Pressure Systolic")
+  @JsonProperty("restingBloodPressureObservationsystolic")
+  public Integer getRestingBloodPressureObservationsystolic() {
+    return restingBloodPressureObservationsystolic;
+  }
+  public void setRestingBloodPressureObservationsystolic(Integer restingBloodPressureObservationsystolic) {
+    this.restingBloodPressureObservationsystolic = restingBloodPressureObservationsystolic;
+  }
+
+  
+  /**
+   * resting Blood Pressure diastolic
+   **/
+  @ApiModelProperty(value = "resting Blood Pressure diastolic")
+  @JsonProperty("restingBloodPressureObservationdiastolic")
+  public Integer getRestingBloodPressureObservationdiastolic() {
+    return restingBloodPressureObservationdiastolic;
+  }
+  public void setRestingBloodPressureObservationdiastolic(Integer restingBloodPressureObservationdiastolic) {
+    this.restingBloodPressureObservationdiastolic = restingBloodPressureObservationdiastolic;
+  }
+
+  
+  /**
+   * resting ECH File
+   **/
+  @ApiModelProperty(value = "resting ECH File")
+  @JsonProperty("restingECHFile")
+  public String getRestingECHFile() {
+    return restingECHFile;
+  }
+  public void setRestingECHFile(String restingECHFile) {
+    this.restingECHFile = restingECHFile;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class HealthAndFitnessAssessmentPreScreeningInfo {\n");
+    
+    sb.append("    restingHRvalue: ").append(StringUtil.toIndentedString(restingHRvalue)).append("\n");
+    sb.append("    restingHRdate: ").append(StringUtil.toIndentedString(restingHRdate)).append("\n");
+    sb.append("    restingBloodPressureObservationsystolicTimeStamp: ").append(StringUtil.toIndentedString(restingBloodPressureObservationsystolicTimeStamp)).append("\n");
+    sb.append("    restingBloodPressureObservationsystolic: ").append(StringUtil.toIndentedString(restingBloodPressureObservationsystolic)).append("\n");
+    sb.append("    restingBloodPressureObservationdiastolic: ").append(StringUtil.toIndentedString(restingBloodPressureObservationdiastolic)).append("\n");
+    sb.append("    restingECHFile: ").append(StringUtil.toIndentedString(restingECHFile)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

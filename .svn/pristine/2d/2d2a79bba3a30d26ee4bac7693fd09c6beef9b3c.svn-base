@@ -1,0 +1,56 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-05-30T11:30:03.045+02:00")
+public class HealthFitnessAssessmentPreScreeningQuestionnaire   {
+  
+  private String question1 = null;
+  private String questionn = null;
+
+  
+  /**
+   * question 1 answer
+   **/
+  @ApiModelProperty(value = "question 1 answer")
+  @JsonProperty("question1")
+  public String getQuestion1() {
+    return question1;
+  }
+  public void setQuestion1(String question1) {
+    this.question1 = question1;
+  }
+
+  
+  /**
+   * question n answer
+   **/
+  @ApiModelProperty(value = "question n answer")
+  @JsonProperty("questionn")
+  public String getQuestionn() {
+    return questionn;
+  }
+  public void setQuestionn(String questionn) {
+    this.questionn = questionn;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class HealthFitnessAssessmentPreScreeningQuestionnaire {\n");
+    
+    sb.append("    question1: ").append(StringUtil.toIndentedString(question1)).append("\n");
+    sb.append("    questionn: ").append(StringUtil.toIndentedString(questionn)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

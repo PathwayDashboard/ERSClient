@@ -1,0 +1,372 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+import io.swagger.client.model.ProgressExergamerSessionPreScreeningInfo;
+import java.util.Date;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-05-17T15:35:09.175+02:00")
+public class ExerGameSessionProgress   {
+  
+  private Integer crProgressExerGameSessionID = null;
+  private Date crProgressExerGameSessionDate = null;
+  private String crProgressExerGameSessionStartTime = null;
+  private String crProgressExerGameSessionEndTime = null;
+  private Integer crProgressExerGameSessionDuration = null;
+  private String crProgressExerGameSessionHrfile = null;
+  private Integer crProgressExerGameSessionExependitureObservationValue = null;
+  private Integer crProgressExerGameSessionScore = null;
+  private Integer crProgressExerGameSessionStatus = null;
+  private Integer crProgressExerGameSessionWarningUpInfoDuration = null;
+  private Integer crProgressExerGameSessionWarningUpInfoMinHRBpm = null;
+  private Integer crProgressExerGameSessionWarningUpInfoMaxHRBpm = null;
+  private Double crProgressExerGameSessionWarningUpInfoAverageHRBpm = null;
+  private Integer crProgressExerGameSessionMainInfoDuration = null;
+  private Integer crProgressExerGameSessionMainInfoMinHRBpm = null;
+  private Integer crProgressExerGameSessionMainInfoMaxHRBpm = null;
+  private Double crProgressExerGameSessionMainInfoAverageHRBpm = null;
+  private Integer crProgressExerGameSessionCoolDownInfoDuration = null;
+  private Integer crProgressExerGameSessionCoolDownInfoMinHRBpm = null;
+  private Integer crProgressExerGameSessionCoolDownInfoMaxHRBpm = null;
+  private Double crProgressExerGameSessionCoolDownInfoAverageHRBpm = null;
+  private Integer crProgressExerGameSessionSessionSatisfactionLevel = null;
+  private ProgressExergamerSessionPreScreeningInfo progressExergamerSessionPreScreeningInfo = null;
+
+  
+  /**
+   * Session ID
+   **/
+  @ApiModelProperty(value = "Session ID")
+  @JsonProperty("CrProgressExerGameSessionID")
+  public Integer getCrProgressExerGameSessionID() {
+    return crProgressExerGameSessionID;
+  }
+  public void setCrProgressExerGameSessionID(Integer crProgressExerGameSessionID) {
+    this.crProgressExerGameSessionID = crProgressExerGameSessionID;
+  }
+
+  
+  /**
+   * Session Date
+   **/
+  @ApiModelProperty(value = "Session Date")
+  @JsonProperty("CrProgressExerGameSessionDate")
+  public Date getCrProgressExerGameSessionDate() {
+    return crProgressExerGameSessionDate;
+  }
+  public void setCrProgressExerGameSessionDate(Date crProgressExerGameSessionDate) {
+    this.crProgressExerGameSessionDate = crProgressExerGameSessionDate;
+  }
+
+  
+  /**
+   * Session Start Time
+   **/
+  @ApiModelProperty(value = "Session Start Time")
+  @JsonProperty("CrProgressExerGameSessionStartTime")
+  public String getCrProgressExerGameSessionStartTime() {
+    return crProgressExerGameSessionStartTime;
+  }
+  public void setCrProgressExerGameSessionStartTime(String crProgressExerGameSessionStartTime) {
+    this.crProgressExerGameSessionStartTime = crProgressExerGameSessionStartTime;
+  }
+
+  
+  /**
+   * Session End Time
+   **/
+  @ApiModelProperty(value = "Session End Time")
+  @JsonProperty("CrProgressExerGameSessionEndTime")
+  public String getCrProgressExerGameSessionEndTime() {
+    return crProgressExerGameSessionEndTime;
+  }
+  public void setCrProgressExerGameSessionEndTime(String crProgressExerGameSessionEndTime) {
+    this.crProgressExerGameSessionEndTime = crProgressExerGameSessionEndTime;
+  }
+
+  
+  /**
+   * Session Duration
+   **/
+  @ApiModelProperty(value = "Session Duration")
+  @JsonProperty("CrProgressExerGameSessionDuration")
+  public Integer getCrProgressExerGameSessionDuration() {
+    return crProgressExerGameSessionDuration;
+  }
+  public void setCrProgressExerGameSessionDuration(Integer crProgressExerGameSessionDuration) {
+    this.crProgressExerGameSessionDuration = crProgressExerGameSessionDuration;
+  }
+
+  
+  /**
+   * Session HR File
+   **/
+  @ApiModelProperty(value = "Session HR File")
+  @JsonProperty("CrProgressExerGameSessionHrfile")
+  public String getCrProgressExerGameSessionHrfile() {
+    return crProgressExerGameSessionHrfile;
+  }
+  public void setCrProgressExerGameSessionHrfile(String crProgressExerGameSessionHrfile) {
+    this.crProgressExerGameSessionHrfile = crProgressExerGameSessionHrfile;
+  }
+
+  
+  /**
+   * Session Expenditure Value
+   **/
+  @ApiModelProperty(value = "Session Expenditure Value")
+  @JsonProperty("CrProgressExerGameSessionExependitureObservationValue")
+  public Integer getCrProgressExerGameSessionExependitureObservationValue() {
+    return crProgressExerGameSessionExependitureObservationValue;
+  }
+  public void setCrProgressExerGameSessionExependitureObservationValue(Integer crProgressExerGameSessionExependitureObservationValue) {
+    this.crProgressExerGameSessionExependitureObservationValue = crProgressExerGameSessionExependitureObservationValue;
+  }
+
+  
+  /**
+   * Session Score
+   **/
+  @ApiModelProperty(value = "Session Score")
+  @JsonProperty("CrProgressExerGameSessionScore")
+  public Integer getCrProgressExerGameSessionScore() {
+    return crProgressExerGameSessionScore;
+  }
+  public void setCrProgressExerGameSessionScore(Integer crProgressExerGameSessionScore) {
+    this.crProgressExerGameSessionScore = crProgressExerGameSessionScore;
+  }
+
+  
+  /**
+   * Session Status
+   **/
+  @ApiModelProperty(value = "Session Status")
+  @JsonProperty("CrProgressExerGameSessionStatus")
+  public Integer getCrProgressExerGameSessionStatus() {
+    return crProgressExerGameSessionStatus;
+  }
+  public void setCrProgressExerGameSessionStatus(Integer crProgressExerGameSessionStatus) {
+    this.crProgressExerGameSessionStatus = crProgressExerGameSessionStatus;
+  }
+
+  
+  /**
+   * Session WarningUp Duration
+   **/
+  @ApiModelProperty(value = "Session WarningUp Duration")
+  @JsonProperty("CrProgressExerGameSessionWarningUpInfoDuration")
+  public Integer getCrProgressExerGameSessionWarningUpInfoDuration() {
+    return crProgressExerGameSessionWarningUpInfoDuration;
+  }
+  public void setCrProgressExerGameSessionWarningUpInfoDuration(Integer crProgressExerGameSessionWarningUpInfoDuration) {
+    this.crProgressExerGameSessionWarningUpInfoDuration = crProgressExerGameSessionWarningUpInfoDuration;
+  }
+
+  
+  /**
+   * Session WarningUp Min HRBpm
+   **/
+  @ApiModelProperty(value = "Session WarningUp Min HRBpm")
+  @JsonProperty("CrProgressExerGameSessionWarningUpInfoMinHRBpm")
+  public Integer getCrProgressExerGameSessionWarningUpInfoMinHRBpm() {
+    return crProgressExerGameSessionWarningUpInfoMinHRBpm;
+  }
+  public void setCrProgressExerGameSessionWarningUpInfoMinHRBpm(Integer crProgressExerGameSessionWarningUpInfoMinHRBpm) {
+    this.crProgressExerGameSessionWarningUpInfoMinHRBpm = crProgressExerGameSessionWarningUpInfoMinHRBpm;
+  }
+
+  
+  /**
+   * Session WarningUp Max HRBpm
+   **/
+  @ApiModelProperty(value = "Session WarningUp Max HRBpm")
+  @JsonProperty("CrProgressExerGameSessionWarningUpInfoMaxHRBpm")
+  public Integer getCrProgressExerGameSessionWarningUpInfoMaxHRBpm() {
+    return crProgressExerGameSessionWarningUpInfoMaxHRBpm;
+  }
+  public void setCrProgressExerGameSessionWarningUpInfoMaxHRBpm(Integer crProgressExerGameSessionWarningUpInfoMaxHRBpm) {
+    this.crProgressExerGameSessionWarningUpInfoMaxHRBpm = crProgressExerGameSessionWarningUpInfoMaxHRBpm;
+  }
+
+  
+  /**
+   * Session WarningUp Average HRBpm
+   **/
+  @ApiModelProperty(value = "Session WarningUp Average HRBpm")
+  @JsonProperty("CrProgressExerGameSessionWarningUpInfoAverageHRBpm")
+  public Double getCrProgressExerGameSessionWarningUpInfoAverageHRBpm() {
+    return crProgressExerGameSessionWarningUpInfoAverageHRBpm;
+  }
+  public void setCrProgressExerGameSessionWarningUpInfoAverageHRBpm(Double crProgressExerGameSessionWarningUpInfoAverageHRBpm) {
+    this.crProgressExerGameSessionWarningUpInfoAverageHRBpm = crProgressExerGameSessionWarningUpInfoAverageHRBpm;
+  }
+
+  
+  /**
+   * Session Main Duration
+   **/
+  @ApiModelProperty(value = "Session Main Duration")
+  @JsonProperty("CrProgressExerGameSessionMainInfoDuration")
+  public Integer getCrProgressExerGameSessionMainInfoDuration() {
+    return crProgressExerGameSessionMainInfoDuration;
+  }
+  public void setCrProgressExerGameSessionMainInfoDuration(Integer crProgressExerGameSessionMainInfoDuration) {
+    this.crProgressExerGameSessionMainInfoDuration = crProgressExerGameSessionMainInfoDuration;
+  }
+
+  
+  /**
+   * Session Main Min HRBpm
+   **/
+  @ApiModelProperty(value = "Session Main Min HRBpm")
+  @JsonProperty("CrProgressExerGameSessionMainInfoMinHRBpm")
+  public Integer getCrProgressExerGameSessionMainInfoMinHRBpm() {
+    return crProgressExerGameSessionMainInfoMinHRBpm;
+  }
+  public void setCrProgressExerGameSessionMainInfoMinHRBpm(Integer crProgressExerGameSessionMainInfoMinHRBpm) {
+    this.crProgressExerGameSessionMainInfoMinHRBpm = crProgressExerGameSessionMainInfoMinHRBpm;
+  }
+
+  
+  /**
+   * Session Main Max HRBpm
+   **/
+  @ApiModelProperty(value = "Session Main Max HRBpm")
+  @JsonProperty("CrProgressExerGameSessionMainInfoMaxHRBpm")
+  public Integer getCrProgressExerGameSessionMainInfoMaxHRBpm() {
+    return crProgressExerGameSessionMainInfoMaxHRBpm;
+  }
+  public void setCrProgressExerGameSessionMainInfoMaxHRBpm(Integer crProgressExerGameSessionMainInfoMaxHRBpm) {
+    this.crProgressExerGameSessionMainInfoMaxHRBpm = crProgressExerGameSessionMainInfoMaxHRBpm;
+  }
+
+  
+  /**
+   * Session Main Average HRBpm
+   **/
+  @ApiModelProperty(value = "Session Main Average HRBpm")
+  @JsonProperty("CrProgressExerGameSessionMainInfoAverageHRBpm")
+  public Double getCrProgressExerGameSessionMainInfoAverageHRBpm() {
+    return crProgressExerGameSessionMainInfoAverageHRBpm;
+  }
+  public void setCrProgressExerGameSessionMainInfoAverageHRBpm(Double crProgressExerGameSessionMainInfoAverageHRBpm) {
+    this.crProgressExerGameSessionMainInfoAverageHRBpm = crProgressExerGameSessionMainInfoAverageHRBpm;
+  }
+
+  
+  /**
+   * Session CoolDown Duration
+   **/
+  @ApiModelProperty(value = "Session CoolDown Duration")
+  @JsonProperty("CrProgressExerGameSessionCoolDownInfoDuration")
+  public Integer getCrProgressExerGameSessionCoolDownInfoDuration() {
+    return crProgressExerGameSessionCoolDownInfoDuration;
+  }
+  public void setCrProgressExerGameSessionCoolDownInfoDuration(Integer crProgressExerGameSessionCoolDownInfoDuration) {
+    this.crProgressExerGameSessionCoolDownInfoDuration = crProgressExerGameSessionCoolDownInfoDuration;
+  }
+
+  
+  /**
+   * Session CoolDown Min HRBpm
+   **/
+  @ApiModelProperty(value = "Session CoolDown Min HRBpm")
+  @JsonProperty("CrProgressExerGameSessionCoolDownInfoMinHRBpm")
+  public Integer getCrProgressExerGameSessionCoolDownInfoMinHRBpm() {
+    return crProgressExerGameSessionCoolDownInfoMinHRBpm;
+  }
+  public void setCrProgressExerGameSessionCoolDownInfoMinHRBpm(Integer crProgressExerGameSessionCoolDownInfoMinHRBpm) {
+    this.crProgressExerGameSessionCoolDownInfoMinHRBpm = crProgressExerGameSessionCoolDownInfoMinHRBpm;
+  }
+
+  
+  /**
+   * Session Cool Down Max HRBpm
+   **/
+  @ApiModelProperty(value = "Session Cool Down Max HRBpm")
+  @JsonProperty("CrProgressExerGameSessionCoolDownInfoMaxHRBpm")
+  public Integer getCrProgressExerGameSessionCoolDownInfoMaxHRBpm() {
+    return crProgressExerGameSessionCoolDownInfoMaxHRBpm;
+  }
+  public void setCrProgressExerGameSessionCoolDownInfoMaxHRBpm(Integer crProgressExerGameSessionCoolDownInfoMaxHRBpm) {
+    this.crProgressExerGameSessionCoolDownInfoMaxHRBpm = crProgressExerGameSessionCoolDownInfoMaxHRBpm;
+  }
+
+  
+  /**
+   * Session Cool Down Average HRBpm
+   **/
+  @ApiModelProperty(value = "Session Cool Down Average HRBpm")
+  @JsonProperty("CrProgressExerGameSessionCoolDownInfoAverageHRBpm")
+  public Double getCrProgressExerGameSessionCoolDownInfoAverageHRBpm() {
+    return crProgressExerGameSessionCoolDownInfoAverageHRBpm;
+  }
+  public void setCrProgressExerGameSessionCoolDownInfoAverageHRBpm(Double crProgressExerGameSessionCoolDownInfoAverageHRBpm) {
+    this.crProgressExerGameSessionCoolDownInfoAverageHRBpm = crProgressExerGameSessionCoolDownInfoAverageHRBpm;
+  }
+
+  
+  /**
+   * Session Session Satisfaction Level
+   **/
+  @ApiModelProperty(value = "Session Session Satisfaction Level")
+  @JsonProperty("CrProgressExerGameSessionSessionSatisfactionLevel")
+  public Integer getCrProgressExerGameSessionSessionSatisfactionLevel() {
+    return crProgressExerGameSessionSessionSatisfactionLevel;
+  }
+  public void setCrProgressExerGameSessionSessionSatisfactionLevel(Integer crProgressExerGameSessionSessionSatisfactionLevel) {
+    this.crProgressExerGameSessionSessionSatisfactionLevel = crProgressExerGameSessionSessionSatisfactionLevel;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("progressExergamerSessionPreScreeningInfo")
+  public ProgressExergamerSessionPreScreeningInfo getProgressExergamerSessionPreScreeningInfo() {
+    return progressExergamerSessionPreScreeningInfo;
+  }
+  public void setProgressExergamerSessionPreScreeningInfo(ProgressExergamerSessionPreScreeningInfo progressExergamerSessionPreScreeningInfo) {
+    this.progressExergamerSessionPreScreeningInfo = progressExergamerSessionPreScreeningInfo;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class ExerGameSessionProgress {\n");
+    
+    sb.append("    crProgressExerGameSessionID: ").append(StringUtil.toIndentedString(crProgressExerGameSessionID)).append("\n");
+    sb.append("    crProgressExerGameSessionDate: ").append(StringUtil.toIndentedString(crProgressExerGameSessionDate)).append("\n");
+    sb.append("    crProgressExerGameSessionStartTime: ").append(StringUtil.toIndentedString(crProgressExerGameSessionStartTime)).append("\n");
+    sb.append("    crProgressExerGameSessionEndTime: ").append(StringUtil.toIndentedString(crProgressExerGameSessionEndTime)).append("\n");
+    sb.append("    crProgressExerGameSessionDuration: ").append(StringUtil.toIndentedString(crProgressExerGameSessionDuration)).append("\n");
+    sb.append("    crProgressExerGameSessionHrfile: ").append(StringUtil.toIndentedString(crProgressExerGameSessionHrfile)).append("\n");
+    sb.append("    crProgressExerGameSessionExependitureObservationValue: ").append(StringUtil.toIndentedString(crProgressExerGameSessionExependitureObservationValue)).append("\n");
+    sb.append("    crProgressExerGameSessionScore: ").append(StringUtil.toIndentedString(crProgressExerGameSessionScore)).append("\n");
+    sb.append("    crProgressExerGameSessionStatus: ").append(StringUtil.toIndentedString(crProgressExerGameSessionStatus)).append("\n");
+    sb.append("    crProgressExerGameSessionWarningUpInfoDuration: ").append(StringUtil.toIndentedString(crProgressExerGameSessionWarningUpInfoDuration)).append("\n");
+    sb.append("    crProgressExerGameSessionWarningUpInfoMinHRBpm: ").append(StringUtil.toIndentedString(crProgressExerGameSessionWarningUpInfoMinHRBpm)).append("\n");
+    sb.append("    crProgressExerGameSessionWarningUpInfoMaxHRBpm: ").append(StringUtil.toIndentedString(crProgressExerGameSessionWarningUpInfoMaxHRBpm)).append("\n");
+    sb.append("    crProgressExerGameSessionWarningUpInfoAverageHRBpm: ").append(StringUtil.toIndentedString(crProgressExerGameSessionWarningUpInfoAverageHRBpm)).append("\n");
+    sb.append("    crProgressExerGameSessionMainInfoDuration: ").append(StringUtil.toIndentedString(crProgressExerGameSessionMainInfoDuration)).append("\n");
+    sb.append("    crProgressExerGameSessionMainInfoMinHRBpm: ").append(StringUtil.toIndentedString(crProgressExerGameSessionMainInfoMinHRBpm)).append("\n");
+    sb.append("    crProgressExerGameSessionMainInfoMaxHRBpm: ").append(StringUtil.toIndentedString(crProgressExerGameSessionMainInfoMaxHRBpm)).append("\n");
+    sb.append("    crProgressExerGameSessionMainInfoAverageHRBpm: ").append(StringUtil.toIndentedString(crProgressExerGameSessionMainInfoAverageHRBpm)).append("\n");
+    sb.append("    crProgressExerGameSessionCoolDownInfoDuration: ").append(StringUtil.toIndentedString(crProgressExerGameSessionCoolDownInfoDuration)).append("\n");
+    sb.append("    crProgressExerGameSessionCoolDownInfoMinHRBpm: ").append(StringUtil.toIndentedString(crProgressExerGameSessionCoolDownInfoMinHRBpm)).append("\n");
+    sb.append("    crProgressExerGameSessionCoolDownInfoMaxHRBpm: ").append(StringUtil.toIndentedString(crProgressExerGameSessionCoolDownInfoMaxHRBpm)).append("\n");
+    sb.append("    crProgressExerGameSessionCoolDownInfoAverageHRBpm: ").append(StringUtil.toIndentedString(crProgressExerGameSessionCoolDownInfoAverageHRBpm)).append("\n");
+    sb.append("    crProgressExerGameSessionSessionSatisfactionLevel: ").append(StringUtil.toIndentedString(crProgressExerGameSessionSessionSatisfactionLevel)).append("\n");
+    sb.append("    progressExergamerSessionPreScreeningInfo: ").append(StringUtil.toIndentedString(progressExergamerSessionPreScreeningInfo)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

@@ -1,0 +1,71 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+import io.swagger.client.model.CardiacRehabilitationProgressExerClassSessionwarmingUpInfohrRangeSubSubSubsection;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-09-14T09:51:50.944+02:00")
+public class CardiacRehabilitationProgressExerClassSessionwarmingUpInfoSubSubsection   {
+  
+  private Integer duration = null;
+  private Double averageHRBpm = null;
+  private CardiacRehabilitationProgressExerClassSessionwarmingUpInfohrRangeSubSubSubsection hrRange = null;
+
+  
+  /**
+   * Duration
+   **/
+  @ApiModelProperty(value = "Duration")
+  @JsonProperty("duration")
+  public Integer getDuration() {
+    return duration;
+  }
+  public void setDuration(Integer duration) {
+    this.duration = duration;
+  }
+
+  
+  /**
+   * averageHRBpm
+   **/
+  @ApiModelProperty(value = "averageHRBpm")
+  @JsonProperty("averageHRBpm")
+  public Double getAverageHRBpm() {
+    return averageHRBpm;
+  }
+  public void setAverageHRBpm(Double averageHRBpm) {
+    this.averageHRBpm = averageHRBpm;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("hrRange")
+  public CardiacRehabilitationProgressExerClassSessionwarmingUpInfohrRangeSubSubSubsection getHrRange() {
+    return hrRange;
+  }
+  public void setHrRange(CardiacRehabilitationProgressExerClassSessionwarmingUpInfohrRangeSubSubSubsection hrRange) {
+    this.hrRange = hrRange;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class CardiacRehabilitationProgressExerClassSessionwarmingUpInfoSubSubsection {\n");
+    
+    sb.append("    duration: ").append(StringUtil.toIndentedString(duration)).append("\n");
+    sb.append("    averageHRBpm: ").append(StringUtil.toIndentedString(averageHRBpm)).append("\n");
+    sb.append("    hrRange: ").append(StringUtil.toIndentedString(hrRange)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

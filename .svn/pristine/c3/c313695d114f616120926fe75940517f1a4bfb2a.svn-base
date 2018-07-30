@@ -1,0 +1,42 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+import io.swagger.client.model.ExerClassSessionSS;
+import java.util.*;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-04-21T15:01:39.375+02:00")
+public class ExerClassSessionProgress   {
+  
+  private List<ExerClassSessionSS> exerClassSessionSSs = new ArrayList<ExerClassSessionSS>();
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("exerClassSessionSSs")
+  public List<ExerClassSessionSS> getExerClassSessionSSs() {
+    return exerClassSessionSSs;
+  }
+  public void setExerClassSessionSSs(List<ExerClassSessionSS> exerClassSessionSSs) {
+    this.exerClassSessionSSs = exerClassSessionSSs;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class ExerClassSessionProgress {\n");
+    
+    sb.append("    exerClassSessionSSs: ").append(StringUtil.toIndentedString(exerClassSessionSSs)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

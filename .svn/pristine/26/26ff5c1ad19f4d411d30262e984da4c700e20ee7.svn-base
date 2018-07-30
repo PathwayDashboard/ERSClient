@@ -1,0 +1,87 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+import io.swagger.client.model.ExerClassSessionPreScreeningInforestingBloodPressureSubSubSubsection;
+import java.util.*;
+import io.swagger.client.model.ExerClassSessionPreScreeningInfoFinalEvaluationSubSubSubsection;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-07-18T17:20:02.553+02:00")
+public class ExerClassSessionPreScreeningInfoSubSubsection   {
+  
+  private Integer restingHR = null;
+  private List<String> preScreeningAssessment = new ArrayList<String>();
+  private ExerClassSessionPreScreeningInfoFinalEvaluationSubSubSubsection finalEvaluation = null;
+  private ExerClassSessionPreScreeningInforestingBloodPressureSubSubSubsection restingBloodPressure = null;
+
+  
+  /**
+   * Resting heart rate
+   **/
+  @ApiModelProperty(value = "Resting heart rate")
+  @JsonProperty("restingHR")
+  public Integer getRestingHR() {
+    return restingHR;
+  }
+  public void setRestingHR(Integer restingHR) {
+    this.restingHR = restingHR;
+  }
+
+  
+  /**
+   * Assessment
+   **/
+  @ApiModelProperty(value = "Assessment")
+  @JsonProperty("preScreeningAssessment")
+  public List<String> getPreScreeningAssessment() {
+    return preScreeningAssessment;
+  }
+  public void setPreScreeningAssessment(List<String> preScreeningAssessment) {
+    this.preScreeningAssessment = preScreeningAssessment;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("finalEvaluation")
+  public ExerClassSessionPreScreeningInfoFinalEvaluationSubSubSubsection getFinalEvaluation() {
+    return finalEvaluation;
+  }
+  public void setFinalEvaluation(ExerClassSessionPreScreeningInfoFinalEvaluationSubSubSubsection finalEvaluation) {
+    this.finalEvaluation = finalEvaluation;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("restingBloodPressure")
+  public ExerClassSessionPreScreeningInforestingBloodPressureSubSubSubsection getRestingBloodPressure() {
+    return restingBloodPressure;
+  }
+  public void setRestingBloodPressure(ExerClassSessionPreScreeningInforestingBloodPressureSubSubSubsection restingBloodPressure) {
+    this.restingBloodPressure = restingBloodPressure;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class ExerClassSessionPreScreeningInfoSubSubsection {\n");
+    
+    sb.append("    restingHR: ").append(StringUtil.toIndentedString(restingHR)).append("\n");
+    sb.append("    preScreeningAssessment: ").append(StringUtil.toIndentedString(preScreeningAssessment)).append("\n");
+    sb.append("    finalEvaluation: ").append(StringUtil.toIndentedString(finalEvaluation)).append("\n");
+    sb.append("    restingBloodPressure: ").append(StringUtil.toIndentedString(restingBloodPressure)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

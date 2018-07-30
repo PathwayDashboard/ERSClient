@@ -1,0 +1,56 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-07-22T14:54:54.065+02:00")
+public class ExerGameSessionExecutedExerciseenjoymentLevelSubSubSubsection   {
+  
+  private Integer value = null;
+  private String description = null;
+
+  
+  /**
+   * Session Enjoyment Level Value
+   **/
+  @ApiModelProperty(value = "Session Enjoyment Level Value")
+  @JsonProperty("value")
+  public Integer getValue() {
+    return value;
+  }
+  public void setValue(Integer value) {
+    this.value = value;
+  }
+
+  
+  /**
+   * Session Enjoyment Level Description
+   **/
+  @ApiModelProperty(value = "Session Enjoyment Level Description")
+  @JsonProperty("description")
+  public String getDescription() {
+    return description;
+  }
+  public void setDescription(String description) {
+    this.description = description;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class ExerGameSessionExecutedExerciseenjoymentLevelSubSubSubsection {\n");
+    
+    sb.append("    value: ").append(StringUtil.toIndentedString(value)).append("\n");
+    sb.append("    description: ").append(StringUtil.toIndentedString(description)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

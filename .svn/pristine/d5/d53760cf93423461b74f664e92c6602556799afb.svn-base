@@ -1,0 +1,101 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-05-13T12:06:50.958+02:00")
+public class PreScreeningQuestionnaire   {
+  
+  private Integer qExersisedToDay = null;
+  private Integer qMedicationPrescribedUse = null;
+  private Integer qEatingLast4Hours = null;
+  private Integer qSystolicBloodPressure = null;
+  private Integer qDiastolicBloodPressure = null;
+
+  
+  /**
+   * Are you feeling ok to exercise today?
+   **/
+  @ApiModelProperty(value = "Are you feeling ok to exercise today?")
+  @JsonProperty("qExersisedToDay")
+  public Integer getQExersisedToDay() {
+    return qExersisedToDay;
+  }
+  public void setQExersisedToDay(Integer qExersisedToDay) {
+    this.qExersisedToDay = qExersisedToDay;
+  }
+
+  
+  /**
+   * Did you take your medication as prescribed and recommended?
+   **/
+  @ApiModelProperty(value = "Did you take your medication as prescribed and recommended?")
+  @JsonProperty("qMedicationPrescribedUse")
+  public Integer getQMedicationPrescribedUse() {
+    return qMedicationPrescribedUse;
+  }
+  public void setQMedicationPrescribedUse(Integer qMedicationPrescribedUse) {
+    this.qMedicationPrescribedUse = qMedicationPrescribedUse;
+  }
+
+  
+  /**
+   * Did you eat something during the last four hours?
+   **/
+  @ApiModelProperty(value = "Did you eat something during the last four hours?")
+  @JsonProperty("qEatingLast4Hours")
+  public Integer getQEatingLast4Hours() {
+    return qEatingLast4Hours;
+  }
+  public void setQEatingLast4Hours(Integer qEatingLast4Hours) {
+    this.qEatingLast4Hours = qEatingLast4Hours;
+  }
+
+  
+  /**
+   * Please specify your systolic  blood pressure at rest.
+   **/
+  @ApiModelProperty(value = "Please specify your systolic  blood pressure at rest.")
+  @JsonProperty("qSystolicBloodPressure")
+  public Integer getQSystolicBloodPressure() {
+    return qSystolicBloodPressure;
+  }
+  public void setQSystolicBloodPressure(Integer qSystolicBloodPressure) {
+    this.qSystolicBloodPressure = qSystolicBloodPressure;
+  }
+
+  
+  /**
+   * Please specify your diastolic  blood pressure at rest.
+   **/
+  @ApiModelProperty(value = "Please specify your diastolic  blood pressure at rest.")
+  @JsonProperty("qDiastolicBloodPressure")
+  public Integer getQDiastolicBloodPressure() {
+    return qDiastolicBloodPressure;
+  }
+  public void setQDiastolicBloodPressure(Integer qDiastolicBloodPressure) {
+    this.qDiastolicBloodPressure = qDiastolicBloodPressure;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class PreScreeningQuestionnaire {\n");
+    
+    sb.append("    qExersisedToDay: ").append(StringUtil.toIndentedString(qExersisedToDay)).append("\n");
+    sb.append("    qMedicationPrescribedUse: ").append(StringUtil.toIndentedString(qMedicationPrescribedUse)).append("\n");
+    sb.append("    qEatingLast4Hours: ").append(StringUtil.toIndentedString(qEatingLast4Hours)).append("\n");
+    sb.append("    qSystolicBloodPressure: ").append(StringUtil.toIndentedString(qSystolicBloodPressure)).append("\n");
+    sb.append("    qDiastolicBloodPressure: ").append(StringUtil.toIndentedString(qDiastolicBloodPressure)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

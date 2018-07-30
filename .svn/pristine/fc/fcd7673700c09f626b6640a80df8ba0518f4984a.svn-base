@@ -1,0 +1,192 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+import java.util.Date;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-07-18T17:20:02.553+02:00")
+public class FExerciseProgrammeSubSection   {
+  
+  private Integer weeklyFrequency = null;
+  private Integer exerciseIntensity = null;
+  private Integer weeklyTime = null;
+  private Integer personalWeeklyTime = null;
+  private Integer classDuration = null;
+  private Integer gameDuration = null;
+  private Integer numberOfExerClass = null;
+  private Integer numberOfExerGame = null;
+  private Integer numberOfActiveLifeStyleActivity = null;
+  private Double hrrUpperThreshold = null;
+  private Date date = null;
+
+  
+  /**
+   * weekly frequency
+   **/
+  @ApiModelProperty(value = "weekly frequency")
+  @JsonProperty("weeklyFrequency")
+  public Integer getWeeklyFrequency() {
+    return weeklyFrequency;
+  }
+  public void setWeeklyFrequency(Integer weeklyFrequency) {
+    this.weeklyFrequency = weeklyFrequency;
+  }
+
+  
+  /**
+   * exercise Intensity
+   **/
+  @ApiModelProperty(value = "exercise Intensity")
+  @JsonProperty("exerciseIntensity")
+  public Integer getExerciseIntensity() {
+    return exerciseIntensity;
+  }
+  public void setExerciseIntensity(Integer exerciseIntensity) {
+    this.exerciseIntensity = exerciseIntensity;
+  }
+
+  
+  /**
+   * prescribed weekly time
+   **/
+  @ApiModelProperty(value = "prescribed weekly time")
+  @JsonProperty("weeklyTime")
+  public Integer getWeeklyTime() {
+    return weeklyTime;
+  }
+  public void setWeeklyTime(Integer weeklyTime) {
+    this.weeklyTime = weeklyTime;
+  }
+
+  
+  /**
+   * personal weekly time
+   **/
+  @ApiModelProperty(value = "personal weekly time")
+  @JsonProperty("personalWeeklyTime")
+  public Integer getPersonalWeeklyTime() {
+    return personalWeeklyTime;
+  }
+  public void setPersonalWeeklyTime(Integer personalWeeklyTime) {
+    this.personalWeeklyTime = personalWeeklyTime;
+  }
+
+  
+  /**
+   * class duration
+   **/
+  @ApiModelProperty(value = "class duration")
+  @JsonProperty("classDuration")
+  public Integer getClassDuration() {
+    return classDuration;
+  }
+  public void setClassDuration(Integer classDuration) {
+    this.classDuration = classDuration;
+  }
+
+  
+  /**
+   * game duration
+   **/
+  @ApiModelProperty(value = "game duration")
+  @JsonProperty("gameDuration")
+  public Integer getGameDuration() {
+    return gameDuration;
+  }
+  public void setGameDuration(Integer gameDuration) {
+    this.gameDuration = gameDuration;
+  }
+
+  
+  /**
+   * number of exerclasses
+   **/
+  @ApiModelProperty(value = "number of exerclasses")
+  @JsonProperty("numberOfExerClass")
+  public Integer getNumberOfExerClass() {
+    return numberOfExerClass;
+  }
+  public void setNumberOfExerClass(Integer numberOfExerClass) {
+    this.numberOfExerClass = numberOfExerClass;
+  }
+
+  
+  /**
+   * number of exergames
+   **/
+  @ApiModelProperty(value = "number of exergames")
+  @JsonProperty("numberOfExerGame")
+  public Integer getNumberOfExerGame() {
+    return numberOfExerGame;
+  }
+  public void setNumberOfExerGame(Integer numberOfExerGame) {
+    this.numberOfExerGame = numberOfExerGame;
+  }
+
+  
+  /**
+   * number of active Life style activities
+   **/
+  @ApiModelProperty(value = "number of active Life style activities")
+  @JsonProperty("numberOfActiveLifeStyleActivity")
+  public Integer getNumberOfActiveLifeStyleActivity() {
+    return numberOfActiveLifeStyleActivity;
+  }
+  public void setNumberOfActiveLifeStyleActivity(Integer numberOfActiveLifeStyleActivity) {
+    this.numberOfActiveLifeStyleActivity = numberOfActiveLifeStyleActivity;
+  }
+
+  
+  /**
+   * Upper threshold
+   **/
+  @ApiModelProperty(value = "Upper threshold")
+  @JsonProperty("hrrUpperThreshold")
+  public Double getHrrUpperThreshold() {
+    return hrrUpperThreshold;
+  }
+  public void setHrrUpperThreshold(Double hrrUpperThreshold) {
+    this.hrrUpperThreshold = hrrUpperThreshold;
+  }
+
+  
+  /**
+   * exercise programme date
+   **/
+  @ApiModelProperty(value = "exercise programme date")
+  @JsonProperty("date")
+  public Date getDate() {
+    return date;
+  }
+  public void setDate(Date date) {
+    this.date = date;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class FExerciseProgrammeSubSection {\n");
+    
+    sb.append("    weeklyFrequency: ").append(StringUtil.toIndentedString(weeklyFrequency)).append("\n");
+    sb.append("    exerciseIntensity: ").append(StringUtil.toIndentedString(exerciseIntensity)).append("\n");
+    sb.append("    weeklyTime: ").append(StringUtil.toIndentedString(weeklyTime)).append("\n");
+    sb.append("    personalWeeklyTime: ").append(StringUtil.toIndentedString(personalWeeklyTime)).append("\n");
+    sb.append("    classDuration: ").append(StringUtil.toIndentedString(classDuration)).append("\n");
+    sb.append("    gameDuration: ").append(StringUtil.toIndentedString(gameDuration)).append("\n");
+    sb.append("    numberOfExerClass: ").append(StringUtil.toIndentedString(numberOfExerClass)).append("\n");
+    sb.append("    numberOfExerGame: ").append(StringUtil.toIndentedString(numberOfExerGame)).append("\n");
+    sb.append("    numberOfActiveLifeStyleActivity: ").append(StringUtil.toIndentedString(numberOfActiveLifeStyleActivity)).append("\n");
+    sb.append("    hrrUpperThreshold: ").append(StringUtil.toIndentedString(hrrUpperThreshold)).append("\n");
+    sb.append("    date: ").append(StringUtil.toIndentedString(date)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

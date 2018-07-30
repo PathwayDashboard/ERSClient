@@ -1,0 +1,207 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+import io.swagger.client.model.HealthAndFitnessAssessmentPreScreeningInfo;
+import java.util.Date;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-05-30T11:30:03.045+02:00")
+public class HealthAndFitnessAssessmentSessionss   {
+  
+  private Integer hFASessionID = null;
+  private Integer hFAminute1HR = null;
+  private Integer hFAminute2HR = null;
+  private Integer hFAminute3HR = null;
+  private Integer hFAminute4HR = null;
+  private Date hFAenergyExpenditureTimeStamp = null;
+  private Integer hFAenergyExpenditureValue = null;
+  private String hFAsymptoms = null;
+  private Integer hFAdifficultyLevel = null;
+  private Date hFASessiondate = null;
+  private String hFASessionfile = null;
+  private HealthAndFitnessAssessmentPreScreeningInfo healthAndFitnessAssessmentPreScreeningInfo = null;
+
+  
+  /**
+   * Programme ID
+   **/
+  @ApiModelProperty(value = "Programme ID")
+  @JsonProperty("HFASessionID")
+  public Integer getHFASessionID() {
+    return hFASessionID;
+  }
+  public void setHFASessionID(Integer hFASessionID) {
+    this.hFASessionID = hFASessionID;
+  }
+
+  
+  /**
+   * minute 1 HR
+   **/
+  @ApiModelProperty(value = "minute 1 HR")
+  @JsonProperty("HFAminute1HR")
+  public Integer getHFAminute1HR() {
+    return hFAminute1HR;
+  }
+  public void setHFAminute1HR(Integer hFAminute1HR) {
+    this.hFAminute1HR = hFAminute1HR;
+  }
+
+  
+  /**
+   * minute 2 HR
+   **/
+  @ApiModelProperty(value = "minute 2 HR")
+  @JsonProperty("HFAminute2HR")
+  public Integer getHFAminute2HR() {
+    return hFAminute2HR;
+  }
+  public void setHFAminute2HR(Integer hFAminute2HR) {
+    this.hFAminute2HR = hFAminute2HR;
+  }
+
+  
+  /**
+   * minute 3 HR
+   **/
+  @ApiModelProperty(value = "minute 3 HR")
+  @JsonProperty("HFAminute3HR")
+  public Integer getHFAminute3HR() {
+    return hFAminute3HR;
+  }
+  public void setHFAminute3HR(Integer hFAminute3HR) {
+    this.hFAminute3HR = hFAminute3HR;
+  }
+
+  
+  /**
+   * minute 4 HR
+   **/
+  @ApiModelProperty(value = "minute 4 HR")
+  @JsonProperty("HFAminute4HR")
+  public Integer getHFAminute4HR() {
+    return hFAminute4HR;
+  }
+  public void setHFAminute4HR(Integer hFAminute4HR) {
+    this.hFAminute4HR = hFAminute4HR;
+  }
+
+  
+  /**
+   * energy Expenditure Timestamp
+   **/
+  @ApiModelProperty(value = "energy Expenditure Timestamp")
+  @JsonProperty("HFAenergyExpenditureTimeStamp")
+  public Date getHFAenergyExpenditureTimeStamp() {
+    return hFAenergyExpenditureTimeStamp;
+  }
+  public void setHFAenergyExpenditureTimeStamp(Date hFAenergyExpenditureTimeStamp) {
+    this.hFAenergyExpenditureTimeStamp = hFAenergyExpenditureTimeStamp;
+  }
+
+  
+  /**
+   * energy Expenditure
+   **/
+  @ApiModelProperty(value = "energy Expenditure")
+  @JsonProperty("HFAenergyExpenditureValue")
+  public Integer getHFAenergyExpenditureValue() {
+    return hFAenergyExpenditureValue;
+  }
+  public void setHFAenergyExpenditureValue(Integer hFAenergyExpenditureValue) {
+    this.hFAenergyExpenditureValue = hFAenergyExpenditureValue;
+  }
+
+  
+  /**
+   * symptoms reported
+   **/
+  @ApiModelProperty(value = "symptoms reported")
+  @JsonProperty("HFAsymptoms")
+  public String getHFAsymptoms() {
+    return hFAsymptoms;
+  }
+  public void setHFAsymptoms(String hFAsymptoms) {
+    this.hFAsymptoms = hFAsymptoms;
+  }
+
+  
+  /**
+   * CR Progress Difficulty Level
+   **/
+  @ApiModelProperty(value = "CR Progress Difficulty Level")
+  @JsonProperty("HFAdifficultyLevel")
+  public Integer getHFAdifficultyLevel() {
+    return hFAdifficultyLevel;
+  }
+  public void setHFAdifficultyLevel(Integer hFAdifficultyLevel) {
+    this.hFAdifficultyLevel = hFAdifficultyLevel;
+  }
+
+  
+  /**
+   * CR Progress Date
+   **/
+  @ApiModelProperty(value = "CR Progress Date")
+  @JsonProperty("HFASessiondate")
+  public Date getHFASessiondate() {
+    return hFASessiondate;
+  }
+  public void setHFASessiondate(Date hFASessiondate) {
+    this.hFASessiondate = hFASessiondate;
+  }
+
+  
+  /**
+   * CR Progress file
+   **/
+  @ApiModelProperty(value = "CR Progress file")
+  @JsonProperty("HFASessionfile")
+  public String getHFASessionfile() {
+    return hFASessionfile;
+  }
+  public void setHFASessionfile(String hFASessionfile) {
+    this.hFASessionfile = hFASessionfile;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("healthAndFitnessAssessmentPreScreeningInfo")
+  public HealthAndFitnessAssessmentPreScreeningInfo getHealthAndFitnessAssessmentPreScreeningInfo() {
+    return healthAndFitnessAssessmentPreScreeningInfo;
+  }
+  public void setHealthAndFitnessAssessmentPreScreeningInfo(HealthAndFitnessAssessmentPreScreeningInfo healthAndFitnessAssessmentPreScreeningInfo) {
+    this.healthAndFitnessAssessmentPreScreeningInfo = healthAndFitnessAssessmentPreScreeningInfo;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class HealthAndFitnessAssessmentSessionss {\n");
+    
+    sb.append("    hFASessionID: ").append(StringUtil.toIndentedString(hFASessionID)).append("\n");
+    sb.append("    hFAminute1HR: ").append(StringUtil.toIndentedString(hFAminute1HR)).append("\n");
+    sb.append("    hFAminute2HR: ").append(StringUtil.toIndentedString(hFAminute2HR)).append("\n");
+    sb.append("    hFAminute3HR: ").append(StringUtil.toIndentedString(hFAminute3HR)).append("\n");
+    sb.append("    hFAminute4HR: ").append(StringUtil.toIndentedString(hFAminute4HR)).append("\n");
+    sb.append("    hFAenergyExpenditureTimeStamp: ").append(StringUtil.toIndentedString(hFAenergyExpenditureTimeStamp)).append("\n");
+    sb.append("    hFAenergyExpenditureValue: ").append(StringUtil.toIndentedString(hFAenergyExpenditureValue)).append("\n");
+    sb.append("    hFAsymptoms: ").append(StringUtil.toIndentedString(hFAsymptoms)).append("\n");
+    sb.append("    hFAdifficultyLevel: ").append(StringUtil.toIndentedString(hFAdifficultyLevel)).append("\n");
+    sb.append("    hFASessiondate: ").append(StringUtil.toIndentedString(hFASessiondate)).append("\n");
+    sb.append("    hFASessionfile: ").append(StringUtil.toIndentedString(hFASessionfile)).append("\n");
+    sb.append("    healthAndFitnessAssessmentPreScreeningInfo: ").append(StringUtil.toIndentedString(healthAndFitnessAssessmentPreScreeningInfo)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

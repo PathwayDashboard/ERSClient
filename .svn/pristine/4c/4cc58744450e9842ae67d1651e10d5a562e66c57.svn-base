@@ -1,0 +1,71 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-07-18T17:20:02.553+02:00")
+public class AnswerSubSubsection   {
+  
+  private String questionID = null;
+  private String value = null;
+  private Integer type = null;
+
+  
+  /**
+   * questionID
+   **/
+  @ApiModelProperty(value = "questionID")
+  @JsonProperty("questionID")
+  public String getQuestionID() {
+    return questionID;
+  }
+  public void setQuestionID(String questionID) {
+    this.questionID = questionID;
+  }
+
+  
+  /**
+   * Value
+   **/
+  @ApiModelProperty(value = "Value")
+  @JsonProperty("value")
+  public String getValue() {
+    return value;
+  }
+  public void setValue(String value) {
+    this.value = value;
+  }
+
+  
+  /**
+   * Type
+   **/
+  @ApiModelProperty(value = "Type")
+  @JsonProperty("type")
+  public Integer getType() {
+    return type;
+  }
+  public void setType(Integer type) {
+    this.type = type;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class AnswerSubSubsection {\n");
+    
+    sb.append("    questionID: ").append(StringUtil.toIndentedString(questionID)).append("\n");
+    sb.append("    value: ").append(StringUtil.toIndentedString(value)).append("\n");
+    sb.append("    type: ").append(StringUtil.toIndentedString(type)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

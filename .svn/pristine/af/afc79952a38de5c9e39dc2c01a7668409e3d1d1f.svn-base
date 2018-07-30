@@ -1,0 +1,178 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+import io.swagger.client.model.HealthFitnessAssessmentPreScreeningQuestionnaire;
+import java.util.*;
+import io.swagger.client.model.PreScreeningQuestionnaire;
+import io.swagger.client.model.ExerciseProgramme;
+import java.util.Date;
+import io.swagger.client.model.FitnessAssessmentConf;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-05-30T11:30:03.045+02:00")
+public class CardiacRehabilitationProgramme   {
+  
+  private Integer cardiacrehabilitationProgrammeid = null;
+  private Date cardiacrehabilitationProgrammecreationDate = null;
+  private Integer mandatorySensorsZensor = null;
+  private Integer mandatorySensorsHRSensor = null;
+  private Integer mandatorySensorsBloodPressureSensor = null;
+  private Integer mandatorySensorsEnergyExpenditureSensor = null;
+  private PreScreeningQuestionnaire preScreeningQuestionnaire = null;
+  private HealthFitnessAssessmentPreScreeningQuestionnaire healthFitnessAssessmentPreScreeningQuestionnaire = null;
+  private FitnessAssessmentConf fitnessAssessmentConf = null;
+  private List<ExerciseProgramme> exerciseProgrammes = new ArrayList<ExerciseProgramme>();
+
+  
+  /**
+   * Programme Id
+   **/
+  @ApiModelProperty(value = "Programme Id")
+  @JsonProperty("cardiacrehabilitationProgrammeid")
+  public Integer getCardiacrehabilitationProgrammeid() {
+    return cardiacrehabilitationProgrammeid;
+  }
+  public void setCardiacrehabilitationProgrammeid(Integer cardiacrehabilitationProgrammeid) {
+    this.cardiacrehabilitationProgrammeid = cardiacrehabilitationProgrammeid;
+  }
+
+  
+  /**
+   * Creation date
+   **/
+  @ApiModelProperty(value = "Creation date")
+  @JsonProperty("cardiacrehabilitationProgrammecreationDate")
+  public Date getCardiacrehabilitationProgrammecreationDate() {
+    return cardiacrehabilitationProgrammecreationDate;
+  }
+  public void setCardiacrehabilitationProgrammecreationDate(Date cardiacrehabilitationProgrammecreationDate) {
+    this.cardiacrehabilitationProgrammecreationDate = cardiacrehabilitationProgrammecreationDate;
+  }
+
+  
+  /**
+   * Zensor
+   **/
+  @ApiModelProperty(value = "Zensor")
+  @JsonProperty("mandatorySensorsZensor")
+  public Integer getMandatorySensorsZensor() {
+    return mandatorySensorsZensor;
+  }
+  public void setMandatorySensorsZensor(Integer mandatorySensorsZensor) {
+    this.mandatorySensorsZensor = mandatorySensorsZensor;
+  }
+
+  
+  /**
+   * HR Sensor
+   **/
+  @ApiModelProperty(value = "HR Sensor")
+  @JsonProperty("mandatorySensorsHRSensor")
+  public Integer getMandatorySensorsHRSensor() {
+    return mandatorySensorsHRSensor;
+  }
+  public void setMandatorySensorsHRSensor(Integer mandatorySensorsHRSensor) {
+    this.mandatorySensorsHRSensor = mandatorySensorsHRSensor;
+  }
+
+  
+  /**
+   * Blood Pressure Sensor
+   **/
+  @ApiModelProperty(value = "Blood Pressure Sensor")
+  @JsonProperty("mandatorySensorsBloodPressureSensor")
+  public Integer getMandatorySensorsBloodPressureSensor() {
+    return mandatorySensorsBloodPressureSensor;
+  }
+  public void setMandatorySensorsBloodPressureSensor(Integer mandatorySensorsBloodPressureSensor) {
+    this.mandatorySensorsBloodPressureSensor = mandatorySensorsBloodPressureSensor;
+  }
+
+  
+  /**
+   * Energy Expenditure Sensor
+   **/
+  @ApiModelProperty(value = "Energy Expenditure Sensor")
+  @JsonProperty("mandatorySensorsEnergyExpenditureSensor")
+  public Integer getMandatorySensorsEnergyExpenditureSensor() {
+    return mandatorySensorsEnergyExpenditureSensor;
+  }
+  public void setMandatorySensorsEnergyExpenditureSensor(Integer mandatorySensorsEnergyExpenditureSensor) {
+    this.mandatorySensorsEnergyExpenditureSensor = mandatorySensorsEnergyExpenditureSensor;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("preScreeningQuestionnaire")
+  public PreScreeningQuestionnaire getPreScreeningQuestionnaire() {
+    return preScreeningQuestionnaire;
+  }
+  public void setPreScreeningQuestionnaire(PreScreeningQuestionnaire preScreeningQuestionnaire) {
+    this.preScreeningQuestionnaire = preScreeningQuestionnaire;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("healthFitnessAssessmentPreScreeningQuestionnaire")
+  public HealthFitnessAssessmentPreScreeningQuestionnaire getHealthFitnessAssessmentPreScreeningQuestionnaire() {
+    return healthFitnessAssessmentPreScreeningQuestionnaire;
+  }
+  public void setHealthFitnessAssessmentPreScreeningQuestionnaire(HealthFitnessAssessmentPreScreeningQuestionnaire healthFitnessAssessmentPreScreeningQuestionnaire) {
+    this.healthFitnessAssessmentPreScreeningQuestionnaire = healthFitnessAssessmentPreScreeningQuestionnaire;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("fitnessAssessmentConf")
+  public FitnessAssessmentConf getFitnessAssessmentConf() {
+    return fitnessAssessmentConf;
+  }
+  public void setFitnessAssessmentConf(FitnessAssessmentConf fitnessAssessmentConf) {
+    this.fitnessAssessmentConf = fitnessAssessmentConf;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("exerciseProgrammes")
+  public List<ExerciseProgramme> getExerciseProgrammes() {
+    return exerciseProgrammes;
+  }
+  public void setExerciseProgrammes(List<ExerciseProgramme> exerciseProgrammes) {
+    this.exerciseProgrammes = exerciseProgrammes;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class CardiacRehabilitationProgramme {\n");
+    
+    sb.append("    cardiacrehabilitationProgrammeid: ").append(StringUtil.toIndentedString(cardiacrehabilitationProgrammeid)).append("\n");
+    sb.append("    cardiacrehabilitationProgrammecreationDate: ").append(StringUtil.toIndentedString(cardiacrehabilitationProgrammecreationDate)).append("\n");
+    sb.append("    mandatorySensorsZensor: ").append(StringUtil.toIndentedString(mandatorySensorsZensor)).append("\n");
+    sb.append("    mandatorySensorsHRSensor: ").append(StringUtil.toIndentedString(mandatorySensorsHRSensor)).append("\n");
+    sb.append("    mandatorySensorsBloodPressureSensor: ").append(StringUtil.toIndentedString(mandatorySensorsBloodPressureSensor)).append("\n");
+    sb.append("    mandatorySensorsEnergyExpenditureSensor: ").append(StringUtil.toIndentedString(mandatorySensorsEnergyExpenditureSensor)).append("\n");
+    sb.append("    preScreeningQuestionnaire: ").append(StringUtil.toIndentedString(preScreeningQuestionnaire)).append("\n");
+    sb.append("    healthFitnessAssessmentPreScreeningQuestionnaire: ").append(StringUtil.toIndentedString(healthFitnessAssessmentPreScreeningQuestionnaire)).append("\n");
+    sb.append("    fitnessAssessmentConf: ").append(StringUtil.toIndentedString(fitnessAssessmentConf)).append("\n");
+    sb.append("    exerciseProgrammes: ").append(StringUtil.toIndentedString(exerciseProgrammes)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

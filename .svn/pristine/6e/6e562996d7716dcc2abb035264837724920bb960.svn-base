@@ -1,0 +1,13 @@
+package it.eng.pathway.fake.model;
+
+public class SensorsEnum {
+
+	private int Zensor;
+
+	private int HRsensor;
+
+	private int bloodPressureSensor;
+
+	private int energyExpenditureSensor;
+
+}

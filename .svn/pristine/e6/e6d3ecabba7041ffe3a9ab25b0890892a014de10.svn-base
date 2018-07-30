@@ -1,0 +1,223 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+import java.util.*;
+import io.swagger.client.model.RestingBloodPressureSubSubsection;
+import java.util.Date;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-07-18T17:20:02.553+02:00")
+public class HealthAndFitnessAssessmentSessionSubsection   {
+  
+  private Double minute1HR = null;
+  private Double minute2HR = null;
+  private Double minute3HR = null;
+  private Double minute4HR = null;
+  private Double energyExpenditure = null;
+  private List<String> symptoms = new ArrayList<String>();
+  private Integer difficultyLevel = null;
+  private Date date = null;
+  private String file = null;
+  private List<String> healthAssessment = new ArrayList<String>();
+  private Double restingHR = null;
+  private String restingECGFile = null;
+  private RestingBloodPressureSubSubsection restingBloodPressure = null;
+
+  
+  /**
+   * Minute 1 HR
+   **/
+  @ApiModelProperty(value = "Minute 1 HR")
+  @JsonProperty("minute1HR")
+  public Double getMinute1HR() {
+    return minute1HR;
+  }
+  public void setMinute1HR(Double minute1HR) {
+    this.minute1HR = minute1HR;
+  }
+
+  
+  /**
+   * Minute 2 HR
+   **/
+  @ApiModelProperty(value = "Minute 2 HR")
+  @JsonProperty("minute2HR")
+  public Double getMinute2HR() {
+    return minute2HR;
+  }
+  public void setMinute2HR(Double minute2HR) {
+    this.minute2HR = minute2HR;
+  }
+
+  
+  /**
+   * Minute 3 HR
+   **/
+  @ApiModelProperty(value = "Minute 3 HR")
+  @JsonProperty("minute3HR")
+  public Double getMinute3HR() {
+    return minute3HR;
+  }
+  public void setMinute3HR(Double minute3HR) {
+    this.minute3HR = minute3HR;
+  }
+
+  
+  /**
+   * Minute 4 HR
+   **/
+  @ApiModelProperty(value = "Minute 4 HR")
+  @JsonProperty("minute4HR")
+  public Double getMinute4HR() {
+    return minute4HR;
+  }
+  public void setMinute4HR(Double minute4HR) {
+    this.minute4HR = minute4HR;
+  }
+
+  
+  /**
+   * Energy expenditure
+   **/
+  @ApiModelProperty(value = "Energy expenditure")
+  @JsonProperty("energyExpenditure")
+  public Double getEnergyExpenditure() {
+    return energyExpenditure;
+  }
+  public void setEnergyExpenditure(Double energyExpenditure) {
+    this.energyExpenditure = energyExpenditure;
+  }
+
+  
+  /**
+   * Symptoms
+   **/
+  @ApiModelProperty(value = "Symptoms")
+  @JsonProperty("symptoms")
+  public List<String> getSymptoms() {
+    return symptoms;
+  }
+  public void setSymptoms(List<String> symptoms) {
+    this.symptoms = symptoms;
+  }
+
+  
+  /**
+   * Difficulty level
+   **/
+  @ApiModelProperty(value = "Difficulty level")
+  @JsonProperty("difficultyLevel")
+  public Integer getDifficultyLevel() {
+    return difficultyLevel;
+  }
+  public void setDifficultyLevel(Integer difficultyLevel) {
+    this.difficultyLevel = difficultyLevel;
+  }
+
+  
+  /**
+   * Date
+   **/
+  @ApiModelProperty(value = "Date")
+  @JsonProperty("date")
+  public Date getDate() {
+    return date;
+  }
+  public void setDate(Date date) {
+    this.date = date;
+  }
+
+  
+  /**
+   * File
+   **/
+  @ApiModelProperty(value = "File")
+  @JsonProperty("file")
+  public String getFile() {
+    return file;
+  }
+  public void setFile(String file) {
+    this.file = file;
+  }
+
+  
+  /**
+   * health Assessment
+   **/
+  @ApiModelProperty(value = "health Assessment")
+  @JsonProperty("healthAssessment")
+  public List<String> getHealthAssessment() {
+    return healthAssessment;
+  }
+  public void setHealthAssessment(List<String> healthAssessment) {
+    this.healthAssessment = healthAssessment;
+  }
+
+  
+  /**
+   * resting HR
+   **/
+  @ApiModelProperty(value = "resting HR")
+  @JsonProperty("restingHR")
+  public Double getRestingHR() {
+    return restingHR;
+  }
+  public void setRestingHR(Double restingHR) {
+    this.restingHR = restingHR;
+  }
+
+  
+  /**
+   * resting ECH File
+   **/
+  @ApiModelProperty(value = "resting ECH File")
+  @JsonProperty("restingECGFile")
+  public String getRestingECGFile() {
+    return restingECGFile;
+  }
+  public void setRestingECGFile(String restingECGFile) {
+    this.restingECGFile = restingECGFile;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("restingBloodPressure")
+  public RestingBloodPressureSubSubsection getRestingBloodPressure() {
+    return restingBloodPressure;
+  }
+  public void setRestingBloodPressure(RestingBloodPressureSubSubsection restingBloodPressure) {
+    this.restingBloodPressure = restingBloodPressure;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class HealthAndFitnessAssessmentSessionSubsection {\n");
+    
+    sb.append("    minute1HR: ").append(StringUtil.toIndentedString(minute1HR)).append("\n");
+    sb.append("    minute2HR: ").append(StringUtil.toIndentedString(minute2HR)).append("\n");
+    sb.append("    minute3HR: ").append(StringUtil.toIndentedString(minute3HR)).append("\n");
+    sb.append("    minute4HR: ").append(StringUtil.toIndentedString(minute4HR)).append("\n");
+    sb.append("    energyExpenditure: ").append(StringUtil.toIndentedString(energyExpenditure)).append("\n");
+    sb.append("    symptoms: ").append(StringUtil.toIndentedString(symptoms)).append("\n");
+    sb.append("    difficultyLevel: ").append(StringUtil.toIndentedString(difficultyLevel)).append("\n");
+    sb.append("    date: ").append(StringUtil.toIndentedString(date)).append("\n");
+    sb.append("    file: ").append(StringUtil.toIndentedString(file)).append("\n");
+    sb.append("    healthAssessment: ").append(StringUtil.toIndentedString(healthAssessment)).append("\n");
+    sb.append("    restingHR: ").append(StringUtil.toIndentedString(restingHR)).append("\n");
+    sb.append("    restingECGFile: ").append(StringUtil.toIndentedString(restingECGFile)).append("\n");
+    sb.append("    restingBloodPressure: ").append(StringUtil.toIndentedString(restingBloodPressure)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

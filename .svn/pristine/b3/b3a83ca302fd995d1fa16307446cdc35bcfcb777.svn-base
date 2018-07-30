@@ -1,0 +1,448 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+import io.swagger.client.model.ExecutedExerClassSessionExercises;
+import io.swagger.client.model.ExerClassPreScreeningInfo;
+import java.util.*;
+import java.util.Date;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-05-30T11:30:03.045+02:00")
+public class ExerClassSessionss   {
+  
+  private Integer exerClassSessionID = null;
+  private Date exerClassSessiondate = null;
+  private String exerClassSessionstartTime = null;
+  private String exerClassSessionendTime = null;
+  private Integer exerClassSessionDuration = null;
+  private String exerClassSessionhrFile = null;
+  private Date exerClassSessionexpenditureObservationTimeStamp = null;
+  private Integer exerClassSessionexpenditureObservationValue = null;
+  private Integer exerClassSessionacceptable = null;
+  private String exerClassSessionexerciseRulesMappingHashMapString = null;
+  private String exerClassSessionexerciseRulesMappingHashMapList = null;
+  private Integer exerClassSessionstatus = null;
+  private Integer exerClassSessionwarmingUpDuration = null;
+  private Integer exerClassSessionwarmingUpHRBpmMin = null;
+  private Integer exerClassSessionwarmingUpHRBpmMax = null;
+  private Integer exerClassSessionwarmingUpAverageHRBpm = null;
+  private Integer exerClassSessionmainInfoDuration = null;
+  private Integer exerClassSessionmainInfoMinHRBpm = null;
+  private Integer exerClassSessionmainInfoMaxHRBpm = null;
+  private Double exerClassSessionmainInfoAverageHRBpm = null;
+  private Integer exerClassSessioncoolDownInfoDuration = null;
+  private Integer exerClassSessioncoolDownInfoMinHRBpm = null;
+  private Integer exerClassSessioncoolDownInfoMaxHRBpm = null;
+  private Double exerClassSessioncoolDownInfoAverageHRBpm = null;
+  private Integer exerClassSessionsessionSatisfactionLevel = null;
+  private Integer exerClassSessionrpe = null;
+  private List<ExecutedExerClassSessionExercises> executedExerClassSessionExercisess = new ArrayList<ExecutedExerClassSessionExercises>();
+  private ExerClassPreScreeningInfo exerClassPreScreeningInfo = null;
+
+  
+  /**
+   * SessionID
+   **/
+  @ApiModelProperty(value = "SessionID")
+  @JsonProperty("ExerClassSessionID")
+  public Integer getExerClassSessionID() {
+    return exerClassSessionID;
+  }
+  public void setExerClassSessionID(Integer exerClassSessionID) {
+    this.exerClassSessionID = exerClassSessionID;
+  }
+
+  
+  /**
+   * Session Date
+   **/
+  @ApiModelProperty(value = "Session Date")
+  @JsonProperty("ExerClassSessiondate")
+  public Date getExerClassSessiondate() {
+    return exerClassSessiondate;
+  }
+  public void setExerClassSessiondate(Date exerClassSessiondate) {
+    this.exerClassSessiondate = exerClassSessiondate;
+  }
+
+  
+  /**
+   * Session StartTime
+   **/
+  @ApiModelProperty(value = "Session StartTime")
+  @JsonProperty("ExerClassSessionstartTime")
+  public String getExerClassSessionstartTime() {
+    return exerClassSessionstartTime;
+  }
+  public void setExerClassSessionstartTime(String exerClassSessionstartTime) {
+    this.exerClassSessionstartTime = exerClassSessionstartTime;
+  }
+
+  
+  /**
+   * Session End Time
+   **/
+  @ApiModelProperty(value = "Session End Time")
+  @JsonProperty("ExerClassSessionendTime")
+  public String getExerClassSessionendTime() {
+    return exerClassSessionendTime;
+  }
+  public void setExerClassSessionendTime(String exerClassSessionendTime) {
+    this.exerClassSessionendTime = exerClassSessionendTime;
+  }
+
+  
+  /**
+   * Session Duration
+   **/
+  @ApiModelProperty(value = "Session Duration")
+  @JsonProperty("ExerClassSessionDuration")
+  public Integer getExerClassSessionDuration() {
+    return exerClassSessionDuration;
+  }
+  public void setExerClassSessionDuration(Integer exerClassSessionDuration) {
+    this.exerClassSessionDuration = exerClassSessionDuration;
+  }
+
+  
+  /**
+   * Session Heart rate file
+   **/
+  @ApiModelProperty(value = "Session Heart rate file")
+  @JsonProperty("ExerClassSessionhrFile")
+  public String getExerClassSessionhrFile() {
+    return exerClassSessionhrFile;
+  }
+  public void setExerClassSessionhrFile(String exerClassSessionhrFile) {
+    this.exerClassSessionhrFile = exerClassSessionhrFile;
+  }
+
+  
+  /**
+   * Session Expenditure timestamp
+   **/
+  @ApiModelProperty(value = "Session Expenditure timestamp")
+  @JsonProperty("ExerClassSessionexpenditureObservationTimeStamp")
+  public Date getExerClassSessionexpenditureObservationTimeStamp() {
+    return exerClassSessionexpenditureObservationTimeStamp;
+  }
+  public void setExerClassSessionexpenditureObservationTimeStamp(Date exerClassSessionexpenditureObservationTimeStamp) {
+    this.exerClassSessionexpenditureObservationTimeStamp = exerClassSessionexpenditureObservationTimeStamp;
+  }
+
+  
+  /**
+   * Session Expenditure Value
+   **/
+  @ApiModelProperty(value = "Session Expenditure Value")
+  @JsonProperty("ExerClassSessionexpenditureObservationValue")
+  public Integer getExerClassSessionexpenditureObservationValue() {
+    return exerClassSessionexpenditureObservationValue;
+  }
+  public void setExerClassSessionexpenditureObservationValue(Integer exerClassSessionexpenditureObservationValue) {
+    this.exerClassSessionexpenditureObservationValue = exerClassSessionexpenditureObservationValue;
+  }
+
+  
+  /**
+   * Session Acceptable
+   **/
+  @ApiModelProperty(value = "Session Acceptable")
+  @JsonProperty("ExerClassSessionacceptable")
+  public Integer getExerClassSessionacceptable() {
+    return exerClassSessionacceptable;
+  }
+  public void setExerClassSessionacceptable(Integer exerClassSessionacceptable) {
+    this.exerClassSessionacceptable = exerClassSessionacceptable;
+  }
+
+  
+  /**
+   * HashMap Hash
+   **/
+  @ApiModelProperty(value = "HashMap Hash")
+  @JsonProperty("ExerClassSessionexerciseRulesMappingHashMapString")
+  public String getExerClassSessionexerciseRulesMappingHashMapString() {
+    return exerClassSessionexerciseRulesMappingHashMapString;
+  }
+  public void setExerClassSessionexerciseRulesMappingHashMapString(String exerClassSessionexerciseRulesMappingHashMapString) {
+    this.exerClassSessionexerciseRulesMappingHashMapString = exerClassSessionexerciseRulesMappingHashMapString;
+  }
+
+  
+  /**
+   * HashMap LIst
+   **/
+  @ApiModelProperty(value = "HashMap LIst")
+  @JsonProperty("ExerClassSessionexerciseRulesMappingHashMapList")
+  public String getExerClassSessionexerciseRulesMappingHashMapList() {
+    return exerClassSessionexerciseRulesMappingHashMapList;
+  }
+  public void setExerClassSessionexerciseRulesMappingHashMapList(String exerClassSessionexerciseRulesMappingHashMapList) {
+    this.exerClassSessionexerciseRulesMappingHashMapList = exerClassSessionexerciseRulesMappingHashMapList;
+  }
+
+  
+  /**
+   * Session Status
+   **/
+  @ApiModelProperty(value = "Session Status")
+  @JsonProperty("ExerClassSessionstatus")
+  public Integer getExerClassSessionstatus() {
+    return exerClassSessionstatus;
+  }
+  public void setExerClassSessionstatus(Integer exerClassSessionstatus) {
+    this.exerClassSessionstatus = exerClassSessionstatus;
+  }
+
+  
+  /**
+   * Session WarningUp Duration
+   **/
+  @ApiModelProperty(value = "Session WarningUp Duration")
+  @JsonProperty("ExerClassSessionwarmingUpDuration")
+  public Integer getExerClassSessionwarmingUpDuration() {
+    return exerClassSessionwarmingUpDuration;
+  }
+  public void setExerClassSessionwarmingUpDuration(Integer exerClassSessionwarmingUpDuration) {
+    this.exerClassSessionwarmingUpDuration = exerClassSessionwarmingUpDuration;
+  }
+
+  
+  /**
+   * Session WarningUp HR Min
+   **/
+  @ApiModelProperty(value = "Session WarningUp HR Min")
+  @JsonProperty("ExerClassSessionwarmingUpHRBpmMin")
+  public Integer getExerClassSessionwarmingUpHRBpmMin() {
+    return exerClassSessionwarmingUpHRBpmMin;
+  }
+  public void setExerClassSessionwarmingUpHRBpmMin(Integer exerClassSessionwarmingUpHRBpmMin) {
+    this.exerClassSessionwarmingUpHRBpmMin = exerClassSessionwarmingUpHRBpmMin;
+  }
+
+  
+  /**
+   * Session WarningUp HR Max
+   **/
+  @ApiModelProperty(value = "Session WarningUp HR Max")
+  @JsonProperty("ExerClassSessionwarmingUpHRBpmMax")
+  public Integer getExerClassSessionwarmingUpHRBpmMax() {
+    return exerClassSessionwarmingUpHRBpmMax;
+  }
+  public void setExerClassSessionwarmingUpHRBpmMax(Integer exerClassSessionwarmingUpHRBpmMax) {
+    this.exerClassSessionwarmingUpHRBpmMax = exerClassSessionwarmingUpHRBpmMax;
+  }
+
+  
+  /**
+   * Session warmingUP HR Average
+   **/
+  @ApiModelProperty(value = "Session warmingUP HR Average")
+  @JsonProperty("ExerClassSessionwarmingUpAverageHRBpm")
+  public Integer getExerClassSessionwarmingUpAverageHRBpm() {
+    return exerClassSessionwarmingUpAverageHRBpm;
+  }
+  public void setExerClassSessionwarmingUpAverageHRBpm(Integer exerClassSessionwarmingUpAverageHRBpm) {
+    this.exerClassSessionwarmingUpAverageHRBpm = exerClassSessionwarmingUpAverageHRBpm;
+  }
+
+  
+  /**
+   * Session Main Duration
+   **/
+  @ApiModelProperty(value = "Session Main Duration")
+  @JsonProperty("ExerClassSessionmainInfoDuration")
+  public Integer getExerClassSessionmainInfoDuration() {
+    return exerClassSessionmainInfoDuration;
+  }
+  public void setExerClassSessionmainInfoDuration(Integer exerClassSessionmainInfoDuration) {
+    this.exerClassSessionmainInfoDuration = exerClassSessionmainInfoDuration;
+  }
+
+  
+  /**
+   * Session Main Min HR Bpm
+   **/
+  @ApiModelProperty(value = "Session Main Min HR Bpm")
+  @JsonProperty("ExerClassSessionmainInfoMinHRBpm")
+  public Integer getExerClassSessionmainInfoMinHRBpm() {
+    return exerClassSessionmainInfoMinHRBpm;
+  }
+  public void setExerClassSessionmainInfoMinHRBpm(Integer exerClassSessionmainInfoMinHRBpm) {
+    this.exerClassSessionmainInfoMinHRBpm = exerClassSessionmainInfoMinHRBpm;
+  }
+
+  
+  /**
+   * Session Main Max HR Bpm
+   **/
+  @ApiModelProperty(value = "Session Main Max HR Bpm")
+  @JsonProperty("ExerClassSessionmainInfoMaxHRBpm")
+  public Integer getExerClassSessionmainInfoMaxHRBpm() {
+    return exerClassSessionmainInfoMaxHRBpm;
+  }
+  public void setExerClassSessionmainInfoMaxHRBpm(Integer exerClassSessionmainInfoMaxHRBpm) {
+    this.exerClassSessionmainInfoMaxHRBpm = exerClassSessionmainInfoMaxHRBpm;
+  }
+
+  
+  /**
+   * Session Main Average HR Bpm
+   **/
+  @ApiModelProperty(value = "Session Main Average HR Bpm")
+  @JsonProperty("ExerClassSessionmainInfoAverageHRBpm")
+  public Double getExerClassSessionmainInfoAverageHRBpm() {
+    return exerClassSessionmainInfoAverageHRBpm;
+  }
+  public void setExerClassSessionmainInfoAverageHRBpm(Double exerClassSessionmainInfoAverageHRBpm) {
+    this.exerClassSessionmainInfoAverageHRBpm = exerClassSessionmainInfoAverageHRBpm;
+  }
+
+  
+  /**
+   * Session CoolDown Duration
+   **/
+  @ApiModelProperty(value = "Session CoolDown Duration")
+  @JsonProperty("ExerClassSessioncoolDownInfoDuration")
+  public Integer getExerClassSessioncoolDownInfoDuration() {
+    return exerClassSessioncoolDownInfoDuration;
+  }
+  public void setExerClassSessioncoolDownInfoDuration(Integer exerClassSessioncoolDownInfoDuration) {
+    this.exerClassSessioncoolDownInfoDuration = exerClassSessioncoolDownInfoDuration;
+  }
+
+  
+  /**
+   * Session CoolDown Min HR Bpm
+   **/
+  @ApiModelProperty(value = "Session CoolDown Min HR Bpm")
+  @JsonProperty("ExerClassSessioncoolDownInfoMinHRBpm")
+  public Integer getExerClassSessioncoolDownInfoMinHRBpm() {
+    return exerClassSessioncoolDownInfoMinHRBpm;
+  }
+  public void setExerClassSessioncoolDownInfoMinHRBpm(Integer exerClassSessioncoolDownInfoMinHRBpm) {
+    this.exerClassSessioncoolDownInfoMinHRBpm = exerClassSessioncoolDownInfoMinHRBpm;
+  }
+
+  
+  /**
+   * Session CoolDown Max HR Bpm
+   **/
+  @ApiModelProperty(value = "Session CoolDown Max HR Bpm")
+  @JsonProperty("ExerClassSessioncoolDownInfoMaxHRBpm")
+  public Integer getExerClassSessioncoolDownInfoMaxHRBpm() {
+    return exerClassSessioncoolDownInfoMaxHRBpm;
+  }
+  public void setExerClassSessioncoolDownInfoMaxHRBpm(Integer exerClassSessioncoolDownInfoMaxHRBpm) {
+    this.exerClassSessioncoolDownInfoMaxHRBpm = exerClassSessioncoolDownInfoMaxHRBpm;
+  }
+
+  
+  /**
+   * Session CoolDown Average HR Bpm
+   **/
+  @ApiModelProperty(value = "Session CoolDown Average HR Bpm")
+  @JsonProperty("ExerClassSessioncoolDownInfoAverageHRBpm")
+  public Double getExerClassSessioncoolDownInfoAverageHRBpm() {
+    return exerClassSessioncoolDownInfoAverageHRBpm;
+  }
+  public void setExerClassSessioncoolDownInfoAverageHRBpm(Double exerClassSessioncoolDownInfoAverageHRBpm) {
+    this.exerClassSessioncoolDownInfoAverageHRBpm = exerClassSessioncoolDownInfoAverageHRBpm;
+  }
+
+  
+  /**
+   * Session Session Satisfaction Level
+   **/
+  @ApiModelProperty(value = "Session Session Satisfaction Level")
+  @JsonProperty("ExerClassSessionsessionSatisfactionLevel")
+  public Integer getExerClassSessionsessionSatisfactionLevel() {
+    return exerClassSessionsessionSatisfactionLevel;
+  }
+  public void setExerClassSessionsessionSatisfactionLevel(Integer exerClassSessionsessionSatisfactionLevel) {
+    this.exerClassSessionsessionSatisfactionLevel = exerClassSessionsessionSatisfactionLevel;
+  }
+
+  
+  /**
+   * Session Rate perceived Effort
+   **/
+  @ApiModelProperty(value = "Session Rate perceived Effort")
+  @JsonProperty("ExerClassSessionrpe")
+  public Integer getExerClassSessionrpe() {
+    return exerClassSessionrpe;
+  }
+  public void setExerClassSessionrpe(Integer exerClassSessionrpe) {
+    this.exerClassSessionrpe = exerClassSessionrpe;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("executedExerClassSessionExercisess")
+  public List<ExecutedExerClassSessionExercises> getExecutedExerClassSessionExercisess() {
+    return executedExerClassSessionExercisess;
+  }
+  public void setExecutedExerClassSessionExercisess(List<ExecutedExerClassSessionExercises> executedExerClassSessionExercisess) {
+    this.executedExerClassSessionExercisess = executedExerClassSessionExercisess;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("exerClassPreScreeningInfo")
+  public ExerClassPreScreeningInfo getExerClassPreScreeningInfo() {
+    return exerClassPreScreeningInfo;
+  }
+  public void setExerClassPreScreeningInfo(ExerClassPreScreeningInfo exerClassPreScreeningInfo) {
+    this.exerClassPreScreeningInfo = exerClassPreScreeningInfo;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class ExerClassSessionss {\n");
+    
+    sb.append("    exerClassSessionID: ").append(StringUtil.toIndentedString(exerClassSessionID)).append("\n");
+    sb.append("    exerClassSessiondate: ").append(StringUtil.toIndentedString(exerClassSessiondate)).append("\n");
+    sb.append("    exerClassSessionstartTime: ").append(StringUtil.toIndentedString(exerClassSessionstartTime)).append("\n");
+    sb.append("    exerClassSessionendTime: ").append(StringUtil.toIndentedString(exerClassSessionendTime)).append("\n");
+    sb.append("    exerClassSessionDuration: ").append(StringUtil.toIndentedString(exerClassSessionDuration)).append("\n");
+    sb.append("    exerClassSessionhrFile: ").append(StringUtil.toIndentedString(exerClassSessionhrFile)).append("\n");
+    sb.append("    exerClassSessionexpenditureObservationTimeStamp: ").append(StringUtil.toIndentedString(exerClassSessionexpenditureObservationTimeStamp)).append("\n");
+    sb.append("    exerClassSessionexpenditureObservationValue: ").append(StringUtil.toIndentedString(exerClassSessionexpenditureObservationValue)).append("\n");
+    sb.append("    exerClassSessionacceptable: ").append(StringUtil.toIndentedString(exerClassSessionacceptable)).append("\n");
+    sb.append("    exerClassSessionexerciseRulesMappingHashMapString: ").append(StringUtil.toIndentedString(exerClassSessionexerciseRulesMappingHashMapString)).append("\n");
+    sb.append("    exerClassSessionexerciseRulesMappingHashMapList: ").append(StringUtil.toIndentedString(exerClassSessionexerciseRulesMappingHashMapList)).append("\n");
+    sb.append("    exerClassSessionstatus: ").append(StringUtil.toIndentedString(exerClassSessionstatus)).append("\n");
+    sb.append("    exerClassSessionwarmingUpDuration: ").append(StringUtil.toIndentedString(exerClassSessionwarmingUpDuration)).append("\n");
+    sb.append("    exerClassSessionwarmingUpHRBpmMin: ").append(StringUtil.toIndentedString(exerClassSessionwarmingUpHRBpmMin)).append("\n");
+    sb.append("    exerClassSessionwarmingUpHRBpmMax: ").append(StringUtil.toIndentedString(exerClassSessionwarmingUpHRBpmMax)).append("\n");
+    sb.append("    exerClassSessionwarmingUpAverageHRBpm: ").append(StringUtil.toIndentedString(exerClassSessionwarmingUpAverageHRBpm)).append("\n");
+    sb.append("    exerClassSessionmainInfoDuration: ").append(StringUtil.toIndentedString(exerClassSessionmainInfoDuration)).append("\n");
+    sb.append("    exerClassSessionmainInfoMinHRBpm: ").append(StringUtil.toIndentedString(exerClassSessionmainInfoMinHRBpm)).append("\n");
+    sb.append("    exerClassSessionmainInfoMaxHRBpm: ").append(StringUtil.toIndentedString(exerClassSessionmainInfoMaxHRBpm)).append("\n");
+    sb.append("    exerClassSessionmainInfoAverageHRBpm: ").append(StringUtil.toIndentedString(exerClassSessionmainInfoAverageHRBpm)).append("\n");
+    sb.append("    exerClassSessioncoolDownInfoDuration: ").append(StringUtil.toIndentedString(exerClassSessioncoolDownInfoDuration)).append("\n");
+    sb.append("    exerClassSessioncoolDownInfoMinHRBpm: ").append(StringUtil.toIndentedString(exerClassSessioncoolDownInfoMinHRBpm)).append("\n");
+    sb.append("    exerClassSessioncoolDownInfoMaxHRBpm: ").append(StringUtil.toIndentedString(exerClassSessioncoolDownInfoMaxHRBpm)).append("\n");
+    sb.append("    exerClassSessioncoolDownInfoAverageHRBpm: ").append(StringUtil.toIndentedString(exerClassSessioncoolDownInfoAverageHRBpm)).append("\n");
+    sb.append("    exerClassSessionsessionSatisfactionLevel: ").append(StringUtil.toIndentedString(exerClassSessionsessionSatisfactionLevel)).append("\n");
+    sb.append("    exerClassSessionrpe: ").append(StringUtil.toIndentedString(exerClassSessionrpe)).append("\n");
+    sb.append("    executedExerClassSessionExercisess: ").append(StringUtil.toIndentedString(executedExerClassSessionExercisess)).append("\n");
+    sb.append("    exerClassPreScreeningInfo: ").append(StringUtil.toIndentedString(exerClassPreScreeningInfo)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

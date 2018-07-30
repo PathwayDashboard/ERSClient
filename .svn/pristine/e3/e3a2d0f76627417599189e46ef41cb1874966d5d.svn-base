@@ -1,0 +1,72 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+import io.swagger.client.model.LifeStyleAssessments;
+import io.swagger.client.model.GoalAssessments;
+import java.util.*;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-05-17T15:35:09.175+02:00")
+public class BehaviouralChangeProgress   {
+  
+  private Integer behaviouralChangeType = null;
+  private List<GoalAssessments> goalAssessmentss = new ArrayList<GoalAssessments>();
+  private List<LifeStyleAssessments> lifeStyleAssessmentss = new ArrayList<LifeStyleAssessments>();
+
+  
+  /**
+   * Behavioural Change Type
+   **/
+  @ApiModelProperty(value = "Behavioural Change Type")
+  @JsonProperty("behaviouralChangeType")
+  public Integer getBehaviouralChangeType() {
+    return behaviouralChangeType;
+  }
+  public void setBehaviouralChangeType(Integer behaviouralChangeType) {
+    this.behaviouralChangeType = behaviouralChangeType;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("goalAssessmentss")
+  public List<GoalAssessments> getGoalAssessmentss() {
+    return goalAssessmentss;
+  }
+  public void setGoalAssessmentss(List<GoalAssessments> goalAssessmentss) {
+    this.goalAssessmentss = goalAssessmentss;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("lifeStyleAssessmentss")
+  public List<LifeStyleAssessments> getLifeStyleAssessmentss() {
+    return lifeStyleAssessmentss;
+  }
+  public void setLifeStyleAssessmentss(List<LifeStyleAssessments> lifeStyleAssessmentss) {
+    this.lifeStyleAssessmentss = lifeStyleAssessmentss;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class BehaviouralChangeProgress {\n");
+    
+    sb.append("    behaviouralChangeType: ").append(StringUtil.toIndentedString(behaviouralChangeType)).append("\n");
+    sb.append("    goalAssessmentss: ").append(StringUtil.toIndentedString(goalAssessmentss)).append("\n");
+    sb.append("    lifeStyleAssessmentss: ").append(StringUtil.toIndentedString(lifeStyleAssessmentss)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

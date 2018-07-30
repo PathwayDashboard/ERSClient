@@ -1,0 +1,42 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+import io.swagger.client.model.ActiveLifestylePASessionSS;
+import java.util.*;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-05-30T11:30:03.045+02:00")
+public class ActiveLifeStyleProgress   {
+  
+  private List<ActiveLifestylePASessionSS> activeLifestylePASessionSSs = new ArrayList<ActiveLifestylePASessionSS>();
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("activeLifestylePASessionSSs")
+  public List<ActiveLifestylePASessionSS> getActiveLifestylePASessionSSs() {
+    return activeLifestylePASessionSSs;
+  }
+  public void setActiveLifestylePASessionSSs(List<ActiveLifestylePASessionSS> activeLifestylePASessionSSs) {
+    this.activeLifestylePASessionSSs = activeLifestylePASessionSSs;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class ActiveLifeStyleProgress {\n");
+    
+    sb.append("    activeLifestylePASessionSSs: ").append(StringUtil.toIndentedString(activeLifestylePASessionSSs)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

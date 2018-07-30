@@ -1,0 +1,52 @@
+package it.eng.pathway.fake.model;
+
+public class TrainingPhaseInfo {
+
+	private int duration;
+
+	private int minHR;
+
+	private int maxHR;
+
+	private float averageHR;
+
+	public int getDuration() {
+		return duration;
+	}
+
+	public void setDuration(int duration) {
+		this.duration = duration;
+	}
+
+	public int getMinHR() {
+		return minHR;
+	}
+
+	public void setMinHR(int minHR) {
+		this.minHR = minHR;
+	}
+
+	public int getMaxHR() {
+		return maxHR;
+	}
+
+	public void setMaxHR(int maxHR) {
+		this.maxHR = maxHR;
+	}
+
+	public float getAverageHR() {
+		return averageHR;
+	}
+
+	public void setAverageHR(float averageHR) {
+		this.averageHR = averageHR;
+	}
+
+	@Override
+	public String toString() {
+		return "TrainingPhaseInfo [duration=" + duration + ", minHR=" + minHR + ", maxHR=" + maxHR + ", averageHR="
+				+ averageHR + "]";
+	}
+
+	
+}

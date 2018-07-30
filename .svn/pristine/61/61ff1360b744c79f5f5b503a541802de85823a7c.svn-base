@@ -1,0 +1,59 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+/**
+ * Username and password to open new session
+ **/
+@ApiModel(description = "Username and password to open new session")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-01-28T14:46:04.495+01:00")
+public class CreatePatientSessionData   {
+  
+  private String userName = null;
+  private String password = null;
+
+  
+  /**
+   * User name
+   **/
+  @ApiModelProperty(required = true, value = "User name")
+  @JsonProperty("user_name")
+  public String getUserName() {
+    return userName;
+  }
+  public void setUserName(String userName) {
+    this.userName = userName;
+  }
+
+  
+  /**
+   * Password
+   **/
+  @ApiModelProperty(required = true, value = "Password")
+  @JsonProperty("password")
+  public String getPassword() {
+    return password;
+  }
+  public void setPassword(String password) {
+    this.password = password;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class CreatePatientSessionData {\n");
+    
+    sb.append("    userName: ").append(StringUtil.toIndentedString(userName)).append("\n");
+    sb.append("    password: ").append(StringUtil.toIndentedString(password)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

@@ -1,0 +1,11 @@
+package it.eng.pathway.fake.model;
+
+public class AccuracyZone {
+
+	private int min;
+
+	private int max;
+
+	private ExerClassExerciseDescription exerClassExerciseDescription;
+
+}

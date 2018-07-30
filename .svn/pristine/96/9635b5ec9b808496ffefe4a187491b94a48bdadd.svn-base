@@ -1,0 +1,41 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+import io.swagger.client.model.CpetTestCP;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-05-17T15:35:09.175+02:00")
+public class CPETTest   {
+  
+  private CpetTestCP cpetTestCP = null;
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("cpetTestCP")
+  public CpetTestCP getCpetTestCP() {
+    return cpetTestCP;
+  }
+  public void setCpetTestCP(CpetTestCP cpetTestCP) {
+    this.cpetTestCP = cpetTestCP;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class CPETTest {\n");
+    
+    sb.append("    cpetTestCP: ").append(StringUtil.toIndentedString(cpetTestCP)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

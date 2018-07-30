@@ -1,0 +1,161 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-04-21T15:01:39.375+02:00")
+public class TrainingProfile   {
+  
+  private Integer warmingUpDuration = null;
+  private Integer warmingHRzoneMin = null;
+  private Integer warmingHRzoneMax = null;
+  private Integer mainDuration = null;
+  private Integer mainHRzoneMin = null;
+  private Integer mainHRzoneMax = null;
+  private Integer cooldownDuration = null;
+  private Integer cooldownHRZoneMin = null;
+  private Integer cooldownHRZoneMax = null;
+
+  
+  /**
+   * Warming Up Duration
+   **/
+  @ApiModelProperty(value = "Warming Up Duration")
+  @JsonProperty("warmingUpDuration")
+  public Integer getWarmingUpDuration() {
+    return warmingUpDuration;
+  }
+  public void setWarmingUpDuration(Integer warmingUpDuration) {
+    this.warmingUpDuration = warmingUpDuration;
+  }
+
+  
+  /**
+   * Warming HR zone Min
+   **/
+  @ApiModelProperty(value = "Warming HR zone Min")
+  @JsonProperty("warmingHRzoneMin")
+  public Integer getWarmingHRzoneMin() {
+    return warmingHRzoneMin;
+  }
+  public void setWarmingHRzoneMin(Integer warmingHRzoneMin) {
+    this.warmingHRzoneMin = warmingHRzoneMin;
+  }
+
+  
+  /**
+   * Warming HR zone Max
+   **/
+  @ApiModelProperty(value = "Warming HR zone Max")
+  @JsonProperty("warmingHRzoneMax")
+  public Integer getWarmingHRzoneMax() {
+    return warmingHRzoneMax;
+  }
+  public void setWarmingHRzoneMax(Integer warmingHRzoneMax) {
+    this.warmingHRzoneMax = warmingHRzoneMax;
+  }
+
+  
+  /**
+   * Main Duration
+   **/
+  @ApiModelProperty(value = "Main Duration")
+  @JsonProperty("mainDuration")
+  public Integer getMainDuration() {
+    return mainDuration;
+  }
+  public void setMainDuration(Integer mainDuration) {
+    this.mainDuration = mainDuration;
+  }
+
+  
+  /**
+   * Main HRzone Min
+   **/
+  @ApiModelProperty(value = "Main HRzone Min")
+  @JsonProperty("mainHRzoneMin")
+  public Integer getMainHRzoneMin() {
+    return mainHRzoneMin;
+  }
+  public void setMainHRzoneMin(Integer mainHRzoneMin) {
+    this.mainHRzoneMin = mainHRzoneMin;
+  }
+
+  
+  /**
+   * Main HRzone Max
+   **/
+  @ApiModelProperty(value = "Main HRzone Max")
+  @JsonProperty("mainHRzoneMax")
+  public Integer getMainHRzoneMax() {
+    return mainHRzoneMax;
+  }
+  public void setMainHRzoneMax(Integer mainHRzoneMax) {
+    this.mainHRzoneMax = mainHRzoneMax;
+  }
+
+  
+  /**
+   * Cooldown Duration
+   **/
+  @ApiModelProperty(value = "Cooldown Duration")
+  @JsonProperty("cooldownDuration")
+  public Integer getCooldownDuration() {
+    return cooldownDuration;
+  }
+  public void setCooldownDuration(Integer cooldownDuration) {
+    this.cooldownDuration = cooldownDuration;
+  }
+
+  
+  /**
+   * Cooldown HR Zone Min
+   **/
+  @ApiModelProperty(value = "Cooldown HR Zone Min")
+  @JsonProperty("cooldownHRZoneMin")
+  public Integer getCooldownHRZoneMin() {
+    return cooldownHRZoneMin;
+  }
+  public void setCooldownHRZoneMin(Integer cooldownHRZoneMin) {
+    this.cooldownHRZoneMin = cooldownHRZoneMin;
+  }
+
+  
+  /**
+   * Cooldown HR Zone Max
+   **/
+  @ApiModelProperty(value = "Cooldown HR Zone Max")
+  @JsonProperty("cooldownHRZoneMax")
+  public Integer getCooldownHRZoneMax() {
+    return cooldownHRZoneMax;
+  }
+  public void setCooldownHRZoneMax(Integer cooldownHRZoneMax) {
+    this.cooldownHRZoneMax = cooldownHRZoneMax;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class TrainingProfile {\n");
+    
+    sb.append("    warmingUpDuration: ").append(StringUtil.toIndentedString(warmingUpDuration)).append("\n");
+    sb.append("    warmingHRzoneMin: ").append(StringUtil.toIndentedString(warmingHRzoneMin)).append("\n");
+    sb.append("    warmingHRzoneMax: ").append(StringUtil.toIndentedString(warmingHRzoneMax)).append("\n");
+    sb.append("    mainDuration: ").append(StringUtil.toIndentedString(mainDuration)).append("\n");
+    sb.append("    mainHRzoneMin: ").append(StringUtil.toIndentedString(mainHRzoneMin)).append("\n");
+    sb.append("    mainHRzoneMax: ").append(StringUtil.toIndentedString(mainHRzoneMax)).append("\n");
+    sb.append("    cooldownDuration: ").append(StringUtil.toIndentedString(cooldownDuration)).append("\n");
+    sb.append("    cooldownHRZoneMin: ").append(StringUtil.toIndentedString(cooldownHRZoneMin)).append("\n");
+    sb.append("    cooldownHRZoneMax: ").append(StringUtil.toIndentedString(cooldownHRZoneMax)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

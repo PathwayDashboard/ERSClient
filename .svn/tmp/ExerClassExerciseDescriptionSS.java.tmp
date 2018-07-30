@@ -1,0 +1,266 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-05-17T15:35:09.175+02:00")
+public class ExerClassExerciseDescriptionSS   {
+  
+  private Integer exerClassExerciseDescriptionID = null;
+  private Integer motionReferenceID = null;
+  private Integer exerClassExerciseType = null;
+  private Integer involvedBodyPartsArm = null;
+  private Integer involvedBodyPartsTrunk = null;
+  private Integer involvedBodyPartsLeg = null;
+  private Integer difficulty = null;
+  private Integer intensity = null;
+  private Integer possibleTrainingProfilePhaseWarmingUp = null;
+  private Integer possibleTrainingProfilePhaseMain = null;
+  private Integer possibleTrainingProfilePhaseCoolDown = null;
+  private String exerciseExplanation = null;
+  private String attentionPoints = null;
+  private Double targetAccuracyZonemin = null;
+  private Double targetAccuracyZonemax = null;
+  private Integer repetitionsAreExpected = null;
+
+  
+  /**
+   * exerClass Exercise ID
+   **/
+  @ApiModelProperty(value = "exerClass Exercise ID")
+  @JsonProperty("exerClassExerciseDescriptionID")
+  public Integer getExerClassExerciseDescriptionID() {
+    return exerClassExerciseDescriptionID;
+  }
+  public void setExerClassExerciseDescriptionID(Integer exerClassExerciseDescriptionID) {
+    this.exerClassExerciseDescriptionID = exerClassExerciseDescriptionID;
+  }
+
+  
+  /**
+   * motion Reference ID
+   **/
+  @ApiModelProperty(value = "motion Reference ID")
+  @JsonProperty("motionReferenceID")
+  public Integer getMotionReferenceID() {
+    return motionReferenceID;
+  }
+  public void setMotionReferenceID(Integer motionReferenceID) {
+    this.motionReferenceID = motionReferenceID;
+  }
+
+  
+  /**
+   * exerClass Exercise Type
+   **/
+  @ApiModelProperty(value = "exerClass Exercise Type")
+  @JsonProperty("exerClassExerciseType")
+  public Integer getExerClassExerciseType() {
+    return exerClassExerciseType;
+  }
+  public void setExerClassExerciseType(Integer exerClassExerciseType) {
+    this.exerClassExerciseType = exerClassExerciseType;
+  }
+
+  
+  /**
+   * involved Body Parts Arm
+   **/
+  @ApiModelProperty(value = "involved Body Parts Arm")
+  @JsonProperty("involvedBodyPartsArm")
+  public Integer getInvolvedBodyPartsArm() {
+    return involvedBodyPartsArm;
+  }
+  public void setInvolvedBodyPartsArm(Integer involvedBodyPartsArm) {
+    this.involvedBodyPartsArm = involvedBodyPartsArm;
+  }
+
+  
+  /**
+   * involved Body PartsTrunk
+   **/
+  @ApiModelProperty(value = "involved Body PartsTrunk")
+  @JsonProperty("involvedBodyPartsTrunk")
+  public Integer getInvolvedBodyPartsTrunk() {
+    return involvedBodyPartsTrunk;
+  }
+  public void setInvolvedBodyPartsTrunk(Integer involvedBodyPartsTrunk) {
+    this.involvedBodyPartsTrunk = involvedBodyPartsTrunk;
+  }
+
+  
+  /**
+   * involved Body Parts Leg
+   **/
+  @ApiModelProperty(value = "involved Body Parts Leg")
+  @JsonProperty("involvedBodyPartsLeg")
+  public Integer getInvolvedBodyPartsLeg() {
+    return involvedBodyPartsLeg;
+  }
+  public void setInvolvedBodyPartsLeg(Integer involvedBodyPartsLeg) {
+    this.involvedBodyPartsLeg = involvedBodyPartsLeg;
+  }
+
+  
+  /**
+   * difficulty
+   **/
+  @ApiModelProperty(value = "difficulty")
+  @JsonProperty("difficulty")
+  public Integer getDifficulty() {
+    return difficulty;
+  }
+  public void setDifficulty(Integer difficulty) {
+    this.difficulty = difficulty;
+  }
+
+  
+  /**
+   * intensity
+   **/
+  @ApiModelProperty(value = "intensity")
+  @JsonProperty("intensity")
+  public Integer getIntensity() {
+    return intensity;
+  }
+  public void setIntensity(Integer intensity) {
+    this.intensity = intensity;
+  }
+
+  
+  /**
+   * possible Training Profile Phase Warming Up
+   **/
+  @ApiModelProperty(value = "possible Training Profile Phase Warming Up")
+  @JsonProperty("possibleTrainingProfilePhaseWarmingUp")
+  public Integer getPossibleTrainingProfilePhaseWarmingUp() {
+    return possibleTrainingProfilePhaseWarmingUp;
+  }
+  public void setPossibleTrainingProfilePhaseWarmingUp(Integer possibleTrainingProfilePhaseWarmingUp) {
+    this.possibleTrainingProfilePhaseWarmingUp = possibleTrainingProfilePhaseWarmingUp;
+  }
+
+  
+  /**
+   * possible Training Profile Phase Main
+   **/
+  @ApiModelProperty(value = "possible Training Profile Phase Main")
+  @JsonProperty("possibleTrainingProfilePhaseMain")
+  public Integer getPossibleTrainingProfilePhaseMain() {
+    return possibleTrainingProfilePhaseMain;
+  }
+  public void setPossibleTrainingProfilePhaseMain(Integer possibleTrainingProfilePhaseMain) {
+    this.possibleTrainingProfilePhaseMain = possibleTrainingProfilePhaseMain;
+  }
+
+  
+  /**
+   * possible Training Profile Phase Cool Down
+   **/
+  @ApiModelProperty(value = "possible Training Profile Phase Cool Down")
+  @JsonProperty("possibleTrainingProfilePhaseCoolDown")
+  public Integer getPossibleTrainingProfilePhaseCoolDown() {
+    return possibleTrainingProfilePhaseCoolDown;
+  }
+  public void setPossibleTrainingProfilePhaseCoolDown(Integer possibleTrainingProfilePhaseCoolDown) {
+    this.possibleTrainingProfilePhaseCoolDown = possibleTrainingProfilePhaseCoolDown;
+  }
+
+  
+  /**
+   * exercise Explanation
+   **/
+  @ApiModelProperty(value = "exercise Explanation")
+  @JsonProperty("exerciseExplanation")
+  public String getExerciseExplanation() {
+    return exerciseExplanation;
+  }
+  public void setExerciseExplanation(String exerciseExplanation) {
+    this.exerciseExplanation = exerciseExplanation;
+  }
+
+  
+  /**
+   * attention Points
+   **/
+  @ApiModelProperty(value = "attention Points")
+  @JsonProperty("attentionPoints")
+  public String getAttentionPoints() {
+    return attentionPoints;
+  }
+  public void setAttentionPoints(String attentionPoints) {
+    this.attentionPoints = attentionPoints;
+  }
+
+  
+  /**
+   * target Accuracy Zonemin
+   **/
+  @ApiModelProperty(value = "target Accuracy Zonemin")
+  @JsonProperty("targetAccuracyZonemin")
+  public Double getTargetAccuracyZonemin() {
+    return targetAccuracyZonemin;
+  }
+  public void setTargetAccuracyZonemin(Double targetAccuracyZonemin) {
+    this.targetAccuracyZonemin = targetAccuracyZonemin;
+  }
+
+  
+  /**
+   * target Accuracy Zone max
+   **/
+  @ApiModelProperty(value = "target Accuracy Zone max")
+  @JsonProperty("targetAccuracyZonemax")
+  public Double getTargetAccuracyZonemax() {
+    return targetAccuracyZonemax;
+  }
+  public void setTargetAccuracyZonemax(Double targetAccuracyZonemax) {
+    this.targetAccuracyZonemax = targetAccuracyZonemax;
+  }
+
+  
+  /**
+   * repetitions Are Expected
+   **/
+  @ApiModelProperty(value = "repetitions Are Expected")
+  @JsonProperty("repetitionsAreExpected")
+  public Integer getRepetitionsAreExpected() {
+    return repetitionsAreExpected;
+  }
+  public void setRepetitionsAreExpected(Integer repetitionsAreExpected) {
+    this.repetitionsAreExpected = repetitionsAreExpected;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class ExerClassExerciseDescriptionSS {\n");
+    
+    sb.append("    exerClassExerciseDescriptionID: ").append(StringUtil.toIndentedString(exerClassExerciseDescriptionID)).append("\n");
+    sb.append("    motionReferenceID: ").append(StringUtil.toIndentedString(motionReferenceID)).append("\n");
+    sb.append("    exerClassExerciseType: ").append(StringUtil.toIndentedString(exerClassExerciseType)).append("\n");
+    sb.append("    involvedBodyPartsArm: ").append(StringUtil.toIndentedString(involvedBodyPartsArm)).append("\n");
+    sb.append("    involvedBodyPartsTrunk: ").append(StringUtil.toIndentedString(involvedBodyPartsTrunk)).append("\n");
+    sb.append("    involvedBodyPartsLeg: ").append(StringUtil.toIndentedString(involvedBodyPartsLeg)).append("\n");
+    sb.append("    difficulty: ").append(StringUtil.toIndentedString(difficulty)).append("\n");
+    sb.append("    intensity: ").append(StringUtil.toIndentedString(intensity)).append("\n");
+    sb.append("    possibleTrainingProfilePhaseWarmingUp: ").append(StringUtil.toIndentedString(possibleTrainingProfilePhaseWarmingUp)).append("\n");
+    sb.append("    possibleTrainingProfilePhaseMain: ").append(StringUtil.toIndentedString(possibleTrainingProfilePhaseMain)).append("\n");
+    sb.append("    possibleTrainingProfilePhaseCoolDown: ").append(StringUtil.toIndentedString(possibleTrainingProfilePhaseCoolDown)).append("\n");
+    sb.append("    exerciseExplanation: ").append(StringUtil.toIndentedString(exerciseExplanation)).append("\n");
+    sb.append("    attentionPoints: ").append(StringUtil.toIndentedString(attentionPoints)).append("\n");
+    sb.append("    targetAccuracyZonemin: ").append(StringUtil.toIndentedString(targetAccuracyZonemin)).append("\n");
+    sb.append("    targetAccuracyZonemax: ").append(StringUtil.toIndentedString(targetAccuracyZonemax)).append("\n");
+    sb.append("    repetitionsAreExpected: ").append(StringUtil.toIndentedString(repetitionsAreExpected)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

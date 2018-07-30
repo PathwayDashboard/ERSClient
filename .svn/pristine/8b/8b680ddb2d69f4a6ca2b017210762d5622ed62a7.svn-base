@@ -1,0 +1,56 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-04-21T15:01:39.375+02:00")
+public class BehaviouralChangeProgramLifeStyleAssessmentQuestionnaire   {
+  
+  private Integer behaviouralChangeProgramLifeStyleAssessmentQuestionnaireID = null;
+  private String behaviouralChangeProgramLifeStyleAssessmentQuestionnaireQ1 = null;
+
+  
+  /**
+   * Life Style Assessment Questionnaire ID
+   **/
+  @ApiModelProperty(value = "Life Style Assessment Questionnaire ID")
+  @JsonProperty("behaviouralChangeProgramLifeStyleAssessmentQuestionnaireID")
+  public Integer getBehaviouralChangeProgramLifeStyleAssessmentQuestionnaireID() {
+    return behaviouralChangeProgramLifeStyleAssessmentQuestionnaireID;
+  }
+  public void setBehaviouralChangeProgramLifeStyleAssessmentQuestionnaireID(Integer behaviouralChangeProgramLifeStyleAssessmentQuestionnaireID) {
+    this.behaviouralChangeProgramLifeStyleAssessmentQuestionnaireID = behaviouralChangeProgramLifeStyleAssessmentQuestionnaireID;
+  }
+
+  
+  /**
+   * tbd
+   **/
+  @ApiModelProperty(value = "tbd")
+  @JsonProperty("behaviouralChangeProgramLifeStyleAssessmentQuestionnaireQ1")
+  public String getBehaviouralChangeProgramLifeStyleAssessmentQuestionnaireQ1() {
+    return behaviouralChangeProgramLifeStyleAssessmentQuestionnaireQ1;
+  }
+  public void setBehaviouralChangeProgramLifeStyleAssessmentQuestionnaireQ1(String behaviouralChangeProgramLifeStyleAssessmentQuestionnaireQ1) {
+    this.behaviouralChangeProgramLifeStyleAssessmentQuestionnaireQ1 = behaviouralChangeProgramLifeStyleAssessmentQuestionnaireQ1;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class BehaviouralChangeProgramLifeStyleAssessmentQuestionnaire {\n");
+    
+    sb.append("    behaviouralChangeProgramLifeStyleAssessmentQuestionnaireID: ").append(StringUtil.toIndentedString(behaviouralChangeProgramLifeStyleAssessmentQuestionnaireID)).append("\n");
+    sb.append("    behaviouralChangeProgramLifeStyleAssessmentQuestionnaireQ1: ").append(StringUtil.toIndentedString(behaviouralChangeProgramLifeStyleAssessmentQuestionnaireQ1)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

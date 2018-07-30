@@ -1,0 +1,15 @@
+package it.eng.pathway.fake.model;
+
+public enum ChannelType {
+
+	;
+
+	private int sms;
+
+	private int mail;
+
+	private ExerciseNotificationPreferences exerciseNotificationPreferences;
+
+	private BehaviouralChangeNotificationPreferences behaviouralChangeNotificationPreferences;
+
+}

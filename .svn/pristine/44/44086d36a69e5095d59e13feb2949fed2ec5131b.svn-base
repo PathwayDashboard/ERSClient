@@ -1,0 +1,31 @@
+package it.eng.pathway.fake.model;
+
+import java.io.File;
+
+public class HealthAndFitnessAssessmentSession {
+
+	private int minute1HR;
+
+	private int minute2HR;
+
+	private int minute3HR;
+
+	private int minute4HR;
+
+	private int energyExpenditure;
+
+	private int symptoms;
+
+	private int difficultyLevel;
+
+	private int date;
+
+	private File hr_file;
+
+	private CardiacRehabilitationProgress cardiacRehabilitationProgress;
+
+	private HealthAndFitnessAssessmentPreScreeningInfo healthAndFitnessAssessmentPreScreeningInfo;
+
+	private File file;
+
+}

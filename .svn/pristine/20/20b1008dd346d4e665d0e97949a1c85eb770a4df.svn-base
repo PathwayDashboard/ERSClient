@@ -1,0 +1,237 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+import java.util.Date;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-05-13T12:06:50.958+02:00")
+public class CpetTestCP   {
+  
+  private Date cPetDate = null;
+  private Integer cpetTerminatedBy = null;
+  private Integer cpetVisitNumber = null;
+  private String cpetProtocol = null;
+  private Integer cpetHrRestSitting = null;
+  private Integer cpetSysBPRestSitting = null;
+  private Integer cpetDIastolicBPRestSitting = null;
+  private Integer cpetHrPeak = null;
+  private Integer cpetSysBPPeak = null;
+  private Double cpetRqPeak = null;
+  private Double vO2Peak = null;
+  private Double vO2PredictedPeak = null;
+  private Integer vO2PercentagePredicted = null;
+  private Integer borgScore = null;
+
+  
+  /**
+   * Cpet date
+   **/
+  @ApiModelProperty(value = "Cpet date")
+  @JsonProperty("CPetDate")
+  public Date getCPetDate() {
+    return cPetDate;
+  }
+  public void setCPetDate(Date cPetDate) {
+    this.cPetDate = cPetDate;
+  }
+
+  
+  /**
+   * Terminated by
+   **/
+  @ApiModelProperty(value = "Terminated by")
+  @JsonProperty("CpetTerminatedBy")
+  public Integer getCpetTerminatedBy() {
+    return cpetTerminatedBy;
+  }
+  public void setCpetTerminatedBy(Integer cpetTerminatedBy) {
+    this.cpetTerminatedBy = cpetTerminatedBy;
+  }
+
+  
+  /**
+   * Visitnumber
+   **/
+  @ApiModelProperty(value = "Visitnumber")
+  @JsonProperty("CpetVisitNumber")
+  public Integer getCpetVisitNumber() {
+    return cpetVisitNumber;
+  }
+  public void setCpetVisitNumber(Integer cpetVisitNumber) {
+    this.cpetVisitNumber = cpetVisitNumber;
+  }
+
+  
+  /**
+   * Cpet protocol
+   **/
+  @ApiModelProperty(value = "Cpet protocol")
+  @JsonProperty("CpetProtocol")
+  public String getCpetProtocol() {
+    return cpetProtocol;
+  }
+  public void setCpetProtocol(String cpetProtocol) {
+    this.cpetProtocol = cpetProtocol;
+  }
+
+  
+  /**
+   * HR rest sitting
+   **/
+  @ApiModelProperty(value = "HR rest sitting")
+  @JsonProperty("CpetHrRestSitting")
+  public Integer getCpetHrRestSitting() {
+    return cpetHrRestSitting;
+  }
+  public void setCpetHrRestSitting(Integer cpetHrRestSitting) {
+    this.cpetHrRestSitting = cpetHrRestSitting;
+  }
+
+  
+  /**
+   * Systolic BP rest Sitting
+   **/
+  @ApiModelProperty(value = "Systolic BP rest Sitting")
+  @JsonProperty("CpetSysBPRestSitting")
+  public Integer getCpetSysBPRestSitting() {
+    return cpetSysBPRestSitting;
+  }
+  public void setCpetSysBPRestSitting(Integer cpetSysBPRestSitting) {
+    this.cpetSysBPRestSitting = cpetSysBPRestSitting;
+  }
+
+  
+  /**
+   * Diastolic BP rest Sitting
+   **/
+  @ApiModelProperty(value = "Diastolic BP rest Sitting")
+  @JsonProperty("CpetDIastolicBPRestSitting")
+  public Integer getCpetDIastolicBPRestSitting() {
+    return cpetDIastolicBPRestSitting;
+  }
+  public void setCpetDIastolicBPRestSitting(Integer cpetDIastolicBPRestSitting) {
+    this.cpetDIastolicBPRestSitting = cpetDIastolicBPRestSitting;
+  }
+
+  
+  /**
+   * HR peak
+   **/
+  @ApiModelProperty(value = "HR peak")
+  @JsonProperty("CpetHrPeak")
+  public Integer getCpetHrPeak() {
+    return cpetHrPeak;
+  }
+  public void setCpetHrPeak(Integer cpetHrPeak) {
+    this.cpetHrPeak = cpetHrPeak;
+  }
+
+  
+  /**
+   * Systolic BP peak
+   **/
+  @ApiModelProperty(value = "Systolic BP peak")
+  @JsonProperty("CpetSysBPPeak")
+  public Integer getCpetSysBPPeak() {
+    return cpetSysBPPeak;
+  }
+  public void setCpetSysBPPeak(Integer cpetSysBPPeak) {
+    this.cpetSysBPPeak = cpetSysBPPeak;
+  }
+
+  
+  /**
+   * RQ peak
+   **/
+  @ApiModelProperty(value = "RQ peak")
+  @JsonProperty("CpetRqPeak")
+  public Double getCpetRqPeak() {
+    return cpetRqPeak;
+  }
+  public void setCpetRqPeak(Double cpetRqPeak) {
+    this.cpetRqPeak = cpetRqPeak;
+  }
+
+  
+  /**
+   * Vo2 peak
+   **/
+  @ApiModelProperty(value = "Vo2 peak")
+  @JsonProperty("VO2Peak")
+  public Double getVO2Peak() {
+    return vO2Peak;
+  }
+  public void setVO2Peak(Double vO2Peak) {
+    this.vO2Peak = vO2Peak;
+  }
+
+  
+  /**
+   * Vo2 peak predicted
+   **/
+  @ApiModelProperty(value = "Vo2 peak predicted")
+  @JsonProperty("VO2PredictedPeak")
+  public Double getVO2PredictedPeak() {
+    return vO2PredictedPeak;
+  }
+  public void setVO2PredictedPeak(Double vO2PredictedPeak) {
+    this.vO2PredictedPeak = vO2PredictedPeak;
+  }
+
+  
+  /**
+   * Vo2 % predicted
+   **/
+  @ApiModelProperty(value = "Vo2 % predicted")
+  @JsonProperty("VO2PercentagePredicted")
+  public Integer getVO2PercentagePredicted() {
+    return vO2PercentagePredicted;
+  }
+  public void setVO2PercentagePredicted(Integer vO2PercentagePredicted) {
+    this.vO2PercentagePredicted = vO2PercentagePredicted;
+  }
+
+  
+  /**
+   * Borg score
+   **/
+  @ApiModelProperty(value = "Borg score")
+  @JsonProperty("BorgScore")
+  public Integer getBorgScore() {
+    return borgScore;
+  }
+  public void setBorgScore(Integer borgScore) {
+    this.borgScore = borgScore;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class CpetTestCP {\n");
+    
+    sb.append("    cPetDate: ").append(StringUtil.toIndentedString(cPetDate)).append("\n");
+    sb.append("    cpetTerminatedBy: ").append(StringUtil.toIndentedString(cpetTerminatedBy)).append("\n");
+    sb.append("    cpetVisitNumber: ").append(StringUtil.toIndentedString(cpetVisitNumber)).append("\n");
+    sb.append("    cpetProtocol: ").append(StringUtil.toIndentedString(cpetProtocol)).append("\n");
+    sb.append("    cpetHrRestSitting: ").append(StringUtil.toIndentedString(cpetHrRestSitting)).append("\n");
+    sb.append("    cpetSysBPRestSitting: ").append(StringUtil.toIndentedString(cpetSysBPRestSitting)).append("\n");
+    sb.append("    cpetDIastolicBPRestSitting: ").append(StringUtil.toIndentedString(cpetDIastolicBPRestSitting)).append("\n");
+    sb.append("    cpetHrPeak: ").append(StringUtil.toIndentedString(cpetHrPeak)).append("\n");
+    sb.append("    cpetSysBPPeak: ").append(StringUtil.toIndentedString(cpetSysBPPeak)).append("\n");
+    sb.append("    cpetRqPeak: ").append(StringUtil.toIndentedString(cpetRqPeak)).append("\n");
+    sb.append("    vO2Peak: ").append(StringUtil.toIndentedString(vO2Peak)).append("\n");
+    sb.append("    vO2PredictedPeak: ").append(StringUtil.toIndentedString(vO2PredictedPeak)).append("\n");
+    sb.append("    vO2PercentagePredicted: ").append(StringUtil.toIndentedString(vO2PercentagePredicted)).append("\n");
+    sb.append("    borgScore: ").append(StringUtil.toIndentedString(borgScore)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

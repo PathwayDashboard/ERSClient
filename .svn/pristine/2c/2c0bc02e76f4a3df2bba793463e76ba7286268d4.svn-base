@@ -1,0 +1,86 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-04-21T15:01:39.375+02:00")
+public class ExerciseNotificationPreferences   {
+  
+  private Integer exerciseProgressNotificationPeriod = null;
+  private Integer exerciseProgressNotificationChannel = null;
+  private Integer nextSessionNotificationChannel = null;
+  private Integer inactiveStatusNotificationChannel = null;
+
+  
+  /**
+   * exercise progress notification period
+   **/
+  @ApiModelProperty(value = "exercise progress notification period")
+  @JsonProperty("exerciseProgressNotificationPeriod")
+  public Integer getExerciseProgressNotificationPeriod() {
+    return exerciseProgressNotificationPeriod;
+  }
+  public void setExerciseProgressNotificationPeriod(Integer exerciseProgressNotificationPeriod) {
+    this.exerciseProgressNotificationPeriod = exerciseProgressNotificationPeriod;
+  }
+
+  
+  /**
+   * exercise progress notification channel
+   **/
+  @ApiModelProperty(value = "exercise progress notification channel")
+  @JsonProperty("exerciseProgressNotificationChannel")
+  public Integer getExerciseProgressNotificationChannel() {
+    return exerciseProgressNotificationChannel;
+  }
+  public void setExerciseProgressNotificationChannel(Integer exerciseProgressNotificationChannel) {
+    this.exerciseProgressNotificationChannel = exerciseProgressNotificationChannel;
+  }
+
+  
+  /**
+   * next session notification channel
+   **/
+  @ApiModelProperty(value = "next session notification channel")
+  @JsonProperty("nextSessionNotificationChannel")
+  public Integer getNextSessionNotificationChannel() {
+    return nextSessionNotificationChannel;
+  }
+  public void setNextSessionNotificationChannel(Integer nextSessionNotificationChannel) {
+    this.nextSessionNotificationChannel = nextSessionNotificationChannel;
+  }
+
+  
+  /**
+   * inactive status notification Channel
+   **/
+  @ApiModelProperty(value = "inactive status notification Channel")
+  @JsonProperty("inactiveStatusNotificationChannel")
+  public Integer getInactiveStatusNotificationChannel() {
+    return inactiveStatusNotificationChannel;
+  }
+  public void setInactiveStatusNotificationChannel(Integer inactiveStatusNotificationChannel) {
+    this.inactiveStatusNotificationChannel = inactiveStatusNotificationChannel;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class ExerciseNotificationPreferences {\n");
+    
+    sb.append("    exerciseProgressNotificationPeriod: ").append(StringUtil.toIndentedString(exerciseProgressNotificationPeriod)).append("\n");
+    sb.append("    exerciseProgressNotificationChannel: ").append(StringUtil.toIndentedString(exerciseProgressNotificationChannel)).append("\n");
+    sb.append("    nextSessionNotificationChannel: ").append(StringUtil.toIndentedString(nextSessionNotificationChannel)).append("\n");
+    sb.append("    inactiveStatusNotificationChannel: ").append(StringUtil.toIndentedString(inactiveStatusNotificationChannel)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

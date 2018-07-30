@@ -1,0 +1,86 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-05-13T12:06:50.958+02:00")
+public class BehavioralChangeNotificationPreferences   {
+  
+  private Integer behavioralChangeProgressNotificationPeriod = null;
+  private Integer behavioralChangeProgressNotificationChannel = null;
+  private Integer behavioralChangeAdvicesNotificationPeriod = null;
+  private Integer behavioralChangeAdvicesNotificationChannel = null;
+
+  
+  /**
+   * Progress notification period
+   **/
+  @ApiModelProperty(value = "Progress notification period")
+  @JsonProperty("behavioralChangeProgressNotificationPeriod")
+  public Integer getBehavioralChangeProgressNotificationPeriod() {
+    return behavioralChangeProgressNotificationPeriod;
+  }
+  public void setBehavioralChangeProgressNotificationPeriod(Integer behavioralChangeProgressNotificationPeriod) {
+    this.behavioralChangeProgressNotificationPeriod = behavioralChangeProgressNotificationPeriod;
+  }
+
+  
+  /**
+   * Progress notification channel
+   **/
+  @ApiModelProperty(value = "Progress notification channel")
+  @JsonProperty("behavioralChangeProgressNotificationChannel")
+  public Integer getBehavioralChangeProgressNotificationChannel() {
+    return behavioralChangeProgressNotificationChannel;
+  }
+  public void setBehavioralChangeProgressNotificationChannel(Integer behavioralChangeProgressNotificationChannel) {
+    this.behavioralChangeProgressNotificationChannel = behavioralChangeProgressNotificationChannel;
+  }
+
+  
+  /**
+   * Advices notification period
+   **/
+  @ApiModelProperty(value = "Advices notification period")
+  @JsonProperty("behavioralChangeAdvicesNotificationPeriod")
+  public Integer getBehavioralChangeAdvicesNotificationPeriod() {
+    return behavioralChangeAdvicesNotificationPeriod;
+  }
+  public void setBehavioralChangeAdvicesNotificationPeriod(Integer behavioralChangeAdvicesNotificationPeriod) {
+    this.behavioralChangeAdvicesNotificationPeriod = behavioralChangeAdvicesNotificationPeriod;
+  }
+
+  
+  /**
+   * Advices notification channel
+   **/
+  @ApiModelProperty(value = "Advices notification channel")
+  @JsonProperty("behavioralChangeAdvicesNotificationChannel")
+  public Integer getBehavioralChangeAdvicesNotificationChannel() {
+    return behavioralChangeAdvicesNotificationChannel;
+  }
+  public void setBehavioralChangeAdvicesNotificationChannel(Integer behavioralChangeAdvicesNotificationChannel) {
+    this.behavioralChangeAdvicesNotificationChannel = behavioralChangeAdvicesNotificationChannel;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class BehavioralChangeNotificationPreferences {\n");
+    
+    sb.append("    behavioralChangeProgressNotificationPeriod: ").append(StringUtil.toIndentedString(behavioralChangeProgressNotificationPeriod)).append("\n");
+    sb.append("    behavioralChangeProgressNotificationChannel: ").append(StringUtil.toIndentedString(behavioralChangeProgressNotificationChannel)).append("\n");
+    sb.append("    behavioralChangeAdvicesNotificationPeriod: ").append(StringUtil.toIndentedString(behavioralChangeAdvicesNotificationPeriod)).append("\n");
+    sb.append("    behavioralChangeAdvicesNotificationChannel: ").append(StringUtil.toIndentedString(behavioralChangeAdvicesNotificationChannel)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

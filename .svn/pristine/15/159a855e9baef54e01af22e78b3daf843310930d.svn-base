@@ -1,0 +1,106 @@
+package it.eng.pathway.fake.model;
+
+public class ExerGameSession extends ExerciseSession {
+
+	private int score;
+
+	private StatusType status;
+
+	private TrainingPhaseInfo warmingUpDuration;
+
+	private TrainingPhaseInfo stretchingDuration;
+
+	private TrainingPhaseInfo aerobicEnduranceDuration;
+
+	private TrainingPhaseInfo coolDownDuration;
+
+	private TrainingPhaseInfo relaxationDuration;
+
+	private SatisfactionLevelType sessionSatisfactionLevel;
+
+	private TrainingPhaseInfo trainingPhaseInfo;
+
+	public int getScore() {
+		return score;
+	}
+
+	public void setScore(int score) {
+		this.score = score;
+	}
+
+	public StatusType getStatus() {
+		return status;
+	}
+
+	public void setStatus(StatusType status) {
+		this.status = status;
+	}
+
+	public TrainingPhaseInfo getWarmingUpDuration() {
+		return warmingUpDuration;
+	}
+
+	public void setWarmingUpDuration(TrainingPhaseInfo warmingUpDuration) {
+		this.warmingUpDuration = warmingUpDuration;
+	}
+
+	public TrainingPhaseInfo getStretchingDuration() {
+		return stretchingDuration;
+	}
+
+	public void setStretchingDuration(TrainingPhaseInfo stretchingDuration) {
+		this.stretchingDuration = stretchingDuration;
+	}
+
+	public TrainingPhaseInfo getAerobicEnduranceDuration() {
+		return aerobicEnduranceDuration;
+	}
+
+	public void setAerobicEnduranceDuration(TrainingPhaseInfo aerobicEnduranceDuration) {
+		this.aerobicEnduranceDuration = aerobicEnduranceDuration;
+	}
+
+	public TrainingPhaseInfo getCoolDownDuration() {
+		return coolDownDuration;
+	}
+
+	public void setCoolDownDuration(TrainingPhaseInfo coolDownDuration) {
+		this.coolDownDuration = coolDownDuration;
+	}
+
+	public TrainingPhaseInfo getRelaxationDuration() {
+		return relaxationDuration;
+	}
+
+	public void setRelaxationDuration(TrainingPhaseInfo relaxationDuration) {
+		this.relaxationDuration = relaxationDuration;
+	}
+
+	public SatisfactionLevelType getSessionSatisfactionLevel() {
+		return sessionSatisfactionLevel;
+	}
+
+	public void setSessionSatisfactionLevel(SatisfactionLevelType sessionSatisfactionLevel) {
+		this.sessionSatisfactionLevel = sessionSatisfactionLevel;
+	}
+
+	public TrainingPhaseInfo getTrainingPhaseInfo() {
+		return trainingPhaseInfo;
+	}
+
+	public void setTrainingPhaseInfo(TrainingPhaseInfo trainingPhaseInfo) {
+		this.trainingPhaseInfo = trainingPhaseInfo;
+	}
+
+	@Override
+	public String toString() {
+		return "ExerGameSession [score=" + score + ", warmingUpDuration=" + warmingUpDuration + ", stretchingDuration="
+				+ stretchingDuration + ", aerobicEnduranceDuration=" + aerobicEnduranceDuration + ", coolDownDuration="
+				+ coolDownDuration + ", relaxationDuration=" + relaxationDuration + ", getDate()=" + getDate()
+				+ ", getDuration()=" + getDuration() + ", getEnergyExpenditure()=" + getEnergyExpenditure()
+				+ ", getStart_time()=" + getStart_time() + ", getEnd_time()=" + getEnd_time() + "]";
+	}
+	
+	
+
+}

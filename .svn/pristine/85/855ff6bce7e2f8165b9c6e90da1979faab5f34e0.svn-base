@@ -1,0 +1,164 @@
+package ers.client.model;
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+import ers.client.StringUtil;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-01-13T11:04:43.139+01:00")
+public class ExerClassExerciseDescription   {
+  
+  private String uid = null;
+  private String category = null;
+  private String difficulty = null;
+  private String value = null;
+  private String intensity = null;
+  private Integer targetAccuracyZoneMin = null;
+  private Integer targetAccuracyZoneMax = null;
+  private Integer possibleTrainingProfilePhase = null;
+  private String textualExplanation = null;
+  private String involvedBodyParts = null;
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("uid")
+  public String getUid() {
+    return uid;
+  }
+  public void setUid(String uid) {
+    this.uid = uid;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("category")
+  public String getCategory() {
+    return category;
+  }
+  public void setCategory(String category) {
+    this.category = category;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("difficulty")
+  public String getDifficulty() {
+    return difficulty;
+  }
+  public void setDifficulty(String difficulty) {
+    this.difficulty = difficulty;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("value")
+  public String getValue() {
+    return value;
+  }
+  public void setValue(String value) {
+    this.value = value;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("intensity")
+  public String getIntensity() {
+    return intensity;
+  }
+  public void setIntensity(String intensity) {
+    this.intensity = intensity;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("targetAccuracyZone_min")
+  public Integer getTargetAccuracyZoneMin() {
+    return targetAccuracyZoneMin;
+  }
+  public void setTargetAccuracyZoneMin(Integer targetAccuracyZoneMin) {
+    this.targetAccuracyZoneMin = targetAccuracyZoneMin;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("targetAccuracyZone_max")
+  public Integer getTargetAccuracyZoneMax() {
+    return targetAccuracyZoneMax;
+  }
+  public void setTargetAccuracyZoneMax(Integer targetAccuracyZoneMax) {
+    this.targetAccuracyZoneMax = targetAccuracyZoneMax;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("possibleTrainingProfilePhase")
+  public Integer getPossibleTrainingProfilePhase() {
+    return possibleTrainingProfilePhase;
+  }
+  public void setPossibleTrainingProfilePhase(Integer possibleTrainingProfilePhase) {
+    this.possibleTrainingProfilePhase = possibleTrainingProfilePhase;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("textualExplanation")
+  public String getTextualExplanation() {
+    return textualExplanation;
+  }
+  public void setTextualExplanation(String textualExplanation) {
+    this.textualExplanation = textualExplanation;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("involvedBodyParts")
+  public String getInvolvedBodyParts() {
+    return involvedBodyParts;
+  }
+  public void setInvolvedBodyParts(String involvedBodyParts) {
+    this.involvedBodyParts = involvedBodyParts;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class ExerClassExerciseDescription {\n");
+    
+    sb.append("    uid: ").append(StringUtil.toIndentedString(uid)).append("\n");
+    sb.append("    category: ").append(StringUtil.toIndentedString(category)).append("\n");
+    sb.append("    difficulty: ").append(StringUtil.toIndentedString(difficulty)).append("\n");
+    sb.append("    value: ").append(StringUtil.toIndentedString(value)).append("\n");
+    sb.append("    intensity: ").append(StringUtil.toIndentedString(intensity)).append("\n");
+    sb.append("    targetAccuracyZoneMin: ").append(StringUtil.toIndentedString(targetAccuracyZoneMin)).append("\n");
+    sb.append("    targetAccuracyZoneMax: ").append(StringUtil.toIndentedString(targetAccuracyZoneMax)).append("\n");
+    sb.append("    possibleTrainingProfilePhase: ").append(StringUtil.toIndentedString(possibleTrainingProfilePhase)).append("\n");
+    sb.append("    textualExplanation: ").append(StringUtil.toIndentedString(textualExplanation)).append("\n");
+    sb.append("    involvedBodyParts: ").append(StringUtil.toIndentedString(involvedBodyParts)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

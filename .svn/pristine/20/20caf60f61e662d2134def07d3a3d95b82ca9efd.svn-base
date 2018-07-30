@@ -1,0 +1,96 @@
+package io.swagger.client.model;
+
+import com.fasterxml.jackson.annotation.JsonValue;
+import java.util.Objects;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
+
+/**
+ * ExercisePreferencePersonalisedIntensitySubsection
+ */
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-07-15T09:31:08.817+02:00")
+public class ExercisePreferencePersonalisedIntensitySubsection   {
+  
+  private Integer exerclassExerciseDescriptionID = null;
+  private Integer value = null;
+
+  
+  /**
+   * exerclassExerciseDescriptionID
+   **/
+  public ExercisePreferencePersonalisedIntensitySubsection exerclassExerciseDescriptionID(Integer exerclassExerciseDescriptionID) {
+    this.exerclassExerciseDescriptionID = exerclassExerciseDescriptionID;
+    return this;
+  }
+  
+  @ApiModelProperty(example = "null", value = "exerclassExerciseDescriptionID")
+  @JsonProperty("exerclassExerciseDescriptionID")
+  public Integer getExerclassExerciseDescriptionID() {
+    return exerclassExerciseDescriptionID;
+  }
+  public void setExerclassExerciseDescriptionID(Integer exerclassExerciseDescriptionID) {
+    this.exerclassExerciseDescriptionID = exerclassExerciseDescriptionID;
+  }
+
+
+  /**
+   * Value
+   **/
+  public ExercisePreferencePersonalisedIntensitySubsection value(Integer value) {
+    this.value = value;
+    return this;
+  }
+  
+  @ApiModelProperty(example = "null", value = "Value")
+  @JsonProperty("value")
+  public Integer getValue() {
+    return value;
+  }
+  public void setValue(Integer value) {
+    this.value = value;
+  }
+
+
+  @Override
+  public boolean equals(java.lang.Object o) {
+    if (this == o) {
+      return true;
+    }
+    if (o == null || getClass() != o.getClass()) {
+      return false;
+    }
+    ExercisePreferencePersonalisedIntensitySubsection exercisePreferencePersonalisedIntensitySubsection = (ExercisePreferencePersonalisedIntensitySubsection) o;
+    return Objects.equals(this.exerclassExerciseDescriptionID, exercisePreferencePersonalisedIntensitySubsection.exerclassExerciseDescriptionID) &&
+        Objects.equals(this.value, exercisePreferencePersonalisedIntensitySubsection.value);
+  }
+
+  @Override
+  public int hashCode() {
+    return Objects.hash(exerclassExerciseDescriptionID, value);
+  }
+
+  @Override
+  public String toString() {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class ExercisePreferencePersonalisedIntensitySubsection {\n");
+    
+    sb.append("    exerclassExerciseDescriptionID: ").append(toIndentedString(exerclassExerciseDescriptionID)).append("\n");
+    sb.append("    value: ").append(toIndentedString(value)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(java.lang.Object o) {
+    if (o == null) {
+      return "null";
+    }
+    return o.toString().replace("\n", "\n    ");
+  }
+}
+

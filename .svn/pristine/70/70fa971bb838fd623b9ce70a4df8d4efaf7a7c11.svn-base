@@ -1,0 +1,15 @@
+package it.eng.pathway.fake.model;
+
+public enum ExerClassExerciseType {
+
+	;
+
+	private int normal;
+
+	private int adaptation;
+
+	private int progression;
+
+	private ExerClassExerciseDescription exerClassExerciseDescription;
+
+}

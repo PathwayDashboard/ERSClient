@@ -1,0 +1,71 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+import io.swagger.client.model.ExerClassSessionCoolDownInfohrRange;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-07-22T14:54:54.065+02:00")
+public class ExerClassSessioncoolDownInfoSubSubsection   {
+  
+  private Integer duration = null;
+  private Integer averageHRBpm = null;
+  private ExerClassSessionCoolDownInfohrRange hrRange = null;
+
+  
+  /**
+   * Session WarningUp Duration
+   **/
+  @ApiModelProperty(value = "Session WarningUp Duration")
+  @JsonProperty("duration")
+  public Integer getDuration() {
+    return duration;
+  }
+  public void setDuration(Integer duration) {
+    this.duration = duration;
+  }
+
+  
+  /**
+   * Session warmingUP HR Average
+   **/
+  @ApiModelProperty(value = "Session warmingUP HR Average")
+  @JsonProperty("averageHRBpm")
+  public Integer getAverageHRBpm() {
+    return averageHRBpm;
+  }
+  public void setAverageHRBpm(Integer averageHRBpm) {
+    this.averageHRBpm = averageHRBpm;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("hrRange")
+  public ExerClassSessionCoolDownInfohrRange getHrRange() {
+    return hrRange;
+  }
+  public void setHrRange(ExerClassSessionCoolDownInfohrRange hrRange) {
+    this.hrRange = hrRange;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class ExerClassSessioncoolDownInfoSubSubsection {\n");
+    
+    sb.append("    duration: ").append(StringUtil.toIndentedString(duration)).append("\n");
+    sb.append("    averageHRBpm: ").append(StringUtil.toIndentedString(averageHRBpm)).append("\n");
+    sb.append("    hrRange: ").append(StringUtil.toIndentedString(hrRange)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

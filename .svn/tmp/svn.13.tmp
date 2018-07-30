@@ -1,0 +1,87 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+import java.util.Date;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-05-17T15:35:09.175+02:00")
+public class NotificationsPreferences   {
+  
+  private Integer notificationID = null;
+  private String notificationText = null;
+  private Date notificationDate = null;
+  private Integer notificationChannel = null;
+
+  
+  /**
+   * notification ID
+   **/
+  @ApiModelProperty(value = "notification ID")
+  @JsonProperty("notificationID")
+  public Integer getNotificationID() {
+    return notificationID;
+  }
+  public void setNotificationID(Integer notificationID) {
+    this.notificationID = notificationID;
+  }
+
+  
+  /**
+   * notification
+   **/
+  @ApiModelProperty(value = "notification")
+  @JsonProperty("notificationText")
+  public String getNotificationText() {
+    return notificationText;
+  }
+  public void setNotificationText(String notificationText) {
+    this.notificationText = notificationText;
+  }
+
+  
+  /**
+   * Date
+   **/
+  @ApiModelProperty(value = "Date")
+  @JsonProperty("notificationDate")
+  public Date getNotificationDate() {
+    return notificationDate;
+  }
+  public void setNotificationDate(Date notificationDate) {
+    this.notificationDate = notificationDate;
+  }
+
+  
+  /**
+   * Channel
+   **/
+  @ApiModelProperty(value = "Channel")
+  @JsonProperty("notificationChannel")
+  public Integer getNotificationChannel() {
+    return notificationChannel;
+  }
+  public void setNotificationChannel(Integer notificationChannel) {
+    this.notificationChannel = notificationChannel;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class NotificationsPreferences {\n");
+    
+    sb.append("    notificationID: ").append(StringUtil.toIndentedString(notificationID)).append("\n");
+    sb.append("    notificationText: ").append(StringUtil.toIndentedString(notificationText)).append("\n");
+    sb.append("    notificationDate: ").append(StringUtil.toIndentedString(notificationDate)).append("\n");
+    sb.append("    notificationChannel: ").append(StringUtil.toIndentedString(notificationChannel)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

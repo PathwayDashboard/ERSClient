@@ -1,0 +1,115 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+import java.util.Date;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+/**
+ * Patient information
+ **/
+@ApiModel(description = "Patient information")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-05-17T15:35:09.175+02:00")
+public class PatientDemographics   {
+  
+  private String givenName = null;
+  private String familyName = null;
+  private Date dateOfBirth = null;
+  private String insuranceNumber = null;
+  private String patientID = null;
+  private String biologicalGender = null;
+
+  
+  /**
+   * Patient given name
+   **/
+  @ApiModelProperty(value = "Patient given name")
+  @JsonProperty("GivenName")
+  public String getGivenName() {
+    return givenName;
+  }
+  public void setGivenName(String givenName) {
+    this.givenName = givenName;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("FamilyName")
+  public String getFamilyName() {
+    return familyName;
+  }
+  public void setFamilyName(String familyName) {
+    this.familyName = familyName;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("DateOfBirth")
+  public Date getDateOfBirth() {
+    return dateOfBirth;
+  }
+  public void setDateOfBirth(Date dateOfBirth) {
+    this.dateOfBirth = dateOfBirth;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("InsuranceNumber")
+  public String getInsuranceNumber() {
+    return insuranceNumber;
+  }
+  public void setInsuranceNumber(String insuranceNumber) {
+    this.insuranceNumber = insuranceNumber;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("PatientID")
+  public String getPatientID() {
+    return patientID;
+  }
+  public void setPatientID(String patientID) {
+    this.patientID = patientID;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("BiologicalGender")
+  public String getBiologicalGender() {
+    return biologicalGender;
+  }
+  public void setBiologicalGender(String biologicalGender) {
+    this.biologicalGender = biologicalGender;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class PatientDemographics {\n");
+    
+    sb.append("    givenName: ").append(StringUtil.toIndentedString(givenName)).append("\n");
+    sb.append("    familyName: ").append(StringUtil.toIndentedString(familyName)).append("\n");
+    sb.append("    dateOfBirth: ").append(StringUtil.toIndentedString(dateOfBirth)).append("\n");
+    sb.append("    insuranceNumber: ").append(StringUtil.toIndentedString(insuranceNumber)).append("\n");
+    sb.append("    patientID: ").append(StringUtil.toIndentedString(patientID)).append("\n");
+    sb.append("    biologicalGender: ").append(StringUtil.toIndentedString(biologicalGender)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

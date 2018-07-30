@@ -1,0 +1,88 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+import java.util.*;
+import io.swagger.client.model.FitnessAssessmentConfSubSection;
+import io.swagger.client.model.ExerciseProgrammeSubSection;
+import java.util.Date;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-07-22T14:54:54.065+02:00")
+public class CardiacRehabilitationProgrammeFull   {
+  
+  private Date creationDate = null;
+  private List<Integer> mandatorySensors = new ArrayList<Integer>();
+  private FitnessAssessmentConfSubSection fitnessAssessmentConf = null;
+  private List<ExerciseProgrammeSubSection> exerciseProgrammes = new ArrayList<ExerciseProgrammeSubSection>();
+
+  
+  /**
+   * Creation date
+   **/
+  @ApiModelProperty(value = "Creation date")
+  @JsonProperty("creationDate")
+  public Date getCreationDate() {
+    return creationDate;
+  }
+  public void setCreationDate(Date creationDate) {
+    this.creationDate = creationDate;
+  }
+
+  
+  /**
+   * Mandatory Sensors
+   **/
+  @ApiModelProperty(value = "Mandatory Sensors")
+  @JsonProperty("mandatorySensors")
+  public List<Integer> getMandatorySensors() {
+    return mandatorySensors;
+  }
+  public void setMandatorySensors(List<Integer> mandatorySensors) {
+    this.mandatorySensors = mandatorySensors;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("fitnessAssessmentConf")
+  public FitnessAssessmentConfSubSection getFitnessAssessmentConf() {
+    return fitnessAssessmentConf;
+  }
+  public void setFitnessAssessmentConf(FitnessAssessmentConfSubSection fitnessAssessmentConf) {
+    this.fitnessAssessmentConf = fitnessAssessmentConf;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("exerciseProgrammes")
+  public List<ExerciseProgrammeSubSection> getExerciseProgrammes() {
+    return exerciseProgrammes;
+  }
+  public void setExerciseProgrammes(List<ExerciseProgrammeSubSection> exerciseProgrammes) {
+    this.exerciseProgrammes = exerciseProgrammes;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class CardiacRehabilitationProgrammeFull {\n");
+    
+    sb.append("    creationDate: ").append(StringUtil.toIndentedString(creationDate)).append("\n");
+    sb.append("    mandatorySensors: ").append(StringUtil.toIndentedString(mandatorySensors)).append("\n");
+    sb.append("    fitnessAssessmentConf: ").append(StringUtil.toIndentedString(fitnessAssessmentConf)).append("\n");
+    sb.append("    exerciseProgrammes: ").append(StringUtil.toIndentedString(exerciseProgrammes)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

@@ -1,0 +1,138 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-01-28T14:46:04.495+01:00")
+public class CurrentExerciseProgramme   {
+  
+  private String uid = null;
+  private Integer exerciseIntensity = null;
+  private Integer numberOfExerGame = null;
+  private Integer weeklyFrequency = null;
+  private Integer weeklyTime = null;
+  private Integer sessionDuration = null;
+  private Integer numberOfExerclass = null;
+  private Integer numberOfActiveLifeStyleActivity = null;
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("uid")
+  public String getUid() {
+    return uid;
+  }
+  public void setUid(String uid) {
+    this.uid = uid;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("exerciseIntensity")
+  public Integer getExerciseIntensity() {
+    return exerciseIntensity;
+  }
+  public void setExerciseIntensity(Integer exerciseIntensity) {
+    this.exerciseIntensity = exerciseIntensity;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("numberOfExerGame")
+  public Integer getNumberOfExerGame() {
+    return numberOfExerGame;
+  }
+  public void setNumberOfExerGame(Integer numberOfExerGame) {
+    this.numberOfExerGame = numberOfExerGame;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("weeklyFrequency")
+  public Integer getWeeklyFrequency() {
+    return weeklyFrequency;
+  }
+  public void setWeeklyFrequency(Integer weeklyFrequency) {
+    this.weeklyFrequency = weeklyFrequency;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("weeklyTime")
+  public Integer getWeeklyTime() {
+    return weeklyTime;
+  }
+  public void setWeeklyTime(Integer weeklyTime) {
+    this.weeklyTime = weeklyTime;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("sessionDuration")
+  public Integer getSessionDuration() {
+    return sessionDuration;
+  }
+  public void setSessionDuration(Integer sessionDuration) {
+    this.sessionDuration = sessionDuration;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("numberOfExerclass")
+  public Integer getNumberOfExerclass() {
+    return numberOfExerclass;
+  }
+  public void setNumberOfExerclass(Integer numberOfExerclass) {
+    this.numberOfExerclass = numberOfExerclass;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("numberOfActiveLifeStyleActivity")
+  public Integer getNumberOfActiveLifeStyleActivity() {
+    return numberOfActiveLifeStyleActivity;
+  }
+  public void setNumberOfActiveLifeStyleActivity(Integer numberOfActiveLifeStyleActivity) {
+    this.numberOfActiveLifeStyleActivity = numberOfActiveLifeStyleActivity;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class CurrentExerciseProgramme {\n");
+    
+    sb.append("    uid: ").append(StringUtil.toIndentedString(uid)).append("\n");
+    sb.append("    exerciseIntensity: ").append(StringUtil.toIndentedString(exerciseIntensity)).append("\n");
+    sb.append("    numberOfExerGame: ").append(StringUtil.toIndentedString(numberOfExerGame)).append("\n");
+    sb.append("    weeklyFrequency: ").append(StringUtil.toIndentedString(weeklyFrequency)).append("\n");
+    sb.append("    weeklyTime: ").append(StringUtil.toIndentedString(weeklyTime)).append("\n");
+    sb.append("    sessionDuration: ").append(StringUtil.toIndentedString(sessionDuration)).append("\n");
+    sb.append("    numberOfExerclass: ").append(StringUtil.toIndentedString(numberOfExerclass)).append("\n");
+    sb.append("    numberOfActiveLifeStyleActivity: ").append(StringUtil.toIndentedString(numberOfActiveLifeStyleActivity)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

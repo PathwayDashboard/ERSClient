@@ -1,0 +1,86 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-07-18T17:20:02.553+02:00")
+public class ExerGameSessionmainInfoSubSubsection   {
+  
+  private Integer duration = null;
+  private Integer minHRBpm = null;
+  private Integer maxHRBpm = null;
+  private Double averageHRBpm = null;
+
+  
+  /**
+   * Session Main Duration
+   **/
+  @ApiModelProperty(value = "Session Main Duration")
+  @JsonProperty("duration")
+  public Integer getDuration() {
+    return duration;
+  }
+  public void setDuration(Integer duration) {
+    this.duration = duration;
+  }
+
+  
+  /**
+   * Session Main Min HR Bpm
+   **/
+  @ApiModelProperty(value = "Session Main Min HR Bpm")
+  @JsonProperty("minHRBpm")
+  public Integer getMinHRBpm() {
+    return minHRBpm;
+  }
+  public void setMinHRBpm(Integer minHRBpm) {
+    this.minHRBpm = minHRBpm;
+  }
+
+  
+  /**
+   * Session Main Max HR Bpm
+   **/
+  @ApiModelProperty(value = "Session Main Max HR Bpm")
+  @JsonProperty("maxHRBpm")
+  public Integer getMaxHRBpm() {
+    return maxHRBpm;
+  }
+  public void setMaxHRBpm(Integer maxHRBpm) {
+    this.maxHRBpm = maxHRBpm;
+  }
+
+  
+  /**
+   * Session Main Average HR Bpm
+   **/
+  @ApiModelProperty(value = "Session Main Average HR Bpm")
+  @JsonProperty("averageHRBpm")
+  public Double getAverageHRBpm() {
+    return averageHRBpm;
+  }
+  public void setAverageHRBpm(Double averageHRBpm) {
+    this.averageHRBpm = averageHRBpm;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class ExerGameSessionmainInfoSubSubsection {\n");
+    
+    sb.append("    duration: ").append(StringUtil.toIndentedString(duration)).append("\n");
+    sb.append("    minHRBpm: ").append(StringUtil.toIndentedString(minHRBpm)).append("\n");
+    sb.append("    maxHRBpm: ").append(StringUtil.toIndentedString(maxHRBpm)).append("\n");
+    sb.append("    averageHRBpm: ").append(StringUtil.toIndentedString(averageHRBpm)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

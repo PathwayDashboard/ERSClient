@@ -1,0 +1,161 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-04-21T15:01:39.375+02:00")
+public class ExerciseProgrammes   {
+  
+  private Integer exerciseProgrammeID = null;
+  private Integer exerciseProgrammeexerciseType = null;
+  private Integer exerciseProgrammeWeeklyFrequency = null;
+  private Integer exerciseProgrammeExerciseIntensity = null;
+  private Integer exerciseProgrammeWeeklyTime = null;
+  private Integer exerciseProgrammeSessionDuration = null;
+  private Integer exerciseProgrammeNumberOfExerClass = null;
+  private Integer exerciseProgrammeNumberOfExerGame = null;
+  private Integer exerciseProgrammeNumberOfActiveLifeStyleActivity = null;
+
+  
+  /**
+   * Exercise ProgrammeID
+   **/
+  @ApiModelProperty(value = "Exercise ProgrammeID")
+  @JsonProperty("exerciseProgrammeID")
+  public Integer getExerciseProgrammeID() {
+    return exerciseProgrammeID;
+  }
+  public void setExerciseProgrammeID(Integer exerciseProgrammeID) {
+    this.exerciseProgrammeID = exerciseProgrammeID;
+  }
+
+  
+  /**
+   * Exercise Type
+   **/
+  @ApiModelProperty(value = "Exercise Type")
+  @JsonProperty("exerciseProgrammeexerciseType")
+  public Integer getExerciseProgrammeexerciseType() {
+    return exerciseProgrammeexerciseType;
+  }
+  public void setExerciseProgrammeexerciseType(Integer exerciseProgrammeexerciseType) {
+    this.exerciseProgrammeexerciseType = exerciseProgrammeexerciseType;
+  }
+
+  
+  /**
+   * Weekly Frequency
+   **/
+  @ApiModelProperty(value = "Weekly Frequency")
+  @JsonProperty("exerciseProgrammeWeeklyFrequency")
+  public Integer getExerciseProgrammeWeeklyFrequency() {
+    return exerciseProgrammeWeeklyFrequency;
+  }
+  public void setExerciseProgrammeWeeklyFrequency(Integer exerciseProgrammeWeeklyFrequency) {
+    this.exerciseProgrammeWeeklyFrequency = exerciseProgrammeWeeklyFrequency;
+  }
+
+  
+  /**
+   * Exercise Intensity
+   **/
+  @ApiModelProperty(value = "Exercise Intensity")
+  @JsonProperty("exerciseProgrammeExerciseIntensity")
+  public Integer getExerciseProgrammeExerciseIntensity() {
+    return exerciseProgrammeExerciseIntensity;
+  }
+  public void setExerciseProgrammeExerciseIntensity(Integer exerciseProgrammeExerciseIntensity) {
+    this.exerciseProgrammeExerciseIntensity = exerciseProgrammeExerciseIntensity;
+  }
+
+  
+  /**
+   * Weekly Time
+   **/
+  @ApiModelProperty(value = "Weekly Time")
+  @JsonProperty("exerciseProgrammeWeeklyTime")
+  public Integer getExerciseProgrammeWeeklyTime() {
+    return exerciseProgrammeWeeklyTime;
+  }
+  public void setExerciseProgrammeWeeklyTime(Integer exerciseProgrammeWeeklyTime) {
+    this.exerciseProgrammeWeeklyTime = exerciseProgrammeWeeklyTime;
+  }
+
+  
+  /**
+   * Session Duration
+   **/
+  @ApiModelProperty(value = "Session Duration")
+  @JsonProperty("exerciseProgrammeSessionDuration")
+  public Integer getExerciseProgrammeSessionDuration() {
+    return exerciseProgrammeSessionDuration;
+  }
+  public void setExerciseProgrammeSessionDuration(Integer exerciseProgrammeSessionDuration) {
+    this.exerciseProgrammeSessionDuration = exerciseProgrammeSessionDuration;
+  }
+
+  
+  /**
+   * ExerClass  number
+   **/
+  @ApiModelProperty(value = "ExerClass  number")
+  @JsonProperty("exerciseProgrammeNumberOfExerClass")
+  public Integer getExerciseProgrammeNumberOfExerClass() {
+    return exerciseProgrammeNumberOfExerClass;
+  }
+  public void setExerciseProgrammeNumberOfExerClass(Integer exerciseProgrammeNumberOfExerClass) {
+    this.exerciseProgrammeNumberOfExerClass = exerciseProgrammeNumberOfExerClass;
+  }
+
+  
+  /**
+   * ExerGame number
+   **/
+  @ApiModelProperty(value = "ExerGame number")
+  @JsonProperty("exerciseProgrammeNumberOfExerGame")
+  public Integer getExerciseProgrammeNumberOfExerGame() {
+    return exerciseProgrammeNumberOfExerGame;
+  }
+  public void setExerciseProgrammeNumberOfExerGame(Integer exerciseProgrammeNumberOfExerGame) {
+    this.exerciseProgrammeNumberOfExerGame = exerciseProgrammeNumberOfExerGame;
+  }
+
+  
+  /**
+   * StyleActivity numbers
+   **/
+  @ApiModelProperty(value = "StyleActivity numbers")
+  @JsonProperty("exerciseProgrammeNumberOfActiveLifeStyleActivity")
+  public Integer getExerciseProgrammeNumberOfActiveLifeStyleActivity() {
+    return exerciseProgrammeNumberOfActiveLifeStyleActivity;
+  }
+  public void setExerciseProgrammeNumberOfActiveLifeStyleActivity(Integer exerciseProgrammeNumberOfActiveLifeStyleActivity) {
+    this.exerciseProgrammeNumberOfActiveLifeStyleActivity = exerciseProgrammeNumberOfActiveLifeStyleActivity;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class ExerciseProgrammes {\n");
+    
+    sb.append("    exerciseProgrammeID: ").append(StringUtil.toIndentedString(exerciseProgrammeID)).append("\n");
+    sb.append("    exerciseProgrammeexerciseType: ").append(StringUtil.toIndentedString(exerciseProgrammeexerciseType)).append("\n");
+    sb.append("    exerciseProgrammeWeeklyFrequency: ").append(StringUtil.toIndentedString(exerciseProgrammeWeeklyFrequency)).append("\n");
+    sb.append("    exerciseProgrammeExerciseIntensity: ").append(StringUtil.toIndentedString(exerciseProgrammeExerciseIntensity)).append("\n");
+    sb.append("    exerciseProgrammeWeeklyTime: ").append(StringUtil.toIndentedString(exerciseProgrammeWeeklyTime)).append("\n");
+    sb.append("    exerciseProgrammeSessionDuration: ").append(StringUtil.toIndentedString(exerciseProgrammeSessionDuration)).append("\n");
+    sb.append("    exerciseProgrammeNumberOfExerClass: ").append(StringUtil.toIndentedString(exerciseProgrammeNumberOfExerClass)).append("\n");
+    sb.append("    exerciseProgrammeNumberOfExerGame: ").append(StringUtil.toIndentedString(exerciseProgrammeNumberOfExerGame)).append("\n");
+    sb.append("    exerciseProgrammeNumberOfActiveLifeStyleActivity: ").append(StringUtil.toIndentedString(exerciseProgrammeNumberOfActiveLifeStyleActivity)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

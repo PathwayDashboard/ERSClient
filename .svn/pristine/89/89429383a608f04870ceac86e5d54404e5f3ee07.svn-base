@@ -1,0 +1,43 @@
+package ers.client.model;
+
+import java.util.*;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+import ers.client.StringUtil;
+import ers.client.model.QuestionsAndAnswer;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-01-13T11:04:43.139+01:00")
+public class HealthFitnessAssessmentPreScreeningQuestionnaire   {
+  
+  private List<QuestionsAndAnswer> questionsAndAnswers = new ArrayList<QuestionsAndAnswer>();
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("questionsAndAnswers")
+  public List<QuestionsAndAnswer> getQuestionsAndAnswers() {
+    return questionsAndAnswers;
+  }
+  public void setQuestionsAndAnswers(List<QuestionsAndAnswer> questionsAndAnswers) {
+    this.questionsAndAnswers = questionsAndAnswers;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class HealthFitnessAssessmentPreScreeningQuestionnaire {\n");
+    
+    sb.append("    questionsAndAnswers: ").append(StringUtil.toIndentedString(questionsAndAnswers)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

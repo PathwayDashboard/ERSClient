@@ -1,0 +1,149 @@
+package it.eng.pathway.fake.model;
+
+import java.util.List;
+
+public class ExerClassSession extends ExerciseSession {
+
+	private StatusType status;
+
+	private TrainingPhaseInfo warmingUpDuration;
+
+	private TrainingPhaseInfo stretchingDuration;
+
+	private TrainingPhaseInfo aerobicEnduranceDuration;
+
+	private TrainingPhaseInfo coolDownDuration;
+
+	private TrainingPhaseInfo relaxationDuration;
+
+	private SatisfactionLevelType sessionSatisfactionLevel;
+
+	private List executedExercises;
+
+	private StatusType statusType;
+
+	private SatisfactionLevelType satisfactionLevelType;
+
+	private HRZone hRZone;
+
+	private ExerClassExercise[] exerClassExercise;
+
+	private TrainingPhaseInfo trainingPhaseInfo;
+
+	public StatusType getStatus() {
+		return status;
+	}
+
+	public void setStatus(StatusType status) {
+		this.status = status;
+	}
+
+	public TrainingPhaseInfo getWarmingUpDuration() {
+		return warmingUpDuration;
+	}
+
+	public void setWarmingUpDuration(TrainingPhaseInfo warmingUpDuration) {
+		this.warmingUpDuration = warmingUpDuration;
+	}
+
+	public TrainingPhaseInfo getStretchingDuration() {
+		return stretchingDuration;
+	}
+
+	public void setStretchingDuration(TrainingPhaseInfo stretchingDuration) {
+		this.stretchingDuration = stretchingDuration;
+	}
+
+	public TrainingPhaseInfo getAerobicEnduranceDuration() {
+		return aerobicEnduranceDuration;
+	}
+
+	public void setAerobicEnduranceDuration(TrainingPhaseInfo aerobicEnduranceDuration) {
+		this.aerobicEnduranceDuration = aerobicEnduranceDuration;
+	}
+
+	public TrainingPhaseInfo getCoolDownDuration() {
+		return coolDownDuration;
+	}
+
+	public void setCoolDownDuration(TrainingPhaseInfo coolDownDuration) {
+		this.coolDownDuration = coolDownDuration;
+	}
+
+	public TrainingPhaseInfo getRelaxationDuration() {
+		return relaxationDuration;
+	}
+
+	public void setRelaxationDuration(TrainingPhaseInfo relaxationDuration) {
+		this.relaxationDuration = relaxationDuration;
+	}
+
+	public SatisfactionLevelType getSessionSatisfactionLevel() {
+		return sessionSatisfactionLevel;
+	}
+
+	public void setSessionSatisfactionLevel(SatisfactionLevelType sessionSatisfactionLevel) {
+		this.sessionSatisfactionLevel = sessionSatisfactionLevel;
+	}
+
+	public List getExecutedExercises() {
+		return executedExercises;
+	}
+
+	public void setExecutedExercises(List executedExercises) {
+		this.executedExercises = executedExercises;
+	}
+
+	public StatusType getStatusType() {
+		return statusType;
+	}
+
+	public void setStatusType(StatusType statusType) {
+		this.statusType = statusType;
+	}
+
+	public SatisfactionLevelType getSatisfactionLevelType() {
+		return satisfactionLevelType;
+	}
+
+	public void setSatisfactionLevelType(SatisfactionLevelType satisfactionLevelType) {
+		this.satisfactionLevelType = satisfactionLevelType;
+	}
+
+	public HRZone gethRZone() {
+		return hRZone;
+	}
+
+	public void sethRZone(HRZone hRZone) {
+		this.hRZone = hRZone;
+	}
+
+	public ExerClassExercise[] getExerClassExercise() {
+		return exerClassExercise;
+	}
+
+	public void setExerClassExercise(ExerClassExercise[] exerClassExercise) {
+		this.exerClassExercise = exerClassExercise;
+	}
+
+	public TrainingPhaseInfo getTrainingPhaseInfo() {
+		return trainingPhaseInfo;
+	}
+
+	public void setTrainingPhaseInfo(TrainingPhaseInfo trainingPhaseInfo) {
+		this.trainingPhaseInfo = trainingPhaseInfo;
+	}
+
+	@Override
+	public String toString() {
+		return "ExerClassSession [warmingUpDuration=" + warmingUpDuration + ", stretchingDuration=" + stretchingDuration
+				+ ", aerobicEnduranceDuration=" + aerobicEnduranceDuration + ", coolDownDuration=" + coolDownDuration
+				+ ", relaxationDuration=" + relaxationDuration + ", sessionSatisfactionLevel="
+				+ sessionSatisfactionLevel + ", executedExercises=" + executedExercises + ", getDate()=" + getDate()
+				+ ", getDuration()=" + getDuration() + ", getStart_time()=" + getStart_time() + ", getEnd_time()="
+				+ getEnd_time() + "]";
+	}
+	
+	
+
+}

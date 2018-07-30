@@ -1,0 +1,54 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-08-04T11:43:36.581+02:00")
+public class GenericPostputResult   {
+  
+  private String result = null;
+  private String uid = null;
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("result")
+  public String getResult() {
+    return result;
+  }
+  public void setResult(String result) {
+    this.result = result;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("uid")
+  public String getUid() {
+    return uid;
+  }
+  public void setUid(String uid) {
+    this.uid = uid;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class GenericPostputResult {\n");
+    
+    sb.append("    result: ").append(StringUtil.toIndentedString(result)).append("\n");
+    sb.append("    uid: ").append(StringUtil.toIndentedString(uid)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

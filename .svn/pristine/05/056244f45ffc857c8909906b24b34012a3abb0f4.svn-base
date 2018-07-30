@@ -1,0 +1,113 @@
+package io.swagger.client.api;
+
+import io.swagger.client.ApiException;
+import io.swagger.client.ApiClient;
+import io.swagger.client.Configuration;
+import io.swagger.client.Pair;
+import io.swagger.client.TypeRef;
+
+import io.swagger.client.model.*;
+
+import java.util.*;
+
+
+import java.io.File;
+import java.util.Map;
+import java.util.HashMap;
+
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-05-30T11:30:03.045+02:00")
+public class SendNotificationApi {
+  private ApiClient apiClient;
+
+  public SendNotificationApi() {
+    this(Configuration.getDefaultApiClient());
+  }
+
+  public SendNotificationApi(ApiClient apiClient) {
+    this.apiClient = apiClient;
+  }
+
+  public ApiClient getApiClient() {
+    return apiClient;
+  }
+
+  public void setApiClient(ApiClient apiClient) {
+    this.apiClient = apiClient;
+  }
+
+  
+  /**
+   * 
+   * 
+   * @param method 
+   * @param recipient 
+   * @param text 
+   * @param xSessionId Identifies user which undertakes this action
+   * @return String
+   */
+  public String sendNotificationPostNotification (Integer method, String recipient, String text, String xSessionId) throws ApiException {
+    Object postBody = null;
+    byte[] postBinaryBody = null;
+    
+     // verify the required parameter 'method' is set
+     if (method == null) {
+        throw new ApiException(400, "Missing the required parameter 'method' when calling sendNotificationPostNotification");
+     }
+     
+     // verify the required parameter 'recipient' is set
+     if (recipient == null) {
+        throw new ApiException(400, "Missing the required parameter 'recipient' when calling sendNotificationPostNotification");
+     }
+     
+     // verify the required parameter 'text' is set
+     if (text == null) {
+        throw new ApiException(400, "Missing the required parameter 'text' when calling sendNotificationPostNotification");
+     }
+     
+    // create path and map variables
+    String path = "/api/SendNotification".replaceAll("\\{format\\}","json");
+
+    // query params
+    List<Pair> queryParams = new ArrayList<Pair>();
+    Map<String, String> headerParams = new HashMap<String, String>();
+    Map<String, Object> formParams = new HashMap<String, Object>();
+
+    
+    queryParams.addAll(apiClient.parameterToPairs("", "Method", method));
+    
+    queryParams.addAll(apiClient.parameterToPairs("", "Recipient", recipient));
+    
+    queryParams.addAll(apiClient.parameterToPairs("", "Text", text));
+    
+
+    if (xSessionId != null)
+    headerParams.put("X-session_id", apiClient.parameterToString(xSessionId));
+    
+
+    
+
+    final String[] accepts = {
+      "application/json", "text/json", "application/xml", "text/xml"
+    };
+    final String accept = apiClient.selectHeaderAccept(accepts);
+
+    final String[] contentTypes = {
+      
+    };
+    final String contentType = apiClient.selectHeaderContentType(contentTypes);
+
+    String[] authNames = new String[] {  };
+
+    
+
+    
+    
+    TypeRef returnType = new TypeRef<String>() {};
+    return apiClient.invokeAPI(path, "POST", queryParams, postBody, postBinaryBody, headerParams, formParams, accept, contentType, authNames, returnType);
+    
+    
+
+
+  }
+  
+}

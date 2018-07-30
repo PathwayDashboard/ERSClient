@@ -1,0 +1,416 @@
+package ers.client.model;
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+import ers.client.StringUtil;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-01-13T11:04:43.139+01:00")
+public class ExerClassSession   {
+  
+  private String sessionDate = null;
+  private String sessionStartingTime = null;
+  private String sessionEndTime = null;
+  private Integer sessionActualDuration = null;
+  private String sessionSatisfactionLevel = null;
+  private String status = null;
+  private Integer warmingUpDuration = null;
+  private Integer warmingUpHRMin = null;
+  private Integer warmingUpHRMax = null;
+  private Integer warmingUpAverageHR = null;
+  private Integer stretchingDuration = null;
+  private Integer stretchingHRMin = null;
+  private Integer stretchingHRMax = null;
+  private Integer stretchingAverageHR = null;
+  private Integer aerobicEnduranceDuration = null;
+  private Integer aerobicEnduranceHRMin = null;
+  private Integer aerobicEnduranceDHRMax = null;
+  private Integer aerobicEnduranceAverageHR = null;
+  private Integer cooldownDuration = null;
+  private Integer cooldownHRMin = null;
+  private Integer cooldownHRMax = null;
+  private Integer cooldownAverageHR = null;
+  private Integer relaxationDuration = null;
+  private Integer relaxationHRMin = null;
+  private Integer relaxationHRMax = null;
+  private Integer relaxationAverageHR = null;
+  private Integer energyExpenditure = null;
+  private String energyExpenditureTimeStamp = null;
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("sessionDate")
+  public String getSessionDate() {
+    return sessionDate;
+  }
+  public void setSessionDate(String sessionDate) {
+    this.sessionDate = sessionDate;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("sessionStartingTime")
+  public String getSessionStartingTime() {
+    return sessionStartingTime;
+  }
+  public void setSessionStartingTime(String sessionStartingTime) {
+    this.sessionStartingTime = sessionStartingTime;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("sessionEndTime")
+  public String getSessionEndTime() {
+    return sessionEndTime;
+  }
+  public void setSessionEndTime(String sessionEndTime) {
+    this.sessionEndTime = sessionEndTime;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("sessionActualDuration")
+  public Integer getSessionActualDuration() {
+    return sessionActualDuration;
+  }
+  public void setSessionActualDuration(Integer sessionActualDuration) {
+    this.sessionActualDuration = sessionActualDuration;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("sessionSatisfactionLevel")
+  public String getSessionSatisfactionLevel() {
+    return sessionSatisfactionLevel;
+  }
+  public void setSessionSatisfactionLevel(String sessionSatisfactionLevel) {
+    this.sessionSatisfactionLevel = sessionSatisfactionLevel;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("status")
+  public String getStatus() {
+    return status;
+  }
+  public void setStatus(String status) {
+    this.status = status;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("warmingUpDuration")
+  public Integer getWarmingUpDuration() {
+    return warmingUpDuration;
+  }
+  public void setWarmingUpDuration(Integer warmingUpDuration) {
+    this.warmingUpDuration = warmingUpDuration;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("warmingUpHR_min")
+  public Integer getWarmingUpHRMin() {
+    return warmingUpHRMin;
+  }
+  public void setWarmingUpHRMin(Integer warmingUpHRMin) {
+    this.warmingUpHRMin = warmingUpHRMin;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("warmingUpHR_max")
+  public Integer getWarmingUpHRMax() {
+    return warmingUpHRMax;
+  }
+  public void setWarmingUpHRMax(Integer warmingUpHRMax) {
+    this.warmingUpHRMax = warmingUpHRMax;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("warmingUpAverageHR")
+  public Integer getWarmingUpAverageHR() {
+    return warmingUpAverageHR;
+  }
+  public void setWarmingUpAverageHR(Integer warmingUpAverageHR) {
+    this.warmingUpAverageHR = warmingUpAverageHR;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("stretchingDuration")
+  public Integer getStretchingDuration() {
+    return stretchingDuration;
+  }
+  public void setStretchingDuration(Integer stretchingDuration) {
+    this.stretchingDuration = stretchingDuration;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("stretchingHR_min")
+  public Integer getStretchingHRMin() {
+    return stretchingHRMin;
+  }
+  public void setStretchingHRMin(Integer stretchingHRMin) {
+    this.stretchingHRMin = stretchingHRMin;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("stretchingHR_max")
+  public Integer getStretchingHRMax() {
+    return stretchingHRMax;
+  }
+  public void setStretchingHRMax(Integer stretchingHRMax) {
+    this.stretchingHRMax = stretchingHRMax;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("stretchingAverageHR")
+  public Integer getStretchingAverageHR() {
+    return stretchingAverageHR;
+  }
+  public void setStretchingAverageHR(Integer stretchingAverageHR) {
+    this.stretchingAverageHR = stretchingAverageHR;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("aerobicEnduranceDuration")
+  public Integer getAerobicEnduranceDuration() {
+    return aerobicEnduranceDuration;
+  }
+  public void setAerobicEnduranceDuration(Integer aerobicEnduranceDuration) {
+    this.aerobicEnduranceDuration = aerobicEnduranceDuration;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("aerobicEnduranceHR_min")
+  public Integer getAerobicEnduranceHRMin() {
+    return aerobicEnduranceHRMin;
+  }
+  public void setAerobicEnduranceHRMin(Integer aerobicEnduranceHRMin) {
+    this.aerobicEnduranceHRMin = aerobicEnduranceHRMin;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("aerobicEnduranceDHR_max")
+  public Integer getAerobicEnduranceDHRMax() {
+    return aerobicEnduranceDHRMax;
+  }
+  public void setAerobicEnduranceDHRMax(Integer aerobicEnduranceDHRMax) {
+    this.aerobicEnduranceDHRMax = aerobicEnduranceDHRMax;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("aerobicEnduranceAverageHR")
+  public Integer getAerobicEnduranceAverageHR() {
+    return aerobicEnduranceAverageHR;
+  }
+  public void setAerobicEnduranceAverageHR(Integer aerobicEnduranceAverageHR) {
+    this.aerobicEnduranceAverageHR = aerobicEnduranceAverageHR;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("cooldownDuration")
+  public Integer getCooldownDuration() {
+    return cooldownDuration;
+  }
+  public void setCooldownDuration(Integer cooldownDuration) {
+    this.cooldownDuration = cooldownDuration;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("cooldownHR_min")
+  public Integer getCooldownHRMin() {
+    return cooldownHRMin;
+  }
+  public void setCooldownHRMin(Integer cooldownHRMin) {
+    this.cooldownHRMin = cooldownHRMin;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("cooldownHR_max")
+  public Integer getCooldownHRMax() {
+    return cooldownHRMax;
+  }
+  public void setCooldownHRMax(Integer cooldownHRMax) {
+    this.cooldownHRMax = cooldownHRMax;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("cooldownAverageHR")
+  public Integer getCooldownAverageHR() {
+    return cooldownAverageHR;
+  }
+  public void setCooldownAverageHR(Integer cooldownAverageHR) {
+    this.cooldownAverageHR = cooldownAverageHR;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("relaxationDuration")
+  public Integer getRelaxationDuration() {
+    return relaxationDuration;
+  }
+  public void setRelaxationDuration(Integer relaxationDuration) {
+    this.relaxationDuration = relaxationDuration;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("relaxationHR_min")
+  public Integer getRelaxationHRMin() {
+    return relaxationHRMin;
+  }
+  public void setRelaxationHRMin(Integer relaxationHRMin) {
+    this.relaxationHRMin = relaxationHRMin;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("relaxationHR_max")
+  public Integer getRelaxationHRMax() {
+    return relaxationHRMax;
+  }
+  public void setRelaxationHRMax(Integer relaxationHRMax) {
+    this.relaxationHRMax = relaxationHRMax;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("relaxationAverageHR")
+  public Integer getRelaxationAverageHR() {
+    return relaxationAverageHR;
+  }
+  public void setRelaxationAverageHR(Integer relaxationAverageHR) {
+    this.relaxationAverageHR = relaxationAverageHR;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("energyExpenditure")
+  public Integer getEnergyExpenditure() {
+    return energyExpenditure;
+  }
+  public void setEnergyExpenditure(Integer energyExpenditure) {
+    this.energyExpenditure = energyExpenditure;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("energyExpenditureTimeStamp")
+  public String getEnergyExpenditureTimeStamp() {
+    return energyExpenditureTimeStamp;
+  }
+  public void setEnergyExpenditureTimeStamp(String energyExpenditureTimeStamp) {
+    this.energyExpenditureTimeStamp = energyExpenditureTimeStamp;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class ExerClassSession {\n");
+    
+    sb.append("    sessionDate: ").append(StringUtil.toIndentedString(sessionDate)).append("\n");
+    sb.append("    sessionStartingTime: ").append(StringUtil.toIndentedString(sessionStartingTime)).append("\n");
+    sb.append("    sessionEndTime: ").append(StringUtil.toIndentedString(sessionEndTime)).append("\n");
+    sb.append("    sessionActualDuration: ").append(StringUtil.toIndentedString(sessionActualDuration)).append("\n");
+    sb.append("    sessionSatisfactionLevel: ").append(StringUtil.toIndentedString(sessionSatisfactionLevel)).append("\n");
+    sb.append("    status: ").append(StringUtil.toIndentedString(status)).append("\n");
+    sb.append("    warmingUpDuration: ").append(StringUtil.toIndentedString(warmingUpDuration)).append("\n");
+    sb.append("    warmingUpHRMin: ").append(StringUtil.toIndentedString(warmingUpHRMin)).append("\n");
+    sb.append("    warmingUpHRMax: ").append(StringUtil.toIndentedString(warmingUpHRMax)).append("\n");
+    sb.append("    warmingUpAverageHR: ").append(StringUtil.toIndentedString(warmingUpAverageHR)).append("\n");
+    sb.append("    stretchingDuration: ").append(StringUtil.toIndentedString(stretchingDuration)).append("\n");
+    sb.append("    stretchingHRMin: ").append(StringUtil.toIndentedString(stretchingHRMin)).append("\n");
+    sb.append("    stretchingHRMax: ").append(StringUtil.toIndentedString(stretchingHRMax)).append("\n");
+    sb.append("    stretchingAverageHR: ").append(StringUtil.toIndentedString(stretchingAverageHR)).append("\n");
+    sb.append("    aerobicEnduranceDuration: ").append(StringUtil.toIndentedString(aerobicEnduranceDuration)).append("\n");
+    sb.append("    aerobicEnduranceHRMin: ").append(StringUtil.toIndentedString(aerobicEnduranceHRMin)).append("\n");
+    sb.append("    aerobicEnduranceDHRMax: ").append(StringUtil.toIndentedString(aerobicEnduranceDHRMax)).append("\n");
+    sb.append("    aerobicEnduranceAverageHR: ").append(StringUtil.toIndentedString(aerobicEnduranceAverageHR)).append("\n");
+    sb.append("    cooldownDuration: ").append(StringUtil.toIndentedString(cooldownDuration)).append("\n");
+    sb.append("    cooldownHRMin: ").append(StringUtil.toIndentedString(cooldownHRMin)).append("\n");
+    sb.append("    cooldownHRMax: ").append(StringUtil.toIndentedString(cooldownHRMax)).append("\n");
+    sb.append("    cooldownAverageHR: ").append(StringUtil.toIndentedString(cooldownAverageHR)).append("\n");
+    sb.append("    relaxationDuration: ").append(StringUtil.toIndentedString(relaxationDuration)).append("\n");
+    sb.append("    relaxationHRMin: ").append(StringUtil.toIndentedString(relaxationHRMin)).append("\n");
+    sb.append("    relaxationHRMax: ").append(StringUtil.toIndentedString(relaxationHRMax)).append("\n");
+    sb.append("    relaxationAverageHR: ").append(StringUtil.toIndentedString(relaxationAverageHR)).append("\n");
+    sb.append("    energyExpenditure: ").append(StringUtil.toIndentedString(energyExpenditure)).append("\n");
+    sb.append("    energyExpenditureTimeStamp: ").append(StringUtil.toIndentedString(energyExpenditureTimeStamp)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

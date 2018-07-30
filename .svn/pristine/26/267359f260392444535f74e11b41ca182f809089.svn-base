@@ -1,0 +1,71 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-07-18T17:20:02.553+02:00")
+public class ProgressNotificationPeriodSubSection   {
+  
+  private String daily = null;
+  private String weekly = null;
+  private String monthly = null;
+
+  
+  /**
+   * daily
+   **/
+  @ApiModelProperty(value = "daily")
+  @JsonProperty("daily")
+  public String getDaily() {
+    return daily;
+  }
+  public void setDaily(String daily) {
+    this.daily = daily;
+  }
+
+  
+  /**
+   * weekly
+   **/
+  @ApiModelProperty(value = "weekly")
+  @JsonProperty("weekly")
+  public String getWeekly() {
+    return weekly;
+  }
+  public void setWeekly(String weekly) {
+    this.weekly = weekly;
+  }
+
+  
+  /**
+   * monthly
+   **/
+  @ApiModelProperty(value = "monthly")
+  @JsonProperty("monthly")
+  public String getMonthly() {
+    return monthly;
+  }
+  public void setMonthly(String monthly) {
+    this.monthly = monthly;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class ProgressNotificationPeriodSubSection {\n");
+    
+    sb.append("    daily: ").append(StringUtil.toIndentedString(daily)).append("\n");
+    sb.append("    weekly: ").append(StringUtil.toIndentedString(weekly)).append("\n");
+    sb.append("    monthly: ").append(StringUtil.toIndentedString(monthly)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

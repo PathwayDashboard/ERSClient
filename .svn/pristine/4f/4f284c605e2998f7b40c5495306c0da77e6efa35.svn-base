@@ -1,0 +1,117 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+import io.swagger.client.model.BehaviouralChangeProgramRecommendedGoals;
+import java.util.*;
+import io.swagger.client.model.BehaviouralChangeProgramLifeStyleAssessmentQuestionnaire;
+import io.swagger.client.model.BehaviouralChangeProgramGoodHabit;
+import io.swagger.client.model.BehaviouralChangeProgramPersonalGoals;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-04-21T15:01:39.375+02:00")
+public class BehaviouralChangeProgramme   {
+  
+  private Integer behaviouralChangeProgramID = null;
+  private Integer behaviouralChangeProgramAssessmentMonthInterval = null;
+  private List<BehaviouralChangeProgramPersonalGoals> behaviouralChangeProgramPersonalGoalss = new ArrayList<BehaviouralChangeProgramPersonalGoals>();
+  private List<BehaviouralChangeProgramRecommendedGoals> behaviouralChangeProgramRecommendedGoalss = new ArrayList<BehaviouralChangeProgramRecommendedGoals>();
+  private List<BehaviouralChangeProgramGoodHabit> behaviouralChangeProgramGoodHabits = new ArrayList<BehaviouralChangeProgramGoodHabit>();
+  private List<BehaviouralChangeProgramLifeStyleAssessmentQuestionnaire> behaviouralChangeProgramLifeStyleAssessmentQuestionnaires = new ArrayList<BehaviouralChangeProgramLifeStyleAssessmentQuestionnaire>();
+
+  
+  /**
+   * Program ID
+   **/
+  @ApiModelProperty(value = "Program ID")
+  @JsonProperty("behaviouralChangeProgramID")
+  public Integer getBehaviouralChangeProgramID() {
+    return behaviouralChangeProgramID;
+  }
+  public void setBehaviouralChangeProgramID(Integer behaviouralChangeProgramID) {
+    this.behaviouralChangeProgramID = behaviouralChangeProgramID;
+  }
+
+  
+  /**
+   * Program Assessment Month interval
+   **/
+  @ApiModelProperty(value = "Program Assessment Month interval")
+  @JsonProperty("behaviouralChangeProgramAssessmentMonthInterval")
+  public Integer getBehaviouralChangeProgramAssessmentMonthInterval() {
+    return behaviouralChangeProgramAssessmentMonthInterval;
+  }
+  public void setBehaviouralChangeProgramAssessmentMonthInterval(Integer behaviouralChangeProgramAssessmentMonthInterval) {
+    this.behaviouralChangeProgramAssessmentMonthInterval = behaviouralChangeProgramAssessmentMonthInterval;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("behaviouralChangeProgramPersonalGoalss")
+  public List<BehaviouralChangeProgramPersonalGoals> getBehaviouralChangeProgramPersonalGoalss() {
+    return behaviouralChangeProgramPersonalGoalss;
+  }
+  public void setBehaviouralChangeProgramPersonalGoalss(List<BehaviouralChangeProgramPersonalGoals> behaviouralChangeProgramPersonalGoalss) {
+    this.behaviouralChangeProgramPersonalGoalss = behaviouralChangeProgramPersonalGoalss;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("behaviouralChangeProgramRecommendedGoalss")
+  public List<BehaviouralChangeProgramRecommendedGoals> getBehaviouralChangeProgramRecommendedGoalss() {
+    return behaviouralChangeProgramRecommendedGoalss;
+  }
+  public void setBehaviouralChangeProgramRecommendedGoalss(List<BehaviouralChangeProgramRecommendedGoals> behaviouralChangeProgramRecommendedGoalss) {
+    this.behaviouralChangeProgramRecommendedGoalss = behaviouralChangeProgramRecommendedGoalss;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("behaviouralChangeProgramGoodHabits")
+  public List<BehaviouralChangeProgramGoodHabit> getBehaviouralChangeProgramGoodHabits() {
+    return behaviouralChangeProgramGoodHabits;
+  }
+  public void setBehaviouralChangeProgramGoodHabits(List<BehaviouralChangeProgramGoodHabit> behaviouralChangeProgramGoodHabits) {
+    this.behaviouralChangeProgramGoodHabits = behaviouralChangeProgramGoodHabits;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("behaviouralChangeProgramLifeStyleAssessmentQuestionnaires")
+  public List<BehaviouralChangeProgramLifeStyleAssessmentQuestionnaire> getBehaviouralChangeProgramLifeStyleAssessmentQuestionnaires() {
+    return behaviouralChangeProgramLifeStyleAssessmentQuestionnaires;
+  }
+  public void setBehaviouralChangeProgramLifeStyleAssessmentQuestionnaires(List<BehaviouralChangeProgramLifeStyleAssessmentQuestionnaire> behaviouralChangeProgramLifeStyleAssessmentQuestionnaires) {
+    this.behaviouralChangeProgramLifeStyleAssessmentQuestionnaires = behaviouralChangeProgramLifeStyleAssessmentQuestionnaires;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class BehaviouralChangeProgramme {\n");
+    
+    sb.append("    behaviouralChangeProgramID: ").append(StringUtil.toIndentedString(behaviouralChangeProgramID)).append("\n");
+    sb.append("    behaviouralChangeProgramAssessmentMonthInterval: ").append(StringUtil.toIndentedString(behaviouralChangeProgramAssessmentMonthInterval)).append("\n");
+    sb.append("    behaviouralChangeProgramPersonalGoalss: ").append(StringUtil.toIndentedString(behaviouralChangeProgramPersonalGoalss)).append("\n");
+    sb.append("    behaviouralChangeProgramRecommendedGoalss: ").append(StringUtil.toIndentedString(behaviouralChangeProgramRecommendedGoalss)).append("\n");
+    sb.append("    behaviouralChangeProgramGoodHabits: ").append(StringUtil.toIndentedString(behaviouralChangeProgramGoodHabits)).append("\n");
+    sb.append("    behaviouralChangeProgramLifeStyleAssessmentQuestionnaires: ").append(StringUtil.toIndentedString(behaviouralChangeProgramLifeStyleAssessmentQuestionnaires)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

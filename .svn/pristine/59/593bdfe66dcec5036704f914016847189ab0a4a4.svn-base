@@ -1,0 +1,76 @@
+package it.eng.pathway.fake.model;
+
+public class BehaviouralChangeProgramme {
+
+	private int assessmentPeriod;
+
+	private int personalGoals;
+
+	private int recommendedGoals;
+
+	private CardiacRehabilitationProgramme cardiacRehabilitationProgramme;
+
+
+	private LifeStyleAssessmentQuestionnaire[] lifeStyleAssessmentQuestionnaire;
+
+	private Patient patient;
+
+	private GoodHabit[] goodHabit;
+
+	public int getAssessmentPeriod() {
+		return assessmentPeriod;
+	}
+
+	public void setAssessmentPeriod(int assessmentPeriod) {
+		this.assessmentPeriod = assessmentPeriod;
+	}
+
+	public int getPersonalGoals() {
+		return personalGoals;
+	}
+
+	public void setPersonalGoals(int personalGoals) {
+		this.personalGoals = personalGoals;
+	}
+
+	public int getRecommendedGoals() {
+		return recommendedGoals;
+	}
+
+	public void setRecommendedGoals(int recommendedGoals) {
+		this.recommendedGoals = recommendedGoals;
+	}
+
+	public CardiacRehabilitationProgramme getCardiacRehabilitationProgramme() {
+		return cardiacRehabilitationProgramme;
+	}
+
+	public void setCardiacRehabilitationProgramme(CardiacRehabilitationProgramme cardiacRehabilitationProgramme) {
+		this.cardiacRehabilitationProgramme = cardiacRehabilitationProgramme;
+	}
+
+	public LifeStyleAssessmentQuestionnaire[] getLifeStyleAssessmentQuestionnaire() {
+		return lifeStyleAssessmentQuestionnaire;
+	}
+
+	public void setLifeStyleAssessmentQuestionnaire(LifeStyleAssessmentQuestionnaire[] lifeStyleAssessmentQuestionnaire) {
+		this.lifeStyleAssessmentQuestionnaire = lifeStyleAssessmentQuestionnaire;
+	}
+
+	public Patient getPatient() {
+		return patient;
+	}
+
+	public void setPatient(Patient patient) {
+		this.patient = patient;
+	}
+
+	public GoodHabit[] getGoodHabit() {
+		return goodHabit;
+	}
+
+	public void setGoodHabit(GoodHabit[] goodHabit) {
+		this.goodHabit = goodHabit;
+	}
+
+}

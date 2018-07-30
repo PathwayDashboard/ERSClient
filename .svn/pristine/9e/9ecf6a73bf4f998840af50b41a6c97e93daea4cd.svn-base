@@ -1,0 +1,42 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+import java.util.*;
+import io.swagger.client.model.HealthAndFitnessAssessmentSessionss;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-05-30T11:30:03.045+02:00")
+public class HealthAndFitnessAssessmentSession   {
+  
+  private List<HealthAndFitnessAssessmentSessionss> healthAndFitnessAssessmentSessionsss = new ArrayList<HealthAndFitnessAssessmentSessionss>();
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("healthAndFitnessAssessmentSessionsss")
+  public List<HealthAndFitnessAssessmentSessionss> getHealthAndFitnessAssessmentSessionsss() {
+    return healthAndFitnessAssessmentSessionsss;
+  }
+  public void setHealthAndFitnessAssessmentSessionsss(List<HealthAndFitnessAssessmentSessionss> healthAndFitnessAssessmentSessionsss) {
+    this.healthAndFitnessAssessmentSessionsss = healthAndFitnessAssessmentSessionsss;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class HealthAndFitnessAssessmentSession {\n");
+    
+    sb.append("    healthAndFitnessAssessmentSessionsss: ").append(StringUtil.toIndentedString(healthAndFitnessAssessmentSessionsss)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

@@ -1,0 +1,252 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+import java.util.Date;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-01-31T10:06:44.930+01:00")
+public class CPETTestSection   {
+  
+  private Date date = null;
+  private Integer responsibleForTemination = null;
+  private Integer patientTerminationReason = null;
+  private String patientTerminationResonFreeText = null;
+  private String supervisorTerminationReasonFreeText = null;
+  private Integer visitNumber = null;
+  private String protocol = null;
+  private Integer hrRestSitting = null;
+  private Integer systolicBPRestSitting = null;
+  private Integer hrPeak = null;
+  private Integer systolicBPPeak = null;
+  private Double rqPeak = null;
+  private Double vo2Peak = null;
+  private Double vo2PredictedPeak = null;
+  private Integer voPercentagePredicted = null;
+
+  
+  /**
+   * date
+   **/
+  @ApiModelProperty(value = "date")
+  @JsonProperty("date")
+  public Date getDate() {
+    return date;
+  }
+  public void setDate(Date date) {
+    this.date = date;
+  }
+
+  
+  /**
+   * responsibleForTemination
+   **/
+  @ApiModelProperty(value = "responsibleForTemination")
+  @JsonProperty("responsibleForTemination")
+  public Integer getResponsibleForTemination() {
+    return responsibleForTemination;
+  }
+  public void setResponsibleForTemination(Integer responsibleForTemination) {
+    this.responsibleForTemination = responsibleForTemination;
+  }
+
+  
+  /**
+   * patientTerminationReason
+   **/
+  @ApiModelProperty(value = "patientTerminationReason")
+  @JsonProperty("patientTerminationReason")
+  public Integer getPatientTerminationReason() {
+    return patientTerminationReason;
+  }
+  public void setPatientTerminationReason(Integer patientTerminationReason) {
+    this.patientTerminationReason = patientTerminationReason;
+  }
+
+  
+  /**
+   * patientTerminationResonFreeText
+   **/
+  @ApiModelProperty(value = "patientTerminationResonFreeText")
+  @JsonProperty("patientTerminationResonFreeText")
+  public String getPatientTerminationResonFreeText() {
+    return patientTerminationResonFreeText;
+  }
+  public void setPatientTerminationResonFreeText(String patientTerminationResonFreeText) {
+    this.patientTerminationResonFreeText = patientTerminationResonFreeText;
+  }
+
+  
+  /**
+   * supervisorTerminationReasonFreeText
+   **/
+  @ApiModelProperty(value = "supervisorTerminationReasonFreeText")
+  @JsonProperty("supervisorTerminationReasonFreeText")
+  public String getSupervisorTerminationReasonFreeText() {
+    return supervisorTerminationReasonFreeText;
+  }
+  public void setSupervisorTerminationReasonFreeText(String supervisorTerminationReasonFreeText) {
+    this.supervisorTerminationReasonFreeText = supervisorTerminationReasonFreeText;
+  }
+
+  
+  /**
+   * visitNumber
+   **/
+  @ApiModelProperty(value = "visitNumber")
+  @JsonProperty("visitNumber")
+  public Integer getVisitNumber() {
+    return visitNumber;
+  }
+  public void setVisitNumber(Integer visitNumber) {
+    this.visitNumber = visitNumber;
+  }
+
+  
+  /**
+   * protocol
+   **/
+  @ApiModelProperty(value = "protocol")
+  @JsonProperty("protocol")
+  public String getProtocol() {
+    return protocol;
+  }
+  public void setProtocol(String protocol) {
+    this.protocol = protocol;
+  }
+
+  
+  /**
+   * hrRestSitting
+   **/
+  @ApiModelProperty(value = "hrRestSitting")
+  @JsonProperty("hrRestSitting")
+  public Integer getHrRestSitting() {
+    return hrRestSitting;
+  }
+  public void setHrRestSitting(Integer hrRestSitting) {
+    this.hrRestSitting = hrRestSitting;
+  }
+
+  
+  /**
+   * systolicBPRestSitting
+   **/
+  @ApiModelProperty(value = "systolicBPRestSitting")
+  @JsonProperty("systolicBPRestSitting")
+  public Integer getSystolicBPRestSitting() {
+    return systolicBPRestSitting;
+  }
+  public void setSystolicBPRestSitting(Integer systolicBPRestSitting) {
+    this.systolicBPRestSitting = systolicBPRestSitting;
+  }
+
+  
+  /**
+   * hrPeak
+   **/
+  @ApiModelProperty(value = "hrPeak")
+  @JsonProperty("hrPeak")
+  public Integer getHrPeak() {
+    return hrPeak;
+  }
+  public void setHrPeak(Integer hrPeak) {
+    this.hrPeak = hrPeak;
+  }
+
+  
+  /**
+   * systolicBPPeak
+   **/
+  @ApiModelProperty(value = "systolicBPPeak")
+  @JsonProperty("systolicBPPeak")
+  public Integer getSystolicBPPeak() {
+    return systolicBPPeak;
+  }
+  public void setSystolicBPPeak(Integer systolicBPPeak) {
+    this.systolicBPPeak = systolicBPPeak;
+  }
+
+  
+  /**
+   * rqPeak
+   **/
+  @ApiModelProperty(value = "rqPeak")
+  @JsonProperty("rqPeak")
+  public Double getRqPeak() {
+    return rqPeak;
+  }
+  public void setRqPeak(Double rqPeak) {
+    this.rqPeak = rqPeak;
+  }
+
+  
+  /**
+   * vo2Peak
+   **/
+  @ApiModelProperty(value = "vo2Peak")
+  @JsonProperty("vo2Peak")
+  public Double getVo2Peak() {
+    return vo2Peak;
+  }
+  public void setVo2Peak(Double vo2Peak) {
+    this.vo2Peak = vo2Peak;
+  }
+
+  
+  /**
+   * vo2PredictedPeak
+   **/
+  @ApiModelProperty(value = "vo2PredictedPeak")
+  @JsonProperty("vo2PredictedPeak")
+  public Double getVo2PredictedPeak() {
+    return vo2PredictedPeak;
+  }
+  public void setVo2PredictedPeak(Double vo2PredictedPeak) {
+    this.vo2PredictedPeak = vo2PredictedPeak;
+  }
+
+  
+  /**
+   * voPercentagePredicted
+   **/
+  @ApiModelProperty(value = "voPercentagePredicted")
+  @JsonProperty("voPercentagePredicted")
+  public Integer getVoPercentagePredicted() {
+    return voPercentagePredicted;
+  }
+  public void setVoPercentagePredicted(Integer voPercentagePredicted) {
+    this.voPercentagePredicted = voPercentagePredicted;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class CPETTestSection {\n");
+    
+    sb.append("    date: ").append(StringUtil.toIndentedString(date)).append("\n");
+    sb.append("    responsibleForTemination: ").append(StringUtil.toIndentedString(responsibleForTemination)).append("\n");
+    sb.append("    patientTerminationReason: ").append(StringUtil.toIndentedString(patientTerminationReason)).append("\n");
+    sb.append("    patientTerminationResonFreeText: ").append(StringUtil.toIndentedString(patientTerminationResonFreeText)).append("\n");
+    sb.append("    supervisorTerminationReasonFreeText: ").append(StringUtil.toIndentedString(supervisorTerminationReasonFreeText)).append("\n");
+    sb.append("    visitNumber: ").append(StringUtil.toIndentedString(visitNumber)).append("\n");
+    sb.append("    protocol: ").append(StringUtil.toIndentedString(protocol)).append("\n");
+    sb.append("    hrRestSitting: ").append(StringUtil.toIndentedString(hrRestSitting)).append("\n");
+    sb.append("    systolicBPRestSitting: ").append(StringUtil.toIndentedString(systolicBPRestSitting)).append("\n");
+    sb.append("    hrPeak: ").append(StringUtil.toIndentedString(hrPeak)).append("\n");
+    sb.append("    systolicBPPeak: ").append(StringUtil.toIndentedString(systolicBPPeak)).append("\n");
+    sb.append("    rqPeak: ").append(StringUtil.toIndentedString(rqPeak)).append("\n");
+    sb.append("    vo2Peak: ").append(StringUtil.toIndentedString(vo2Peak)).append("\n");
+    sb.append("    vo2PredictedPeak: ").append(StringUtil.toIndentedString(vo2PredictedPeak)).append("\n");
+    sb.append("    voPercentagePredicted: ").append(StringUtil.toIndentedString(voPercentagePredicted)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

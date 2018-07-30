@@ -1,0 +1,87 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+import io.swagger.client.model.HealthAndFitnessAssessmentSessionSubsection;
+import io.swagger.client.model.ExerGameSessionSubsection;
+import io.swagger.client.model.ExerClassSessionSubsection;
+import java.util.*;
+import io.swagger.client.model.ActiveLifestylePASessionSubsection;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-07-22T14:54:54.065+02:00")
+public class CardiacRehabilitationProgressFull   {
+  
+  private List<HealthAndFitnessAssessmentSessionSubsection> healthAndFitnessAssessmentSessions = new ArrayList<HealthAndFitnessAssessmentSessionSubsection>();
+  private List<ExerClassSessionSubsection> exerClassSessions = new ArrayList<ExerClassSessionSubsection>();
+  private List<ExerGameSessionSubsection> exerGameSessions = new ArrayList<ExerGameSessionSubsection>();
+  private List<ActiveLifestylePASessionSubsection> activeLifestylePASessionSubsections = new ArrayList<ActiveLifestylePASessionSubsection>();
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("healthAndFitnessAssessmentSessions")
+  public List<HealthAndFitnessAssessmentSessionSubsection> getHealthAndFitnessAssessmentSessions() {
+    return healthAndFitnessAssessmentSessions;
+  }
+  public void setHealthAndFitnessAssessmentSessions(List<HealthAndFitnessAssessmentSessionSubsection> healthAndFitnessAssessmentSessions) {
+    this.healthAndFitnessAssessmentSessions = healthAndFitnessAssessmentSessions;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("exerClassSessions")
+  public List<ExerClassSessionSubsection> getExerClassSessions() {
+    return exerClassSessions;
+  }
+  public void setExerClassSessions(List<ExerClassSessionSubsection> exerClassSessions) {
+    this.exerClassSessions = exerClassSessions;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("exerGameSessions")
+  public List<ExerGameSessionSubsection> getExerGameSessions() {
+    return exerGameSessions;
+  }
+  public void setExerGameSessions(List<ExerGameSessionSubsection> exerGameSessions) {
+    this.exerGameSessions = exerGameSessions;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("activeLifestylePASessionSubsections")
+  public List<ActiveLifestylePASessionSubsection> getActiveLifestylePASessionSubsections() {
+    return activeLifestylePASessionSubsections;
+  }
+  public void setActiveLifestylePASessionSubsections(List<ActiveLifestylePASessionSubsection> activeLifestylePASessionSubsections) {
+    this.activeLifestylePASessionSubsections = activeLifestylePASessionSubsections;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class CardiacRehabilitationProgressFull {\n");
+    
+    sb.append("    healthAndFitnessAssessmentSessions: ").append(StringUtil.toIndentedString(healthAndFitnessAssessmentSessions)).append("\n");
+    sb.append("    exerClassSessions: ").append(StringUtil.toIndentedString(exerClassSessions)).append("\n");
+    sb.append("    exerGameSessions: ").append(StringUtil.toIndentedString(exerGameSessions)).append("\n");
+    sb.append("    activeLifestylePASessionSubsections: ").append(StringUtil.toIndentedString(activeLifestylePASessionSubsections)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

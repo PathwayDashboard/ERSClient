@@ -1,0 +1,17 @@
+package it.eng.pathway.fake.model;
+
+public enum PeriodicityType {
+
+	;
+
+	private int daily;
+
+	private int weekly;
+
+	private int monthly;
+
+	private ExerciseNotificationPreferences exerciseNotificationPreferences;
+
+	private BehaviouralChangeNotificationPreferences behaviouralChangeNotificationPreferences;
+
+}

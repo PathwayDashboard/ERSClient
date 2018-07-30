@@ -1,0 +1,41 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-02-03T12:32:06.758+01:00")
+public class CardiacRehabilitationProgressExerGameSessionenergyExpenditureSubSubSection   {
+  
+  private Integer kcal = null;
+
+  
+  /**
+   * kcal
+   **/
+  @ApiModelProperty(value = "kcal")
+  @JsonProperty("kcal")
+  public Integer getKcal() {
+    return kcal;
+  }
+  public void setKcal(Integer kcal) {
+    this.kcal = kcal;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class CardiacRehabilitationProgressExerGameSessionenergyExpenditureSubSubSection {\n");
+    
+    sb.append("    kcal: ").append(StringUtil.toIndentedString(kcal)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

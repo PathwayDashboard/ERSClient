@@ -1,0 +1,14 @@
+package it.eng.pathway.fake.model;
+
+public enum ExerClassExerciseCategory {
+
+	;
+
+	private int walkingOnTheSpot;
+
+	private int sideSteps;
+
+	private int v_step;
+
+
+}

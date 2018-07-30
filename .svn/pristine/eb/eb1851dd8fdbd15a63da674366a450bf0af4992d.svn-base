@@ -1,0 +1,177 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+import java.util.Date;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-05-30T11:30:03.045+02:00")
+public class ExergamerSessionPreScreeningInfo   {
+  
+  private Integer exerGameSessionPreScreeningEvaluationresult = null;
+  private String exerGameSessionPreScreeningEvaluationdescription = null;
+  private Date exerGameSessionPreScreeningEvaluationtimestamp = null;
+  private String exerGameSessionPreScreeningEvaluationmessage = null;
+  private String exerGameSessionPreScreeningpreScreeningAssessment = null;
+  private Date exerGameSessionPreScreeningrestingBloodPressureTimeStamp = null;
+  private Integer exerGameSessionPreScreeningrestingBloodPressureSystolic = null;
+  private Integer exerGameSessionPreScreeningrestingBloodPressureDiastolic = null;
+  private Date exerGameSessionPreScreeningrestingHRTimeStamp = null;
+  private Integer exerGameSessionPreScreeningrestingHR = null;
+
+  
+  /**
+   * ResultType
+   **/
+  @ApiModelProperty(value = "ResultType")
+  @JsonProperty("ExerGameSessionPreScreeningEvaluationresult")
+  public Integer getExerGameSessionPreScreeningEvaluationresult() {
+    return exerGameSessionPreScreeningEvaluationresult;
+  }
+  public void setExerGameSessionPreScreeningEvaluationresult(Integer exerGameSessionPreScreeningEvaluationresult) {
+    this.exerGameSessionPreScreeningEvaluationresult = exerGameSessionPreScreeningEvaluationresult;
+  }
+
+  
+  /**
+   * Description
+   **/
+  @ApiModelProperty(value = "Description")
+  @JsonProperty("ExerGameSessionPreScreeningEvaluationdescription")
+  public String getExerGameSessionPreScreeningEvaluationdescription() {
+    return exerGameSessionPreScreeningEvaluationdescription;
+  }
+  public void setExerGameSessionPreScreeningEvaluationdescription(String exerGameSessionPreScreeningEvaluationdescription) {
+    this.exerGameSessionPreScreeningEvaluationdescription = exerGameSessionPreScreeningEvaluationdescription;
+  }
+
+  
+  /**
+   * Timestamp
+   **/
+  @ApiModelProperty(value = "Timestamp")
+  @JsonProperty("ExerGameSessionPreScreeningEvaluationtimestamp")
+  public Date getExerGameSessionPreScreeningEvaluationtimestamp() {
+    return exerGameSessionPreScreeningEvaluationtimestamp;
+  }
+  public void setExerGameSessionPreScreeningEvaluationtimestamp(Date exerGameSessionPreScreeningEvaluationtimestamp) {
+    this.exerGameSessionPreScreeningEvaluationtimestamp = exerGameSessionPreScreeningEvaluationtimestamp;
+  }
+
+  
+  /**
+   * Message
+   **/
+  @ApiModelProperty(value = "Message")
+  @JsonProperty("ExerGameSessionPreScreeningEvaluationmessage")
+  public String getExerGameSessionPreScreeningEvaluationmessage() {
+    return exerGameSessionPreScreeningEvaluationmessage;
+  }
+  public void setExerGameSessionPreScreeningEvaluationmessage(String exerGameSessionPreScreeningEvaluationmessage) {
+    this.exerGameSessionPreScreeningEvaluationmessage = exerGameSessionPreScreeningEvaluationmessage;
+  }
+
+  
+  /**
+   * Assessment
+   **/
+  @ApiModelProperty(value = "Assessment")
+  @JsonProperty("ExerGameSessionPreScreeningpreScreeningAssessment")
+  public String getExerGameSessionPreScreeningpreScreeningAssessment() {
+    return exerGameSessionPreScreeningpreScreeningAssessment;
+  }
+  public void setExerGameSessionPreScreeningpreScreeningAssessment(String exerGameSessionPreScreeningpreScreeningAssessment) {
+    this.exerGameSessionPreScreeningpreScreeningAssessment = exerGameSessionPreScreeningpreScreeningAssessment;
+  }
+
+  
+  /**
+   * Resting Blood Pressure TimeStamp
+   **/
+  @ApiModelProperty(value = "Resting Blood Pressure TimeStamp")
+  @JsonProperty("ExerGameSessionPreScreeningrestingBloodPressureTimeStamp")
+  public Date getExerGameSessionPreScreeningrestingBloodPressureTimeStamp() {
+    return exerGameSessionPreScreeningrestingBloodPressureTimeStamp;
+  }
+  public void setExerGameSessionPreScreeningrestingBloodPressureTimeStamp(Date exerGameSessionPreScreeningrestingBloodPressureTimeStamp) {
+    this.exerGameSessionPreScreeningrestingBloodPressureTimeStamp = exerGameSessionPreScreeningrestingBloodPressureTimeStamp;
+  }
+
+  
+  /**
+   * Resting Blood Pressure Systolic
+   **/
+  @ApiModelProperty(value = "Resting Blood Pressure Systolic")
+  @JsonProperty("ExerGameSessionPreScreeningrestingBloodPressureSystolic")
+  public Integer getExerGameSessionPreScreeningrestingBloodPressureSystolic() {
+    return exerGameSessionPreScreeningrestingBloodPressureSystolic;
+  }
+  public void setExerGameSessionPreScreeningrestingBloodPressureSystolic(Integer exerGameSessionPreScreeningrestingBloodPressureSystolic) {
+    this.exerGameSessionPreScreeningrestingBloodPressureSystolic = exerGameSessionPreScreeningrestingBloodPressureSystolic;
+  }
+
+  
+  /**
+   * Resting Blood Pressure Diastolic
+   **/
+  @ApiModelProperty(value = "Resting Blood Pressure Diastolic")
+  @JsonProperty("ExerGameSessionPreScreeningrestingBloodPressureDiastolic")
+  public Integer getExerGameSessionPreScreeningrestingBloodPressureDiastolic() {
+    return exerGameSessionPreScreeningrestingBloodPressureDiastolic;
+  }
+  public void setExerGameSessionPreScreeningrestingBloodPressureDiastolic(Integer exerGameSessionPreScreeningrestingBloodPressureDiastolic) {
+    this.exerGameSessionPreScreeningrestingBloodPressureDiastolic = exerGameSessionPreScreeningrestingBloodPressureDiastolic;
+  }
+
+  
+  /**
+   * Resting HR timeStamp
+   **/
+  @ApiModelProperty(value = "Resting HR timeStamp")
+  @JsonProperty("ExerGameSessionPreScreeningrestingHRTimeStamp")
+  public Date getExerGameSessionPreScreeningrestingHRTimeStamp() {
+    return exerGameSessionPreScreeningrestingHRTimeStamp;
+  }
+  public void setExerGameSessionPreScreeningrestingHRTimeStamp(Date exerGameSessionPreScreeningrestingHRTimeStamp) {
+    this.exerGameSessionPreScreeningrestingHRTimeStamp = exerGameSessionPreScreeningrestingHRTimeStamp;
+  }
+
+  
+  /**
+   * Resting heart rate
+   **/
+  @ApiModelProperty(value = "Resting heart rate")
+  @JsonProperty("ExerGameSessionPreScreeningrestingHR")
+  public Integer getExerGameSessionPreScreeningrestingHR() {
+    return exerGameSessionPreScreeningrestingHR;
+  }
+  public void setExerGameSessionPreScreeningrestingHR(Integer exerGameSessionPreScreeningrestingHR) {
+    this.exerGameSessionPreScreeningrestingHR = exerGameSessionPreScreeningrestingHR;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class ExergamerSessionPreScreeningInfo {\n");
+    
+    sb.append("    exerGameSessionPreScreeningEvaluationresult: ").append(StringUtil.toIndentedString(exerGameSessionPreScreeningEvaluationresult)).append("\n");
+    sb.append("    exerGameSessionPreScreeningEvaluationdescription: ").append(StringUtil.toIndentedString(exerGameSessionPreScreeningEvaluationdescription)).append("\n");
+    sb.append("    exerGameSessionPreScreeningEvaluationtimestamp: ").append(StringUtil.toIndentedString(exerGameSessionPreScreeningEvaluationtimestamp)).append("\n");
+    sb.append("    exerGameSessionPreScreeningEvaluationmessage: ").append(StringUtil.toIndentedString(exerGameSessionPreScreeningEvaluationmessage)).append("\n");
+    sb.append("    exerGameSessionPreScreeningpreScreeningAssessment: ").append(StringUtil.toIndentedString(exerGameSessionPreScreeningpreScreeningAssessment)).append("\n");
+    sb.append("    exerGameSessionPreScreeningrestingBloodPressureTimeStamp: ").append(StringUtil.toIndentedString(exerGameSessionPreScreeningrestingBloodPressureTimeStamp)).append("\n");
+    sb.append("    exerGameSessionPreScreeningrestingBloodPressureSystolic: ").append(StringUtil.toIndentedString(exerGameSessionPreScreeningrestingBloodPressureSystolic)).append("\n");
+    sb.append("    exerGameSessionPreScreeningrestingBloodPressureDiastolic: ").append(StringUtil.toIndentedString(exerGameSessionPreScreeningrestingBloodPressureDiastolic)).append("\n");
+    sb.append("    exerGameSessionPreScreeningrestingHRTimeStamp: ").append(StringUtil.toIndentedString(exerGameSessionPreScreeningrestingHRTimeStamp)).append("\n");
+    sb.append("    exerGameSessionPreScreeningrestingHR: ").append(StringUtil.toIndentedString(exerGameSessionPreScreeningrestingHR)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

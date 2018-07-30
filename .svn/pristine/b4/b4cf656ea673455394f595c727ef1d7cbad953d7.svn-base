@@ -1,0 +1,41 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-07-22T14:54:54.065+02:00")
+public class BehaviouralChangeProgrammeGeneralSection   {
+  
+  private Integer assessmentPeriodMonthInterval = null;
+
+  
+  /**
+   * Program Assessment Month interval
+   **/
+  @ApiModelProperty(value = "Program Assessment Month interval")
+  @JsonProperty("assessmentPeriodMonthInterval")
+  public Integer getAssessmentPeriodMonthInterval() {
+    return assessmentPeriodMonthInterval;
+  }
+  public void setAssessmentPeriodMonthInterval(Integer assessmentPeriodMonthInterval) {
+    this.assessmentPeriodMonthInterval = assessmentPeriodMonthInterval;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class BehaviouralChangeProgrammeGeneralSection {\n");
+    
+    sb.append("    assessmentPeriodMonthInterval: ").append(StringUtil.toIndentedString(assessmentPeriodMonthInterval)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

@@ -1,0 +1,117 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+import java.util.Date;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-07-18T17:20:02.553+02:00")
+public class AssessmentSubSection   {
+  
+  private Integer id = null;
+  private String category = null;
+  private Integer read = null;
+  private Integer score = null;
+  private Integer type = null;
+  private Date submissionDate = null;
+
+  
+  /**
+   * ID
+   **/
+  @ApiModelProperty(value = "ID")
+  @JsonProperty("id")
+  public Integer getId() {
+    return id;
+  }
+  public void setId(Integer id) {
+    this.id = id;
+  }
+
+  
+  /**
+   * Category
+   **/
+  @ApiModelProperty(value = "Category")
+  @JsonProperty("category")
+  public String getCategory() {
+    return category;
+  }
+  public void setCategory(String category) {
+    this.category = category;
+  }
+
+  
+  /**
+   * Read
+   **/
+  @ApiModelProperty(value = "Read")
+  @JsonProperty("read")
+  public Integer getRead() {
+    return read;
+  }
+  public void setRead(Integer read) {
+    this.read = read;
+  }
+
+  
+  /**
+   * Score
+   **/
+  @ApiModelProperty(value = "Score")
+  @JsonProperty("score")
+  public Integer getScore() {
+    return score;
+  }
+  public void setScore(Integer score) {
+    this.score = score;
+  }
+
+  
+  /**
+   * Type
+   **/
+  @ApiModelProperty(value = "Type")
+  @JsonProperty("type")
+  public Integer getType() {
+    return type;
+  }
+  public void setType(Integer type) {
+    this.type = type;
+  }
+
+  
+  /**
+   * Submission date
+   **/
+  @ApiModelProperty(value = "Submission date")
+  @JsonProperty("submissionDate")
+  public Date getSubmissionDate() {
+    return submissionDate;
+  }
+  public void setSubmissionDate(Date submissionDate) {
+    this.submissionDate = submissionDate;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class AssessmentSubSection {\n");
+    
+    sb.append("    id: ").append(StringUtil.toIndentedString(id)).append("\n");
+    sb.append("    category: ").append(StringUtil.toIndentedString(category)).append("\n");
+    sb.append("    read: ").append(StringUtil.toIndentedString(read)).append("\n");
+    sb.append("    score: ").append(StringUtil.toIndentedString(score)).append("\n");
+    sb.append("    type: ").append(StringUtil.toIndentedString(type)).append("\n");
+    sb.append("    submissionDate: ").append(StringUtil.toIndentedString(submissionDate)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

@@ -1,0 +1,86 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+import io.swagger.client.model.RecommendedGoalAssessmentQuestionnaire;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-05-30T11:30:03.045+02:00")
+public class BehaviouralChangeProgramRecommendedGoals   {
+  
+  private Integer recommendedGoalID = null;
+  private String recommendedGoaldescription = null;
+  private Integer recommendedGoalcategory = null;
+  private RecommendedGoalAssessmentQuestionnaire recommendedGoalAssessmentQuestionnaire = null;
+
+  
+  /**
+   * Recommended Goal ID
+   **/
+  @ApiModelProperty(value = "Recommended Goal ID")
+  @JsonProperty("recommendedGoalID")
+  public Integer getRecommendedGoalID() {
+    return recommendedGoalID;
+  }
+  public void setRecommendedGoalID(Integer recommendedGoalID) {
+    this.recommendedGoalID = recommendedGoalID;
+  }
+
+  
+  /**
+   * Program Recommended Description
+   **/
+  @ApiModelProperty(value = "Program Recommended Description")
+  @JsonProperty("recommendedGoaldescription")
+  public String getRecommendedGoaldescription() {
+    return recommendedGoaldescription;
+  }
+  public void setRecommendedGoaldescription(String recommendedGoaldescription) {
+    this.recommendedGoaldescription = recommendedGoaldescription;
+  }
+
+  
+  /**
+   * Program Recommended Category
+   **/
+  @ApiModelProperty(value = "Program Recommended Category")
+  @JsonProperty("recommendedGoalcategory")
+  public Integer getRecommendedGoalcategory() {
+    return recommendedGoalcategory;
+  }
+  public void setRecommendedGoalcategory(Integer recommendedGoalcategory) {
+    this.recommendedGoalcategory = recommendedGoalcategory;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("recommendedGoalAssessmentQuestionnaire")
+  public RecommendedGoalAssessmentQuestionnaire getRecommendedGoalAssessmentQuestionnaire() {
+    return recommendedGoalAssessmentQuestionnaire;
+  }
+  public void setRecommendedGoalAssessmentQuestionnaire(RecommendedGoalAssessmentQuestionnaire recommendedGoalAssessmentQuestionnaire) {
+    this.recommendedGoalAssessmentQuestionnaire = recommendedGoalAssessmentQuestionnaire;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class BehaviouralChangeProgramRecommendedGoals {\n");
+    
+    sb.append("    recommendedGoalID: ").append(StringUtil.toIndentedString(recommendedGoalID)).append("\n");
+    sb.append("    recommendedGoaldescription: ").append(StringUtil.toIndentedString(recommendedGoaldescription)).append("\n");
+    sb.append("    recommendedGoalcategory: ").append(StringUtil.toIndentedString(recommendedGoalcategory)).append("\n");
+    sb.append("    recommendedGoalAssessmentQuestionnaire: ").append(StringUtil.toIndentedString(recommendedGoalAssessmentQuestionnaire)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

@@ -1,0 +1,56 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-05-30T11:30:03.045+02:00")
+public class PersonalGoalAssessmentQuestionnaire   {
+  
+  private String personalGoalAssessmentquestionnaireQ1 = null;
+  private String personalGoalAssessmentquestionnaireQ2 = null;
+
+  
+  /**
+   * question 1 amswer
+   **/
+  @ApiModelProperty(value = "question 1 amswer")
+  @JsonProperty("personalGoalAssessmentquestionnaireQ1")
+  public String getPersonalGoalAssessmentquestionnaireQ1() {
+    return personalGoalAssessmentquestionnaireQ1;
+  }
+  public void setPersonalGoalAssessmentquestionnaireQ1(String personalGoalAssessmentquestionnaireQ1) {
+    this.personalGoalAssessmentquestionnaireQ1 = personalGoalAssessmentquestionnaireQ1;
+  }
+
+  
+  /**
+   * question 2 answer
+   **/
+  @ApiModelProperty(value = "question 2 answer")
+  @JsonProperty("personalGoalAssessmentquestionnaireQ2")
+  public String getPersonalGoalAssessmentquestionnaireQ2() {
+    return personalGoalAssessmentquestionnaireQ2;
+  }
+  public void setPersonalGoalAssessmentquestionnaireQ2(String personalGoalAssessmentquestionnaireQ2) {
+    this.personalGoalAssessmentquestionnaireQ2 = personalGoalAssessmentquestionnaireQ2;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class PersonalGoalAssessmentQuestionnaire {\n");
+    
+    sb.append("    personalGoalAssessmentquestionnaireQ1: ").append(StringUtil.toIndentedString(personalGoalAssessmentquestionnaireQ1)).append("\n");
+    sb.append("    personalGoalAssessmentquestionnaireQ2: ").append(StringUtil.toIndentedString(personalGoalAssessmentquestionnaireQ2)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

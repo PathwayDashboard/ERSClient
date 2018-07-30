@@ -1,0 +1,56 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-07-22T14:54:54.065+02:00")
+public class ExerGameSessionPreScreeningInforestingBloodPressureSubSubSubsection   {
+  
+  private Integer systolic = null;
+  private Integer diastolic = null;
+
+  
+  /**
+   * Resting Blood Pressure Systolic
+   **/
+  @ApiModelProperty(value = "Resting Blood Pressure Systolic")
+  @JsonProperty("systolic")
+  public Integer getSystolic() {
+    return systolic;
+  }
+  public void setSystolic(Integer systolic) {
+    this.systolic = systolic;
+  }
+
+  
+  /**
+   * Resting Blood Pressure Diastolic
+   **/
+  @ApiModelProperty(value = "Resting Blood Pressure Diastolic")
+  @JsonProperty("diastolic")
+  public Integer getDiastolic() {
+    return diastolic;
+  }
+  public void setDiastolic(Integer diastolic) {
+    this.diastolic = diastolic;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class ExerGameSessionPreScreeningInforestingBloodPressureSubSubSubsection {\n");
+    
+    sb.append("    systolic: ").append(StringUtil.toIndentedString(systolic)).append("\n");
+    sb.append("    diastolic: ").append(StringUtil.toIndentedString(diastolic)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

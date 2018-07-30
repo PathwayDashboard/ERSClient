@@ -1,0 +1,56 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-09-14T09:51:50.944+02:00")
+public class PersonalisedDifficultySubSection   {
+  
+  private Integer exerclassExerciseDescriptionID = null;
+  private Integer value = null;
+
+  
+  /**
+   * exerclassExerciseDescriptionID
+   **/
+  @ApiModelProperty(value = "exerclassExerciseDescriptionID")
+  @JsonProperty("exerclassExerciseDescriptionID")
+  public Integer getExerclassExerciseDescriptionID() {
+    return exerclassExerciseDescriptionID;
+  }
+  public void setExerclassExerciseDescriptionID(Integer exerclassExerciseDescriptionID) {
+    this.exerclassExerciseDescriptionID = exerclassExerciseDescriptionID;
+  }
+
+  
+  /**
+   * Value
+   **/
+  @ApiModelProperty(value = "Value")
+  @JsonProperty("value")
+  public Integer getValue() {
+    return value;
+  }
+  public void setValue(Integer value) {
+    this.value = value;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class PersonalisedDifficultySubSection {\n");
+    
+    sb.append("    exerclassExerciseDescriptionID: ").append(StringUtil.toIndentedString(exerclassExerciseDescriptionID)).append("\n");
+    sb.append("    value: ").append(StringUtil.toIndentedString(value)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

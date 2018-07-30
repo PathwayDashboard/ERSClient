@@ -1,0 +1,56 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+import io.swagger.client.model.FExerciseProgrammesSection;
+import io.swagger.client.model.FCardiacRehabilitationProgrammeGeneralSection;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-07-18T17:20:02.553+02:00")
+public class FCardiacRehabilitationProgramme   {
+  
+  private FCardiacRehabilitationProgrammeGeneralSection cardiacRehabilitationProgrammeGeneral = null;
+  private FExerciseProgrammesSection exerciseProgrammes = null;
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("cardiacRehabilitationProgrammeGeneral")
+  public FCardiacRehabilitationProgrammeGeneralSection getCardiacRehabilitationProgrammeGeneral() {
+    return cardiacRehabilitationProgrammeGeneral;
+  }
+  public void setCardiacRehabilitationProgrammeGeneral(FCardiacRehabilitationProgrammeGeneralSection cardiacRehabilitationProgrammeGeneral) {
+    this.cardiacRehabilitationProgrammeGeneral = cardiacRehabilitationProgrammeGeneral;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("exerciseProgrammes")
+  public FExerciseProgrammesSection getExerciseProgrammes() {
+    return exerciseProgrammes;
+  }
+  public void setExerciseProgrammes(FExerciseProgrammesSection exerciseProgrammes) {
+    this.exerciseProgrammes = exerciseProgrammes;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class FCardiacRehabilitationProgramme {\n");
+    
+    sb.append("    cardiacRehabilitationProgrammeGeneral: ").append(StringUtil.toIndentedString(cardiacRehabilitationProgrammeGeneral)).append("\n");
+    sb.append("    exerciseProgrammes: ").append(StringUtil.toIndentedString(exerciseProgrammes)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

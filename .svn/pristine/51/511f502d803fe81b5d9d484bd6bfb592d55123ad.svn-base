@@ -1,0 +1,56 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-04-21T15:01:39.375+02:00")
+public class BehaviouralChangeProgramGoodHabit   {
+  
+  private Integer behaviouralChangeProgramGoodHabitID = null;
+  private String behaviouralChangeProgramGoodHabitDescription = null;
+
+  
+  /**
+   * Good habit ID
+   **/
+  @ApiModelProperty(value = "Good habit ID")
+  @JsonProperty("behaviouralChangeProgramGoodHabitID")
+  public Integer getBehaviouralChangeProgramGoodHabitID() {
+    return behaviouralChangeProgramGoodHabitID;
+  }
+  public void setBehaviouralChangeProgramGoodHabitID(Integer behaviouralChangeProgramGoodHabitID) {
+    this.behaviouralChangeProgramGoodHabitID = behaviouralChangeProgramGoodHabitID;
+  }
+
+  
+  /**
+   * Good habit description
+   **/
+  @ApiModelProperty(value = "Good habit description")
+  @JsonProperty("behaviouralChangeProgramGoodHabitDescription")
+  public String getBehaviouralChangeProgramGoodHabitDescription() {
+    return behaviouralChangeProgramGoodHabitDescription;
+  }
+  public void setBehaviouralChangeProgramGoodHabitDescription(String behaviouralChangeProgramGoodHabitDescription) {
+    this.behaviouralChangeProgramGoodHabitDescription = behaviouralChangeProgramGoodHabitDescription;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class BehaviouralChangeProgramGoodHabit {\n");
+    
+    sb.append("    behaviouralChangeProgramGoodHabitID: ").append(StringUtil.toIndentedString(behaviouralChangeProgramGoodHabitID)).append("\n");
+    sb.append("    behaviouralChangeProgramGoodHabitDescription: ").append(StringUtil.toIndentedString(behaviouralChangeProgramGoodHabitDescription)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

@@ -1,0 +1,237 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+import java.util.Date;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-05-17T15:35:09.175+02:00")
+public class CrProgressActiveLifestylePASessionSS   {
+  
+  private Integer crProgressActiveLifestylePASessionID = null;
+  private Date crProgressActiveLifestylePASessionDate = null;
+  private String crProgressActiveLifestylePASessionStartTime = null;
+  private String crProgressActiveLifestylePASessionEndTime = null;
+  private Integer crProgressActiveLifestylePASessionDuration = null;
+  private String crProgressActiveLifestylePASessionHrFile = null;
+  private Date crProgressActiveLifestylePASessionExpenditureObservationTimeStamp = null;
+  private Integer crProgressActiveLifestylePASessionExpenditureObservationValue = null;
+  private Integer crProgressActiveLifestylePASessionAverageHeartRate = null;
+  private Integer crProgressActiveLifestylePASessionStepsNumber = null;
+  private Integer crProgressActiveLifestylePASessionType = null;
+  private Integer crProgressActiveLifestylePASessionMonitored = null;
+  private String crProgressActiveLifestylePASessionDescription = null;
+  private Integer crProgressActiveLifestylePASessionIntensity = null;
+
+  
+  /**
+   * Progress Active Lifestyle PA SessionID
+   **/
+  @ApiModelProperty(value = "Progress Active Lifestyle PA SessionID")
+  @JsonProperty("CrProgressActiveLifestylePASessionID")
+  public Integer getCrProgressActiveLifestylePASessionID() {
+    return crProgressActiveLifestylePASessionID;
+  }
+  public void setCrProgressActiveLifestylePASessionID(Integer crProgressActiveLifestylePASessionID) {
+    this.crProgressActiveLifestylePASessionID = crProgressActiveLifestylePASessionID;
+  }
+
+  
+  /**
+   * Session Date
+   **/
+  @ApiModelProperty(value = "Session Date")
+  @JsonProperty("CrProgressActiveLifestylePASessionDate")
+  public Date getCrProgressActiveLifestylePASessionDate() {
+    return crProgressActiveLifestylePASessionDate;
+  }
+  public void setCrProgressActiveLifestylePASessionDate(Date crProgressActiveLifestylePASessionDate) {
+    this.crProgressActiveLifestylePASessionDate = crProgressActiveLifestylePASessionDate;
+  }
+
+  
+  /**
+   * SessionSession StartTime
+   **/
+  @ApiModelProperty(value = "SessionSession StartTime")
+  @JsonProperty("CrProgressActiveLifestylePASessionStartTime")
+  public String getCrProgressActiveLifestylePASessionStartTime() {
+    return crProgressActiveLifestylePASessionStartTime;
+  }
+  public void setCrProgressActiveLifestylePASessionStartTime(String crProgressActiveLifestylePASessionStartTime) {
+    this.crProgressActiveLifestylePASessionStartTime = crProgressActiveLifestylePASessionStartTime;
+  }
+
+  
+  /**
+   * Session EndTime
+   **/
+  @ApiModelProperty(value = "Session EndTime")
+  @JsonProperty("CrProgressActiveLifestylePASessionEndTime")
+  public String getCrProgressActiveLifestylePASessionEndTime() {
+    return crProgressActiveLifestylePASessionEndTime;
+  }
+  public void setCrProgressActiveLifestylePASessionEndTime(String crProgressActiveLifestylePASessionEndTime) {
+    this.crProgressActiveLifestylePASessionEndTime = crProgressActiveLifestylePASessionEndTime;
+  }
+
+  
+  /**
+   * Session Duration
+   **/
+  @ApiModelProperty(value = "Session Duration")
+  @JsonProperty("CrProgressActiveLifestylePASessionDuration")
+  public Integer getCrProgressActiveLifestylePASessionDuration() {
+    return crProgressActiveLifestylePASessionDuration;
+  }
+  public void setCrProgressActiveLifestylePASessionDuration(Integer crProgressActiveLifestylePASessionDuration) {
+    this.crProgressActiveLifestylePASessionDuration = crProgressActiveLifestylePASessionDuration;
+  }
+
+  
+  /**
+   * Session Hr File
+   **/
+  @ApiModelProperty(value = "Session Hr File")
+  @JsonProperty("CrProgressActiveLifestylePASessionHrFile")
+  public String getCrProgressActiveLifestylePASessionHrFile() {
+    return crProgressActiveLifestylePASessionHrFile;
+  }
+  public void setCrProgressActiveLifestylePASessionHrFile(String crProgressActiveLifestylePASessionHrFile) {
+    this.crProgressActiveLifestylePASessionHrFile = crProgressActiveLifestylePASessionHrFile;
+  }
+
+  
+  /**
+   * Expenditure Observation TimeStamp
+   **/
+  @ApiModelProperty(value = "Expenditure Observation TimeStamp")
+  @JsonProperty("CrProgressActiveLifestylePASessionExpenditureObservationTimeStamp")
+  public Date getCrProgressActiveLifestylePASessionExpenditureObservationTimeStamp() {
+    return crProgressActiveLifestylePASessionExpenditureObservationTimeStamp;
+  }
+  public void setCrProgressActiveLifestylePASessionExpenditureObservationTimeStamp(Date crProgressActiveLifestylePASessionExpenditureObservationTimeStamp) {
+    this.crProgressActiveLifestylePASessionExpenditureObservationTimeStamp = crProgressActiveLifestylePASessionExpenditureObservationTimeStamp;
+  }
+
+  
+  /**
+   * Exependiture Observation Value
+   **/
+  @ApiModelProperty(value = "Exependiture Observation Value")
+  @JsonProperty("CrProgressActiveLifestylePASessionExpenditureObservationValue")
+  public Integer getCrProgressActiveLifestylePASessionExpenditureObservationValue() {
+    return crProgressActiveLifestylePASessionExpenditureObservationValue;
+  }
+  public void setCrProgressActiveLifestylePASessionExpenditureObservationValue(Integer crProgressActiveLifestylePASessionExpenditureObservationValue) {
+    this.crProgressActiveLifestylePASessionExpenditureObservationValue = crProgressActiveLifestylePASessionExpenditureObservationValue;
+  }
+
+  
+  /**
+   * Session Average Heart Rate
+   **/
+  @ApiModelProperty(value = "Session Average Heart Rate")
+  @JsonProperty("CrProgressActiveLifestylePASessionAverageHeartRate")
+  public Integer getCrProgressActiveLifestylePASessionAverageHeartRate() {
+    return crProgressActiveLifestylePASessionAverageHeartRate;
+  }
+  public void setCrProgressActiveLifestylePASessionAverageHeartRate(Integer crProgressActiveLifestylePASessionAverageHeartRate) {
+    this.crProgressActiveLifestylePASessionAverageHeartRate = crProgressActiveLifestylePASessionAverageHeartRate;
+  }
+
+  
+  /**
+   * Session Steps Number
+   **/
+  @ApiModelProperty(value = "Session Steps Number")
+  @JsonProperty("CrProgressActiveLifestylePASessionStepsNumber")
+  public Integer getCrProgressActiveLifestylePASessionStepsNumber() {
+    return crProgressActiveLifestylePASessionStepsNumber;
+  }
+  public void setCrProgressActiveLifestylePASessionStepsNumber(Integer crProgressActiveLifestylePASessionStepsNumber) {
+    this.crProgressActiveLifestylePASessionStepsNumber = crProgressActiveLifestylePASessionStepsNumber;
+  }
+
+  
+  /**
+   * Session Type
+   **/
+  @ApiModelProperty(value = "Session Type")
+  @JsonProperty("CrProgressActiveLifestylePASessionType")
+  public Integer getCrProgressActiveLifestylePASessionType() {
+    return crProgressActiveLifestylePASessionType;
+  }
+  public void setCrProgressActiveLifestylePASessionType(Integer crProgressActiveLifestylePASessionType) {
+    this.crProgressActiveLifestylePASessionType = crProgressActiveLifestylePASessionType;
+  }
+
+  
+  /**
+   * Session Monitored
+   **/
+  @ApiModelProperty(value = "Session Monitored")
+  @JsonProperty("CrProgressActiveLifestylePASessionMonitored")
+  public Integer getCrProgressActiveLifestylePASessionMonitored() {
+    return crProgressActiveLifestylePASessionMonitored;
+  }
+  public void setCrProgressActiveLifestylePASessionMonitored(Integer crProgressActiveLifestylePASessionMonitored) {
+    this.crProgressActiveLifestylePASessionMonitored = crProgressActiveLifestylePASessionMonitored;
+  }
+
+  
+  /**
+   * Session Description
+   **/
+  @ApiModelProperty(value = "Session Description")
+  @JsonProperty("CrProgressActiveLifestylePASessionDescription")
+  public String getCrProgressActiveLifestylePASessionDescription() {
+    return crProgressActiveLifestylePASessionDescription;
+  }
+  public void setCrProgressActiveLifestylePASessionDescription(String crProgressActiveLifestylePASessionDescription) {
+    this.crProgressActiveLifestylePASessionDescription = crProgressActiveLifestylePASessionDescription;
+  }
+
+  
+  /**
+   * Session Intensity
+   **/
+  @ApiModelProperty(value = "Session Intensity")
+  @JsonProperty("CrProgressActiveLifestylePASessionIntensity")
+  public Integer getCrProgressActiveLifestylePASessionIntensity() {
+    return crProgressActiveLifestylePASessionIntensity;
+  }
+  public void setCrProgressActiveLifestylePASessionIntensity(Integer crProgressActiveLifestylePASessionIntensity) {
+    this.crProgressActiveLifestylePASessionIntensity = crProgressActiveLifestylePASessionIntensity;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class CrProgressActiveLifestylePASessionSS {\n");
+    
+    sb.append("    crProgressActiveLifestylePASessionID: ").append(StringUtil.toIndentedString(crProgressActiveLifestylePASessionID)).append("\n");
+    sb.append("    crProgressActiveLifestylePASessionDate: ").append(StringUtil.toIndentedString(crProgressActiveLifestylePASessionDate)).append("\n");
+    sb.append("    crProgressActiveLifestylePASessionStartTime: ").append(StringUtil.toIndentedString(crProgressActiveLifestylePASessionStartTime)).append("\n");
+    sb.append("    crProgressActiveLifestylePASessionEndTime: ").append(StringUtil.toIndentedString(crProgressActiveLifestylePASessionEndTime)).append("\n");
+    sb.append("    crProgressActiveLifestylePASessionDuration: ").append(StringUtil.toIndentedString(crProgressActiveLifestylePASessionDuration)).append("\n");
+    sb.append("    crProgressActiveLifestylePASessionHrFile: ").append(StringUtil.toIndentedString(crProgressActiveLifestylePASessionHrFile)).append("\n");
+    sb.append("    crProgressActiveLifestylePASessionExpenditureObservationTimeStamp: ").append(StringUtil.toIndentedString(crProgressActiveLifestylePASessionExpenditureObservationTimeStamp)).append("\n");
+    sb.append("    crProgressActiveLifestylePASessionExpenditureObservationValue: ").append(StringUtil.toIndentedString(crProgressActiveLifestylePASessionExpenditureObservationValue)).append("\n");
+    sb.append("    crProgressActiveLifestylePASessionAverageHeartRate: ").append(StringUtil.toIndentedString(crProgressActiveLifestylePASessionAverageHeartRate)).append("\n");
+    sb.append("    crProgressActiveLifestylePASessionStepsNumber: ").append(StringUtil.toIndentedString(crProgressActiveLifestylePASessionStepsNumber)).append("\n");
+    sb.append("    crProgressActiveLifestylePASessionType: ").append(StringUtil.toIndentedString(crProgressActiveLifestylePASessionType)).append("\n");
+    sb.append("    crProgressActiveLifestylePASessionMonitored: ").append(StringUtil.toIndentedString(crProgressActiveLifestylePASessionMonitored)).append("\n");
+    sb.append("    crProgressActiveLifestylePASessionDescription: ").append(StringUtil.toIndentedString(crProgressActiveLifestylePASessionDescription)).append("\n");
+    sb.append("    crProgressActiveLifestylePASessionIntensity: ").append(StringUtil.toIndentedString(crProgressActiveLifestylePASessionIntensity)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

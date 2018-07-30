@@ -1,0 +1,131 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+import io.swagger.client.model.SocialStatusSection;
+import io.swagger.client.model.BirthDeathSection;
+import io.swagger.client.model.ContactpersonSection;
+import io.swagger.client.model.IdentificationSection;
+import io.swagger.client.model.PreferredHPHPOContactSection;
+import io.swagger.client.model.DemographicsSection;
+import io.swagger.client.model.NameSection;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-07-22T14:54:54.065+02:00")
+public class PATIENT   {
+  
+  private IdentificationSection identification = null;
+  private DemographicsSection demographics = null;
+  private NameSection name = null;
+  private BirthDeathSection birthDeath = null;
+  private PreferredHPHPOContactSection preferredHPHPOContact = null;
+  private ContactpersonSection contactperson = null;
+  private SocialStatusSection socialStatus = null;
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("identification")
+  public IdentificationSection getIdentification() {
+    return identification;
+  }
+  public void setIdentification(IdentificationSection identification) {
+    this.identification = identification;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("demographics")
+  public DemographicsSection getDemographics() {
+    return demographics;
+  }
+  public void setDemographics(DemographicsSection demographics) {
+    this.demographics = demographics;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("name")
+  public NameSection getName() {
+    return name;
+  }
+  public void setName(NameSection name) {
+    this.name = name;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("birthDeath")
+  public BirthDeathSection getBirthDeath() {
+    return birthDeath;
+  }
+  public void setBirthDeath(BirthDeathSection birthDeath) {
+    this.birthDeath = birthDeath;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("preferredHP_HPOContact")
+  public PreferredHPHPOContactSection getPreferredHPHPOContact() {
+    return preferredHPHPOContact;
+  }
+  public void setPreferredHPHPOContact(PreferredHPHPOContactSection preferredHPHPOContact) {
+    this.preferredHPHPOContact = preferredHPHPOContact;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("contactperson")
+  public ContactpersonSection getContactperson() {
+    return contactperson;
+  }
+  public void setContactperson(ContactpersonSection contactperson) {
+    this.contactperson = contactperson;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("socialStatus")
+  public SocialStatusSection getSocialStatus() {
+    return socialStatus;
+  }
+  public void setSocialStatus(SocialStatusSection socialStatus) {
+    this.socialStatus = socialStatus;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class PATIENT {\n");
+    
+    sb.append("    identification: ").append(StringUtil.toIndentedString(identification)).append("\n");
+    sb.append("    demographics: ").append(StringUtil.toIndentedString(demographics)).append("\n");
+    sb.append("    name: ").append(StringUtil.toIndentedString(name)).append("\n");
+    sb.append("    birthDeath: ").append(StringUtil.toIndentedString(birthDeath)).append("\n");
+    sb.append("    preferredHPHPOContact: ").append(StringUtil.toIndentedString(preferredHPHPOContact)).append("\n");
+    sb.append("    contactperson: ").append(StringUtil.toIndentedString(contactperson)).append("\n");
+    sb.append("    socialStatus: ").append(StringUtil.toIndentedString(socialStatus)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

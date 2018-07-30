@@ -1,0 +1,57 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+import java.util.*;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-09-14T09:51:50.944+02:00")
+public class CardiacRehabilitationProgressExerClassSessionexerciseRulesMappingSubSubSection   {
+  
+  private String id = null;
+  private List<String> value = new ArrayList<String>();
+
+  
+  /**
+   * id
+   **/
+  @ApiModelProperty(value = "id")
+  @JsonProperty("id")
+  public String getId() {
+    return id;
+  }
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  
+  /**
+   * value
+   **/
+  @ApiModelProperty(value = "value")
+  @JsonProperty("value")
+  public List<String> getValue() {
+    return value;
+  }
+  public void setValue(List<String> value) {
+    this.value = value;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class CardiacRehabilitationProgressExerClassSessionexerciseRulesMappingSubSubSection {\n");
+    
+    sb.append("    id: ").append(StringUtil.toIndentedString(id)).append("\n");
+    sb.append("    value: ").append(StringUtil.toIndentedString(value)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

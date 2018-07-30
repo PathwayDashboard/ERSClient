@@ -1,0 +1,72 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+import java.util.Date;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-05-13T12:06:50.958+02:00")
+public class GoalAssessments   {
+  
+  private Integer goalAssessmentID = null;
+  private String goalAssessmentanswerList = null;
+  private Date goalAssessmentsubmissionDate = null;
+
+  
+  /**
+   * Goal Assessment ID
+   **/
+  @ApiModelProperty(value = "Goal Assessment ID")
+  @JsonProperty("goalAssessmentID")
+  public Integer getGoalAssessmentID() {
+    return goalAssessmentID;
+  }
+  public void setGoalAssessmentID(Integer goalAssessmentID) {
+    this.goalAssessmentID = goalAssessmentID;
+  }
+
+  
+  /**
+   * Answer List
+   **/
+  @ApiModelProperty(value = "Answer List")
+  @JsonProperty("goalAssessmentanswerList")
+  public String getGoalAssessmentanswerList() {
+    return goalAssessmentanswerList;
+  }
+  public void setGoalAssessmentanswerList(String goalAssessmentanswerList) {
+    this.goalAssessmentanswerList = goalAssessmentanswerList;
+  }
+
+  
+  /**
+   * Submission date
+   **/
+  @ApiModelProperty(value = "Submission date")
+  @JsonProperty("goalAssessmentsubmissionDate")
+  public Date getGoalAssessmentsubmissionDate() {
+    return goalAssessmentsubmissionDate;
+  }
+  public void setGoalAssessmentsubmissionDate(Date goalAssessmentsubmissionDate) {
+    this.goalAssessmentsubmissionDate = goalAssessmentsubmissionDate;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class GoalAssessments {\n");
+    
+    sb.append("    goalAssessmentID: ").append(StringUtil.toIndentedString(goalAssessmentID)).append("\n");
+    sb.append("    goalAssessmentanswerList: ").append(StringUtil.toIndentedString(goalAssessmentanswerList)).append("\n");
+    sb.append("    goalAssessmentsubmissionDate: ").append(StringUtil.toIndentedString(goalAssessmentsubmissionDate)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

@@ -1,0 +1,147 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+import io.swagger.client.model.HealthFitnessAssessmentPreScreeningQuestionnaire;
+import io.swagger.client.model.PreScreeningQuestionnaire;
+import io.swagger.client.model.ExerClassDescription;
+import java.util.Date;
+import io.swagger.client.model.FitnessAssessmentConf;
+import io.swagger.client.model.ExerciseProgrammes;
+import io.swagger.client.model.TrainingProfile;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-05-13T12:06:50.958+02:00")
+public class CardiacRehabilitationProgramme   {
+  
+  private Integer cardiacrehabilitationProgrammeID = null;
+  private Date cardiacrehabilitationProgrammecreationDate = null;
+  private PreScreeningQuestionnaire preScreeningQuestionnaire = null;
+  private FitnessAssessmentConf fitnessAssessmentConf = null;
+  private HealthFitnessAssessmentPreScreeningQuestionnaire healthFitnessAssessmentPreScreeningQuestionnaire = null;
+  private ExerciseProgrammes exerciseProgrammes = null;
+  private ExerClassDescription exerClassDescription = null;
+  private TrainingProfile trainingProfile = null;
+
+  
+  /**
+   * Programme Id
+   **/
+  @ApiModelProperty(value = "Programme Id")
+  @JsonProperty("cardiacrehabilitationProgrammeID")
+  public Integer getCardiacrehabilitationProgrammeID() {
+    return cardiacrehabilitationProgrammeID;
+  }
+  public void setCardiacrehabilitationProgrammeID(Integer cardiacrehabilitationProgrammeID) {
+    this.cardiacrehabilitationProgrammeID = cardiacrehabilitationProgrammeID;
+  }
+
+  
+  /**
+   * Creation date
+   **/
+  @ApiModelProperty(value = "Creation date")
+  @JsonProperty("cardiacrehabilitationProgrammecreationDate")
+  public Date getCardiacrehabilitationProgrammecreationDate() {
+    return cardiacrehabilitationProgrammecreationDate;
+  }
+  public void setCardiacrehabilitationProgrammecreationDate(Date cardiacrehabilitationProgrammecreationDate) {
+    this.cardiacrehabilitationProgrammecreationDate = cardiacrehabilitationProgrammecreationDate;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("preScreeningQuestionnaire")
+  public PreScreeningQuestionnaire getPreScreeningQuestionnaire() {
+    return preScreeningQuestionnaire;
+  }
+  public void setPreScreeningQuestionnaire(PreScreeningQuestionnaire preScreeningQuestionnaire) {
+    this.preScreeningQuestionnaire = preScreeningQuestionnaire;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("fitnessAssessmentConf")
+  public FitnessAssessmentConf getFitnessAssessmentConf() {
+    return fitnessAssessmentConf;
+  }
+  public void setFitnessAssessmentConf(FitnessAssessmentConf fitnessAssessmentConf) {
+    this.fitnessAssessmentConf = fitnessAssessmentConf;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("healthFitnessAssessmentPreScreeningQuestionnaire")
+  public HealthFitnessAssessmentPreScreeningQuestionnaire getHealthFitnessAssessmentPreScreeningQuestionnaire() {
+    return healthFitnessAssessmentPreScreeningQuestionnaire;
+  }
+  public void setHealthFitnessAssessmentPreScreeningQuestionnaire(HealthFitnessAssessmentPreScreeningQuestionnaire healthFitnessAssessmentPreScreeningQuestionnaire) {
+    this.healthFitnessAssessmentPreScreeningQuestionnaire = healthFitnessAssessmentPreScreeningQuestionnaire;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("exerciseProgrammes")
+  public ExerciseProgrammes getExerciseProgrammes() {
+    return exerciseProgrammes;
+  }
+  public void setExerciseProgrammes(ExerciseProgrammes exerciseProgrammes) {
+    this.exerciseProgrammes = exerciseProgrammes;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("exerClassDescription")
+  public ExerClassDescription getExerClassDescription() {
+    return exerClassDescription;
+  }
+  public void setExerClassDescription(ExerClassDescription exerClassDescription) {
+    this.exerClassDescription = exerClassDescription;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("trainingProfile")
+  public TrainingProfile getTrainingProfile() {
+    return trainingProfile;
+  }
+  public void setTrainingProfile(TrainingProfile trainingProfile) {
+    this.trainingProfile = trainingProfile;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class CardiacRehabilitationProgramme {\n");
+    
+    sb.append("    cardiacrehabilitationProgrammeID: ").append(StringUtil.toIndentedString(cardiacrehabilitationProgrammeID)).append("\n");
+    sb.append("    cardiacrehabilitationProgrammecreationDate: ").append(StringUtil.toIndentedString(cardiacrehabilitationProgrammecreationDate)).append("\n");
+    sb.append("    preScreeningQuestionnaire: ").append(StringUtil.toIndentedString(preScreeningQuestionnaire)).append("\n");
+    sb.append("    fitnessAssessmentConf: ").append(StringUtil.toIndentedString(fitnessAssessmentConf)).append("\n");
+    sb.append("    healthFitnessAssessmentPreScreeningQuestionnaire: ").append(StringUtil.toIndentedString(healthFitnessAssessmentPreScreeningQuestionnaire)).append("\n");
+    sb.append("    exerciseProgrammes: ").append(StringUtil.toIndentedString(exerciseProgrammes)).append("\n");
+    sb.append("    exerClassDescription: ").append(StringUtil.toIndentedString(exerClassDescription)).append("\n");
+    sb.append("    trainingProfile: ").append(StringUtil.toIndentedString(trainingProfile)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

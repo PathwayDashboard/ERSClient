@@ -1,0 +1,161 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-05-13T12:06:50.958+02:00")
+public class ExerClassSessionExerClassExercises   {
+  
+  private Integer exerClassSessionExerClassExerciseID = null;
+  private Double exerClassSessionExerClassExerciseAchievedAccuracy = null;
+  private Integer exerClassSessionExerClassExercisesDescriptionID = null;
+  private Integer exerClassSessionExerClassExerciseDuration = null;
+  private Integer exerClassSessionExerClassExerciseEnjoymentLevelValue = null;
+  private String exerClassSessionExerClassExerciseEnjoymentLevelDescription = null;
+  private Integer exerClassSessionExerClassExerciseMinHRBpm = null;
+  private Integer exerClassSessionExerClassExerciseMaxHRBpm = null;
+  private Double exerClassSessionExerClassExerciseAvarrageBpm = null;
+
+  
+  /**
+   * Session ExerClass ExerciseI D
+   **/
+  @ApiModelProperty(value = "Session ExerClass ExerciseI D")
+  @JsonProperty("ExerClassSessionExerClassExerciseID")
+  public Integer getExerClassSessionExerClassExerciseID() {
+    return exerClassSessionExerClassExerciseID;
+  }
+  public void setExerClassSessionExerClassExerciseID(Integer exerClassSessionExerClassExerciseID) {
+    this.exerClassSessionExerClassExerciseID = exerClassSessionExerClassExerciseID;
+  }
+
+  
+  /**
+   * Session ExerClass Exercise Achieved Accuracy
+   **/
+  @ApiModelProperty(value = "Session ExerClass Exercise Achieved Accuracy")
+  @JsonProperty("ExerClassSessionExerClassExerciseAchievedAccuracy")
+  public Double getExerClassSessionExerClassExerciseAchievedAccuracy() {
+    return exerClassSessionExerClassExerciseAchievedAccuracy;
+  }
+  public void setExerClassSessionExerClassExerciseAchievedAccuracy(Double exerClassSessionExerClassExerciseAchievedAccuracy) {
+    this.exerClassSessionExerClassExerciseAchievedAccuracy = exerClassSessionExerClassExerciseAchievedAccuracy;
+  }
+
+  
+  /**
+   * Session ExerClass Exercises Description ID
+   **/
+  @ApiModelProperty(value = "Session ExerClass Exercises Description ID")
+  @JsonProperty("ExerClassSessionExerClassExercisesDescriptionID")
+  public Integer getExerClassSessionExerClassExercisesDescriptionID() {
+    return exerClassSessionExerClassExercisesDescriptionID;
+  }
+  public void setExerClassSessionExerClassExercisesDescriptionID(Integer exerClassSessionExerClassExercisesDescriptionID) {
+    this.exerClassSessionExerClassExercisesDescriptionID = exerClassSessionExerClassExercisesDescriptionID;
+  }
+
+  
+  /**
+   * Session ExerClass Exercise Duration
+   **/
+  @ApiModelProperty(value = "Session ExerClass Exercise Duration")
+  @JsonProperty("ExerClassSessionExerClassExerciseDuration")
+  public Integer getExerClassSessionExerClassExerciseDuration() {
+    return exerClassSessionExerClassExerciseDuration;
+  }
+  public void setExerClassSessionExerClassExerciseDuration(Integer exerClassSessionExerClassExerciseDuration) {
+    this.exerClassSessionExerClassExerciseDuration = exerClassSessionExerClassExerciseDuration;
+  }
+
+  
+  /**
+   * Session ExerClass Exercise Enjoyment Level Value
+   **/
+  @ApiModelProperty(value = "Session ExerClass Exercise Enjoyment Level Value")
+  @JsonProperty("ExerClassSessionExerClassExerciseEnjoymentLevelValue")
+  public Integer getExerClassSessionExerClassExerciseEnjoymentLevelValue() {
+    return exerClassSessionExerClassExerciseEnjoymentLevelValue;
+  }
+  public void setExerClassSessionExerClassExerciseEnjoymentLevelValue(Integer exerClassSessionExerClassExerciseEnjoymentLevelValue) {
+    this.exerClassSessionExerClassExerciseEnjoymentLevelValue = exerClassSessionExerClassExerciseEnjoymentLevelValue;
+  }
+
+  
+  /**
+   * Session ExerClass Exercise Enjoyment Level Description
+   **/
+  @ApiModelProperty(value = "Session ExerClass Exercise Enjoyment Level Description")
+  @JsonProperty("ExerClassSessionExerClassExerciseEnjoymentLevelDescription")
+  public String getExerClassSessionExerClassExerciseEnjoymentLevelDescription() {
+    return exerClassSessionExerClassExerciseEnjoymentLevelDescription;
+  }
+  public void setExerClassSessionExerClassExerciseEnjoymentLevelDescription(String exerClassSessionExerClassExerciseEnjoymentLevelDescription) {
+    this.exerClassSessionExerClassExerciseEnjoymentLevelDescription = exerClassSessionExerClassExerciseEnjoymentLevelDescription;
+  }
+
+  
+  /**
+   * Session ExerClass Exercise Min HR Bpm
+   **/
+  @ApiModelProperty(value = "Session ExerClass Exercise Min HR Bpm")
+  @JsonProperty("ExerClassSessionExerClassExerciseMinHRBpm")
+  public Integer getExerClassSessionExerClassExerciseMinHRBpm() {
+    return exerClassSessionExerClassExerciseMinHRBpm;
+  }
+  public void setExerClassSessionExerClassExerciseMinHRBpm(Integer exerClassSessionExerClassExerciseMinHRBpm) {
+    this.exerClassSessionExerClassExerciseMinHRBpm = exerClassSessionExerClassExerciseMinHRBpm;
+  }
+
+  
+  /**
+   * Session ExerClass Exercise Max HR Bpm
+   **/
+  @ApiModelProperty(value = "Session ExerClass Exercise Max HR Bpm")
+  @JsonProperty("ExerClassSessionExerClassExerciseMaxHRBpm")
+  public Integer getExerClassSessionExerClassExerciseMaxHRBpm() {
+    return exerClassSessionExerClassExerciseMaxHRBpm;
+  }
+  public void setExerClassSessionExerClassExerciseMaxHRBpm(Integer exerClassSessionExerClassExerciseMaxHRBpm) {
+    this.exerClassSessionExerClassExerciseMaxHRBpm = exerClassSessionExerClassExerciseMaxHRBpm;
+  }
+
+  
+  /**
+   * SessionExerClass Exercise Avarage Bpm
+   **/
+  @ApiModelProperty(value = "SessionExerClass Exercise Avarage Bpm")
+  @JsonProperty("ExerClassSessionExerClassExerciseAvarrageBpm")
+  public Double getExerClassSessionExerClassExerciseAvarrageBpm() {
+    return exerClassSessionExerClassExerciseAvarrageBpm;
+  }
+  public void setExerClassSessionExerClassExerciseAvarrageBpm(Double exerClassSessionExerClassExerciseAvarrageBpm) {
+    this.exerClassSessionExerClassExerciseAvarrageBpm = exerClassSessionExerClassExerciseAvarrageBpm;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class ExerClassSessionExerClassExercises {\n");
+    
+    sb.append("    exerClassSessionExerClassExerciseID: ").append(StringUtil.toIndentedString(exerClassSessionExerClassExerciseID)).append("\n");
+    sb.append("    exerClassSessionExerClassExerciseAchievedAccuracy: ").append(StringUtil.toIndentedString(exerClassSessionExerClassExerciseAchievedAccuracy)).append("\n");
+    sb.append("    exerClassSessionExerClassExercisesDescriptionID: ").append(StringUtil.toIndentedString(exerClassSessionExerClassExercisesDescriptionID)).append("\n");
+    sb.append("    exerClassSessionExerClassExerciseDuration: ").append(StringUtil.toIndentedString(exerClassSessionExerClassExerciseDuration)).append("\n");
+    sb.append("    exerClassSessionExerClassExerciseEnjoymentLevelValue: ").append(StringUtil.toIndentedString(exerClassSessionExerClassExerciseEnjoymentLevelValue)).append("\n");
+    sb.append("    exerClassSessionExerClassExerciseEnjoymentLevelDescription: ").append(StringUtil.toIndentedString(exerClassSessionExerClassExerciseEnjoymentLevelDescription)).append("\n");
+    sb.append("    exerClassSessionExerClassExerciseMinHRBpm: ").append(StringUtil.toIndentedString(exerClassSessionExerClassExerciseMinHRBpm)).append("\n");
+    sb.append("    exerClassSessionExerClassExerciseMaxHRBpm: ").append(StringUtil.toIndentedString(exerClassSessionExerClassExerciseMaxHRBpm)).append("\n");
+    sb.append("    exerClassSessionExerClassExerciseAvarrageBpm: ").append(StringUtil.toIndentedString(exerClassSessionExerClassExerciseAvarrageBpm)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

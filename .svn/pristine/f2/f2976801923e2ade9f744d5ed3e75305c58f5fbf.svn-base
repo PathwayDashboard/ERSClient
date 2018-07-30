@@ -1,0 +1,42 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+import io.swagger.client.model.QuestionsAndAnswer;
+import java.util.*;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-01-28T14:46:04.495+01:00")
+public class PreScreeningQuestionnaire   {
+  
+  private List<QuestionsAndAnswer> questionsAndAnswers = new ArrayList<QuestionsAndAnswer>();
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("questionsAndAnswers")
+  public List<QuestionsAndAnswer> getQuestionsAndAnswers() {
+    return questionsAndAnswers;
+  }
+  public void setQuestionsAndAnswers(List<QuestionsAndAnswer> questionsAndAnswers) {
+    this.questionsAndAnswers = questionsAndAnswers;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class PreScreeningQuestionnaire {\n");
+    
+    sb.append("    questionsAndAnswers: ").append(StringUtil.toIndentedString(questionsAndAnswers)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

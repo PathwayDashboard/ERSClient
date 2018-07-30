@@ -1,0 +1,11 @@
+package it.eng.pathway.fake.model;
+
+public class sexType {
+
+	private int male;
+
+	private int female;
+
+	private PersonalInfo personalInfo;
+
+}

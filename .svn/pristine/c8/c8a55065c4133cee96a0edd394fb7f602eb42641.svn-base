@@ -1,0 +1,42 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+import java.util.*;
+import io.swagger.client.model.ExerClassExerciseDescriptionSS;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-05-30T11:30:03.045+02:00")
+public class AvailableExercises   {
+  
+  private List<ExerClassExerciseDescriptionSS> exerClassExerciseDescriptionSSs = new ArrayList<ExerClassExerciseDescriptionSS>();
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("exerClassExerciseDescriptionSSs")
+  public List<ExerClassExerciseDescriptionSS> getExerClassExerciseDescriptionSSs() {
+    return exerClassExerciseDescriptionSSs;
+  }
+  public void setExerClassExerciseDescriptionSSs(List<ExerClassExerciseDescriptionSS> exerClassExerciseDescriptionSSs) {
+    this.exerClassExerciseDescriptionSSs = exerClassExerciseDescriptionSSs;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class AvailableExercises {\n");
+    
+    sb.append("    exerClassExerciseDescriptionSSs: ").append(StringUtil.toIndentedString(exerClassExerciseDescriptionSSs)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}

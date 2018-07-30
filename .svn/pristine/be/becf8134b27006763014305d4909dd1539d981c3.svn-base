@@ -1,0 +1,766 @@
+package io.swagger.client.api;
+
+import io.swagger.client.ApiException;
+import io.swagger.client.ApiClient;
+import io.swagger.client.Configuration;
+import io.swagger.client.Pair;
+import io.swagger.client.TypeRef;
+
+import io.swagger.client.model.*;
+
+import java.util.*;
+
+import io.swagger.client.model.BehaviouralChangeNotificationPreferencesSection;
+import io.swagger.client.model.GenericPostputResult;
+import io.swagger.client.model.ExerciseNotificationPreferencesSection;
+import io.swagger.client.model.ExclusionIndicationSubSection;
+import io.swagger.client.model.ExercisePreferenceSection;
+import io.swagger.client.model.PersonalisedDifficultySubSection;
+import io.swagger.client.model.PersonalisedIntensitySubSection;
+
+import java.io.File;
+import java.util.Map;
+import java.util.HashMap;
+
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-09-14T09:51:50.944+02:00")
+public class PreferencesApi {
+  private ApiClient apiClient;
+
+  public PreferencesApi() {
+    this(Configuration.getDefaultApiClient());
+  }
+
+  public PreferencesApi(ApiClient apiClient) {
+    this.apiClient = apiClient;
+  }
+
+  public ApiClient getApiClient() {
+    return apiClient;
+  }
+
+  public void setApiClient(ApiClient apiClient) {
+    this.apiClient = apiClient;
+  }
+
+  
+  /**
+   * Gets a BehaviouralChangeNotificationPreferences from a patient
+   * 
+   * @param patientNumber The health ID of the patient
+   * @param xSessionId Identifies user which undertakes this action
+   * @return BehaviouralChangeNotificationPreferencesSection
+   */
+  public BehaviouralChangeNotificationPreferencesSection preferencesGetBehaviouralChangeNotificationPreferences (String patientNumber, String xSessionId) throws ApiException {
+    Object postBody = null;
+    byte[] postBinaryBody = null;
+    
+     // verify the required parameter 'patientNumber' is set
+     if (patientNumber == null) {
+        throw new ApiException(400, "Missing the required parameter 'patientNumber' when calling preferencesGetBehaviouralChangeNotificationPreferences");
+     }
+     
+    // create path and map variables
+    String path = "/pathway/hdm/BehaviouralChangeNotificationPreferences/{patientNumber}".replaceAll("\\{format\\}","json")
+      .replaceAll("\\{" + "patientNumber" + "\\}", apiClient.escapeString(patientNumber.toString()));
+
+    // query params
+    List<Pair> queryParams = new ArrayList<Pair>();
+    Map<String, String> headerParams = new HashMap<String, String>();
+    Map<String, Object> formParams = new HashMap<String, Object>();
+
+    
+
+    if (xSessionId != null)
+    headerParams.put("X-session_id", apiClient.parameterToString(xSessionId));
+    
+
+    
+
+    final String[] accepts = {
+      "application/json", "text/json", "application/xml", "text/xml"
+    };
+    final String accept = apiClient.selectHeaderAccept(accepts);
+
+    final String[] contentTypes = {
+      
+    };
+    final String contentType = apiClient.selectHeaderContentType(contentTypes);
+
+    String[] authNames = new String[] {  };
+
+    
+
+    
+    
+    TypeRef returnType = new TypeRef<BehaviouralChangeNotificationPreferencesSection>() {};
+    return apiClient.invokeAPI(path, "GET", queryParams, postBody, postBinaryBody, headerParams, formParams, accept, contentType, authNames, returnType);
+    
+    
+
+
+  }
+  
+  /**
+   * Sets a BehaviouralChangeNotificationPreferences of a patient
+   * 
+   * @param patientNumber The health ID of the patient
+   * @param behaviouralChangeNotificationPreferences Data belonging to an BehaviouralChangeNotificationPreferences
+   * @param xSessionId Identifies user which undertakes this action
+   * @return GenericPostputResult
+   */
+  public GenericPostputResult preferencesPutBehaviouralChangeNotificationPreferences (String patientNumber, BehaviouralChangeNotificationPreferencesSection behaviouralChangeNotificationPreferences, String xSessionId) throws ApiException {
+    Object postBody = behaviouralChangeNotificationPreferences;
+    byte[] postBinaryBody = null;
+    
+     // verify the required parameter 'patientNumber' is set
+     if (patientNumber == null) {
+        throw new ApiException(400, "Missing the required parameter 'patientNumber' when calling preferencesPutBehaviouralChangeNotificationPreferences");
+     }
+     
+     // verify the required parameter 'behaviouralChangeNotificationPreferences' is set
+     if (behaviouralChangeNotificationPreferences == null) {
+        throw new ApiException(400, "Missing the required parameter 'behaviouralChangeNotificationPreferences' when calling preferencesPutBehaviouralChangeNotificationPreferences");
+     }
+     
+    // create path and map variables
+    String path = "/pathway/hdm/BehaviouralChangeNotificationPreferences/{patientNumber}".replaceAll("\\{format\\}","json")
+      .replaceAll("\\{" + "patientNumber" + "\\}", apiClient.escapeString(patientNumber.toString()));
+
+    // query params
+    List<Pair> queryParams = new ArrayList<Pair>();
+    Map<String, String> headerParams = new HashMap<String, String>();
+    Map<String, Object> formParams = new HashMap<String, Object>();
+
+    
+
+    if (xSessionId != null)
+    headerParams.put("X-session_id", apiClient.parameterToString(xSessionId));
+    
+
+    
+
+    final String[] accepts = {
+      "application/json", "text/json", "application/xml", "text/xml"
+    };
+    final String accept = apiClient.selectHeaderAccept(accepts);
+
+    final String[] contentTypes = {
+      "application/json", "text/json", "application/xml", "text/xml", "application/x-www-form-urlencoded"
+    };
+    final String contentType = apiClient.selectHeaderContentType(contentTypes);
+
+    String[] authNames = new String[] {  };
+
+    
+
+    
+    
+    TypeRef returnType = new TypeRef<GenericPostputResult>() {};
+    return apiClient.invokeAPI(path, "PUT", queryParams, postBody, postBinaryBody, headerParams, formParams, accept, contentType, authNames, returnType);
+    
+    
+
+
+  }
+  
+  /**
+   * Gets a ExerciseNotificationPreferences from a patient
+   * 
+   * @param patientNumber The health ID of the patient
+   * @param xSessionId Identifies user which undertakes this action
+   * @return ExerciseNotificationPreferencesSection
+   */
+  public ExerciseNotificationPreferencesSection preferencesGetExerciseNotificationPreferences (String patientNumber, String xSessionId) throws ApiException {
+    Object postBody = null;
+    byte[] postBinaryBody = null;
+    
+     // verify the required parameter 'patientNumber' is set
+     if (patientNumber == null) {
+        throw new ApiException(400, "Missing the required parameter 'patientNumber' when calling preferencesGetExerciseNotificationPreferences");
+     }
+     
+    // create path and map variables
+    String path = "/pathway/hdm/ExerciseNotificationPreferences/{patientNumber}".replaceAll("\\{format\\}","json")
+      .replaceAll("\\{" + "patientNumber" + "\\}", apiClient.escapeString(patientNumber.toString()));
+
+    // query params
+    List<Pair> queryParams = new ArrayList<Pair>();
+    Map<String, String> headerParams = new HashMap<String, String>();
+    Map<String, Object> formParams = new HashMap<String, Object>();
+
+    
+
+    if (xSessionId != null)
+    headerParams.put("X-session_id", apiClient.parameterToString(xSessionId));
+    
+
+    
+
+    final String[] accepts = {
+      "application/json", "text/json", "application/xml", "text/xml"
+    };
+    final String accept = apiClient.selectHeaderAccept(accepts);
+
+    final String[] contentTypes = {
+      
+    };
+    final String contentType = apiClient.selectHeaderContentType(contentTypes);
+
+    String[] authNames = new String[] {  };
+
+    
+
+    
+    
+    TypeRef returnType = new TypeRef<ExerciseNotificationPreferencesSection>() {};
+    return apiClient.invokeAPI(path, "GET", queryParams, postBody, postBinaryBody, headerParams, formParams, accept, contentType, authNames, returnType);
+    
+    
+
+
+  }
+  
+  /**
+   * Sets a ExerciseNotificationPreferences of a patient
+   * 
+   * @param patientNumber The health ID of the patient
+   * @param exerciseNotificationPreferences Data belonging to an ExerciseNotificationPreferences
+   * @param xSessionId Identifies user which undertakes this action
+   * @return GenericPostputResult
+   */
+  public GenericPostputResult preferencesPutExerciseNotificationPreferences (String patientNumber, ExerciseNotificationPreferencesSection exerciseNotificationPreferences, String xSessionId) throws ApiException {
+    Object postBody = exerciseNotificationPreferences;
+    byte[] postBinaryBody = null;
+    
+     // verify the required parameter 'patientNumber' is set
+     if (patientNumber == null) {
+        throw new ApiException(400, "Missing the required parameter 'patientNumber' when calling preferencesPutExerciseNotificationPreferences");
+     }
+     
+     // verify the required parameter 'exerciseNotificationPreferences' is set
+     if (exerciseNotificationPreferences == null) {
+        throw new ApiException(400, "Missing the required parameter 'exerciseNotificationPreferences' when calling preferencesPutExerciseNotificationPreferences");
+     }
+     
+    // create path and map variables
+    String path = "/pathway/hdm/ExerciseNotificationPreferences/{patientNumber}".replaceAll("\\{format\\}","json")
+      .replaceAll("\\{" + "patientNumber" + "\\}", apiClient.escapeString(patientNumber.toString()));
+
+    // query params
+    List<Pair> queryParams = new ArrayList<Pair>();
+    Map<String, String> headerParams = new HashMap<String, String>();
+    Map<String, Object> formParams = new HashMap<String, Object>();
+
+    
+
+    if (xSessionId != null)
+    headerParams.put("X-session_id", apiClient.parameterToString(xSessionId));
+    
+
+    
+
+    final String[] accepts = {
+      "application/json", "text/json", "application/xml", "text/xml"
+    };
+    final String accept = apiClient.selectHeaderAccept(accepts);
+
+    final String[] contentTypes = {
+      "application/json", "text/json", "application/xml", "text/xml", "application/x-www-form-urlencoded"
+    };
+    final String contentType = apiClient.selectHeaderContentType(contentTypes);
+
+    String[] authNames = new String[] {  };
+
+    
+
+    
+    
+    TypeRef returnType = new TypeRef<GenericPostputResult>() {};
+    return apiClient.invokeAPI(path, "PUT", queryParams, postBody, postBinaryBody, headerParams, formParams, accept, contentType, authNames, returnType);
+    
+    
+
+
+  }
+  
+  /**
+   * Gets ExclusionIndications from a patient
+   * 
+   * @param patientNumber The health ID of the patient
+   * @param xSessionId Identifies user which undertakes this action
+   * @return List<ExclusionIndicationSubSection>
+   */
+  public List<ExclusionIndicationSubSection> preferencesGetExclusionIndications (String patientNumber, String xSessionId) throws ApiException {
+    Object postBody = null;
+    byte[] postBinaryBody = null;
+    
+     // verify the required parameter 'patientNumber' is set
+     if (patientNumber == null) {
+        throw new ApiException(400, "Missing the required parameter 'patientNumber' when calling preferencesGetExclusionIndications");
+     }
+     
+    // create path and map variables
+    String path = "/pathway/hdm/PatientExclusionIndications/{patientNumber}".replaceAll("\\{format\\}","json")
+      .replaceAll("\\{" + "patientNumber" + "\\}", apiClient.escapeString(patientNumber.toString()));
+
+    // query params
+    List<Pair> queryParams = new ArrayList<Pair>();
+    Map<String, String> headerParams = new HashMap<String, String>();
+    Map<String, Object> formParams = new HashMap<String, Object>();
+
+    
+
+    if (xSessionId != null)
+    headerParams.put("X-session_id", apiClient.parameterToString(xSessionId));
+    
+
+    
+
+    final String[] accepts = {
+      "application/json", "text/json", "application/xml", "text/xml"
+    };
+    final String accept = apiClient.selectHeaderAccept(accepts);
+
+    final String[] contentTypes = {
+      
+    };
+    final String contentType = apiClient.selectHeaderContentType(contentTypes);
+
+    String[] authNames = new String[] {  };
+
+    
+
+    
+    
+    TypeRef returnType = new TypeRef<List<ExclusionIndicationSubSection>>() {};
+    return apiClient.invokeAPI(path, "GET", queryParams, postBody, postBinaryBody, headerParams, formParams, accept, contentType, authNames, returnType);
+    
+    
+
+
+  }
+  
+  /**
+   * Sets a ExclusionIndications of a patient
+   * 
+   * @param patientNumber The health ID of the patient
+   * @param exclusionIndications Data belonging to an ExclusionIndications
+   * @param xSessionId Identifies user which undertakes this action
+   * @return GenericPostputResult
+   */
+  public GenericPostputResult preferencesPutPatientExclusionIndications (String patientNumber, ExclusionIndicationSubSection exclusionIndications, String xSessionId) throws ApiException {
+    Object postBody = exclusionIndications;
+    byte[] postBinaryBody = null;
+    
+     // verify the required parameter 'patientNumber' is set
+     if (patientNumber == null) {
+        throw new ApiException(400, "Missing the required parameter 'patientNumber' when calling preferencesPutPatientExclusionIndications");
+     }
+     
+     // verify the required parameter 'exclusionIndications' is set
+     if (exclusionIndications == null) {
+        throw new ApiException(400, "Missing the required parameter 'exclusionIndications' when calling preferencesPutPatientExclusionIndications");
+     }
+     
+    // create path and map variables
+    String path = "/pathway/hdm/PatientExclusionIndications/{patientNumber}".replaceAll("\\{format\\}","json")
+      .replaceAll("\\{" + "patientNumber" + "\\}", apiClient.escapeString(patientNumber.toString()));
+
+    // query params
+    List<Pair> queryParams = new ArrayList<Pair>();
+    Map<String, String> headerParams = new HashMap<String, String>();
+    Map<String, Object> formParams = new HashMap<String, Object>();
+
+    
+
+    if (xSessionId != null)
+    headerParams.put("X-session_id", apiClient.parameterToString(xSessionId));
+    
+
+    
+
+    final String[] accepts = {
+      "application/json", "text/json", "application/xml", "text/xml"
+    };
+    final String accept = apiClient.selectHeaderAccept(accepts);
+
+    final String[] contentTypes = {
+      "application/json", "text/json", "application/xml", "text/xml", "application/x-www-form-urlencoded"
+    };
+    final String contentType = apiClient.selectHeaderContentType(contentTypes);
+
+    String[] authNames = new String[] {  };
+
+    
+
+    
+    
+    TypeRef returnType = new TypeRef<GenericPostputResult>() {};
+    return apiClient.invokeAPI(path, "PUT", queryParams, postBody, postBinaryBody, headerParams, formParams, accept, contentType, authNames, returnType);
+    
+    
+
+
+  }
+  
+  /**
+   * Gets a ExercisePreference from a patient
+   * 
+   * @param patientNumber The health ID of the patient
+   * @param xSessionId Identifies user which undertakes this action
+   * @return ExercisePreferenceSection
+   */
+  public ExercisePreferenceSection preferencesGetPatientExercisePreference (String patientNumber, String xSessionId) throws ApiException {
+    Object postBody = null;
+    byte[] postBinaryBody = null;
+    
+     // verify the required parameter 'patientNumber' is set
+     if (patientNumber == null) {
+        throw new ApiException(400, "Missing the required parameter 'patientNumber' when calling preferencesGetPatientExercisePreference");
+     }
+     
+    // create path and map variables
+    String path = "/pathway/hdm/PatientExercisePreference/{patientNumber}".replaceAll("\\{format\\}","json")
+      .replaceAll("\\{" + "patientNumber" + "\\}", apiClient.escapeString(patientNumber.toString()));
+
+    // query params
+    List<Pair> queryParams = new ArrayList<Pair>();
+    Map<String, String> headerParams = new HashMap<String, String>();
+    Map<String, Object> formParams = new HashMap<String, Object>();
+
+    
+
+    if (xSessionId != null)
+    headerParams.put("X-session_id", apiClient.parameterToString(xSessionId));
+    
+
+    
+
+    final String[] accepts = {
+      "application/json", "text/json", "application/xml", "text/xml"
+    };
+    final String accept = apiClient.selectHeaderAccept(accepts);
+
+    final String[] contentTypes = {
+      
+    };
+    final String contentType = apiClient.selectHeaderContentType(contentTypes);
+
+    String[] authNames = new String[] {  };
+
+    
+
+    
+    
+    TypeRef returnType = new TypeRef<ExercisePreferenceSection>() {};
+    return apiClient.invokeAPI(path, "GET", queryParams, postBody, postBinaryBody, headerParams, formParams, accept, contentType, authNames, returnType);
+    
+    
+
+
+  }
+  
+  /**
+   * Sets a ExercisePreference of a patient
+   * 
+   * @param patientNumber The health ID of the patient
+   * @param exercisePreference Data belonging to an ExercisePreference
+   * @param xSessionId Identifies user which undertakes this action
+   * @return GenericPostputResult
+   */
+  public GenericPostputResult preferencesPutPatientExercisePreference (String patientNumber, ExercisePreferenceSection exercisePreference, String xSessionId) throws ApiException {
+    Object postBody = exercisePreference;
+    byte[] postBinaryBody = null;
+    
+     // verify the required parameter 'patientNumber' is set
+     if (patientNumber == null) {
+        throw new ApiException(400, "Missing the required parameter 'patientNumber' when calling preferencesPutPatientExercisePreference");
+     }
+     
+     // verify the required parameter 'exercisePreference' is set
+     if (exercisePreference == null) {
+        throw new ApiException(400, "Missing the required parameter 'exercisePreference' when calling preferencesPutPatientExercisePreference");
+     }
+     
+    // create path and map variables
+    String path = "/pathway/hdm/PatientExercisePreference/{patientNumber}".replaceAll("\\{format\\}","json")
+      .replaceAll("\\{" + "patientNumber" + "\\}", apiClient.escapeString(patientNumber.toString()));
+
+    // query params
+    List<Pair> queryParams = new ArrayList<Pair>();
+    Map<String, String> headerParams = new HashMap<String, String>();
+    Map<String, Object> formParams = new HashMap<String, Object>();
+
+    
+
+    if (xSessionId != null)
+    headerParams.put("X-session_id", apiClient.parameterToString(xSessionId));
+    
+
+    
+
+    final String[] accepts = {
+      "application/json", "text/json", "application/xml", "text/xml"
+    };
+    final String accept = apiClient.selectHeaderAccept(accepts);
+
+    final String[] contentTypes = {
+      "application/json", "text/json", "application/xml", "text/xml", "application/x-www-form-urlencoded"
+    };
+    final String contentType = apiClient.selectHeaderContentType(contentTypes);
+
+    String[] authNames = new String[] {  };
+
+    
+
+    
+    
+    TypeRef returnType = new TypeRef<GenericPostputResult>() {};
+    return apiClient.invokeAPI(path, "PUT", queryParams, postBody, postBinaryBody, headerParams, formParams, accept, contentType, authNames, returnType);
+    
+    
+
+
+  }
+  
+  /**
+   * Gets PersonalisedDifficulties from a patient
+   * 
+   * @param patientNumber The health ID of the patient
+   * @param xSessionId Identifies user which undertakes this action
+   * @return List<PersonalisedDifficultySubSection>
+   */
+  public List<PersonalisedDifficultySubSection> preferencesGetPatientPersonalisedDifficulties (String patientNumber, String xSessionId) throws ApiException {
+    Object postBody = null;
+    byte[] postBinaryBody = null;
+    
+     // verify the required parameter 'patientNumber' is set
+     if (patientNumber == null) {
+        throw new ApiException(400, "Missing the required parameter 'patientNumber' when calling preferencesGetPatientPersonalisedDifficulties");
+     }
+     
+    // create path and map variables
+    String path = "/pathway/hdm/PatientPersonalisedDifficulties/{patientNumber}".replaceAll("\\{format\\}","json")
+      .replaceAll("\\{" + "patientNumber" + "\\}", apiClient.escapeString(patientNumber.toString()));
+
+    // query params
+    List<Pair> queryParams = new ArrayList<Pair>();
+    Map<String, String> headerParams = new HashMap<String, String>();
+    Map<String, Object> formParams = new HashMap<String, Object>();
+
+    
+
+    if (xSessionId != null)
+    headerParams.put("X-session_id", apiClient.parameterToString(xSessionId));
+    
+
+    
+
+    final String[] accepts = {
+      "application/json", "text/json", "application/xml", "text/xml"
+    };
+    final String accept = apiClient.selectHeaderAccept(accepts);
+
+    final String[] contentTypes = {
+      
+    };
+    final String contentType = apiClient.selectHeaderContentType(contentTypes);
+
+    String[] authNames = new String[] {  };
+
+    
+
+    
+    
+    TypeRef returnType = new TypeRef<List<PersonalisedDifficultySubSection>>() {};
+    return apiClient.invokeAPI(path, "GET", queryParams, postBody, postBinaryBody, headerParams, formParams, accept, contentType, authNames, returnType);
+    
+    
+
+
+  }
+  
+  /**
+   * Sets a PersonalisedDifficulties of a patient
+   * 
+   * @param patientNumber The health ID of the patient
+   * @param personalisedDifficulties Data belonging to an PersonalisedDifficulties
+   * @param xSessionId Identifies user which undertakes this action
+   * @return GenericPostputResult
+   */
+  public GenericPostputResult preferencesPutPatientPersonalisedDifficulties (String patientNumber, PersonalisedDifficultySubSection personalisedDifficulties, String xSessionId) throws ApiException {
+    Object postBody = personalisedDifficulties;
+    byte[] postBinaryBody = null;
+    
+     // verify the required parameter 'patientNumber' is set
+     if (patientNumber == null) {
+        throw new ApiException(400, "Missing the required parameter 'patientNumber' when calling preferencesPutPatientPersonalisedDifficulties");
+     }
+     
+     // verify the required parameter 'personalisedDifficulties' is set
+     if (personalisedDifficulties == null) {
+        throw new ApiException(400, "Missing the required parameter 'personalisedDifficulties' when calling preferencesPutPatientPersonalisedDifficulties");
+     }
+     
+    // create path and map variables
+    String path = "/pathway/hdm/PatientPersonalisedDifficulties/{patientNumber}".replaceAll("\\{format\\}","json")
+      .replaceAll("\\{" + "patientNumber" + "\\}", apiClient.escapeString(patientNumber.toString()));
+
+    // query params
+    List<Pair> queryParams = new ArrayList<Pair>();
+    Map<String, String> headerParams = new HashMap<String, String>();
+    Map<String, Object> formParams = new HashMap<String, Object>();
+
+    
+
+    if (xSessionId != null)
+    headerParams.put("X-session_id", apiClient.parameterToString(xSessionId));
+    
+
+    
+
+    final String[] accepts = {
+      "application/json", "text/json", "application/xml", "text/xml"
+    };
+    final String accept = apiClient.selectHeaderAccept(accepts);
+
+    final String[] contentTypes = {
+      "application/json", "text/json", "application/xml", "text/xml", "application/x-www-form-urlencoded"
+    };
+    final String contentType = apiClient.selectHeaderContentType(contentTypes);
+
+    String[] authNames = new String[] {  };
+
+    
+
+    
+    
+    TypeRef returnType = new TypeRef<GenericPostputResult>() {};
+    return apiClient.invokeAPI(path, "PUT", queryParams, postBody, postBinaryBody, headerParams, formParams, accept, contentType, authNames, returnType);
+    
+    
+
+
+  }
+  
+  /**
+   * Gets PersonalisedIntensities from a patient
+   * 
+   * @param patientNumber The health ID of the patient
+   * @param xSessionId Identifies user which undertakes this action
+   * @return List<PersonalisedIntensitySubSection>
+   */
+  public List<PersonalisedIntensitySubSection> preferencesGetPatientPersonalisedIntensities (String patientNumber, String xSessionId) throws ApiException {
+    Object postBody = null;
+    byte[] postBinaryBody = null;
+    
+     // verify the required parameter 'patientNumber' is set
+     if (patientNumber == null) {
+        throw new ApiException(400, "Missing the required parameter 'patientNumber' when calling preferencesGetPatientPersonalisedIntensities");
+     }
+     
+    // create path and map variables
+    String path = "/pathway/hdm/PatientPersonalisedIntensities/{patientNumber}".replaceAll("\\{format\\}","json")
+      .replaceAll("\\{" + "patientNumber" + "\\}", apiClient.escapeString(patientNumber.toString()));
+
+    // query params
+    List<Pair> queryParams = new ArrayList<Pair>();
+    Map<String, String> headerParams = new HashMap<String, String>();
+    Map<String, Object> formParams = new HashMap<String, Object>();
+
+    
+
+    if (xSessionId != null)
+    headerParams.put("X-session_id", apiClient.parameterToString(xSessionId));
+    
+
+    
+
+    final String[] accepts = {
+      "application/json", "text/json", "application/xml", "text/xml"
+    };
+    final String accept = apiClient.selectHeaderAccept(accepts);
+
+    final String[] contentTypes = {
+      
+    };
+    final String contentType = apiClient.selectHeaderContentType(contentTypes);
+
+    String[] authNames = new String[] {  };
+
+    
+
+    
+    
+    TypeRef returnType = new TypeRef<List<PersonalisedIntensitySubSection>>() {};
+    return apiClient.invokeAPI(path, "GET", queryParams, postBody, postBinaryBody, headerParams, formParams, accept, contentType, authNames, returnType);
+    
+    
+
+
+  }
+  
+  /**
+   * Sets a PersonalisedIntensities of a patient
+   * 
+   * @param patientNumber The health ID of the patient
+   * @param personalisedIntensities Data belonging to an PersonalisedIntensities
+   * @param xSessionId Identifies user which undertakes this action
+   * @return GenericPostputResult
+   */
+  public GenericPostputResult preferencesPutPatientPersonalisedIntensities (String patientNumber, PersonalisedIntensitySubSection personalisedIntensities, String xSessionId) throws ApiException {
+    Object postBody = personalisedIntensities;
+    byte[] postBinaryBody = null;
+    
+     // verify the required parameter 'patientNumber' is set
+     if (patientNumber == null) {
+        throw new ApiException(400, "Missing the required parameter 'patientNumber' when calling preferencesPutPatientPersonalisedIntensities");
+     }
+     
+     // verify the required parameter 'personalisedIntensities' is set
+     if (personalisedIntensities == null) {
+        throw new ApiException(400, "Missing the required parameter 'personalisedIntensities' when calling preferencesPutPatientPersonalisedIntensities");
+     }
+     
+    // create path and map variables
+    String path = "/pathway/hdm/PatientPersonalisedIntensities/{patientNumber}".replaceAll("\\{format\\}","json")
+      .replaceAll("\\{" + "patientNumber" + "\\}", apiClient.escapeString(patientNumber.toString()));
+
+    // query params
+    List<Pair> queryParams = new ArrayList<Pair>();
+    Map<String, String> headerParams = new HashMap<String, String>();
+    Map<String, Object> formParams = new HashMap<String, Object>();
+
+    
+
+    if (xSessionId != null)
+    headerParams.put("X-session_id", apiClient.parameterToString(xSessionId));
+    
+
+    
+
+    final String[] accepts = {
+      "application/json", "text/json", "application/xml", "text/xml"
+    };
+    final String accept = apiClient.selectHeaderAccept(accepts);
+
+    final String[] contentTypes = {
+      "application/json", "text/json", "application/xml", "text/xml", "application/x-www-form-urlencoded"
+    };
+    final String contentType = apiClient.selectHeaderContentType(contentTypes);
+
+    String[] authNames = new String[] {  };
+
+    
+
+    
+    
+    TypeRef returnType = new TypeRef<GenericPostputResult>() {};
+    return apiClient.invokeAPI(path, "PUT", queryParams, postBody, postBinaryBody, headerParams, formParams, accept, contentType, authNames, returnType);
+    
+    
+
+
+  }
+  
+}

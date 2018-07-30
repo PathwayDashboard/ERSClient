@@ -1,0 +1,101 @@
+package io.swagger.client.model;
+
+import io.swagger.client.StringUtil;
+
+
+
+import io.swagger.annotations.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+@ApiModel(description = "")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-07-18T17:20:02.553+02:00")
+public class ExerGameSessionExecutedExerciseenjoymentLevelSubSubSubsection   {
+  
+  private Integer value = null;
+  private String description = null;
+  private Integer minHRBpm = null;
+  private Integer maxHRBpm = null;
+  private Double averageHRBpm = null;
+
+  
+  /**
+   * Session Enjoyment Level Value
+   **/
+  @ApiModelProperty(value = "Session Enjoyment Level Value")
+  @JsonProperty("value")
+  public Integer getValue() {
+    return value;
+  }
+  public void setValue(Integer value) {
+    this.value = value;
+  }
+
+  
+  /**
+   * Session Enjoyment Level Description
+   **/
+  @ApiModelProperty(value = "Session Enjoyment Level Description")
+  @JsonProperty("description")
+  public String getDescription() {
+    return description;
+  }
+  public void setDescription(String description) {
+    this.description = description;
+  }
+
+  
+  /**
+   * Session Min HR Bpm
+   **/
+  @ApiModelProperty(value = "Session Min HR Bpm")
+  @JsonProperty("minHRBpm")
+  public Integer getMinHRBpm() {
+    return minHRBpm;
+  }
+  public void setMinHRBpm(Integer minHRBpm) {
+    this.minHRBpm = minHRBpm;
+  }
+
+  
+  /**
+   * Session Max HR Bpm
+   **/
+  @ApiModelProperty(value = "Session Max HR Bpm")
+  @JsonProperty("maxHRBpm")
+  public Integer getMaxHRBpm() {
+    return maxHRBpm;
+  }
+  public void setMaxHRBpm(Integer maxHRBpm) {
+    this.maxHRBpm = maxHRBpm;
+  }
+
+  
+  /**
+   * Session Average Bpm
+   **/
+  @ApiModelProperty(value = "Session Average Bpm")
+  @JsonProperty("averageHRBpm")
+  public Double getAverageHRBpm() {
+    return averageHRBpm;
+  }
+  public void setAverageHRBpm(Double averageHRBpm) {
+    this.averageHRBpm = averageHRBpm;
+  }
+
+  
+
+  @Override
+  public String toString()  {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class ExerGameSessionExecutedExerciseenjoymentLevelSubSubSubsection {\n");
+    
+    sb.append("    value: ").append(StringUtil.toIndentedString(value)).append("\n");
+    sb.append("    description: ").append(StringUtil.toIndentedString(description)).append("\n");
+    sb.append("    minHRBpm: ").append(StringUtil.toIndentedString(minHRBpm)).append("\n");
+    sb.append("    maxHRBpm: ").append(StringUtil.toIndentedString(maxHRBpm)).append("\n");
+    sb.append("    averageHRBpm: ").append(StringUtil.toIndentedString(averageHRBpm)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+}
